@@ -30,8 +30,8 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
+      # The ubuntu-latest runner already provides the Android SDK. Avoid
+      # the obsolete 'tools' package requested by setup-android defaults.
 
       - name: Setup Flutter 3.47.6 stable
         uses: subosito/flutter-action@v2
