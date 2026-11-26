@@ -109,6 +109,30 @@ void main(){
     expect(tester.takeException(),isNull);
   });
 
+  testWidgets('account language globe artwork is visible and switches Arabic to English',(tester)async{
+    bool? selected;
+    await tester.pumpWidget(harness(PQLanguageSwitcher(
+      arabic:true,onChanged:(value)=>selected=value),arabic:true,width:320));
+    final globe=find.byWidgetPredicate((widget) =>
+      widget is Image && widget.image is AssetImage &&
+      (widget.image as AssetImage).assetName == 'assets/design/ui/icons/worlds.png');
+    expect(globe,findsOneWidget);
+    expect(find.text('تغيير اللغة'),findsOneWidget);
+    await tester.tap(globe);await tester.pump();
+    expect(selected,false);
+    expect(tester.takeException(),isNull);
+  });
+
+  testWidgets('language control shows selected English and switches back',(tester)async{
+    bool? selected;
+    await tester.pumpWidget(harness(PQLanguageSwitcher(
+      arabic:false,onChanged:(value)=>selected=value),width:320));
+    expect(find.text('Change language'),findsOneWidget);
+    expect(find.textContaining('English'),findsOneWidget);
+    await tester.tap(find.byType(SwitchListTile));await tester.pump();
+    expect(selected,true);
+  });
+
   testWidgets('rewarded ad unavailable state does not call native ad',(tester)async{
     var watched=false;
     await tester.pumpWidget(harness(PQAdChoice(title:'Rewarded preview',
