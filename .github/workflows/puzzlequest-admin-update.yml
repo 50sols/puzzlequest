@@ -99,7 +99,9 @@ jobs:
 
   publish-signed-update:
     name: Publish trusted v1.0.1 Admin ZIP
-    if: ${{ github.event_name == 'workflow_dispatch' }}
+    # One-time owner-authorized production signing attempt from this hotfix
+    # branch. All later pushes skip release unless manually dispatched.
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/fix/level-content-download-cpanel-20261126' && github.event.head_commit.message == 'release(puzzlequest): one-time signed v1.0.1 artifact') }}
     needs: validate-update
     runs-on: ubuntu-latest
     timeout-minutes: 20
