@@ -6,9 +6,12 @@ import 'screens/screens.dart';
 import 'widgets/pq_widgets.dart';
 import 'widgets/app_footer_banner.dart';
 import 'core/ads_service.dart';
+import 'core/orientation.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // Apply portrait orientation before rendering the first frame.
+  await lockPuzzleQuestPortrait();
   final session=PuzzleSession();
   runApp(PuzzleQuestApp(session:session));
   await session.initialize();
