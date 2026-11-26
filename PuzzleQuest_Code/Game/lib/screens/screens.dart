@@ -20,6 +20,7 @@ import '../widgets/reward_shine.dart';
 import '../widgets/game_art_button.dart';
 import '../widgets/level_tile_lighting.dart';
 import '../widgets/mission_claim_button.dart';
+import '../widgets/world_card_lighting.dart';
 import '../game/gameplay.dart';
 
 const _screenTitles=<int, List<String>>{
@@ -571,21 +572,21 @@ class _ScreenPageState extends State<ScreenPage> {
         : s.tr('يفتح بعد نشر المحتوى وإكمال العالم السابق',
             'Unlocks when published and after completing the previous world');
     return Container(
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), boxShadow: [
-        BoxShadow(color: accent.withValues(alpha: available ? .7 : .23), blurRadius: 12),
-      ]),
+      decoration: PQWorldCardLighting.outer(accent, available: available),
       child: Material(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),
-          side: BorderSide(color: accent, width: 2)),
+        shape: RoundedRectangleBorder(borderRadius: PQWorldCardLighting.radius,
+          side: PQWorldCardLighting.rim(accent, available: available)),
         clipBehavior: Clip.antiAlias,
         child: InkWell(
           onTap: available ? () => _navigate(4, {'world': worldId}) : null,
           child: Stack(children: [
             Positioned.fill(child: Image.asset('assets/design/art/worlds/$art.png',
-              fit: BoxFit.cover, excludeFromSemantics: true)),
-            const Positioned.fill(child: DecoratedBox(decoration: BoxDecoration(
-              gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter,
-                colors: [Colors.transparent, Color(0xE610102A)]),
+              fit: BoxFit.cover, excludeFromSemantics: true,
+              color: PQWorldCardLighting.artworkTint(available: available),
+              colorBlendMode: BlendMode.modulate)),
+            Positioned.fill(child: IgnorePointer(child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: PQWorldCardLighting.scrim(available: available)),
             ))),
             ConstrainedBox(constraints: BoxConstraints(minHeight: available ? 172 : 146),
               child: Align(alignment: Alignment.bottomCenter,
@@ -593,7 +594,12 @@ class _ScreenPageState extends State<ScreenPage> {
                   child: Row(crossAxisAlignment: CrossAxisAlignment.end, children: [
                     Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisSize: MainAxisSize.min, children: [
-                        Text(title, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold)),
+                        Text(title, style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold,
+                          color: available ? PQColors.white : PQColors.muted,
+                          shadows: available ? const [
+                            Shadow(color: Color(0xFF422164), blurRadius: 7),
+                            Shadow(color: Color(0xAAFFBB31), blurRadius: 12),
+                          ] : const [])),
                         if (available)
                           _worldStars(levels)
                         else Text(requirement),
