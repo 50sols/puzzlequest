@@ -1,0 +1,537 @@
+{
+  "id": 4,
+  "slug": "Puzzle_Levels",
+  "title": "Green Valley",
+  "description": "Fixed-grid stage picker; no scrolling inside the level grid",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/04_Puzzle_Levels/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_buildings_cottage",
+      "path": "00_SHARED/art/buildings/cottage.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/buildings/cottage.png"
+      }
+    },
+    {
+      "asset_id": "screen_art_04_Puzzle_Levels_art_example_level_complete",
+      "path": "00_SHARED/screen_art/04_Puzzle_Levels/art/example_level_complete.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/screen_art/04_Puzzle_Levels/art/example_level_complete.png"
+      }
+    },
+    {
+      "asset_id": "art_rewards_treasure_chest",
+      "path": "00_SHARED/art/rewards/treasure_chest.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/treasure_chest.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_bright",
+      "path": "00_SHARED/art/backgrounds/bright.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/bright.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_arrow_right",
+      "path": "00_SHARED/icons/png/arrow_right.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/arrow_right.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_arrow_right",
+      "path": "00_SHARED/icons/svg/arrow_right.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/arrow_right.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_back",
+      "path": "00_SHARED/icons/png/back.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/back.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_back",
+      "path": "00_SHARED/icons/svg/back.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/back.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_chest",
+      "path": "00_SHARED/icons/png/chest.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/chest.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_chest",
+      "path": "00_SHARED/icons/svg/chest.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/chest.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_levels",
+      "path": "00_SHARED/icons/png/levels.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/levels.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_levels",
+      "path": "00_SHARED/icons/svg/levels.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/levels.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_lock",
+      "path": "00_SHARED/icons/png/lock.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/lock.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_lock",
+      "path": "00_SHARED/icons/svg/lock.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/lock.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_star",
+      "path": "00_SHARED/icons/png/star.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/star.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_star",
+      "path": "00_SHARED/icons/svg/star.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/star.svg"
+      }
+    },
+    {
+      "asset_id": "ui_ads_banner_320x50",
+      "path": "00_SHARED/ui/ads/banner_320x50.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/ads/banner_320x50.png",
+        "svg": "00_SHARED/ui/ads/banner_320x50.svg"
+      }
+    },
+    {
+      "asset_id": "ui_progress_bar_fill",
+      "path": "00_SHARED/ui/progress/bar_fill.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/bar_fill.png"
+      }
+    },
+    {
+      "asset_id": "ui_progress_bar_track",
+      "path": "00_SHARED/ui/progress/bar_track.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/bar_track.png"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_disabled",
+      "path": "00_SHARED/ui/buttons/neutral_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_disabled.png",
+        "svg": "00_SHARED/ui/buttons/neutral_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_normal",
+      "path": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_normal.png",
+        "svg": "00_SHARED/ui/buttons/neutral_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_pressed",
+      "path": "00_SHARED/ui/buttons/neutral_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_pressed.png",
+        "svg": "00_SHARED/ui/buttons/neutral_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_disabled",
+      "path": "00_SHARED/ui/buttons/primary_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_disabled.png",
+        "svg": "00_SHARED/ui/buttons/primary_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_normal",
+      "path": "00_SHARED/ui/buttons/primary_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_normal.png",
+        "svg": "00_SHARED/ui/buttons/primary_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_pressed",
+      "path": "00_SHARED/ui/buttons/primary_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_pressed.png",
+        "svg": "00_SHARED/ui/buttons/primary_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_progress_xp_fill",
+      "path": "00_SHARED/ui/progress/xp_fill.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/xp_fill.png"
+      }
+    },
+    {
+      "asset_id": "art_puzzle_scenes_level_002_windmill_spring_thumb",
+      "path": "00_SHARED/art/puzzle_scenes/level_002_windmill_spring_thumb.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/puzzle_scenes/level_002_windmill_spring_thumb.png"
+      }
+    },
+    {
+      "asset_id": "art_puzzle_scenes_level_003_snow_castle_thumb",
+      "path": "00_SHARED/art/puzzle_scenes/level_003_snow_castle_thumb.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/puzzle_scenes/level_003_snow_castle_thumb.png"
+      }
+    },
+    {
+      "asset_id": "art_puzzle_scenes_level_004_sky_balloon_thumb",
+      "path": "00_SHARED/art/puzzle_scenes/level_004_sky_balloon_thumb.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/puzzle_scenes/level_004_sky_balloon_thumb.png"
+      }
+    },
+    {
+      "asset_id": "art_puzzle_scenes_level_005_autumn_tree_thumb",
+      "path": "00_SHARED/art/puzzle_scenes/level_005_autumn_tree_thumb.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/puzzle_scenes/level_005_autumn_tree_thumb.png"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Level_Preview",
+    "Worlds_Map"
+  ],
+  "widgets": [
+    {
+      "id": "world_name",
+      "kind": "heading",
+      "role": "heading",
+      "text_key": "ui_world_name",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        72,
+        16,
+        246,
+        48
+      ],
+      "label_role": "dynamic_value_with_localized_label",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "selected_world.localized_title"
+      }
+    },
+    {
+      "id": "stars",
+      "kind": "counter",
+      "role": "image",
+      "text_key": "ui_stars",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        16,
+        208,
+        220,
+        48
+      ],
+      "label_role": "dynamic_value_with_localized_label",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "confirmed_world.star_total"
+      }
+    },
+    {
+      "id": "levels_grid",
+      "kind": "grid",
+      "role": "grid",
+      "text_key": "ui_levels_grid",
+      "focusable": false,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "selected"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        16,
+        280,
+        358,
+        360
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "collection",
+        "selection_context": "preserve selected world/level and scroll position; only an eligible child row or card navigates",
+        "item_action": {
+          "type": "navigation",
+          "target": "Level_Preview",
+          "requires": "five ordered Green Valley stages only; 1-1 open automatically; each next after >=1 star on prior; stage must be published and asset manifest verified",
+          "on_unavailable": "locked: no navigation; not_downloaded: request existing download and enter preview only after asset integrity succeeds; on error preserve progress/selection"
+        },
+        "note": "Only selected eligible row/card may navigate; source container itself does not navigate."
+      },
+      "layer": "content",
+      "child_min_touch_dp": 48,
+      "semantics_policy": "Container is not one clickable/focusable button; actionable visible children expose separate 48dp targets and semantics. Decorative or disabled children are not actionable.",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "00_SHARED/puzzles/LEVEL_CATALOG.json levels by selected world; never screenshot 36/45"
+      }
+    },
+    {
+      "id": "pages_indicator",
+      "kind": "progress",
+      "role": "progressbar",
+      "text_key": "ui_pages_indicator",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        127,
+        672,
+        136,
+        48
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content"
+    },
+    {
+      "id": "back",
+      "kind": "icon_button",
+      "role": "button",
+      "text_key": "ui_back",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Worlds_Map"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "world_banner",
+      "kind": "image",
+      "rect_dp": [
+        16,
+        88,
+        358,
+        104
+      ],
+      "text_key": "ui_world_banner",
+      "label_role": "semantics_or_reference_only",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": false,
+      "focusable": false,
+      "min_hit_size_dp": null,
+      "role": "image",
+      "states": [
+        "default"
+      ],
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "world_banner"
+      }
+    },
+    {
+      "id": "world_progress",
+      "kind": "progress",
+      "rect_dp": [
+        16,
+        256,
+        358,
+        12
+      ],
+      "text_key": "ui_world_progress",
+      "label_role": "semantics_or_reference_only",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": false,
+      "focusable": false,
+      "min_hit_size_dp": null,
+      "role": "progressbar",
+      "states": [
+        "default"
+      ],
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "confirmed_world.progress"
+      }
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/04_Puzzle_Levels/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win.",
+  "layout_preview": "01_SCREENS/04_Puzzle_Levels/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Home_My_Village"
+  },
+  "approved_product_rules": {
+    "source": "02_DESIGN/APPROVED_PRODUCT_RULES.json",
+    "applicable_policies": [
+      "content",
+      "future_content_publication"
+    ],
+    "design_rule": "re-render published levels from catalog revision; no fixed max=5 or phantom cells Reference screenshot numerals and old Gems art are not runtime strings. Historical image is preserved as art.",
+    "approved_through": "Q21"
+  },
+  "dynamic_content_policy_ref": "02_DESIGN/CONTENT_PUBLISHING_CONTRACT.json"
+}

@@ -1,0 +1,648 @@
+{
+  "id": 15,
+  "slug": "Pause_Menu",
+  "title": "Paused",
+  "description": "Resume, restart, sound and exit actions",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/15_Pause_Menu/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_buildings_cottage",
+      "path": "00_SHARED/art/buildings/cottage.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/buildings/cottage.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_standard",
+      "path": "00_SHARED/art/backgrounds/standard.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/standard.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_close",
+      "path": "00_SHARED/icons/png/close.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/close.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_close",
+      "path": "00_SHARED/icons/svg/close.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/close.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_home",
+      "path": "00_SHARED/icons/png/home.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/home.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_home",
+      "path": "00_SHARED/icons/svg/home.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/home.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_pause",
+      "path": "00_SHARED/icons/png/pause.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/pause.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_pause",
+      "path": "00_SHARED/icons/svg/pause.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/pause.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_play",
+      "path": "00_SHARED/icons/png/play.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/play.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_play",
+      "path": "00_SHARED/icons/svg/play.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/play.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_restart",
+      "path": "00_SHARED/icons/png/restart.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/restart.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_restart",
+      "path": "00_SHARED/icons/svg/restart.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/restart.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_settings",
+      "path": "00_SHARED/icons/png/settings.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/settings.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_settings",
+      "path": "00_SHARED/icons/svg/settings.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/settings.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_modal",
+      "path": "00_SHARED/ui/panels/modal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/modal.png",
+        "svg": "00_SHARED/ui/panels/modal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_disabled",
+      "path": "00_SHARED/ui/buttons/neutral_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_disabled.png",
+        "svg": "00_SHARED/ui/buttons/neutral_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_normal",
+      "path": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_normal.png",
+        "svg": "00_SHARED/ui/buttons/neutral_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_pressed",
+      "path": "00_SHARED/ui/buttons/neutral_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_pressed.png",
+        "svg": "00_SHARED/ui/buttons/neutral_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_disabled",
+      "path": "00_SHARED/ui/buttons/primary_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_disabled.png",
+        "svg": "00_SHARED/ui/buttons/primary_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_normal",
+      "path": "00_SHARED/ui/buttons/primary_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_normal.png",
+        "svg": "00_SHARED/ui/buttons/primary_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_pressed",
+      "path": "00_SHARED/ui/buttons/primary_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_pressed.png",
+        "svg": "00_SHARED/ui/buttons/primary_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Puzzle_Gameplay",
+    "Profile_Settings",
+    "Home_My_Village"
+  ],
+  "widgets": [
+    {
+      "id": "dimmed_gameplay",
+      "kind": "backdrop",
+      "role": "image",
+      "text_key": "ui_dimmed_gameplay",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        0,
+        0,
+        390,
+        844
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": true,
+      "renderer": "Flutter",
+      "layer": "modal_barrier"
+    },
+    {
+      "id": "pause_dialog",
+      "kind": "panel",
+      "role": "image",
+      "text_key": "ui_pause_dialog",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        24,
+        154,
+        342,
+        542
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": true,
+      "renderer": "Flutter",
+      "layer": "modal_panel"
+    },
+    {
+      "id": "resume",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_resume",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        48,
+        286,
+        294,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Puzzle_Gameplay"
+      },
+      "parent_id": "pause_dialog",
+      "layer": "modal_content",
+      "visible_when": "pause_menu_main_and_not_shuffle_purchase_confirm"
+    },
+    {
+      "id": "restart",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_restart",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        48,
+        354,
+        294,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "confirmation",
+        "event": "restart_existing_attempt",
+        "on_confirm": "Puzzle_Gameplay",
+        "on_cancel": "stay_paused"
+      },
+      "parent_id": "pause_dialog",
+      "layer": "modal_content",
+      "visible_when": "pause_menu_main_and_not_shuffle_purchase_confirm"
+    },
+    {
+      "id": "shuffle",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_shuffle_with_count",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "available_stored",
+        "purchasable_150_coins",
+        "insufficient_coins",
+        "pending",
+        "disabled_unfixed_less_than_2",
+        "failed_retryable"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        48,
+        422,
+        294,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "conditional_action",
+        "event": "shuffle_from_paused_attempt",
+        "requires": "at least 2 unfixed pieces and no pending request; if inventory>0 use stored only on successful shuffle; else show 150 Coins purchase confirmation in same screen and preview available/deficit balance; no double spend",
+        "on_success": "Stay in existing Pause menu, apply successful effect once; countdown stays paused until Resume.",
+        "on_failure": "stay paused, keep all balance/uses and last board state",
+        "idempotency": "attempt-scoped request"
+      },
+      "parent_id": "pause_dialog",
+      "layer": "modal_content",
+      "visible_when": "pause_menu_main_and_not_shuffle_purchase_confirm",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "player.shuffle_uses count; localized label uses {count}"
+      }
+    },
+    {
+      "id": "settings",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_settings",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        48,
+        490,
+        294,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Profile_Settings"
+      },
+      "parent_id": "pause_dialog",
+      "layer": "modal_content",
+      "visible_when": "pause_menu_main_and_not_shuffle_purchase_confirm"
+    },
+    {
+      "id": "home",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_home",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        48,
+        558,
+        294,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Home_My_Village"
+      },
+      "parent_id": "pause_dialog",
+      "layer": "modal_content",
+      "visible_when": "pause_menu_main_and_not_shuffle_purchase_confirm"
+    },
+    {
+      "id": "close",
+      "kind": "icon_button",
+      "rect_dp": [
+        294,
+        166,
+        48,
+        48
+      ],
+      "text_key": "ui_close",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "conditional_navigation",
+        "when": "pause_shuffle_buy_confirm_only",
+        "on_confirm_state": "return_to_pause_main_without_purchase",
+        "when_main": "return_to_gameplay_and_resume",
+        "requires": "no pending atomic purchase or shuffle operation"
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "parent_id": "pause_dialog",
+      "layer": "modal_content"
+    },
+    {
+      "id": "dialog_title",
+      "kind": "heading",
+      "rect_dp": [
+        48,
+        194,
+        238,
+        48
+      ],
+      "text_key": "screen_15_dialog_title",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": false,
+      "focusable": false,
+      "min_hit_size_dp": null,
+      "role": "heading",
+      "states": [
+        "default"
+      ],
+      "parent_id": "pause_dialog",
+      "layer": "modal_content"
+    },
+    {
+      "id": "shuffle_confirmation_panel",
+      "kind": "panel",
+      "rect_dp": [
+        36,
+        266,
+        318,
+        280
+      ],
+      "text_key": "ui_shuffle_confirm_message",
+      "label_role": "dynamic_value_with_localized_label",
+      "renderer": "Flutter",
+      "interactive": false,
+      "focusable": false,
+      "min_hit_size_dp": null,
+      "role": "dialog",
+      "states": [
+        "confirmation",
+        "insufficient",
+        "pending",
+        "error"
+      ],
+      "parent_id": "pause_dialog",
+      "layer": "modal_content_over_main",
+      "visible_when": "pause_shuffle_buy_confirm_only",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "cost 150 Coins; player.available_coins and shortfall; no new screen"
+      }
+    },
+    {
+      "id": "confirm_shuffle_purchase",
+      "kind": "button",
+      "rect_dp": [
+        48,
+        398,
+        294,
+        56
+      ],
+      "text_key": "ui_confirm_shuffle_150",
+      "label_role": "visible_localized_text",
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "states": [
+        "enabled",
+        "disabled",
+        "pending",
+        "success",
+        "failed"
+      ],
+      "parent_id": "pause_dialog",
+      "layer": "modal_content_over_main",
+      "visible_when": "pause_shuffle_buy_confirm_only",
+      "interaction": {
+        "type": "submission",
+        "event": "purchase_and_apply_shuffle_atomically",
+        "price_coins": 150,
+        "requires": "player.coins >=150, >=2 unfixed pieces, attempt running or paused but not completed",
+        "on_success": "back to Pause main, no auto Resume",
+        "on_failure": "stay confirming, no charge or use; return safe failure feedback",
+        "idempotent": true
+      }
+    },
+    {
+      "id": "cancel_shuffle_purchase",
+      "kind": "button",
+      "rect_dp": [
+        48,
+        472,
+        294,
+        56
+      ],
+      "text_key": "ui_cancel_shuffle_purchase",
+      "label_role": "visible_localized_text",
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "states": [
+        "enabled",
+        "pressed"
+      ],
+      "parent_id": "pause_dialog",
+      "layer": "modal_content_over_main",
+      "visible_when": "pause_shuffle_buy_confirm_only",
+      "interaction": {
+        "type": "local",
+        "event": "return_to_pause_main_without_purchase"
+      }
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/15_Pause_Menu/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets.",
+  "layout_preview": "01_SCREENS/15_Pause_Menu/LAYOUT.svg",
+  "presentation": "modal",
+  "return_policy": {
+    "system_back": "dismiss_top_modal_without_restarting_game",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Home_My_Village"
+  },
+  "approved_product_rules": {
+    "source": "02_DESIGN/APPROVED_PRODUCT_RULES.json",
+    "applicable_policies": [
+      "rating"
+    ],
+    "design_rule": "Use content data, not values baked into screenshot; pending numeric thresholds remain blocked."
+  },
+  "shuffle_same_screen_variant": {
+    "not_a_new_screen": true,
+    "main_actions": [
+      "resume",
+      "restart",
+      "shuffle",
+      "settings",
+      "home"
+    ],
+    "confirm_variant": [
+      "shuffle_confirmation_panel",
+      "confirm_shuffle_purchase",
+      "cancel_shuffle_purchase"
+    ],
+    "state_visibility": "mutually exclusive main actions vs confirmation; disabled confirm if insufficient Coins; close/back returns to main before gameplay",
+    "requires": "no active drag during Pause; game clock paused",
+    "no_new_product_mode": true
+  }
+}

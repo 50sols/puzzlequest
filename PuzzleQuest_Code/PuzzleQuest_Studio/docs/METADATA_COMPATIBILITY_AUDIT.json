@@ -1,0 +1,15 @@
+{
+  "status": "confirmed-from-user-provided-PHP-source",
+  "source": "app.rar:app/Services/Content.php::validate",
+  "required_level_json_root_keys": [
+    "level_id", "world_id", "display_code", "position", "title",
+    "piece_count", "level_time_limit_seconds", "three_star_seconds", "two_star_seconds"
+  ],
+  "manifest": "See LARAVEL_CONTENT_IMPORT_CONTRACT.json for all root/array constraints",
+  "verified": "Python local parity checks, plus PHP Content::validate pre-GD path",
+  "unverified": [
+    "world_id exists in production worlds.id",
+    "production GD pixel validator and full upload",
+    "production DB write and storage", "device QA and publish"
+  ]
+}

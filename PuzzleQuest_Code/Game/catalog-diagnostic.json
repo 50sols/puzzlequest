@@ -1,0 +1,2252 @@
+[
+  {
+    "id": "green_valley_house_001",
+    "code": "1-1",
+    "revision": "14b7da7ba829cffc58b2",
+    "assets": {
+      "master.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/master.png",
+        "sha256": "c4da5ab8feda00b299375cd470bf7739c65ca590c4fe31f7e8d227780e6ec176"
+      },
+      "16_pieces/piece_000.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_000.png",
+        "sha256": "a494046f40121ffe582812dbfcdfb91ca4e764f25cbb808aec9bba46c1c2797a"
+      },
+      "16_masks_svg/piece_000.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_000.svg",
+        "sha256": "bb511eea47b2871fcafb33834448e459a1503d25ab06d3fdfd0c8462417c0218"
+      },
+      "16_pieces/piece_001.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_001.png",
+        "sha256": "e3fe6a8886a2cc87c0a17556c7a6cce4f7fbb57c6c295dc9cea2bb555a9eb648"
+      },
+      "16_masks_svg/piece_001.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_001.svg",
+        "sha256": "ce6b307b3b640bcb98203eaa60d24669bfb5be8cbec47016999ae769249bde3e"
+      },
+      "16_pieces/piece_002.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_002.png",
+        "sha256": "822b3068e150fd7ab4c6233fb890d9821e04c802ad3678b9dc138a2ba730f71a"
+      },
+      "16_masks_svg/piece_002.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_002.svg",
+        "sha256": "8376e2557e63a9490e20cc7e112662d5ae5a1cc7265a19c2660c461bb537daf8"
+      },
+      "16_pieces/piece_003.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_003.png",
+        "sha256": "273359c3f3c0ea6278d2c1526e7048206632c1b0534d58ce9dbeb232f32776bc"
+      },
+      "16_masks_svg/piece_003.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_003.svg",
+        "sha256": "1d392a67173fdb3255db05fe60946240eac416acddfde10dc8795fb26e8286b1"
+      },
+      "16_pieces/piece_004.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_004.png",
+        "sha256": "3ec80337a9ed3af2a344971ffb3f2c151926acda93516ba9b072a070554fe9cc"
+      },
+      "16_masks_svg/piece_004.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_004.svg",
+        "sha256": "ec2775ba0f27be12835e41af14996312f5212417863b77b61382bf4e6012b6bb"
+      },
+      "16_pieces/piece_005.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_005.png",
+        "sha256": "2b34701145197b7e8c583878078955fb7b0f8fb5232c8c6adcf4c1018093e546"
+      },
+      "16_masks_svg/piece_005.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_005.svg",
+        "sha256": "1869bb3847c27bdee327186fdf50d918fa605afa47578c55ff62792db76d2f25"
+      },
+      "16_pieces/piece_006.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_006.png",
+        "sha256": "6d9a5731c842da2c032299fd5ff666f6aed498117a3a735878ee88a72d574d7e"
+      },
+      "16_masks_svg/piece_006.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_006.svg",
+        "sha256": "1869bb3847c27bdee327186fdf50d918fa605afa47578c55ff62792db76d2f25"
+      },
+      "16_pieces/piece_007.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_007.png",
+        "sha256": "9a6250a76437153985a59dfe83f80a23ad1bdd6f90d108bfc68a4c9b9e95a664"
+      },
+      "16_masks_svg/piece_007.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_007.svg",
+        "sha256": "532229af3164239a721dde83b9009dc102c5ecd3ab2f66f24a9312842e995328"
+      },
+      "16_pieces/piece_008.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_008.png",
+        "sha256": "2affec5b5f6e12d6a6f99ddc342ca3ac778ad89b0b980741eac9e435b5b30418"
+      },
+      "16_masks_svg/piece_008.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_008.svg",
+        "sha256": "ec2775ba0f27be12835e41af14996312f5212417863b77b61382bf4e6012b6bb"
+      },
+      "16_pieces/piece_009.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_009.png",
+        "sha256": "6d2cfd80c0200323d7b8a2ad3799820dc972c30f8939cce63ba29333a4e74175"
+      },
+      "16_masks_svg/piece_009.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_009.svg",
+        "sha256": "82c210ccbc80c9b914026cf2917ecc2c3071006e097d012a5431bfea9293b039"
+      },
+      "16_pieces/piece_010.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_010.png",
+        "sha256": "1a31eb9a9481d3fa0abc2b2e42bf814e533a78d8e5a3d34eac13608b5258abcd"
+      },
+      "16_masks_svg/piece_010.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_010.svg",
+        "sha256": "6a2a983fb09a288a143f4ee296d6ed0cbba0541371cf696da8a2744b5d31e6de"
+      },
+      "16_pieces/piece_011.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_011.png",
+        "sha256": "dc9117caa72dad951acd9a76a268660c063239293000c105e51c12605c275826"
+      },
+      "16_masks_svg/piece_011.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_011.svg",
+        "sha256": "4abe373d8d3b3b8a1be8e9cef77776dfa703807ad77f0732ed3790fcb05f32d6"
+      },
+      "16_pieces/piece_012.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_012.png",
+        "sha256": "07380f8edb65e8e99d7f36434ee0174887abb2f74a1712a4d7c11460f8ff2ed4"
+      },
+      "16_masks_svg/piece_012.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_012.svg",
+        "sha256": "2394cfeb4cb3e6a4e9a94a57f7221082a3a225ce3236beb6f317f1f1f7bd1b5d"
+      },
+      "16_pieces/piece_013.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_013.png",
+        "sha256": "62316ac93ae5ea53edc30a8bde23a6b4d7ad944a4e9ae76304c55bdbfaddcc9e"
+      },
+      "16_masks_svg/piece_013.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_013.svg",
+        "sha256": "f454f09e084d8ff640762a7b4ad0fb70112839b7c146495a248de142ae7daba7"
+      },
+      "16_pieces/piece_014.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_014.png",
+        "sha256": "0ab322610af7ee13797082cb30f5f12bfa2acda31a189ea974f84db4b72a85af"
+      },
+      "16_masks_svg/piece_014.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_014.svg",
+        "sha256": "5045f8e96226e7a9dd59770038dc64356036a6e21a1080958c3ad4afa146dff3"
+      },
+      "16_pieces/piece_015.png": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_pieces/piece_015.png",
+        "sha256": "0453e1ee900be3a541a24d77b514576e2b2bf32da18c237aa88d5809ae9a5c27"
+      },
+      "16_masks_svg/piece_015.svg": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/16_masks_svg/piece_015.svg",
+        "sha256": "f68087b0372a98c8676cc5fbc2a63e0959e1751ee995fedbbfa70a46a60e011b"
+      },
+      "manifest.json": {
+        "url": "https://puzzlequest.50sols.com/content/green_valley_house_001/14b7da7ba829cffc58b2/manifest.json",
+        "sha256": "6f105f5b58e56350a518095d48e43e99e605ad050887dbf7778b836960b9bb9a"
+      }
+    },
+    "manifest": null,
+    "unlocked": true
+  },
+  {
+    "id": "level_002_windmill_spring",
+    "code": "1-2",
+    "revision": "402b2aa6ef22ffe4402b",
+    "assets": {
+      "master.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/master.png",
+        "sha256": "108948d6970698b13507fcdd6b4158aba61a1b6231e1003f790f4ef27d58d72d"
+      },
+      "16_pieces/piece_000.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_000.png",
+        "sha256": "f7a3a94059c0dd7adf57eb144dc27a096c832b9c003a648182914c04a513c1a5"
+      },
+      "16_masks_svg/piece_000.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_000.svg",
+        "sha256": "bb511eea47b2871fcafb33834448e459a1503d25ab06d3fdfd0c8462417c0218"
+      },
+      "16_pieces/piece_001.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_001.png",
+        "sha256": "d65358972481369035cdafb35295564dd48e92b2cae938bbf8bd5943d74bc076"
+      },
+      "16_masks_svg/piece_001.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_001.svg",
+        "sha256": "54d94c8740e66f34fae6d8453609919fa53e4745a5fb6698a37173b67cb6162b"
+      },
+      "16_pieces/piece_002.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_002.png",
+        "sha256": "18c9924e049732c8d37d846a0f0a07c7aa436b7e531d25c68abaa59530b9c427"
+      },
+      "16_masks_svg/piece_002.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_002.svg",
+        "sha256": "ce6b307b3b640bcb98203eaa60d24669bfb5be8cbec47016999ae769249bde3e"
+      },
+      "16_pieces/piece_003.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_003.png",
+        "sha256": "9df9d005dc2df372730f7dcec737fedd62472fd6a5d03e2fe8947bd7d0e13aa8"
+      },
+      "16_masks_svg/piece_003.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_003.svg",
+        "sha256": "82872e87805509d3ab4e44f7dc92b6a7a38c688f6d6846dda87023443653368d"
+      },
+      "16_pieces/piece_004.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_004.png",
+        "sha256": "708836a6e15e1a98ac605c3c1be48ad958c4a119d907a98bebeaf0c5b2825a82"
+      },
+      "16_masks_svg/piece_004.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_004.svg",
+        "sha256": "04efc86b85e99c1f95c66cde70a47f933a8d45b423746888430bfe8212a88b8e"
+      },
+      "16_pieces/piece_005.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_005.png",
+        "sha256": "147f67f329c6f2d81c8d14892de8ea8dc59a4fe1b63e09d79d118a7685fcb42a"
+      },
+      "16_masks_svg/piece_005.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_005.svg",
+        "sha256": "5be72615bbb30075edfcb7293006c29bd52ca0bdec50cdb28715c0f1391652a6"
+      },
+      "16_pieces/piece_006.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_006.png",
+        "sha256": "b84610a665d014ff22979b2604d28de3a448f35fdf9ff71b2188c1ab3a4d6924"
+      },
+      "16_masks_svg/piece_006.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_006.svg",
+        "sha256": "6a2a983fb09a288a143f4ee296d6ed0cbba0541371cf696da8a2744b5d31e6de"
+      },
+      "16_pieces/piece_007.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_007.png",
+        "sha256": "661d0f75b367e190ea71510fc7dbc8e8f2d5d75619797cb736176dda66e9dcee"
+      },
+      "16_masks_svg/piece_007.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_007.svg",
+        "sha256": "485977d29172eb67d74c26f5e831354b8ee99637beb880c36426d88978e0db8c"
+      },
+      "16_pieces/piece_008.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_008.png",
+        "sha256": "7775e4714fd884323082a477908dd71198019d62b27df65b75c337f3108f3ee4"
+      },
+      "16_masks_svg/piece_008.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_008.svg",
+        "sha256": "ec2775ba0f27be12835e41af14996312f5212417863b77b61382bf4e6012b6bb"
+      },
+      "16_pieces/piece_009.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_009.png",
+        "sha256": "d2a23c4d9fa5427789befee17ebcbecafab12f1f2cd54174020faf4336cf5d72"
+      },
+      "16_masks_svg/piece_009.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_009.svg",
+        "sha256": "b79fcb4fbe5c4bb7abaaef5ffb32de9411c4b10753714c00b466caa8c4fe4978"
+      },
+      "16_pieces/piece_010.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_010.png",
+        "sha256": "d8d97f2628e00d188118e90188eb7bf4c4d15eb3e1b6f258b4c555f595a4d981"
+      },
+      "16_masks_svg/piece_010.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_010.svg",
+        "sha256": "42c853f43b58c17ae06de9a734084531a0d7b2bbc9d1fb4bf9e975a7e9f63fa5"
+      },
+      "16_pieces/piece_011.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_011.png",
+        "sha256": "46df42e9c97ede9fa63094021dae29aa66a33fd17e2a27e7cb2af52a5b9da78b"
+      },
+      "16_masks_svg/piece_011.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_011.svg",
+        "sha256": "b692e6661063652d3b65f2d7d132002e9b0416ad5ab6ece04f3a0f53f404f984"
+      },
+      "16_pieces/piece_012.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_012.png",
+        "sha256": "2af76aa7f852bf95a6698a070eb27867ec6c3cb54c93720df4267a90e2b24c7f"
+      },
+      "16_masks_svg/piece_012.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_012.svg",
+        "sha256": "735b48785b7a77397235616d6dc166d454474b94d5800c0c36ac5e6005c41395"
+      },
+      "16_pieces/piece_013.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_013.png",
+        "sha256": "66a2e1057ed0735f7de85834d5fe9b94bdbadc76cdb3038bc154db351a8093df"
+      },
+      "16_masks_svg/piece_013.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_013.svg",
+        "sha256": "5045f8e96226e7a9dd59770038dc64356036a6e21a1080958c3ad4afa146dff3"
+      },
+      "16_pieces/piece_014.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_014.png",
+        "sha256": "3cccaa13bf0e45ef0eb04f179cbfef3f3a41ad1f8b8b1a0f3a77ce630d39b23d"
+      },
+      "16_masks_svg/piece_014.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_014.svg",
+        "sha256": "eab362b29891467dccdf403bf9548e620236bb02c957eab178b6ea0117d875c8"
+      },
+      "16_pieces/piece_015.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_pieces/piece_015.png",
+        "sha256": "9e1d2238653015dc01c5f9996f5e41e94c276f8d9e0cfbf0b9a12858c0372ce8"
+      },
+      "16_masks_svg/piece_015.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/16_masks_svg/piece_015.svg",
+        "sha256": "b0e8d82d9c4a6fb6bca1105ea58f73e8d561f359809b43c916c690760d31dab5"
+      },
+      "manifest.json": {
+        "url": "https://puzzlequest.50sols.com/content/level_002_windmill_spring/402b2aa6ef22ffe4402b/manifest.json",
+        "sha256": "8ce20e7ec74c9875507d69273010a4a7dfce8f728473b9fe64349dc2b16313d3"
+      }
+    },
+    "manifest": null,
+    "unlocked": false
+  },
+  {
+    "id": "level_003_snow_castle",
+    "code": "1-3",
+    "revision": "0498c3992aa2b4ae3f00",
+    "assets": {
+      "master.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/master.png",
+        "sha256": "26874a8a080658e842b3f80b2ff429fdc0b4e7a6ab0ac1f71bf3e9e430275387"
+      },
+      "36_pieces/piece_000.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_000.png",
+        "sha256": "2cf2eb730545da8f580bc29af16bb248a45cc3726e24aa965ef98b81e0179732"
+      },
+      "36_masks_svg/piece_000.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_000.svg",
+        "sha256": "013b4d54e66e13d9943c184cb9c297ce3fd5e9d582e238cb87068eb3ebc27287"
+      },
+      "36_pieces/piece_001.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_001.png",
+        "sha256": "4305973a7ee5643f9ffa9fdec87b064421048f64fc846134e1a28967391c5ea9"
+      },
+      "36_masks_svg/piece_001.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_001.svg",
+        "sha256": "83d7630723c35ca4b9334ce3b164d3624420b37996f9be10e98f4804e30333ea"
+      },
+      "36_pieces/piece_002.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_002.png",
+        "sha256": "d551b2bdd50d0169ec224e8419fef0b39d4ce4c899c8a75d01eff9ead7644235"
+      },
+      "36_masks_svg/piece_002.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_002.svg",
+        "sha256": "04f4ef4ee52e2ab85cbafaa0b7a45c687788bf58454ad2a377a4493e8e6197e2"
+      },
+      "36_pieces/piece_003.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_003.png",
+        "sha256": "57d6fb1124dc3e4d8e7cd98dae985b74e5009fc802e5da21e9a2241666a64f61"
+      },
+      "36_masks_svg/piece_003.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_003.svg",
+        "sha256": "f5926cdda808ad23fab15134defbc98ee779b63cfdbddd24c8bbed526729aa9b"
+      },
+      "36_pieces/piece_004.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_004.png",
+        "sha256": "975e13f60a4ea5f71968b05600663034c17866cdbd9c4543aa7a001d4027dd56"
+      },
+      "36_masks_svg/piece_004.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_004.svg",
+        "sha256": "bc86d7208db3c551362b3c61e837eec82c64c8a50048a0ee65f24904decb3d5f"
+      },
+      "36_pieces/piece_005.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_005.png",
+        "sha256": "11fc22c99381bb4d57c7940bd58e0814dee38fdd2a923090f4cdb817c57fac1d"
+      },
+      "36_masks_svg/piece_005.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_005.svg",
+        "sha256": "1da855142d479ccd9066ea21fc3b17ef4f3b2ad5b37cf6022f7d0e6ef662df4c"
+      },
+      "36_pieces/piece_006.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_006.png",
+        "sha256": "4a793afcfe0daa32f426aa2221b52b5d2e632a14e393514dcbb33d111d3d74fd"
+      },
+      "36_masks_svg/piece_006.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_006.svg",
+        "sha256": "cb579485d7b8e3633ddb7526f893eabb16b589b9c0a5457a811311e2ad98d491"
+      },
+      "36_pieces/piece_007.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_007.png",
+        "sha256": "2398368532ae65e644454592c264474d9f4aae2033371aea46819f85356842e0"
+      },
+      "36_masks_svg/piece_007.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_007.svg",
+        "sha256": "6100f6abf4b9738f8e3b0789d9b172cbd983627248650530ca627d62862a486c"
+      },
+      "36_pieces/piece_008.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_008.png",
+        "sha256": "e9f956c443ec4fa716fdb3da605d6ac4bf04075bd82cba25fcec7e9ca6d78186"
+      },
+      "36_masks_svg/piece_008.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_008.svg",
+        "sha256": "46d98c9c9b062b6f689aded0c8562dcc3654433791dcb913e7f96debef9c6d92"
+      },
+      "36_pieces/piece_009.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_009.png",
+        "sha256": "9fdf03184fb5388232bee653433f795ab9950f9eb00bd403eb03285834cc1b1b"
+      },
+      "36_masks_svg/piece_009.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_009.svg",
+        "sha256": "4bb8890c1984f5b7d7b4640907a5aa0622f57304fc4ddd02ee69d9aae67fe05e"
+      },
+      "36_pieces/piece_010.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_010.png",
+        "sha256": "a14b10cd179d39d16b4157e101b117a23b39c69cb6b2504d543c211480f9b48b"
+      },
+      "36_masks_svg/piece_010.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_010.svg",
+        "sha256": "4bb8890c1984f5b7d7b4640907a5aa0622f57304fc4ddd02ee69d9aae67fe05e"
+      },
+      "36_pieces/piece_011.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_011.png",
+        "sha256": "34dfc49d4126a06e505ef8a57d6a77efcefd5d007b3bcbc63b6b24a6ae047a43"
+      },
+      "36_masks_svg/piece_011.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_011.svg",
+        "sha256": "0088ae87ac011d058856c1729138a241de1c80e46db8e419707554ad34ab658c"
+      },
+      "36_pieces/piece_012.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_012.png",
+        "sha256": "2aaa0ef62011b0cc9f088afd2dc45841cc73c65d9c1db01a386be022edeaefcb"
+      },
+      "36_masks_svg/piece_012.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_012.svg",
+        "sha256": "24f5b780bde7d24229af8f8f94049ae036c282dc0db71575bab7a031a19236b2"
+      },
+      "36_pieces/piece_013.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_013.png",
+        "sha256": "d3dc49af0bc7bbe3786808fbfc2828b4204f6a004f88b9454eb69be2e37cfee4"
+      },
+      "36_masks_svg/piece_013.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_013.svg",
+        "sha256": "6ef276b624271498a2efebdd9f41f80f85c9652575ee6fd9b9960981777c22ae"
+      },
+      "36_pieces/piece_014.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_014.png",
+        "sha256": "eac4cce98ddbe991887351b2fcbf698c1a4fae5a4c84f9947570ee10c470948c"
+      },
+      "36_masks_svg/piece_014.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_014.svg",
+        "sha256": "aea71bc23a0d1fea5337b1ed3e3c52549337cecb2de82f1ae19161b9dd610c86"
+      },
+      "36_pieces/piece_015.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_015.png",
+        "sha256": "89cb36b894e4f56c063918bb788c40cc0957fe6b9cd764c1dd504da0b93aa4f8"
+      },
+      "36_masks_svg/piece_015.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_015.svg",
+        "sha256": "9912aaa5b4debf3be68772bd594ade0cd4cb870a79e25e331f6b62afaff35e8f"
+      },
+      "36_pieces/piece_016.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_016.png",
+        "sha256": "f3b1f99bd1cc6faedad9341460b38819644f7958010a034c1130b5347009a3b4"
+      },
+      "36_masks_svg/piece_016.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_016.svg",
+        "sha256": "4bb8890c1984f5b7d7b4640907a5aa0622f57304fc4ddd02ee69d9aae67fe05e"
+      },
+      "36_pieces/piece_017.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_017.png",
+        "sha256": "71bf24d313df8a522a1807c71c2cce37cf4c06cde581dbb2f98c40d89b436ae9"
+      },
+      "36_masks_svg/piece_017.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_017.svg",
+        "sha256": "127bdca0a854f31894d1f6d1f9fb0564faee638e776d0e6e31a8cfa1460cadcf"
+      },
+      "36_pieces/piece_018.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_018.png",
+        "sha256": "5b97448e6e24cdafee264c6f3300bc2834621d1331e7ff9bc4aa1159a631b855"
+      },
+      "36_masks_svg/piece_018.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_018.svg",
+        "sha256": "4b1cc5687dd4ccd8cbfa15218194fc543d0f8962cc5e008b0fc0c71585b39ca0"
+      },
+      "36_pieces/piece_019.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_019.png",
+        "sha256": "edd22efe09d0729e08dd471a1cfb89d5f6014bb0cc929b9160d67b33861a30fd"
+      },
+      "36_masks_svg/piece_019.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_019.svg",
+        "sha256": "aea71bc23a0d1fea5337b1ed3e3c52549337cecb2de82f1ae19161b9dd610c86"
+      },
+      "36_pieces/piece_020.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_020.png",
+        "sha256": "9b14e87c73742de0d36fc46609ce2a2d84501439b2f0c54efb7b22db17b26ce9"
+      },
+      "36_masks_svg/piece_020.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_020.svg",
+        "sha256": "00cc7e545bbe714ffb5636d82167c7593f92b6f96bdd3bc499dbec2bd8951f72"
+      },
+      "36_pieces/piece_021.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_021.png",
+        "sha256": "1ff3e2935d1caae2734b1c27ce8420e47bdebaf985647e8dc686c9cb6cc9fa29"
+      },
+      "36_masks_svg/piece_021.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_021.svg",
+        "sha256": "48ad12dcb6fce637d6eb246d28d0e7252b7bd4101ec37e51c62e06778db24773"
+      },
+      "36_pieces/piece_022.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_022.png",
+        "sha256": "bf5ec2afed175c16669d93a41c3f2a51f96ea26eb80fe49bd86e48937b321d84"
+      },
+      "36_masks_svg/piece_022.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_022.svg",
+        "sha256": "e1b773ab574378925a2b1c2bc6ea9cb496fad3a506c021738b635cf4610d1348"
+      },
+      "36_pieces/piece_023.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_023.png",
+        "sha256": "6a0ea39d26661e42e3c3599b19b232af17de566688b227aa7d7478dafc26d93c"
+      },
+      "36_masks_svg/piece_023.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_023.svg",
+        "sha256": "0db1c383b5526ddc76cf1e7bd6df02cc23dd4bd498761de9bbdcb9f1e07477e9"
+      },
+      "36_pieces/piece_024.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_024.png",
+        "sha256": "16d4566b8d44dc52760232979e49820868ac9f2fff1d3f7af82bebeaa23791f6"
+      },
+      "36_masks_svg/piece_024.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_024.svg",
+        "sha256": "6fa4fc6a4c1e38a7cbed04207e3a2bea08da71aeaaaddca4da1aa83834ce0f7f"
+      },
+      "36_pieces/piece_025.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_025.png",
+        "sha256": "fa93b9d1932759a876835ce76faabd287578132981d356c7cdc012632cedc1af"
+      },
+      "36_masks_svg/piece_025.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_025.svg",
+        "sha256": "48ad12dcb6fce637d6eb246d28d0e7252b7bd4101ec37e51c62e06778db24773"
+      },
+      "36_pieces/piece_026.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_026.png",
+        "sha256": "8337cd6a7576d4c3da5d763a8b9fb64b50ad3c2273195827461c237d94b33e94"
+      },
+      "36_masks_svg/piece_026.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_026.svg",
+        "sha256": "6100f6abf4b9738f8e3b0789d9b172cbd983627248650530ca627d62862a486c"
+      },
+      "36_pieces/piece_027.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_027.png",
+        "sha256": "9e349f9cd643bf00122550ab488f6d0f9469975bda58df9ef0d3e35d6a62c793"
+      },
+      "36_masks_svg/piece_027.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_027.svg",
+        "sha256": "6b96a3143ee011b972d11f896f3b4e165e4981f99b937299c7fa5663dcceda2a"
+      },
+      "36_pieces/piece_028.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_028.png",
+        "sha256": "84601cdd1ea3334ee7a6808af7410c4467add224046fc3f0e9aa3e1b31a7de02"
+      },
+      "36_masks_svg/piece_028.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_028.svg",
+        "sha256": "147730a88b67feed3d90b7311adef43f9d3eec68c4e7151487b3631c79768815"
+      },
+      "36_pieces/piece_029.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_029.png",
+        "sha256": "7271e46dd6bbd0900a2a26635b62e99046b80f821768c219d0284a6f17e4c632"
+      },
+      "36_masks_svg/piece_029.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_029.svg",
+        "sha256": "58df789c45c50c4c221d7f5c691460260bb1bdd2a588be8e0165dce1557ce5cd"
+      },
+      "36_pieces/piece_030.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_030.png",
+        "sha256": "994ee81e083a2c1d66627e9974a3581b4b131659204494fa3d5687c524ee4d52"
+      },
+      "36_masks_svg/piece_030.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_030.svg",
+        "sha256": "9ac1bf1a4cacc9451690f2d8adca688a1046d97db1833d6c4fb55aeb67140740"
+      },
+      "36_pieces/piece_031.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_031.png",
+        "sha256": "23bee2437f8d247d71157dc1dd40520d52b2d11a1b0842e5fdc171aaca53ea4f"
+      },
+      "36_masks_svg/piece_031.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_031.svg",
+        "sha256": "0522ae0784cf5da0875967be2564489c1ee98758854c88051c76ab9d8bcb4f15"
+      },
+      "36_pieces/piece_032.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_032.png",
+        "sha256": "5466dae7a87bf4abe67641dfccc715e6bb49bc65c71fb313e47934bbc34d0e18"
+      },
+      "36_masks_svg/piece_032.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_032.svg",
+        "sha256": "42ce578c20c8a80cdd10bcecfd04ca9b44aa99ba12f2e0ddd596ccda6e1f3373"
+      },
+      "36_pieces/piece_033.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_033.png",
+        "sha256": "6d151d4d13002046878c4ce24cb4d273118fff8718c2e73e819d4ca999fd0766"
+      },
+      "36_masks_svg/piece_033.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_033.svg",
+        "sha256": "0522ae0784cf5da0875967be2564489c1ee98758854c88051c76ab9d8bcb4f15"
+      },
+      "36_pieces/piece_034.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_034.png",
+        "sha256": "a71b51799c38c02a07f870a54c475f0dbe134ea24f2a903348a37acbde171774"
+      },
+      "36_masks_svg/piece_034.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_034.svg",
+        "sha256": "eb57e00872fcfacf6c6eaca15debc901adff56416acdb62c5b9e647838a31f28"
+      },
+      "36_pieces/piece_035.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_pieces/piece_035.png",
+        "sha256": "3d7de84a8af3f55b2e988085e690b81f564f697f1f1d449e6f01d12321db8bc7"
+      },
+      "36_masks_svg/piece_035.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/36_masks_svg/piece_035.svg",
+        "sha256": "109b73cbed2f18511a17a99d078a1efb4f12054cb0824bd9469cf129f02cb46f"
+      },
+      "manifest.json": {
+        "url": "https://puzzlequest.50sols.com/content/level_003_snow_castle/0498c3992aa2b4ae3f00/manifest.json",
+        "sha256": "8bbcd40cefe01c8cf86812f8e88eee9bd0eb420afe64fc0eab47b26d0e7e2c20"
+      }
+    },
+    "manifest": null,
+    "unlocked": false
+  },
+  {
+    "id": "level_004_sky_balloon",
+    "code": "1-4",
+    "revision": "9bd2214aca5fce4b5bbc",
+    "assets": {
+      "master.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/master.png",
+        "sha256": "f0ea1009985e2d09a6d44f5110efe866976d40f6ccfb7291cea78af167059460"
+      },
+      "64_pieces/piece_000.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_000.png",
+        "sha256": "d216f97892cf753dbb87758292daa0e52c7cf9fe9ce540d1a00f927d8f396849"
+      },
+      "64_masks_svg/piece_000.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_000.svg",
+        "sha256": "b44e7175dd0212e62863b2c0b0754b49083d0fac075ca7ea725a86cc0f13b636"
+      },
+      "64_pieces/piece_001.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_001.png",
+        "sha256": "832d0d5f3430e037c01c735e469932c69df26f4972763a0bfaf890d8b9540a24"
+      },
+      "64_masks_svg/piece_001.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_001.svg",
+        "sha256": "44d4bcb1feb374fae6012cad832f9cb2c5fdf7f94726e5d9ea74ab699afc7d12"
+      },
+      "64_pieces/piece_002.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_002.png",
+        "sha256": "4267294e0f7f2ec7683f83fd98c4db64509e0d52f9b8b9c696d349369a38fc8f"
+      },
+      "64_masks_svg/piece_002.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_002.svg",
+        "sha256": "b19e6c4f4b7888c6ab6543b6a1c8c0608527727d5af814088c464100e9391779"
+      },
+      "64_pieces/piece_003.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_003.png",
+        "sha256": "1bef18fe63a953d8a4b9a40e3d8b9e9bc8ca2e4aa51dd3e11eac3f0cc3e1e5f6"
+      },
+      "64_masks_svg/piece_003.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_003.svg",
+        "sha256": "f10cfabb45cc5f98d3487e26ec5f606cbd89aaa17d7551378f4c01e8e29a9cb6"
+      },
+      "64_pieces/piece_004.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_004.png",
+        "sha256": "63c364335e6c44352dbfe75db5bb60e171dbd9a09173e0866ee5fffffb280ac0"
+      },
+      "64_masks_svg/piece_004.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_004.svg",
+        "sha256": "bf394dc938f2cd215a22a1d832c203bf5091ab2e51fccd4701e5377b9a83e475"
+      },
+      "64_pieces/piece_005.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_005.png",
+        "sha256": "82f587712a972ceb1d48204922038117dbdfac95cb9ad96e606e5a100a3e909b"
+      },
+      "64_masks_svg/piece_005.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_005.svg",
+        "sha256": "b19e6c4f4b7888c6ab6543b6a1c8c0608527727d5af814088c464100e9391779"
+      },
+      "64_pieces/piece_006.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_006.png",
+        "sha256": "69a6e8c91056cd79e46f01e79e98b24751337dc665bbe40b906a8731f6099642"
+      },
+      "64_masks_svg/piece_006.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_006.svg",
+        "sha256": "f10cfabb45cc5f98d3487e26ec5f606cbd89aaa17d7551378f4c01e8e29a9cb6"
+      },
+      "64_pieces/piece_007.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_007.png",
+        "sha256": "b1a81eb2adac6b35df013cf3a7522db469a8a53eef0f22b923d96044ab7795fc"
+      },
+      "64_masks_svg/piece_007.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_007.svg",
+        "sha256": "f40db14a61a170a15cb902947b86314f739d3f482bbd1de399b28b7546cf8387"
+      },
+      "64_pieces/piece_008.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_008.png",
+        "sha256": "63357dcfd9b1bcffba4f625fff0f54e6ff164db2f5f9c623a74ce3e4758e29ef"
+      },
+      "64_masks_svg/piece_008.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_008.svg",
+        "sha256": "1a3e04f40575a6b7f80089afeac0cd9b90bf4ef60ee57a8142cbcd14510c8d2b"
+      },
+      "64_pieces/piece_009.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_009.png",
+        "sha256": "3b1b34b2bffa033ff704e9f6b2e450abbbb512bd3733757354e10be2bb48a58a"
+      },
+      "64_masks_svg/piece_009.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_009.svg",
+        "sha256": "bdb20c61881705d5dd66b05b82ca3cee1667aa544a71a19a7813d0c781081b7e"
+      },
+      "64_pieces/piece_010.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_010.png",
+        "sha256": "086ec693166a88654bfab81b012d354bb81384b7063a0bef0ec74643561d1398"
+      },
+      "64_masks_svg/piece_010.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_010.svg",
+        "sha256": "06f86a33a87c1ab48718fb99954c3141e0da59ec836a2c7e80046b0bbc594a85"
+      },
+      "64_pieces/piece_011.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_011.png",
+        "sha256": "9452ec8c67bac3e7bd8d8554e410a86d9166461165c83494231d803c7c8fd4c9"
+      },
+      "64_masks_svg/piece_011.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_011.svg",
+        "sha256": "4cb0d4cd6dbe70a7a3c2d2b615bb85145344d6ebe0f3aec7f8f977ed7107c1d8"
+      },
+      "64_pieces/piece_012.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_012.png",
+        "sha256": "26856edc12da9c2833c697ae3d3c45155fbaae38e610599cbe123afff231170f"
+      },
+      "64_masks_svg/piece_012.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_012.svg",
+        "sha256": "69ddf27bef3db02fb41047e8e4ff30c518e5a4de650b4ee8b0bf77a7a3ce6812"
+      },
+      "64_pieces/piece_013.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_013.png",
+        "sha256": "57f36aa1031a08b5eda26e65315f2749b04843e0e506d1a842f412c31b89b5b9"
+      },
+      "64_masks_svg/piece_013.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_013.svg",
+        "sha256": "3110ae4dfba4ad5a289d49d0d666b6ad59f16b46e0a4dcdadbca89b77870de7b"
+      },
+      "64_pieces/piece_014.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_014.png",
+        "sha256": "483ea701fdf3ed341528ecd02f34053f1ef108581ce368842ae188c28a91bd50"
+      },
+      "64_masks_svg/piece_014.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_014.svg",
+        "sha256": "69ddf27bef3db02fb41047e8e4ff30c518e5a4de650b4ee8b0bf77a7a3ce6812"
+      },
+      "64_pieces/piece_015.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_015.png",
+        "sha256": "2583db51bc8f9efc0fe99e88746598b8eec6fde0fbac30b722c1a41622ab914d"
+      },
+      "64_masks_svg/piece_015.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_015.svg",
+        "sha256": "3c022ead06f629c3cbe375d7b5e8d591ca1739d59a5737ab885aa3748ceff86b"
+      },
+      "64_pieces/piece_016.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_016.png",
+        "sha256": "4a841f9a810f91999b8b5d61b76ef78555e11c021854b9f0eb4a4dd58e087291"
+      },
+      "64_masks_svg/piece_016.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_016.svg",
+        "sha256": "a89bec06375875930bac6e7a39049cdca53b3706983678fce9d0ae87aca8fe5e"
+      },
+      "64_pieces/piece_017.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_017.png",
+        "sha256": "bb7baee28a8bb9f6ca88c5c69f3e67f0235a6d86f90ead35e09fbcd92ce16d33"
+      },
+      "64_masks_svg/piece_017.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_017.svg",
+        "sha256": "f3e482878bb24a7f59847c97284a2643a1987ef13f71d11e0c0e658d2eb06886"
+      },
+      "64_pieces/piece_018.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_018.png",
+        "sha256": "5207ad7f4e8171b97114a2902ca9e0982ba1986f14f1fc2613beba97ec345a4f"
+      },
+      "64_masks_svg/piece_018.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_018.svg",
+        "sha256": "e66464cdfe09fe77cdef853d5ccd7bf72debc6c43685f40a9c3af1af0a2580e5"
+      },
+      "64_pieces/piece_019.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_019.png",
+        "sha256": "35bc6d414e1de9e39cc77a81de75d78456c1406949565b59617392039d9b1c41"
+      },
+      "64_masks_svg/piece_019.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_019.svg",
+        "sha256": "3110ae4dfba4ad5a289d49d0d666b6ad59f16b46e0a4dcdadbca89b77870de7b"
+      },
+      "64_pieces/piece_020.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_020.png",
+        "sha256": "684dfc9ef5eae01b773d173a180d05e880b2328a58a155892581f6546563ba8f"
+      },
+      "64_masks_svg/piece_020.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_020.svg",
+        "sha256": "69ddf27bef3db02fb41047e8e4ff30c518e5a4de650b4ee8b0bf77a7a3ce6812"
+      },
+      "64_pieces/piece_021.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_021.png",
+        "sha256": "25699d0e7da1b9496492dca7113f9dbcb7c7f41d6ae269f594468d5237ae2818"
+      },
+      "64_masks_svg/piece_021.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_021.svg",
+        "sha256": "3110ae4dfba4ad5a289d49d0d666b6ad59f16b46e0a4dcdadbca89b77870de7b"
+      },
+      "64_pieces/piece_022.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_022.png",
+        "sha256": "153e0541fb0307bc463c92920dacdfbae9c86819f937358b26d7d1f98394d1d0"
+      },
+      "64_masks_svg/piece_022.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_022.svg",
+        "sha256": "69ddf27bef3db02fb41047e8e4ff30c518e5a4de650b4ee8b0bf77a7a3ce6812"
+      },
+      "64_pieces/piece_023.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_023.png",
+        "sha256": "b7d93d3d85aa026e1e17c4e341ce7f0446edeacf9bb1b5b716e4dc3ad5d8c782"
+      },
+      "64_masks_svg/piece_023.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_023.svg",
+        "sha256": "bb60ab6b754381535c947e1989d6b730d488d7f4dd1796e6eb56edb5126b49e8"
+      },
+      "64_pieces/piece_024.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_024.png",
+        "sha256": "5006921179af558e2bb7412b7229ae71a97781fed94a4a23f6e379a818fd781c"
+      },
+      "64_masks_svg/piece_024.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_024.svg",
+        "sha256": "701f5b1565969398fcd0d530cca4dbd58578689e9e1dc3ab32bbf5274c96facf"
+      },
+      "64_pieces/piece_025.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_025.png",
+        "sha256": "b175757ea93ebd64f11712cca7b086e0093033ce67aa1a6d1cced069551dfea2"
+      },
+      "64_masks_svg/piece_025.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_025.svg",
+        "sha256": "06f86a33a87c1ab48718fb99954c3141e0da59ec836a2c7e80046b0bbc594a85"
+      },
+      "64_pieces/piece_026.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_026.png",
+        "sha256": "74a76506605621674bcec5443b7c2a05aee817c42949ffe9086717926c67edff"
+      },
+      "64_masks_svg/piece_026.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_026.svg",
+        "sha256": "bdb20c61881705d5dd66b05b82ca3cee1667aa544a71a19a7813d0c781081b7e"
+      },
+      "64_pieces/piece_027.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_027.png",
+        "sha256": "19672502e71a5449ce6baaf69c177cf6f1d604082fb3a138427c3c19670dc830"
+      },
+      "64_masks_svg/piece_027.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_027.svg",
+        "sha256": "a2b152274884d737ffe34e4419819f16af77f02e3a2e3ba164d4b5aa1a661fc7"
+      },
+      "64_pieces/piece_028.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_028.png",
+        "sha256": "1b3e2fd643d77043fab5be6a2e9ecc4b87e57107d31b9fd562cec39cb6e4c511"
+      },
+      "64_masks_svg/piece_028.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_028.svg",
+        "sha256": "a2b152274884d737ffe34e4419819f16af77f02e3a2e3ba164d4b5aa1a661fc7"
+      },
+      "64_pieces/piece_029.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_029.png",
+        "sha256": "bf1a0fc71d7580935aba741b26d40a1a29ac20c482caaac6452fa7047be3fc01"
+      },
+      "64_masks_svg/piece_029.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_029.svg",
+        "sha256": "f3e482878bb24a7f59847c97284a2643a1987ef13f71d11e0c0e658d2eb06886"
+      },
+      "64_pieces/piece_030.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_030.png",
+        "sha256": "eb6e38db7ee57677167d2d7ec1c6a543f0c6fdd2aa37d171d3e8b1c1e241ba93"
+      },
+      "64_masks_svg/piece_030.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_030.svg",
+        "sha256": "06f86a33a87c1ab48718fb99954c3141e0da59ec836a2c7e80046b0bbc594a85"
+      },
+      "64_pieces/piece_031.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_031.png",
+        "sha256": "1d5009c2f5c791830ae18aa2fec0a11f77be299b55c2f2727306c3b74e384761"
+      },
+      "64_masks_svg/piece_031.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_031.svg",
+        "sha256": "6fa7b74f7a1dc8ab2758384834c27be347fab71e86a1293969b0484e1d0c5bb0"
+      },
+      "64_pieces/piece_032.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_032.png",
+        "sha256": "1ca6057af80889c9db5aab3a3fa40ac4b1b6388db3415dd6efecca3ffa6ed9fc"
+      },
+      "64_masks_svg/piece_032.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_032.svg",
+        "sha256": "9ecd103d2481d2cd0e01ec1eda752755e390afb34263ac5ba95ad27edf1a56a7"
+      },
+      "64_pieces/piece_033.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_033.png",
+        "sha256": "c59c64e9a0d139649ba10a9549101684814c9a6d374cf984bbc3ffa7aee27e82"
+      },
+      "64_masks_svg/piece_033.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_033.svg",
+        "sha256": "8fd3c6c8fe400bcc0fdde4f2394cb1348d3d56f37ba75dabc869718cdb96fcee"
+      },
+      "64_pieces/piece_034.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_034.png",
+        "sha256": "451a42215efa0684cc630e7b97675b0393c1ec53b11bc744fd84108535cf89f0"
+      },
+      "64_masks_svg/piece_034.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_034.svg",
+        "sha256": "fe4b77479b0cc7b75ef71bd2f66b3aaa944e6bc6827a9296a46abeec2fec26e8"
+      },
+      "64_pieces/piece_035.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_035.png",
+        "sha256": "572ddcad8fe129bd51fa191ddd3217e00084844e5f117cba538821390da1480e"
+      },
+      "64_masks_svg/piece_035.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_035.svg",
+        "sha256": "68a2d9551a8cef1f6d5521b24186f373390e720b502fba6a8dcc5ce538b35274"
+      },
+      "64_pieces/piece_036.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_036.png",
+        "sha256": "ad76533872ab71022327a2e13dd33477a8ab57b04521bcd744b49b3d15cfdde2"
+      },
+      "64_masks_svg/piece_036.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_036.svg",
+        "sha256": "522dc753c49152914508972e8a940ca570181dd97b6abf87eecfce77960a9fdf"
+      },
+      "64_pieces/piece_037.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_037.png",
+        "sha256": "4c92449a5900fe2ea9b80c8986afd9af81f6939262ea1e075f89ef2b837d4063"
+      },
+      "64_masks_svg/piece_037.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_037.svg",
+        "sha256": "06f86a33a87c1ab48718fb99954c3141e0da59ec836a2c7e80046b0bbc594a85"
+      },
+      "64_pieces/piece_038.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_038.png",
+        "sha256": "b51788791286dad7545757684d934ac6e6093c48ecd59a232492f26c9711a4b6"
+      },
+      "64_masks_svg/piece_038.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_038.svg",
+        "sha256": "68a2d9551a8cef1f6d5521b24186f373390e720b502fba6a8dcc5ce538b35274"
+      },
+      "64_pieces/piece_039.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_039.png",
+        "sha256": "d8ded6b056e7842e2f5f1276d4c5996509fedbb6858d3ae3ba93360e0e9d12db"
+      },
+      "64_masks_svg/piece_039.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_039.svg",
+        "sha256": "3ffb59478a4485d61e3e7396ac0671a4b5cbf180199bfc7e504650c277d0bfb0"
+      },
+      "64_pieces/piece_040.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_040.png",
+        "sha256": "cf86b7223cbcc9d4f883ef06ff329808643381e7f3e5c423d4d5e63503fa0c88"
+      },
+      "64_masks_svg/piece_040.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_040.svg",
+        "sha256": "9ecd103d2481d2cd0e01ec1eda752755e390afb34263ac5ba95ad27edf1a56a7"
+      },
+      "64_pieces/piece_041.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_041.png",
+        "sha256": "f4855d8506c4928b9d30d9a16fe4c99c35fd3d9f6db01c8dd3bc57e8bade626b"
+      },
+      "64_masks_svg/piece_041.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_041.svg",
+        "sha256": "a2b152274884d737ffe34e4419819f16af77f02e3a2e3ba164d4b5aa1a661fc7"
+      },
+      "64_pieces/piece_042.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_042.png",
+        "sha256": "7d04b8c9c30fdd8b4221346f519127d645921c84b9f16cd1392069e06a53d2ee"
+      },
+      "64_masks_svg/piece_042.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_042.svg",
+        "sha256": "9a838db25b0c542e17abc3f4548aa95406d487d9879217982dba273964b6b15e"
+      },
+      "64_pieces/piece_043.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_043.png",
+        "sha256": "106d08d9f62b1fe4454738f44b5555cb7cf510e36b2235cc8d1352603dfc630d"
+      },
+      "64_masks_svg/piece_043.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_043.svg",
+        "sha256": "a2b152274884d737ffe34e4419819f16af77f02e3a2e3ba164d4b5aa1a661fc7"
+      },
+      "64_pieces/piece_044.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_044.png",
+        "sha256": "6f5d737123ebeb42486150707a3f0baa5f6388e5a40bb4b8018b2c2da3224a78"
+      },
+      "64_masks_svg/piece_044.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_044.svg",
+        "sha256": "16b0a6a98caa2671d189910739e1d674ed05311cec6f11d6543cc91d6b2e8fe1"
+      },
+      "64_pieces/piece_045.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_045.png",
+        "sha256": "0e5c721b60d78a77e2f6933bf971f7f5e028e757903911ddd7eb76de8e105d13"
+      },
+      "64_masks_svg/piece_045.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_045.svg",
+        "sha256": "bdb20c61881705d5dd66b05b82ca3cee1667aa544a71a19a7813d0c781081b7e"
+      },
+      "64_pieces/piece_046.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_046.png",
+        "sha256": "c453121b85e60d472b1c7c6faeb06ceeca9d0328d71ba0d89c745a5ce41e4bbd"
+      },
+      "64_masks_svg/piece_046.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_046.svg",
+        "sha256": "f3e482878bb24a7f59847c97284a2643a1987ef13f71d11e0c0e658d2eb06886"
+      },
+      "64_pieces/piece_047.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_047.png",
+        "sha256": "5efae444b0bfe3d942984ebc37034818d47dfbc35aa92b6c6287663846f2de7d"
+      },
+      "64_masks_svg/piece_047.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_047.svg",
+        "sha256": "b2b49b9781d367c5074c4c99d3169c34562e8ca50f1bba1111c43b635a3c74b0"
+      },
+      "64_pieces/piece_048.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_048.png",
+        "sha256": "e262fb1f4c7a7cae4d4a15ae28dac00c4c25751039528da499c73afb25c100f1"
+      },
+      "64_masks_svg/piece_048.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_048.svg",
+        "sha256": "971be659570a643525f9c386926808415d67da3bdbf7f76e8e2d9916f44b3d3c"
+      },
+      "64_pieces/piece_049.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_049.png",
+        "sha256": "5a43d27223a6b076dc5c600f7e64c906365bc0becb83ebc2a0c67575f7f7ffe7"
+      },
+      "64_masks_svg/piece_049.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_049.svg",
+        "sha256": "522dc753c49152914508972e8a940ca570181dd97b6abf87eecfce77960a9fdf"
+      },
+      "64_pieces/piece_050.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_050.png",
+        "sha256": "b33cfa5a78f1de359f3b2b90c65edca893f50e7641b0be6660c70edb24438dc4"
+      },
+      "64_masks_svg/piece_050.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_050.svg",
+        "sha256": "a2b152274884d737ffe34e4419819f16af77f02e3a2e3ba164d4b5aa1a661fc7"
+      },
+      "64_pieces/piece_051.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_051.png",
+        "sha256": "6cb1aaeb04301db5a9487a6364f78320e247540a7f56eeef79e6292292478358"
+      },
+      "64_masks_svg/piece_051.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_051.svg",
+        "sha256": "e66464cdfe09fe77cdef853d5ccd7bf72debc6c43685f40a9c3af1af0a2580e5"
+      },
+      "64_pieces/piece_052.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_052.png",
+        "sha256": "e0d9ce0b50496042d5e7435790ad5db69b32e4ed9c0fd650575b9b5f90c86a1d"
+      },
+      "64_masks_svg/piece_052.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_052.svg",
+        "sha256": "9a838db25b0c542e17abc3f4548aa95406d487d9879217982dba273964b6b15e"
+      },
+      "64_pieces/piece_053.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_053.png",
+        "sha256": "761d8e0ab92ab0e6b4df07cead150e39b7fab980fb13e9198542804a209a9e1e"
+      },
+      "64_masks_svg/piece_053.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_053.svg",
+        "sha256": "f3e482878bb24a7f59847c97284a2643a1987ef13f71d11e0c0e658d2eb06886"
+      },
+      "64_pieces/piece_054.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_054.png",
+        "sha256": "cfd853c4eb2ed20d3683f42a6d3545d0a6eaf863fc5647992e4bc02b329e1348"
+      },
+      "64_masks_svg/piece_054.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_054.svg",
+        "sha256": "a2b152274884d737ffe34e4419819f16af77f02e3a2e3ba164d4b5aa1a661fc7"
+      },
+      "64_pieces/piece_055.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_055.png",
+        "sha256": "17cc7120718609578cec4101d290209fb71262727e32afc914cc1670b8fa44c3"
+      },
+      "64_masks_svg/piece_055.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_055.svg",
+        "sha256": "bb60ab6b754381535c947e1989d6b730d488d7f4dd1796e6eb56edb5126b49e8"
+      },
+      "64_pieces/piece_056.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_056.png",
+        "sha256": "efa9fbbc5a16a6baa90eb4eefb877eb29a8e1952bfbfef5d3caa0a17ba1b5ff9"
+      },
+      "64_masks_svg/piece_056.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_056.svg",
+        "sha256": "1189d7ad93de4f2a780bf47392118035ce8a0e9c81efcdccb93a79d9687d01ef"
+      },
+      "64_pieces/piece_057.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_057.png",
+        "sha256": "9ac33731aeaa2c096cec2093c2f318395ef4fae667840e7bd7c5ec3c76ce2a76"
+      },
+      "64_masks_svg/piece_057.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_057.svg",
+        "sha256": "ba737d9f71f2e0560c4f61fd791f6c4eb696e0962e89a842af9d9da37e392d69"
+      },
+      "64_pieces/piece_058.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_058.png",
+        "sha256": "916949f8acb6ead485f408eeabfaf3dd76f916fd4a03f24450d732ac5e5e37f8"
+      },
+      "64_masks_svg/piece_058.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_058.svg",
+        "sha256": "dfa3b3860e707001913d0871dfd23a64cab13e954ff8e2d393544ff5e029c366"
+      },
+      "64_pieces/piece_059.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_059.png",
+        "sha256": "eafe1861c7835e471772a816989e3099b8272d0044833713572a88731e79e1cd"
+      },
+      "64_masks_svg/piece_059.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_059.svg",
+        "sha256": "3368375fbcc63cdee3a18fd2f117cf0b3e446d6dd44f4726cbb90207d2cb8cc4"
+      },
+      "64_pieces/piece_060.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_060.png",
+        "sha256": "25620e66d5c0240fb25c91def547b7c6c5d1a08e0d26b2eeab8907d2d5c0bab5"
+      },
+      "64_masks_svg/piece_060.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_060.svg",
+        "sha256": "c4f31c44a573d1ab60c86fe189143d996af9b53476ad963de9e922543846ae41"
+      },
+      "64_pieces/piece_061.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_061.png",
+        "sha256": "5f5d864741ddb9b495f6e23a4723681458e76a4eee92fbeb1c74a4e8db63e315"
+      },
+      "64_masks_svg/piece_061.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_061.svg",
+        "sha256": "c4f31c44a573d1ab60c86fe189143d996af9b53476ad963de9e922543846ae41"
+      },
+      "64_pieces/piece_062.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_062.png",
+        "sha256": "f62319d35468f1b1cb4cbabc3431566e325d363bf8ba0f8be7acc9d34ae9ae49"
+      },
+      "64_masks_svg/piece_062.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_062.svg",
+        "sha256": "ba737d9f71f2e0560c4f61fd791f6c4eb696e0962e89a842af9d9da37e392d69"
+      },
+      "64_pieces/piece_063.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_pieces/piece_063.png",
+        "sha256": "93519010aa591d04a264a5ec58bb6bfbf019f3b5be7be0ab0582ffaa24f7619e"
+      },
+      "64_masks_svg/piece_063.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/64_masks_svg/piece_063.svg",
+        "sha256": "272000a10e82385f3ca32323d07f9e99321dae160ae061a9fe57a445037aeffc"
+      },
+      "manifest.json": {
+        "url": "https://puzzlequest.50sols.com/content/level_004_sky_balloon/9bd2214aca5fce4b5bbc/manifest.json",
+        "sha256": "54c1007b20ace7673e1bd4035d34ccd587281de6dfc19a3a8a3ee265535916af"
+      }
+    },
+    "manifest": null,
+    "unlocked": false
+  },
+  {
+    "id": "level_005_autumn_tree",
+    "code": "1-5",
+    "revision": "65e5df7ad5d787be92aa",
+    "assets": {
+      "master.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/master.png",
+        "sha256": "14f14473bc1b09c4301cfeac27390a58a1cf581b2e16b761a9b5706432b1258f"
+      },
+      "100_pieces/piece_000.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_000.png",
+        "sha256": "095b9c829818e569f63f7f7184a6986492b4431e52bca0e11f88dceba63fd396"
+      },
+      "100_masks_svg/piece_000.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_000.svg",
+        "sha256": "4d2b315c818d1192aa6d3cc8c0f2a58e80117e61c32d546255c17962c4a241a7"
+      },
+      "100_pieces/piece_001.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_001.png",
+        "sha256": "f92ace90400b492ed66b982f60d82cfb9a574ced78d033e986312bc6ab91b591"
+      },
+      "100_masks_svg/piece_001.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_001.svg",
+        "sha256": "f262f6ed1ae9e34e3bc1f5e757940ce9b47a87b211eeb69826799101dfe45e61"
+      },
+      "100_pieces/piece_002.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_002.png",
+        "sha256": "ded937f78781f8c4e114f89054c88d58803688f747d0c138bfe6b0a2fe75d7a2"
+      },
+      "100_masks_svg/piece_002.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_002.svg",
+        "sha256": "dcc3306ebc694c10bbe434f6da8e906d2d19406a9741fe145e36e938e45429a9"
+      },
+      "100_pieces/piece_003.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_003.png",
+        "sha256": "aab40a26afbe1e465b0585a41d7c922cfff3eb5c29c490b88b752678ff745180"
+      },
+      "100_masks_svg/piece_003.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_003.svg",
+        "sha256": "92f1bf19c2e3ef70b9e9d6ffdd7c6691cd1ab81c5a4159c6d66078627ffdae32"
+      },
+      "100_pieces/piece_004.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_004.png",
+        "sha256": "59d2b96aad02697e861ebc591952a3391433ac9428a01c68454b5fdde6ddf845"
+      },
+      "100_masks_svg/piece_004.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_004.svg",
+        "sha256": "45c39dd831a78022e74ae251d2f5c58326f54f1bf3df856d2150b8d4fc79c9e7"
+      },
+      "100_pieces/piece_005.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_005.png",
+        "sha256": "ded937f78781f8c4e114f89054c88d58803688f747d0c138bfe6b0a2fe75d7a2"
+      },
+      "100_masks_svg/piece_005.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_005.svg",
+        "sha256": "dcc3306ebc694c10bbe434f6da8e906d2d19406a9741fe145e36e938e45429a9"
+      },
+      "100_pieces/piece_006.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_006.png",
+        "sha256": "aab40a26afbe1e465b0585a41d7c922cfff3eb5c29c490b88b752678ff745180"
+      },
+      "100_masks_svg/piece_006.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_006.svg",
+        "sha256": "92f1bf19c2e3ef70b9e9d6ffdd7c6691cd1ab81c5a4159c6d66078627ffdae32"
+      },
+      "100_pieces/piece_007.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_007.png",
+        "sha256": "c48539a3a43b153d4b6a3b8cc27312bb59d0a04e2fbe256474e75b563d9963e3"
+      },
+      "100_masks_svg/piece_007.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_007.svg",
+        "sha256": "65530caaac81cc117beb80a98a47351df13de73a753bf61eb1e37192c2c408d1"
+      },
+      "100_pieces/piece_008.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_008.png",
+        "sha256": "152f204df9d393156bec2c593a6237e77b61d1295ad1d749c07b964fc5b0cc59"
+      },
+      "100_masks_svg/piece_008.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_008.svg",
+        "sha256": "a1cedfd50ad378cd2016ffef2d9f7dc1ccb27900d70c1fa2dbe92c1279356748"
+      },
+      "100_pieces/piece_009.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_009.png",
+        "sha256": "fb5e52220101cbbf45cc1c0f3717d8db2c8f0bbf5b8db7e1a806f907d2da457e"
+      },
+      "100_masks_svg/piece_009.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_009.svg",
+        "sha256": "2a5f2d6f6180acbc6bd04876c410fd900b86d49c0764e614b34e79b9033578db"
+      },
+      "100_pieces/piece_010.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_010.png",
+        "sha256": "70c1adad76348239dcb9c7d5cfcd473f5c1df3af3ff555d1155f67c05dcc2e2c"
+      },
+      "100_masks_svg/piece_010.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_010.svg",
+        "sha256": "a109fa3d94c2d05ca1468c71d939d3a6164e873f10178cfd344d9f7d5a9bc8fd"
+      },
+      "100_pieces/piece_011.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_011.png",
+        "sha256": "20325ff98c41dae25ed397f0253ba4e34af549f0380ab7168220af6b70b77465"
+      },
+      "100_masks_svg/piece_011.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_011.svg",
+        "sha256": "9fdab564ce6fc8dd0f6cb0dd44d149f9b2ad2ff22241436c6753e2854eb5636f"
+      },
+      "100_pieces/piece_012.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_012.png",
+        "sha256": "6b39fd7db1d694853ac97ce65c7e09ba9776791d0f88ca46d6a7324bcd8188d8"
+      },
+      "100_masks_svg/piece_012.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_012.svg",
+        "sha256": "4b91482d962c6380d3dd227909c613f9a4b290d4aef89614a9d317d233edfaf9"
+      },
+      "100_pieces/piece_013.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_013.png",
+        "sha256": "bb78077a633c26a423a52a16b77f8eb74b2806f1f594085f796752cb9e8516ec"
+      },
+      "100_masks_svg/piece_013.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_013.svg",
+        "sha256": "b55c51346cb39cdf2f36e28e2885698fd22a3fa037c0a66a60b6fcfddb5b9acc"
+      },
+      "100_pieces/piece_014.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_014.png",
+        "sha256": "b9c03ed7f17e68dbd4f58c68b09441bb1ef6e5a7e384fdc08999039f1ce026cc"
+      },
+      "100_masks_svg/piece_014.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_014.svg",
+        "sha256": "a3f32dff7f6d01a70811c3425ce7cad2b2820feed0c378e8d4ed317b0875cefa"
+      },
+      "100_pieces/piece_015.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_015.png",
+        "sha256": "7d70d21ae36d5911d1112cc7bb70685424a91747b9204db46db5bcecaad143b8"
+      },
+      "100_masks_svg/piece_015.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_015.svg",
+        "sha256": "c3b90a3360390c427040ef4a106c9398f3d1d4eec0f18d475690ac5c25a2275f"
+      },
+      "100_pieces/piece_016.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_016.png",
+        "sha256": "b09fadf642a4e07e11c9f16fa1e2f790d6fc3299d738cd5611f7c8941a25a86c"
+      },
+      "100_masks_svg/piece_016.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_016.svg",
+        "sha256": "a3f32dff7f6d01a70811c3425ce7cad2b2820feed0c378e8d4ed317b0875cefa"
+      },
+      "100_pieces/piece_017.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_017.png",
+        "sha256": "6927ffcad6d65cbce214e4fdfeaab56a006cab55ee3edaa98e9660cba3ed8246"
+      },
+      "100_masks_svg/piece_017.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_017.svg",
+        "sha256": "d4226d9618e223653b20b51ef07572ef148a9d5f9d1df9d0e7c3a190ed280c41"
+      },
+      "100_pieces/piece_018.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_018.png",
+        "sha256": "db5395b527fc4efe743357fcea2c5ec8e8ac1acb969f956bc658b06836d19f95"
+      },
+      "100_masks_svg/piece_018.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_018.svg",
+        "sha256": "9fdab564ce6fc8dd0f6cb0dd44d149f9b2ad2ff22241436c6753e2854eb5636f"
+      },
+      "100_pieces/piece_019.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_019.png",
+        "sha256": "28a85e149c341e7157758b004b9621188da223ebe6f3543a8ec1523f40739926"
+      },
+      "100_masks_svg/piece_019.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_019.svg",
+        "sha256": "0d5840a2bab9fadd30a78709dd8ad7c5b56193f956986c44ff314994dd01c912"
+      },
+      "100_pieces/piece_020.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_020.png",
+        "sha256": "4a5aba5376624cd551011ea16e29ad64d89f995a51b0c352ee26ae8086a8a347"
+      },
+      "100_masks_svg/piece_020.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_020.svg",
+        "sha256": "02692041f1aba3a1e09b4a700200aabf4fa24592c13065f2a19c23f72c713044"
+      },
+      "100_pieces/piece_021.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_021.png",
+        "sha256": "856e1a116ac2a69a5dd8ccf2af1e7c909b2466e15c739a8cca7f20ba91470295"
+      },
+      "100_masks_svg/piece_021.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_021.svg",
+        "sha256": "6556e81c4e1ee40aabdfda99479a4892e8b102bf39cb2c4b034d6c1c273fd067"
+      },
+      "100_pieces/piece_022.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_022.png",
+        "sha256": "9c7deab93d83089061b821e8fd0a576d43895d51c4d1f8fe84f8f3e2ca0d1e98"
+      },
+      "100_masks_svg/piece_022.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_022.svg",
+        "sha256": "cf38bd3b67eb45755b944b3c4a9feaa4fc14a887951c4879ee84061b8f8312ac"
+      },
+      "100_pieces/piece_023.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_023.png",
+        "sha256": "60281161f8ba6113241c89843c6cadcdba7117cef6c8c0d98290f25282dffa4f"
+      },
+      "100_masks_svg/piece_023.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_023.svg",
+        "sha256": "6556e81c4e1ee40aabdfda99479a4892e8b102bf39cb2c4b034d6c1c273fd067"
+      },
+      "100_pieces/piece_024.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_024.png",
+        "sha256": "c1c891c84e8f00e395ebe0299b3cda523050fb90ea7382fd36400d900ed4d2df"
+      },
+      "100_masks_svg/piece_024.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_024.svg",
+        "sha256": "47de6f9790766b6d5a646c83d964b12f371f07a321385da1c57fcff487601b91"
+      },
+      "100_pieces/piece_025.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_025.png",
+        "sha256": "ea8f41bce728881c8e3a112c4b9f232a69c53b3f71122fb452c61d13ea8be4d1"
+      },
+      "100_masks_svg/piece_025.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_025.svg",
+        "sha256": "6556e81c4e1ee40aabdfda99479a4892e8b102bf39cb2c4b034d6c1c273fd067"
+      },
+      "100_pieces/piece_026.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_026.png",
+        "sha256": "bcb1c403afae8e22d5b35a1d557cd45351491cba64b912c9106dcfe872b71403"
+      },
+      "100_masks_svg/piece_026.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_026.svg",
+        "sha256": "9fdab564ce6fc8dd0f6cb0dd44d149f9b2ad2ff22241436c6753e2854eb5636f"
+      },
+      "100_pieces/piece_027.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_027.png",
+        "sha256": "631d105f8b1683caf95dfbe69a654a0eaeebc574bb8a45fd7699141827a7e2f6"
+      },
+      "100_masks_svg/piece_027.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_027.svg",
+        "sha256": "d4226d9618e223653b20b51ef07572ef148a9d5f9d1df9d0e7c3a190ed280c41"
+      },
+      "100_pieces/piece_028.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_028.png",
+        "sha256": "db3c8349ff2f5adc1dace770091c41732387863d8d0665716418d78b459539e0"
+      },
+      "100_masks_svg/piece_028.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_028.svg",
+        "sha256": "6556e81c4e1ee40aabdfda99479a4892e8b102bf39cb2c4b034d6c1c273fd067"
+      },
+      "100_pieces/piece_029.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_029.png",
+        "sha256": "03d17795017bd55b69df0061aeaad903c116f39c15801756c728b9c88e9c026f"
+      },
+      "100_masks_svg/piece_029.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_029.svg",
+        "sha256": "3c4c380d704b8387700ffcb5e427be8058ecff1aa8ae27b9a7d1b26072cfc0ea"
+      },
+      "100_pieces/piece_030.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_030.png",
+        "sha256": "00c77b0232c6a46835f8d95f88844e052d3b3a42ffc0144f6044a6ae5628f474"
+      },
+      "100_masks_svg/piece_030.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_030.svg",
+        "sha256": "014d6a155bcb995b93d416a3d1d3bb74c5ee9f56380e72a987fecd258c77e699"
+      },
+      "100_pieces/piece_031.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_031.png",
+        "sha256": "6a867db0919e022da59e9b9230e6838c0a0b1bcb77df3ec305ba270a0fcd72bf"
+      },
+      "100_masks_svg/piece_031.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_031.svg",
+        "sha256": "d31639a63abdbe1c4e81e5b128671fb5da3168535a13c23c46598d2a54ae5928"
+      },
+      "100_pieces/piece_032.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_032.png",
+        "sha256": "ea5114aad243c4a39f2e089de0054582215cbf155aabab9d5d6a93f471cce08b"
+      },
+      "100_masks_svg/piece_032.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_032.svg",
+        "sha256": "6556e81c4e1ee40aabdfda99479a4892e8b102bf39cb2c4b034d6c1c273fd067"
+      },
+      "100_pieces/piece_033.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_033.png",
+        "sha256": "aa0cf1379d34a1e6b013b022d4e5737f876192df83d67e207525ea8e05445693"
+      },
+      "100_masks_svg/piece_033.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_033.svg",
+        "sha256": "92caf0a5226932f5aacb8690d852883480993aff8066e1b1133c01c51e10df5d"
+      },
+      "100_pieces/piece_034.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_034.png",
+        "sha256": "1867b1fe93192d7341d8b02afb4acb1f19af8d2e894f85646523c1b2d59fcaca"
+      },
+      "100_masks_svg/piece_034.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_034.svg",
+        "sha256": "b9094cc048e0cfa76708fbd5e5602dcc60e9fc82d8363be24cf8f1977ee0414f"
+      },
+      "100_pieces/piece_035.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_035.png",
+        "sha256": "39166c6147e7854d5d00332c0602eea820f366b7c8559d6389ffc9d48d820d56"
+      },
+      "100_masks_svg/piece_035.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_035.svg",
+        "sha256": "47de6f9790766b6d5a646c83d964b12f371f07a321385da1c57fcff487601b91"
+      },
+      "100_pieces/piece_036.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_036.png",
+        "sha256": "aac5fa8045800820e65b091266a3cd428e7d809f2505c20f3c6f7ae88ace44a7"
+      },
+      "100_masks_svg/piece_036.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_036.svg",
+        "sha256": "b55c51346cb39cdf2f36e28e2885698fd22a3fa037c0a66a60b6fcfddb5b9acc"
+      },
+      "100_pieces/piece_037.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_037.png",
+        "sha256": "0ae67e7cc86f82a8df161cd3a6b8fea25cfe6ab179f9ffce032051175bb1905c"
+      },
+      "100_masks_svg/piece_037.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_037.svg",
+        "sha256": "a3f32dff7f6d01a70811c3425ce7cad2b2820feed0c378e8d4ed317b0875cefa"
+      },
+      "100_pieces/piece_038.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_038.png",
+        "sha256": "6a2d48f2d1ec318899b223012e699e437194c2a7bfbaf030bf9428e826118328"
+      },
+      "100_masks_svg/piece_038.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_038.svg",
+        "sha256": "18c5b0e045224ad42ab63a8f89e8efb40fb48cd33e71932afe7b1bd867d8cc0d"
+      },
+      "100_pieces/piece_039.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_039.png",
+        "sha256": "801f0b294d20a4b29b062b0ea7f99ddc9c78a7795d87b4bf33c1b8632523cbbe"
+      },
+      "100_masks_svg/piece_039.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_039.svg",
+        "sha256": "72cc1207dc4ace3be496fa2073612e5a9476e3f43c378f6a0ad7fc224d412fcc"
+      },
+      "100_pieces/piece_040.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_040.png",
+        "sha256": "3e549fd0140e9a45a315370ad7b60d386620201d5d70edbd02b2d89495e3f4a8"
+      },
+      "100_masks_svg/piece_040.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_040.svg",
+        "sha256": "19a3cad173847269a2c75e278ca839c6aefd7a80746988e57486e74f7b965ff6"
+      },
+      "100_pieces/piece_041.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_041.png",
+        "sha256": "a21b44e30c8822a6036a279d90f67813d88a7aee358a713bad7f84bba3e2b311"
+      },
+      "100_masks_svg/piece_041.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_041.svg",
+        "sha256": "18c5b0e045224ad42ab63a8f89e8efb40fb48cd33e71932afe7b1bd867d8cc0d"
+      },
+      "100_pieces/piece_042.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_042.png",
+        "sha256": "1f9485e2a804a31a522e361c2a9021c4dae7603d736cb209fc83735120877dc8"
+      },
+      "100_masks_svg/piece_042.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_042.svg",
+        "sha256": "4b91482d962c6380d3dd227909c613f9a4b290d4aef89614a9d317d233edfaf9"
+      },
+      "100_pieces/piece_043.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_043.png",
+        "sha256": "e21c10fba77c05a36bc53f2d7f107a1660a0a33355cc45dcd8f45ba71420b891"
+      },
+      "100_masks_svg/piece_043.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_043.svg",
+        "sha256": "9fdab564ce6fc8dd0f6cb0dd44d149f9b2ad2ff22241436c6753e2854eb5636f"
+      },
+      "100_pieces/piece_044.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_044.png",
+        "sha256": "310546cc11d890aac8b3cc128654daeecae59f8a5dfe4ff016439508de0cfa00"
+      },
+      "100_masks_svg/piece_044.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_044.svg",
+        "sha256": "18c5b0e045224ad42ab63a8f89e8efb40fb48cd33e71932afe7b1bd867d8cc0d"
+      },
+      "100_pieces/piece_045.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_045.png",
+        "sha256": "288cf32d3ab0a2f499c79297decc1fc5a32ceb04a268befd5298c71db6cdd334"
+      },
+      "100_masks_svg/piece_045.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_045.svg",
+        "sha256": "d4226d9618e223653b20b51ef07572ef148a9d5f9d1df9d0e7c3a190ed280c41"
+      },
+      "100_pieces/piece_046.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_046.png",
+        "sha256": "4fe612489a83c0ee2637dc484a8933b6fb9ac894d1f5146f931927dddec1f8e2"
+      },
+      "100_masks_svg/piece_046.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_046.svg",
+        "sha256": "5a3a9e71fd19315fd049f0d0643032c200d697e23fcb420c7a62c04d20e2a941"
+      },
+      "100_pieces/piece_047.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_047.png",
+        "sha256": "a370b85fee46c38f11d209ad79b114c0a8009dfcc05957c7ef2167ab6b433f43"
+      },
+      "100_masks_svg/piece_047.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_047.svg",
+        "sha256": "d31639a63abdbe1c4e81e5b128671fb5da3168535a13c23c46598d2a54ae5928"
+      },
+      "100_pieces/piece_048.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_048.png",
+        "sha256": "bf9569b9646fb48691a9857d3e5ca1126f58dd3989caa0ffa344f630d2a8deaf"
+      },
+      "100_masks_svg/piece_048.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_048.svg",
+        "sha256": "9fdab564ce6fc8dd0f6cb0dd44d149f9b2ad2ff22241436c6753e2854eb5636f"
+      },
+      "100_pieces/piece_049.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_049.png",
+        "sha256": "2e953b654d92ae944dd7306607dd29469b29ba97973ba5b7cbf90340349cbc11"
+      },
+      "100_masks_svg/piece_049.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_049.svg",
+        "sha256": "72cc1207dc4ace3be496fa2073612e5a9476e3f43c378f6a0ad7fc224d412fcc"
+      },
+      "100_pieces/piece_050.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_050.png",
+        "sha256": "008137ef6fded66340c03ae147e5c32605c2332458df08eac11ce6566cb648dd"
+      },
+      "100_masks_svg/piece_050.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_050.svg",
+        "sha256": "20051ee3b22844aacbcfc766d0bfd6894d28827ad89aa5ebedc59aca5df0396d"
+      },
+      "100_pieces/piece_051.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_051.png",
+        "sha256": "5e816d959f687138559634d0649f7f5f4e78452089b2f63f5b2c63f26631c23a"
+      },
+      "100_masks_svg/piece_051.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_051.svg",
+        "sha256": "c3b90a3360390c427040ef4a106c9398f3d1d4eec0f18d475690ac5c25a2275f"
+      },
+      "100_pieces/piece_052.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_052.png",
+        "sha256": "b8c47bf2bbf0d14cda78c6cf2a0d342551b0f369c369fc00d1811dfdfa89a2ad"
+      },
+      "100_masks_svg/piece_052.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_052.svg",
+        "sha256": "b9094cc048e0cfa76708fbd5e5602dcc60e9fc82d8363be24cf8f1977ee0414f"
+      },
+      "100_pieces/piece_053.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_053.png",
+        "sha256": "b23a3e15f40cc85ad31954fd19f1cca615c27886339d8e11582191c7a7d54272"
+      },
+      "100_masks_svg/piece_053.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_053.svg",
+        "sha256": "cf38bd3b67eb45755b944b3c4a9feaa4fc14a887951c4879ee84061b8f8312ac"
+      },
+      "100_pieces/piece_054.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_054.png",
+        "sha256": "9240c2dc5f0e8f6c268387f443f3f747a319f77c0898c82f783c40621e303a2a"
+      },
+      "100_masks_svg/piece_054.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_054.svg",
+        "sha256": "9fdab564ce6fc8dd0f6cb0dd44d149f9b2ad2ff22241436c6753e2854eb5636f"
+      },
+      "100_pieces/piece_055.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_055.png",
+        "sha256": "d2baab58a31703dcdaf9177d3692eddbcc852505c2a1ea9e1e67cf6f5f58e484"
+      },
+      "100_masks_svg/piece_055.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_055.svg",
+        "sha256": "b9094cc048e0cfa76708fbd5e5602dcc60e9fc82d8363be24cf8f1977ee0414f"
+      },
+      "100_pieces/piece_056.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_056.png",
+        "sha256": "42b49b8fddde90021c0985d9a9d788d371664271093d99d04780a6bfc069865b"
+      },
+      "100_masks_svg/piece_056.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_056.svg",
+        "sha256": "47de6f9790766b6d5a646c83d964b12f371f07a321385da1c57fcff487601b91"
+      },
+      "100_pieces/piece_057.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_057.png",
+        "sha256": "4cbfb338c9e0050a1e93d9c32460701e896ef0f74d133ec35a1871c8fc865d5f"
+      },
+      "100_masks_svg/piece_057.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_057.svg",
+        "sha256": "9fdab564ce6fc8dd0f6cb0dd44d149f9b2ad2ff22241436c6753e2854eb5636f"
+      },
+      "100_pieces/piece_058.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_058.png",
+        "sha256": "a5e6826f01ca2da8311787b97c0526f49db149bf1372b2a2e9485e3451bd13c8"
+      },
+      "100_masks_svg/piece_058.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_058.svg",
+        "sha256": "a3f32dff7f6d01a70811c3425ce7cad2b2820feed0c378e8d4ed317b0875cefa"
+      },
+      "100_pieces/piece_059.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_059.png",
+        "sha256": "8d42a7dd74ab7fe18ed9772d9a286183937e3290a88fdb1a1cc64f70e9fe3b27"
+      },
+      "100_masks_svg/piece_059.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_059.svg",
+        "sha256": "4d19bf5ad7c7c49a861c880c3f813f9ba45e3b83d281f89f6c45b40c3e05d504"
+      },
+      "100_pieces/piece_060.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_060.png",
+        "sha256": "87d2091d7133cb63ee8146b5abbb77b3c6d4dbf4eedb9177d84898168c5fb021"
+      },
+      "100_masks_svg/piece_060.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_060.svg",
+        "sha256": "20051ee3b22844aacbcfc766d0bfd6894d28827ad89aa5ebedc59aca5df0396d"
+      },
+      "100_pieces/piece_061.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_061.png",
+        "sha256": "f5d4cc2434d26478ef842c158f6a597f9aaa4cf45ae8544dfc1cf5b44e2ada5d"
+      },
+      "100_masks_svg/piece_061.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_061.svg",
+        "sha256": "7a84c13a72467716752706765d133454f2ac6744ef2e175a07876b0dc5a69cea"
+      },
+      "100_pieces/piece_062.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_062.png",
+        "sha256": "33a4ebafa1ec27b5f4fd3983f3557199dcb0a9d99df7c3793618e98d97f709a0"
+      },
+      "100_masks_svg/piece_062.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_062.svg",
+        "sha256": "18c5b0e045224ad42ab63a8f89e8efb40fb48cd33e71932afe7b1bd867d8cc0d"
+      },
+      "100_pieces/piece_063.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_063.png",
+        "sha256": "a0f6546e9d8b06107ff7977809445f5f45cd08062ff0c47794fd8dcac7dd62ac"
+      },
+      "100_masks_svg/piece_063.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_063.svg",
+        "sha256": "b9094cc048e0cfa76708fbd5e5602dcc60e9fc82d8363be24cf8f1977ee0414f"
+      },
+      "100_pieces/piece_064.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_064.png",
+        "sha256": "3dced893fb30746d4e27a244873dad52e3ff008959438a3608d608749c989d0f"
+      },
+      "100_masks_svg/piece_064.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_064.svg",
+        "sha256": "b55c51346cb39cdf2f36e28e2885698fd22a3fa037c0a66a60b6fcfddb5b9acc"
+      },
+      "100_pieces/piece_065.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_065.png",
+        "sha256": "07d51215086f7a407a72da4cd2583fefc5b5a3ca3f84e875820d38bf1ed3fdc5"
+      },
+      "100_masks_svg/piece_065.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_065.svg",
+        "sha256": "4b91482d962c6380d3dd227909c613f9a4b290d4aef89614a9d317d233edfaf9"
+      },
+      "100_pieces/piece_066.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_066.png",
+        "sha256": "60f091666c3dc09df2be819daed1f1a9e2c9fafd9e68fc2c27c7283b168d22b6"
+      },
+      "100_masks_svg/piece_066.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_066.svg",
+        "sha256": "cf38bd3b67eb45755b944b3c4a9feaa4fc14a887951c4879ee84061b8f8312ac"
+      },
+      "100_pieces/piece_067.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_067.png",
+        "sha256": "f2c39ed2dda0b5a0f713817b806f5c8783cc2996d752844d093b2d12703064ed"
+      },
+      "100_masks_svg/piece_067.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_067.svg",
+        "sha256": "cf38bd3b67eb45755b944b3c4a9feaa4fc14a887951c4879ee84061b8f8312ac"
+      },
+      "100_pieces/piece_068.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_068.png",
+        "sha256": "4c25319f15651b52fdf57b92ad13f3e5129bad030e1b65c2730ddabaa8fb28ca"
+      },
+      "100_masks_svg/piece_068.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_068.svg",
+        "sha256": "92caf0a5226932f5aacb8690d852883480993aff8066e1b1133c01c51e10df5d"
+      },
+      "100_pieces/piece_069.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_069.png",
+        "sha256": "b41c4e09acfd92a94c2337c1dcd3f3d9dcea005007f1e32e8981473cc4428c64"
+      },
+      "100_masks_svg/piece_069.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_069.svg",
+        "sha256": "0d5840a2bab9fadd30a78709dd8ad7c5b56193f956986c44ff314994dd01c912"
+      },
+      "100_pieces/piece_070.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_070.png",
+        "sha256": "09f673715b2df1b87d18164aa58c609389af58972c6112f1be7a854d62c6af8d"
+      },
+      "100_masks_svg/piece_070.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_070.svg",
+        "sha256": "20051ee3b22844aacbcfc766d0bfd6894d28827ad89aa5ebedc59aca5df0396d"
+      },
+      "100_pieces/piece_071.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_071.png",
+        "sha256": "c631df56afef33c32fd61268c88cc2820651e8347a7f57191cd05cf8c60fcd0f"
+      },
+      "100_masks_svg/piece_071.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_071.svg",
+        "sha256": "b9094cc048e0cfa76708fbd5e5602dcc60e9fc82d8363be24cf8f1977ee0414f"
+      },
+      "100_pieces/piece_072.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_072.png",
+        "sha256": "e2414752c8e3432ae399e3cf19cf1487ac34245a7c6e4cb7158c69a92c16faab"
+      },
+      "100_masks_svg/piece_072.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_072.svg",
+        "sha256": "9fdab564ce6fc8dd0f6cb0dd44d149f9b2ad2ff22241436c6753e2854eb5636f"
+      },
+      "100_pieces/piece_073.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_073.png",
+        "sha256": "ba34bc74a9f04283dd04f1b984ab3c98ef0015dd2011f84b92dc6cc609eef012"
+      },
+      "100_masks_svg/piece_073.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_073.svg",
+        "sha256": "18c5b0e045224ad42ab63a8f89e8efb40fb48cd33e71932afe7b1bd867d8cc0d"
+      },
+      "100_pieces/piece_074.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_074.png",
+        "sha256": "bf15dcd96d9c7813d83723d05a24338e039fed685de9bc9318108877fb143b35"
+      },
+      "100_masks_svg/piece_074.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_074.svg",
+        "sha256": "7a84c13a72467716752706765d133454f2ac6744ef2e175a07876b0dc5a69cea"
+      },
+      "100_pieces/piece_075.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_075.png",
+        "sha256": "0dae615a680b18152234dd85bbbd702424248d36d9c89e1506652b84558f587e"
+      },
+      "100_masks_svg/piece_075.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_075.svg",
+        "sha256": "a3f32dff7f6d01a70811c3425ce7cad2b2820feed0c378e8d4ed317b0875cefa"
+      },
+      "100_pieces/piece_076.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_076.png",
+        "sha256": "550808fae85a99ba7f5f902bba8975845533f44da91733a0c41f2d1702f0977e"
+      },
+      "100_masks_svg/piece_076.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_076.svg",
+        "sha256": "b9094cc048e0cfa76708fbd5e5602dcc60e9fc82d8363be24cf8f1977ee0414f"
+      },
+      "100_pieces/piece_077.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_077.png",
+        "sha256": "6b5e8d79173203b7a4252075cae12fc598be6dc97377c2a2f62f7c1e4f4c49a7"
+      },
+      "100_masks_svg/piece_077.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_077.svg",
+        "sha256": "b55c51346cb39cdf2f36e28e2885698fd22a3fa037c0a66a60b6fcfddb5b9acc"
+      },
+      "100_pieces/piece_078.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_078.png",
+        "sha256": "5a756fb13bd6c4f26fd51da07aeb3e752734c20aa44c8c910a7729fa55b833b2"
+      },
+      "100_masks_svg/piece_078.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_078.svg",
+        "sha256": "c3b90a3360390c427040ef4a106c9398f3d1d4eec0f18d475690ac5c25a2275f"
+      },
+      "100_pieces/piece_079.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_079.png",
+        "sha256": "be2279e156ee2770fa3ad76b3bb2d72c6b426625fc1606dfcffcfdc33b58e29b"
+      },
+      "100_masks_svg/piece_079.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_079.svg",
+        "sha256": "0d5840a2bab9fadd30a78709dd8ad7c5b56193f956986c44ff314994dd01c912"
+      },
+      "100_pieces/piece_080.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_080.png",
+        "sha256": "273acec3c5403b54c6d991938315cc55e12cce3276cdbfed6dbbf3aa3fe15a81"
+      },
+      "100_masks_svg/piece_080.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_080.svg",
+        "sha256": "20051ee3b22844aacbcfc766d0bfd6894d28827ad89aa5ebedc59aca5df0396d"
+      },
+      "100_pieces/piece_081.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_081.png",
+        "sha256": "f81aa8a0900d4e94cd9bc9112fa1784690a484a2cd183b31ea2b2746384c11ae"
+      },
+      "100_masks_svg/piece_081.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_081.svg",
+        "sha256": "18c5b0e045224ad42ab63a8f89e8efb40fb48cd33e71932afe7b1bd867d8cc0d"
+      },
+      "100_pieces/piece_082.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_082.png",
+        "sha256": "587e94f118ed0591cf3d2d595ffa5f0b5f8004cf5f6fc7ea2daaaec7d3e55c62"
+      },
+      "100_masks_svg/piece_082.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_082.svg",
+        "sha256": "b9094cc048e0cfa76708fbd5e5602dcc60e9fc82d8363be24cf8f1977ee0414f"
+      },
+      "100_pieces/piece_083.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_083.png",
+        "sha256": "a501ee12cd698e05401198319cfbd7dad3c7df1b93b4616eb4d999fc101ba35c"
+      },
+      "100_masks_svg/piece_083.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_083.svg",
+        "sha256": "47de6f9790766b6d5a646c83d964b12f371f07a321385da1c57fcff487601b91"
+      },
+      "100_pieces/piece_084.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_084.png",
+        "sha256": "2b87ee6929c2ab364687dd582a2a0818c45054cf8ab2ed286f72e24290087ecb"
+      },
+      "100_masks_svg/piece_084.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_084.svg",
+        "sha256": "cf38bd3b67eb45755b944b3c4a9feaa4fc14a887951c4879ee84061b8f8312ac"
+      },
+      "100_pieces/piece_085.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_085.png",
+        "sha256": "4a9b020d596c25d00ab6e5aa19c85e4054dd1d33efc44dd075938170c5a0f411"
+      },
+      "100_masks_svg/piece_085.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_085.svg",
+        "sha256": "3a5592bd7e3c6682cf3c5797561181606e424f7e9c5edfb236fb3cf2446cf9b4"
+      },
+      "100_pieces/piece_086.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_086.png",
+        "sha256": "953356f4126d0c2eeb1cb70639441206a940146389a611e659c6456b04b05609"
+      },
+      "100_masks_svg/piece_086.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_086.svg",
+        "sha256": "47de6f9790766b6d5a646c83d964b12f371f07a321385da1c57fcff487601b91"
+      },
+      "100_pieces/piece_087.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_087.png",
+        "sha256": "0b17abd6a63318f97c5f1d97b53b5cdb7834428cb5605b330df1655f33933865"
+      },
+      "100_masks_svg/piece_087.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_087.svg",
+        "sha256": "6556e81c4e1ee40aabdfda99479a4892e8b102bf39cb2c4b034d6c1c273fd067"
+      },
+      "100_pieces/piece_088.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_088.png",
+        "sha256": "622f88e935cf0ed15039b2ad3be3227612a2789058bf5b2aa53d063f4fd12b66"
+      },
+      "100_masks_svg/piece_088.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_088.svg",
+        "sha256": "5a3a9e71fd19315fd049f0d0643032c200d697e23fcb420c7a62c04d20e2a941"
+      },
+      "100_pieces/piece_089.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_089.png",
+        "sha256": "be2279e156ee2770fa3ad76b3bb2d72c6b426625fc1606dfcffcfdc33b58e29b"
+      },
+      "100_masks_svg/piece_089.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_089.svg",
+        "sha256": "0d5840a2bab9fadd30a78709dd8ad7c5b56193f956986c44ff314994dd01c912"
+      },
+      "100_pieces/piece_090.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_090.png",
+        "sha256": "fcf85b6999427849bb86c6d2b0ca446b103c0a830be580a5326c9a21ac2e6900"
+      },
+      "100_masks_svg/piece_090.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_090.svg",
+        "sha256": "97846e0d27f880cdd2f0420977340310185af8bbad96b046af5d0df2d58406f9"
+      },
+      "100_pieces/piece_091.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_091.png",
+        "sha256": "c3bcf703d6d99af81cf7d485b7f74eceee4cf09772f57a8df42a21699a11e01b"
+      },
+      "100_masks_svg/piece_091.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_091.svg",
+        "sha256": "f4525d4815cd3a55cbd2a5ca705667928215353bb429cd4208db7e6486bfcf86"
+      },
+      "100_pieces/piece_092.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_092.png",
+        "sha256": "0e5367f79b3f33666dae61326cf47f51dd3d1a664bd70c25a846155c0c607b36"
+      },
+      "100_masks_svg/piece_092.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_092.svg",
+        "sha256": "58e41a4c80e088e4883185aeeefdb1993a2653edc04b7d1d64a8f9fe8d45a0d8"
+      },
+      "100_pieces/piece_093.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_093.png",
+        "sha256": "dfd51b51be27b11611e5d3067c51063f935fee0c1412cd089c218195f8d4c094"
+      },
+      "100_masks_svg/piece_093.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_093.svg",
+        "sha256": "7079105b51c43e8b0318065078d1011b33f729184baf3e5c61420f732d75f60d"
+      },
+      "100_pieces/piece_094.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_094.png",
+        "sha256": "b260032741d7e0a62bcdb47d9b6ca702443d63e9cb58bbca93bf1e3668306adc"
+      },
+      "100_masks_svg/piece_094.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_094.svg",
+        "sha256": "e68fa0a448635dd356e061e221eeb6c2f738dd6c73ac36b4539501eac1cf5990"
+      },
+      "100_pieces/piece_095.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_095.png",
+        "sha256": "7914159e600d0fb84fea02d859ca2628fd97a6d5cf669fef50127aca4e99f836"
+      },
+      "100_masks_svg/piece_095.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_095.svg",
+        "sha256": "f4525d4815cd3a55cbd2a5ca705667928215353bb429cd4208db7e6486bfcf86"
+      },
+      "100_pieces/piece_096.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_096.png",
+        "sha256": "013e1598d18a990bbe6b971cbdb27bb04817ae81d830aed7fe26d720d7e3d22e"
+      },
+      "100_masks_svg/piece_096.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_096.svg",
+        "sha256": "f51eb6d1ab027a3d372aed04e25b6dd0964a11518e4b1cf78a5579f50005de03"
+      },
+      "100_pieces/piece_097.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_097.png",
+        "sha256": "0356eca7c56bead490fb396515371d46607c43e55afb10024edc845f329040d9"
+      },
+      "100_masks_svg/piece_097.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_097.svg",
+        "sha256": "f4525d4815cd3a55cbd2a5ca705667928215353bb429cd4208db7e6486bfcf86"
+      },
+      "100_pieces/piece_098.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_098.png",
+        "sha256": "a5b9569f5e57568fe3093f14838b07c7a9379293be1ea50c26a047905877e616"
+      },
+      "100_masks_svg/piece_098.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_098.svg",
+        "sha256": "58e41a4c80e088e4883185aeeefdb1993a2653edc04b7d1d64a8f9fe8d45a0d8"
+      },
+      "100_pieces/piece_099.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_pieces/piece_099.png",
+        "sha256": "86f5ff4041cb899c6cd796dec3852c4d8a9a59039b4670532efb09f87da2a19d"
+      },
+      "100_masks_svg/piece_099.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/100_masks_svg/piece_099.svg",
+        "sha256": "9d19f92d38924ec90151716278ccb158694fcb74d4e93cd0608eddcee430be6c"
+      },
+      "manifest.json": {
+        "url": "https://puzzlequest.50sols.com/content/level_005_autumn_tree/65e5df7ad5d787be92aa/manifest.json",
+        "sha256": "13e92a164bee2fbc5e7dcc901c0c7b241a299b211f5b29c5046e642db6b90fa0"
+      }
+    },
+    "manifest": null,
+    "unlocked": false
+  },
+  {
+    "id": "level_006_green_valley",
+    "code": "1-6",
+    "revision": "c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67",
+    "assets": {
+      "images/master.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/images/master.png",
+        "sha256": "b784795632f95ae8c0b38b1b924cf7059398708562d59dfe4372824264cc53f3"
+      },
+      "manifest.json": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/manifest.json",
+        "sha256": "c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe"
+      },
+      "masks/p000.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p000.svg",
+        "sha256": "0cf14aa91a9c66e2efe4c7747a2e3320670e9e6959e3e6083b926d937a179c6e"
+      },
+      "masks/p001.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p001.svg",
+        "sha256": "b7ecf29efcfb9514c9b7e6412ea0a02efc4883f65f762a0daeaa19057048a15d"
+      },
+      "masks/p002.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p002.svg",
+        "sha256": "bbe83aac85b6e39656adc8e5d201490f8290ef6f4851f7466e3f13d22f608a73"
+      },
+      "masks/p003.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p003.svg",
+        "sha256": "9d32ef1d2f50ccbcf5e4f311b11c54480d6ead2bb561f08e08613ff70861a49b"
+      },
+      "masks/p004.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p004.svg",
+        "sha256": "3b8d0e86729064d4bd2ae244bd6017b59514f32d945d3cc9164ff0932788c5a6"
+      },
+      "masks/p005.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p005.svg",
+        "sha256": "fe35a50b858fad996295e72297b2c3389b3dc777cc2df773af60851f3ce01255"
+      },
+      "masks/p006.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p006.svg",
+        "sha256": "aaf46fec1e28ee693ed44e972616602ee89d7466d7f2afd3e094319e62fcbeda"
+      },
+      "masks/p007.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p007.svg",
+        "sha256": "bfbf69fafb7550199e2f442733436a5f03d3cd113f4f647f5110cc134f33f078"
+      },
+      "masks/p008.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p008.svg",
+        "sha256": "325cd63b79210a40aae0f189099ca4d3da345cf274c11c5c939248373edacd3e"
+      },
+      "masks/p009.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p009.svg",
+        "sha256": "cd523b3bdbb32583ac7ba0de02c4dd39417e89e07fa9055740a7bf64c4a74d13"
+      },
+      "masks/p010.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p010.svg",
+        "sha256": "66fe4334c5e7da0c61c7c13c318c38bb23c779bb3742d88dce37c532eb2bbedf"
+      },
+      "masks/p011.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p011.svg",
+        "sha256": "4f9b8678271c72b65a920e302195a21139ffe1ed7d139a300eb530e9e7f0f436"
+      },
+      "masks/p012.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p012.svg",
+        "sha256": "3c246e017a9eafc7f2b963f38188186f18e521055766ea57985f24e9f8747665"
+      },
+      "masks/p013.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p013.svg",
+        "sha256": "6fd7e430e9587b31c804d28b6a2b9146152eee08c873f44755236fd6a3d66ba6"
+      },
+      "masks/p014.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p014.svg",
+        "sha256": "a8a27926f2db39526201b1f73d79fd1e1c15ccfb72ba8c83a7cc9b699fca9dac"
+      },
+      "masks/p015.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p015.svg",
+        "sha256": "e417bf7af5d0de6305364e6667e2362365f7167700a9d27bcc4a704025b0f2e7"
+      },
+      "masks/p016.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p016.svg",
+        "sha256": "35bd2b55329cdb5b129581e647ae661f2b7b3f5d7155495d716edcb571d3c997"
+      },
+      "masks/p017.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p017.svg",
+        "sha256": "5e020f01bb1d88286538182c4fa42e26177954f77e9ed55a6855d5956f382727"
+      },
+      "masks/p018.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p018.svg",
+        "sha256": "dc57806c64fd2a0b6b31d5f41ce34e5874cb31103e9688197d1d7eb90ec099b2"
+      },
+      "masks/p019.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p019.svg",
+        "sha256": "85892f344f6a0e387faa43dd01d201a02e88ecee1594e32a0a01622608dc1ebf"
+      },
+      "masks/p020.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p020.svg",
+        "sha256": "a5431583eeb3aa9841e52fcf71f85efa8289aa52cf1a79a92a7319fd5852ac41"
+      },
+      "masks/p021.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p021.svg",
+        "sha256": "9cae4b52ff6c6573b556e8f971e623c9f7849e47ad01b35ee72c3f073838b776"
+      },
+      "masks/p022.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p022.svg",
+        "sha256": "284d7ea18d6e10a4ed53cdc148895230f6c15e603ea77eb776a59dd208e05c8e"
+      },
+      "masks/p023.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p023.svg",
+        "sha256": "fe2d500010cade49d1b060e58d65c6ea773f5db7c0021b9a081c8c232892c704"
+      },
+      "masks/p024.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p024.svg",
+        "sha256": "40b26debf1012c4ea05f34a801e5170dbf5b28c469afa1e962724539c5d55193"
+      },
+      "masks/p025.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p025.svg",
+        "sha256": "96d26bcfbf66140f40f08e9675b5b42b5fc02380e6c1cedafd98ff0869870a6a"
+      },
+      "masks/p026.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p026.svg",
+        "sha256": "b3de82e05a1ee8a47af6f901f77737ee8c1f9750944d4778604687023555a4cb"
+      },
+      "masks/p027.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p027.svg",
+        "sha256": "8266fcdda0a0af3f74a2391af2caa25dc81c17f831951008bb2a76be914a36af"
+      },
+      "masks/p028.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p028.svg",
+        "sha256": "6e3dbb13941e3a16b942864217675ba6b7d8f060cbad2a34a2be4b7d2807e454"
+      },
+      "masks/p029.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p029.svg",
+        "sha256": "d23803e3dce307a0b75e408d33ea77ce15f627a27833ad18c50d6ea634e4b6c0"
+      },
+      "masks/p030.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p030.svg",
+        "sha256": "efea4fa83865997f9ae71fae7df9957e3e63fd26bb757913431926637e3dcc4f"
+      },
+      "masks/p031.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p031.svg",
+        "sha256": "0ffe71907f417fb89849e913bd560256e3b4839aec241fef5d592f0cf391273b"
+      },
+      "masks/p032.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p032.svg",
+        "sha256": "4cd7db149d96f76ffc0758387fa52c8b25ddd9b809a508a18cc37dd1112da7cb"
+      },
+      "masks/p033.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p033.svg",
+        "sha256": "35b20ce1ca1e452bcd77047d1a8ae465b63571053a0f1ef3e62eb3db2bb80c51"
+      },
+      "masks/p034.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p034.svg",
+        "sha256": "dceb21548cccb7289e9897d9bf68b0d8d33c3913efd4dfb1a0b0716c13a59ca4"
+      },
+      "masks/p035.svg": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/masks/p035.svg",
+        "sha256": "195db17fd48f4623e1d9dab588c4f3ef3a4196ea3c7f3b347a6fb85419a75d45"
+      },
+      "pieces/p000.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p000.png",
+        "sha256": "4f85b0e3f543d049ad66326952d298b45f130d58ee098052c3a5abf078b6e3ff"
+      },
+      "pieces/p001.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p001.png",
+        "sha256": "5df3bac5333b371ec9d10178f3d80ef26f63eed013ae77f3eebbd82fe2a1c9eb"
+      },
+      "pieces/p002.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p002.png",
+        "sha256": "9518a21273987804026663bfe05d9da33096328bb2a3f28145305e62307cf031"
+      },
+      "pieces/p003.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p003.png",
+        "sha256": "c7805a07ded73f02b475befafd8961e4c3ff290109b6a8ffd6f57a079922b051"
+      },
+      "pieces/p004.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p004.png",
+        "sha256": "c8986c647fc1d669afde939f4747c28ad01e7dfa7b3921c2d6c9f4843b4c9444"
+      },
+      "pieces/p005.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p005.png",
+        "sha256": "945a2bad41aeedf9468eb72ed73c46e1c2d4a54b6ce9662cc65d471c4e1036d7"
+      },
+      "pieces/p006.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p006.png",
+        "sha256": "004d817743b6931af23cff29f04c8d9a585a80b27e034a63faa4f804237e72dc"
+      },
+      "pieces/p007.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p007.png",
+        "sha256": "9c0bdb345c799332cf7b40ff37ee7261235f4d2f03cfc73fbd1f609ea5e7da6b"
+      },
+      "pieces/p008.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p008.png",
+        "sha256": "75adbfb3f6e488a06ef130ac96be678d963b4ad35733b801cbcf43ab6fd5bd14"
+      },
+      "pieces/p009.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p009.png",
+        "sha256": "27bfea5093b5de5b726d45badd6cad6e5c0111f65b9901f11e37aef1f94a457c"
+      },
+      "pieces/p010.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p010.png",
+        "sha256": "c1bda078eef2210c7ca33adbb8bc6cd9bbf352d5cffe3a1b1bcf82b13d855a78"
+      },
+      "pieces/p011.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p011.png",
+        "sha256": "aae6585bfa74a9a659c6c052f8474a298023a593c1807d30296c52d222520b0a"
+      },
+      "pieces/p012.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p012.png",
+        "sha256": "2e0281e0d075a1efb2c59cc14e8f1b0ca670d19727a4923622d5c576912c31f4"
+      },
+      "pieces/p013.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p013.png",
+        "sha256": "c96a0ffbd27d1cb46cc59625a45688843b33827b5d3acc825ccfdb062c5dd643"
+      },
+      "pieces/p014.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p014.png",
+        "sha256": "17aff8711257903648cfde706cdf1ba2e3ca468da37f461130d9f5b657a0f0e8"
+      },
+      "pieces/p015.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p015.png",
+        "sha256": "714b5df6937241d80534dedeaac92adee131051816d91ca439843df9393605d9"
+      },
+      "pieces/p016.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p016.png",
+        "sha256": "b6553522abdcf0fc74fe8468c4e2e0fca366bc298a8b5ca484b514ddd88f7ada"
+      },
+      "pieces/p017.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p017.png",
+        "sha256": "4d4df26d4135eb2e6c9bfda234f7636623cadbad63faa90a8f7299f570aa02d5"
+      },
+      "pieces/p018.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p018.png",
+        "sha256": "6943b06d4bf6df9aaeb1f71a08e656cead8e8f45fde52892313f74724d2c004f"
+      },
+      "pieces/p019.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p019.png",
+        "sha256": "2644568e40f2f98309fe904b96929d2a13b075a838f910c7c4d24d765b1d8004"
+      },
+      "pieces/p020.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p020.png",
+        "sha256": "673cc351c2806be13e250491f12971c3a18c81cf7f4c29e5d7538366f759b108"
+      },
+      "pieces/p021.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p021.png",
+        "sha256": "34cbbea3cdd9abac6b607be05034ce01dcd108e38a512c29f00b89e57a0b13ad"
+      },
+      "pieces/p022.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p022.png",
+        "sha256": "e236af8f7e51a61fe9a6a2efe466555bc7304f5382a9f40b2c44f674f748ce51"
+      },
+      "pieces/p023.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p023.png",
+        "sha256": "c281edb3245f4b0c2b9856a38fc1812187b0d9f6901077f0015faf4508279a8a"
+      },
+      "pieces/p024.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p024.png",
+        "sha256": "b264bb0310433cf783a6178a84342918eb6fb0f0dab7a8ef758f54df60fc910a"
+      },
+      "pieces/p025.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p025.png",
+        "sha256": "17757ec8f8c86459b00bb452b36d236e5a8df3562aaceee9bb2d03b92c458f7e"
+      },
+      "pieces/p026.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p026.png",
+        "sha256": "e3493a97a00c647433b0979f1ca32ddd3682bebf6853524ac9102dccaccfb2f6"
+      },
+      "pieces/p027.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p027.png",
+        "sha256": "2b3749453f9cd4ccfc4493adf3528607f44e42048e0d43abf100eaf4f33a0d77"
+      },
+      "pieces/p028.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p028.png",
+        "sha256": "995baab16c99e5c4e2d569d331e4bd601533e0b639adb85ce68e6ea255e8cc52"
+      },
+      "pieces/p029.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p029.png",
+        "sha256": "d0287ad610d554b3e928ddd749df251be7dbecda9328e8b545d67a7d99888147"
+      },
+      "pieces/p030.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p030.png",
+        "sha256": "5a297c117374fe596cd525c0f4e10d48b9eabba59a2115d596994a1a0a103c4d"
+      },
+      "pieces/p031.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p031.png",
+        "sha256": "977ed275fabcb62051bd97a4a727b35c3ac4424e6206bca36966d36fc87334e1"
+      },
+      "pieces/p032.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p032.png",
+        "sha256": "2d355d298937711ec6209be8f585784c7d5b1a71862425d6e590363438b6dd9a"
+      },
+      "pieces/p033.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p033.png",
+        "sha256": "45edb0bc516ea14b071328eae716bae47a3f14025bdd495d16c903d088f9251b"
+      },
+      "pieces/p034.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p034.png",
+        "sha256": "7b05b3ee86f293adb6ea65acc2041e3f3c01d61705ffa76f694f4265d8845d52"
+      },
+      "pieces/p035.png": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/pieces/p035.png",
+        "sha256": "b7a57acbe00c88960da3d3bf2f9c84f36f56e3a69d742219524977e2a03909f5"
+      },
+      "qa/build-info.json": {
+        "url": "https://puzzlequest.50sols.com/content/level_006_green_valley/c6943ea0c82f3ed8561efdb5f09388bb5a37155b73fe7a8992fab87f2766bbbe-48c2f5012d67/qa/build-info.json",
+        "sha256": "0f30ae02a1001815521d59535c77a42ea0f1847b8a17071653ff72e12cb390f3"
+      }
+    },
+    "manifest": null,
+    "unlocked": false
+  }
+]

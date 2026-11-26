@@ -1,0 +1,87 @@
+{
+  "id": "ADM06",
+  "title_ar": "اللاعبون والتقدم",
+  "kind": "backend_admin_design_only",
+  "status": "static_editable_layout_unimplemented",
+  "not_game_product_screen": true,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "palette_source": "02_DESIGN/DESIGN_TOKENS.json",
+  "specification": {
+    "summary_ar": "تصميم عرض تفاصيل لاعب دون بيانات شخصية افتراضية",
+    "header_cards": [
+      [
+        "نوع اللاعب",
+        "ضيف / مسجل"
+      ],
+      [
+        "أقصى نجوم للإطلاق",
+        "15"
+      ],
+      [
+        "منح البداية",
+        "مرة واحدة"
+      ],
+      [
+        "إكمال أول مرة",
+        "500 Coin / مرحلة"
+      ]
+    ],
+    "table": {
+      "title": "ملخص حقول اللاعب — حقول عرض فقط",
+      "columns": [
+        "المعلومة",
+        "المصدر",
+        "حالة المزامنة",
+        "التعامل"
+      ],
+      "rows": [
+        [
+          "هوية اللاعب",
+          "Player Identity",
+          "مؤكد / ضيف",
+          "منع تكرار البداية"
+        ],
+        [
+          "أفضل تقييم لكل مرحلة",
+          "best_rating 0–3",
+          "مؤكد",
+          "الفرق فقط عند تحسينه"
+        ],
+        [
+          "الرصيد",
+          "Coin/Hint Ledger",
+          "Pending / Confirmed",
+          "لا صرف Pending"
+        ],
+        [
+          "المحاولة الجارية",
+          "Attempt Snapshot",
+          "Local / Synced",
+          "لا تكرار استحقاق"
+        ],
+        [
+          "الانتقال من ضيف",
+          "Smart Merge Q25/Q26",
+          "Confirmed / Pending",
+          "مرة لكل هوية ضيف، بلا تكرار منح"
+        ]
+      ]
+    },
+    "callouts": [
+      "لا تُختلق سجلات لاعبين أو أرقام تشغيلية",
+      "صلاحيات الإدارة والوصول لسجل اللاعب مقيدة",
+      "Q25/Q26 معتمد: أفضل نتائج صحيحة، Ledger خادم، وحفظ Queue المحلية حتى ACK",
+      "لوحة الإدارة تعرض حالة تحقق الحساب والمزامنة وسبب رفض مكافأة دون تعديل رصيد وهمي"
+    ]
+  },
+  "original_scope": "Existing PuzzleQuest gameplay, economy, content, identity, village, ads, and compulsory Laravel system updates only",
+  "approval_questions": [],
+  "interactions": "visual wireframe only; all mutation and permission rules require Backend implementation and approved policy",
+  "data_policy": "Only approved owner Q01–Q12 values are actual configured data. Dashes denote undefined; no player/operations mock data invented.",
+  "figma_like_editable_source": "LAYOUT.svg",
+  "preview": "PREVIEW.png",
+  "responsive_guidance": "Desktop 1440×900. Smaller admin sizes: collapse nav and use row scroll/stack, do not reduce control hit targets; no UI implementation supplied."
+}

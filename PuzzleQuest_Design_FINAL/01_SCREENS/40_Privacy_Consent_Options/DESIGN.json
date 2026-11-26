@@ -1,0 +1,405 @@
+{
+  "id": 40,
+  "slug": "Privacy_Consent_Options",
+  "title": "Privacy choices",
+  "description": "Privacy opt-in and applicable ad consent management; not a legal consent engine",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/40_Privacy_Consent_Options/reference.png",
+  "assets": [
+    {
+      "asset_id": "ui_states_locked",
+      "path": "00_SHARED/ui/states/locked.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/states/locked.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_standard",
+      "path": "00_SHARED/art/backgrounds/standard.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/standard.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_check_circle",
+      "path": "00_SHARED/icons/png/check_circle.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/check_circle.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_check_circle",
+      "path": "00_SHARED/icons/svg/check_circle.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/check_circle.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_settings",
+      "path": "00_SHARED/icons/png/settings.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/settings.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_settings",
+      "path": "00_SHARED/icons/svg/settings.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/settings.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_shield",
+      "path": "00_SHARED/icons/png/shield.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/shield.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_shield",
+      "path": "00_SHARED/icons/svg/shield.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/shield.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_disabled",
+      "path": "00_SHARED/ui/buttons/neutral_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_disabled.png",
+        "svg": "00_SHARED/ui/buttons/neutral_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_normal",
+      "path": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_normal.png",
+        "svg": "00_SHARED/ui/buttons/neutral_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_pressed",
+      "path": "00_SHARED/ui/buttons/neutral_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_pressed.png",
+        "svg": "00_SHARED/ui/buttons/neutral_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_disabled",
+      "path": "00_SHARED/ui/buttons/primary_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_disabled.png",
+        "svg": "00_SHARED/ui/buttons/primary_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_normal",
+      "path": "00_SHARED/ui/buttons/primary_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_normal.png",
+        "svg": "00_SHARED/ui/buttons/primary_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_pressed",
+      "path": "00_SHARED/ui/buttons/primary_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_pressed.png",
+        "svg": "00_SHARED/ui/buttons/primary_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    }
+  ],
+  "navigation_targets": [],
+  "widgets": [
+    {
+      "id": "consent_text",
+      "kind": "text",
+      "role": "image",
+      "text_key": "ui_consent_text",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        32,
+        120,
+        326,
+        176
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content"
+    },
+    {
+      "id": "privacy_choices",
+      "kind": "toggles",
+      "role": "group",
+      "text_key": "ui_privacy_choices",
+      "focusable": false,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        352,
+        326,
+        224
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "local",
+        "event": "interact_privacy_choices",
+        "options": [
+          {
+            "id": "optional_analytics",
+            "editable": true,
+            "default": false
+          },
+          {
+            "id": "personalized_ads",
+            "editable": true,
+            "default": false
+          },
+          {
+            "id": "optional_tracking",
+            "editable": true,
+            "default": false
+          },
+          {
+            "id": "marketing_notifications",
+            "editable": true,
+            "default": false
+          }
+        ],
+        "separate_terms_acceptance": true,
+        "no_optional_opt_in_prechecked": true,
+        "static_essential_explanation": "essential processing explained in existing consent_text, not a fifth interactive toggle",
+        "per_option_hit_height_dp": 56
+      },
+      "layer": "content",
+      "child_min_touch_dp": 48,
+      "choice_rules": {
+        "essential": "always on, noninteractive",
+        "personalized_ads": "optional; do not preselect without saved choice",
+        "notifications": "same existing notification preference as screen 12, permission refusal remains off"
+      },
+      "semantics_policy": "Container is not one clickable/focusable button; actionable visible children expose separate 48dp targets and semantics. Decorative or disabled children are not actionable."
+    },
+    {
+      "id": "save_consent",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_save_consent",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "loading",
+        "error"
+      ],
+      "disabled_while_pending": true,
+      "rect_dp": [
+        32,
+        680,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "submission",
+        "event": "save_privacy_choices",
+        "on_success": "return_to_origin",
+        "on_error": "stay_and_preserve_context"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "later",
+      "kind": "button",
+      "rect_dp": [
+        32,
+        752,
+        326,
+        48
+      ],
+      "text_key": "ui_later",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "return",
+        "target": "return_to_origin",
+        "note": "Do not assume consent and do not reset previously saved preferences."
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "layer": "content"
+    },
+    {
+      "id": "back",
+      "kind": "icon_button",
+      "rect_dp": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "text_key": "ui_back",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "local",
+        "event": "return_to_origin"
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "layer": "content"
+    },
+    {
+      "id": "screen_heading",
+      "kind": "heading",
+      "rect_dp": [
+        72,
+        16,
+        246,
+        48
+      ],
+      "text_key": "screen_40_title",
+      "label_role": "visible_localized_text",
+      "interactive": false,
+      "focusable": false,
+      "decorative": false,
+      "role": "heading",
+      "renderer": "Flutter",
+      "states": [
+        "default"
+      ],
+      "layer": "content",
+      "min_hit_size_dp": null
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/40_Privacy_Consent_Options/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets.",
+  "layout_preview": "01_SCREENS/40_Privacy_Consent_Options/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin_without_assuming_consent",
+    "origin_context": "Welcome_Entry or Privacy_Security or Help_Support",
+    "fallback": "Welcome_Entry"
+  },
+  "legal_consent_policy": {
+    "nonessential_analytics": false,
+    "personalized_ads": false,
+    "marketing_notifications": false,
+    "optional_tracking": false,
+    "optional_consent": false,
+    "default_privacy": "private",
+    "legal_agreement_not_optional_opt_in": true,
+    "consent_audit": [
+      "document_version",
+      "timestamp_utc",
+      "choices"
+    ],
+    "legal_text_status": "awaiting qualified legal counsel and owner publication approval",
+    "legal_pages_host": "https://puzzlequest.50sols.com (requires TLS verification)"
+  },
+  "consent_layout_rule": "4 optional 56dp targets fit 224dp existing container; essential text placed in existing 176dp explanation; no overflow",
+  "pn01_pn04_final_policy": {
+    "reference": "02_DESIGN/PUSH_NOTIFICATION_CONTRACT.json",
+    "noncritical_push_max_in_rolling_24h": 2,
+    "local_quiet_hours": "22:00–08:00 IANA player timezone",
+    "critical_security_can_bypass_only_when_necessary": true,
+    "time_zone_unknown": "inbox_available_but_no_normal_scheduled_push",
+    "push_settings_off_does_not_disable_inbox": true,
+    "no_marketing_in_V1": true
+  }
+}

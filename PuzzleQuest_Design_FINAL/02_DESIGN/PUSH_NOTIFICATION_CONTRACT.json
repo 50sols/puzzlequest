@@ -1,0 +1,292 @@
+{
+  "kind": "push_notifications_design_contract_no_runtime",
+  "scope": "Existing Inbox, Settings, Privacy, Support, Rewards, Achievements, Progress, Security; scheduling in admin requested; no new player screen",
+  "version": "V1",
+  "source": "Owner Q33-Q37, Q39 brand kit and PN01-PN04 final decisions 2026-11-25",
+  "brand": {
+    "app_display_name": "PuzzleQuest",
+    "official_logo": "00_SHARED/branding/masters/official_logo_original.png",
+    "official_store_icon": "00_SHARED/branding/exports/store/PuzzleQuest_AppIcon_512x512.png",
+    "mockup_icon": "REAL approved supplied brand icon (not PQ placeholder)",
+    "os_icon": "OS chooses icon packaged in Android/iOS application; network push cannot replace system icon",
+    "android_icon_limitation": "Legacy launcher art provided; monochrome status-bar/adaptive icon not yet source-approved or device-tested",
+    "ios_icon_limitation": "iOS AppIcon asset matrix included; Xcode build test still needed",
+    "large_image": "only if approved and relevant; do not fabricate art"
+  },
+  "channels": {
+    "in_app_inbox": "canonical for all 7 categories",
+    "remote_push": "best-effort transport; no guarantee device shows notification; Inbox message preserved",
+    "email": "only when approved by corresponding transactional account/support flow"
+  },
+  "types": [
+    {
+      "id": "system",
+      "title_ar": "تحديث مهم",
+      "body_ar": "يوجد تحديث بشأن حسابك في PuzzleQuest.",
+      "title_en": "Important update",
+      "body_en": "There is an update about your PuzzleQuest account.",
+      "sensitive": false,
+      "default_push": "necessary_service_subject_to_app_settings",
+      "target_existing": "inbox"
+    },
+    {
+      "id": "rewards",
+      "title_ar": "مكافأة جاهزة",
+      "body_ar": "لديك مكافأة تنتظر الاستلام.",
+      "title_en": "Reward ready",
+      "body_en": "You have a reward waiting to be claimed.",
+      "sensitive": false,
+      "default_push": "requires_user_notification_setting",
+      "target_existing": "reward_claim_context"
+    },
+    {
+      "id": "achievements",
+      "title_ar": "إنجاز جديد",
+      "body_ar": "حصلت على إنجاز جديد!",
+      "title_en": "New achievement",
+      "body_en": "You unlocked an achievement!",
+      "sensitive": false,
+      "default_push": "requires_user_notification_setting",
+      "target_existing": "achievements"
+    },
+    {
+      "id": "progress",
+      "title_ar": "تقدمك محفوظ",
+      "body_ar": "تم تحديث تقدمك في اللعبة.",
+      "title_en": "Progress saved",
+      "body_en": "Your game progress was updated.",
+      "sensitive": false,
+      "default_push": "requires_user_notification_setting",
+      "target_existing": "worlds_levels"
+    },
+    {
+      "id": "account_security",
+      "title_ar": "تنبيه أمني",
+      "body_ar": "هناك تغيير أمني في حسابك. راجع تفاصيله داخل التطبيق.",
+      "title_en": "Security notice",
+      "body_en": "A security change occurred. Review details in the app.",
+      "sensitive": true,
+      "default_push": "transactional_security_unless_app_policy_requires_permission",
+      "target_existing": "my_account"
+    },
+    {
+      "id": "support",
+      "title_ar": "رد على طلب الدعم",
+      "body_ar": "يوجد رد جديد على طلب المساعدة.",
+      "title_en": "Support reply",
+      "body_en": "There is a new reply to your support request.",
+      "sensitive": true,
+      "default_push": "transactional_subject_to_user_channel_settings",
+      "target_existing": "help_support"
+    },
+    {
+      "id": "events",
+      "title_ar": "فعالية جديدة",
+      "body_ar": "تعرّف على الفعالية المتاحة داخل اللعبة.",
+      "title_en": "New event",
+      "body_en": "A game event is available.",
+      "sensitive": false,
+      "default_push": "disabled_no_events_at_launch",
+      "target_existing": "missions_events"
+    }
+  ],
+  "player": {
+    "existing_screens": [
+      12,
+      28,
+      35,
+      36,
+      40
+    ],
+    "permission_phases": [
+      "not_requested",
+      "explained",
+      "os_prompt",
+      "granted",
+      "denied",
+      "blocked_in_os_settings",
+      "token_refresh_required"
+    ],
+    "master_push_toggle": "screen12 existing notification toggle; display effective state from OS permission and in-app preference",
+    "category_preferences": "within existing Screen28/40 setting subview, no new player page; never turn on marketing by granting OS permission",
+    "marketing_notifications_default": false,
+    "support_for_guests": "Inbox local if authenticated guest identity available; remote only when a valid device token and consent/eligibility exists",
+    "tap_routes": "existing screen ids only; validate account ownership, published content, expiry, and deep link; otherwise open Inbox",
+    "preview_states": [
+      "collapsed_android",
+      "expanded_android",
+      "collapsed_ios",
+      "inbox_unread",
+      "inbox_read",
+      "permission_denied",
+      "quiet_delivery",
+      "offline_pending",
+      "expired_target",
+      "invalid_target"
+    ],
+    "security": "no private payload in lockscreen text"
+  },
+  "admin": {
+    "design_screen": "ADM12",
+    "views": [
+      "campaign_list",
+      "editor_preview",
+      "schedule_review",
+      "delivery_status"
+    ],
+    "permissions": "authorized admin roles only; role names/approval policy to be confirmed",
+    "message_fields": [
+      "category",
+      "ar_title",
+      "en_title",
+      "ar_body",
+      "en_body",
+      "existing_deep_link_target",
+      "recipient_rule",
+      "delivery_mode",
+      "scheduled_at_utc",
+      "status",
+      "recipient_iana_timezone",
+      "scheduled_local_wall_time",
+      "recipient_scheduled_at_utc",
+      "expires_at_utc",
+      "is_critical_security_approved",
+      "dispatch_suppression_reason"
+    ],
+    "recipient_rule": "only pre-existing eligible account audience, no new friend/social/marketing segments; target set must be authorized and consent-filtered",
+    "delivery_mode": [
+      "send_now",
+      "schedule_once"
+    ],
+    "status_flow": [
+      "draft",
+      "validated",
+      "scheduled",
+      "dispatching",
+      "sent_to_provider",
+      "partially_failed",
+      "failed",
+      "cancelled"
+    ],
+    "status_nonclaims": [
+      "provider_accepted_not_device_delivered",
+      "read_only_on_authenticated_open_or_mark_read"
+    ],
+    "scheduling": [
+      "Select local wall-clock schedule for each recipient and IANA time zone; persist calculated UTC delivery time",
+      "Recompute future deliveries on timezone change and DST",
+      "Preview local time per recipient and UTC storage separately",
+      "No normal scheduled Push if timezone unknown",
+      "2 noncritical pushes per rolling 24 hours",
+      "Quiet hours 22:00–08:00 recipient local",
+      "Ordinary missed dispatch max 6 hours from original time and subject to validity/quiet/cap",
+      "Cancel before dispatch; re-evaluate permission/audience at dispatch",
+      "No marketing dispatch in V1"
+    ],
+    "errors": [
+      "missing_translation",
+      "missing_approved_icon",
+      "invalid_deep_link",
+      "no_eligible_recipients",
+      "expired_schedule",
+      "permission_denied",
+      "provider_failure",
+      "throttled",
+      "unauthorized",
+      "missing_recipient_timezone",
+      "quiet_hours_deferred_or_suppressed",
+      "rolling_24h_cap",
+      "missed_more_than_6h",
+      "event_expired",
+      "duplicate_logical_event",
+      "events_not_published"
+    ],
+    "idempotency": "logical_notification_id+recipient_id+channel for each delivery; schedule retries must not duplicate",
+    "audit": [
+      "actor",
+      "draft_version",
+      "scheduled_utc",
+      "send_attempt_id",
+      "eligibility_count",
+      "provider_response",
+      "failure_reason",
+      "changed_utc"
+    ],
+    "marketing": "DISABLED for V1; future not a product feature until separate approval and consent"
+  },
+  "release_gates": [
+    "identify live push transport and credentials outside design archive",
+    "regional privacy/consent and age review",
+    "real Android and iOS permission/channel/deep link tests",
+    "device tokens, retry, duplicate and time-zone tests",
+    "support mail inbox receive test",
+    "Brand source raster installed in real Android/iOS build and icon mask tests",
+    "PN02 local-zone quiet hours / rolling 24h unit acceptance design",
+    "PN03 multi-timezone, DST and changed-timezone tests",
+    "PN04 outage, six-hour window, quiet-hour carry, expiry and no-burst tests",
+    "FCM Android client config and iOS plist match but actual server credentials, APNs linkage and delivery are not yet verified",
+    "Android Google Login OAuth client and signing SHA fingerprints pending verification"
+  ],
+  "owner_decisions_still_required": [],
+  "notification_scheduling_final": {
+    "PN01": {
+      "allowed_scheduled_types_v1": [
+        "system",
+        "rewards",
+        "achievements",
+        "progress",
+        "account_security",
+        "support"
+      ],
+      "events_type": "only when an approved real event exists and is active; launch V1 events none; no scheduled events at launch",
+      "marketing_type_v1": "DISABLED; no promotional messages sent; future only after separate explicit user opt-in and policy review",
+      "category_filter_at_draft_and_dispatch": true,
+      "os_permission_does_not_equal_marketing_consent": true
+    },
+    "PN02": {
+      "nonessential_push_limit": 2,
+      "counting_window": "rolling_24h_per_player (24 hours before each dispatch; do not reset at midnight UTC)",
+      "critical_security_exempt": true,
+      "critical_scope": "only real critical account/security alerts e.g. verified email change, suspicious login; do not mark rewards/marketing or ordinary system news critical",
+      "quiet_hours_local": {
+        "start": "22:00",
+        "end": "08:00",
+        "timezone": "recipient_IANA_timezone",
+        "noncritical_blocked": true,
+        "critical_security_only_exempt": true
+      },
+      "deduplicate": "recipient+logical_event+channel stable idempotency key",
+      "inbox_independent": true,
+      "os_permission_and_user_preference_gated": true
+    },
+    "PN03": {
+      "authoring_mode": "wall_clock_local_for_each_recipient",
+      "scheduled_time_display": "recipient_local_timezone; administration preview includes representative example and UTC conversion where relevant",
+      "storage": "UTC instants per recipient plus IANA timezone rule and schedule definition; never use fixed offset",
+      "timezone_change": "reschedule future unsent deliveries for recipient using newly validated IANA timezone",
+      "dst": "recompute with timezone database; handle nonexistent/ambiguous times with explicit tested deterministic technical convention, no owner-selected convention claimed",
+      "unknown_timezone": "do_not_dispatch_normal_scheduled_push_until_reliable_zone_known; retain relevant Inbox record",
+      "example": "18:00 in each recipient’s own timezone"
+    },
+    "PN04": {
+      "ordinary_max_lateness_seconds": 21600,
+      "lateness_anchor": "original scheduled dispatch time for that recipient, not worker retry time",
+      "ordinary_delivery": "within six hours only if still relevant, eligible, inside allowed local hours and below rolling cap",
+      "quiet_hour_deferral": "next permitted local 08:00 only if still within six-hour grace, event valid and cap permits; otherwise suppress",
+      "expiration": "cancel Push for expired event/claim even within six hours",
+      "critical_security": "send on recovery only while still relevant and authorized, irrespective of quiet hours/cap",
+      "burst_protection": "do not send backlog in bulk; stable idempotency and eligibility recheck",
+      "inbox": "persist independently when still meaningful; do not delete underlying reward/progress when Push canceled"
+    }
+  },
+  "provider_client_config_contract": "03_HANDOFF/MOBILE_CONFIG_REFERENCES/CONFIG_VALIDATION.json",
+  "admin_settings_design": "04_BACKEND_DESIGN/13_System_Settings/DESIGN.json",
+  "provider_status": {
+    "android_client_config": "verified_structurally_not_runtime",
+    "ios_client_config": "verified_structurally_not_runtime",
+    "fcm_server": "not_provisioned_not_verified",
+    "apns": "key_and_console_setup_not_verified",
+    "google_login_android_oauth": "oauth_clients_absent_in_supplied_android_json",
+    "apple_sign_in": "deliberately_not_in_V1"
+  }
+}

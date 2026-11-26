@@ -1,0 +1,71 @@
+{
+  "kind": "design_handoff_firebase_client_configuration_only",
+  "date": "2026-11-25",
+  "source": "Owner supplied Android JSON and iOS plist in this conversation",
+  "project_id": "puzzlequest50sols",
+  "project_number": "834581911975",
+  "android": {
+    "package_name": "com.puzzlequest50sols.com",
+    "app_id": "1:834581911975:android:c41ff55e2e65c3ea83be82",
+    "file": "03_HANDOFF/MOBILE_CONFIG_REFERENCES/android/google-services.json",
+    "sha256": "16d4e7a3808f4ce393345ef1a1926fa2877ad6d873b2e7dc71cd4584fe71b029",
+    "oauth_clients_in_file": 0
+  },
+  "ios": {
+    "bundle_id": "com.puzzlequest50sols.com",
+    "app_id": "1:834581911975:ios:cdae87e48c1b73f783be82",
+    "file": "03_HANDOFF/MOBILE_CONFIG_REFERENCES/ios/GoogleService-Info.plist",
+    "sha256": "bc4fd4043cda885837f41140f4d8729b8cae3211d959ebb620dce887fdd44361",
+    "is_analytics_enabled_flag": false,
+    "is_ads_enabled_flag": false,
+    "is_gcm_enabled_flag": true
+  },
+  "matching_checks": {
+    "firebase_project_id": true,
+    "sender_project_number": true,
+    "application_identifiers": true,
+    "files_parse": true
+  },
+  "disallowed": [
+    "Do not place APNs .p8 private keys, Google service account private keys, FCM server credentials, OAuth secrets, or environment files in design package, client apps, or rendered admin mockups",
+    "Never show raw API keys in SVG/PNG/README"
+  ],
+  "provider_setup_not_verified": [
+    "Firebase Cloud Messaging HTTP v1 server credentials/permissions NOT supplied or tested",
+    "iOS APNs token authentication key not supplied; Firebase Console APNs linkage has not been verified",
+    "iOS Push Notifications capability, Background Modes and provisioned entitlements not verified",
+    "Android notification channel and runtime POST_NOTIFICATIONS permission not tested",
+    "Android Google Sign-In OAuth client list is empty in supplied JSON; correct OAuth/SHA fingerprint config not yet verified",
+    "Google Login on iOS does not imply Sign in with Apple; Apple Login remains excluded by Q22",
+    "FCM token registration/refresh/revoke, user opt-in, locale/timezone and logout behavior not tested",
+    "Production HTTPS, cPanel cron queue worker, delivery, click routes, 24h cap, quiet hours, DST, 6h grace untested"
+  ],
+  "privacy_note": "Client config may contain API keys that identify the project; such keys are not server credentials. Apply appropriate Firebase key restrictions, least-privilege and app attestation as appropriate. The original files are included unmodified in the handoff; avoid publishing full raw file in mockups.",
+  "integration_target_paths": {
+    "android": "android/app/google-services.json",
+    "ios": "ios/Runner/GoogleService-Info.plist"
+  },
+  "push_transport": "Laravel server -> FCM HTTP v1 -> Android FCM / iOS APNs bridge; design only, not implemented",
+  "source_technical_references": [
+    "https://firebase.google.com/docs/cloud-messaging/flutter/get-started",
+    "https://firebase.google.com/docs/flutter/setup",
+    "https://firebase.google.com/docs/projects/api-keys"
+  ],
+  "google_oauth_web_client_public_reference": "02_DESIGN/GOOGLE_OAUTH_DESIGN_CONTRACT.json",
+  "oauth_new_screenshot_review": {
+    "web_client_present_in_google_cloud_screenshot": true,
+    "web_client_type": "Web application",
+    "web_client_name": "PuzzleQuest-Backend",
+    "google_cloud_project": "puzzlequest-515809",
+    "firebase_mobile_project": "puzzlequest50sols",
+    "project_mapping_verified": true,
+    "android_native_oauth_client_from_mobile_file": "not_listed",
+    "ios_native_oauth_client_from_mobile_file": "not_listed",
+    "token_authentication_end_to_end_tested": false,
+    "oauth_web_client_not_proof_mobile_signin_works": true,
+    "client_secret_copied_to_release": false,
+    "screenshot_copied_to_release": false,
+    "project_mapping_verified_scope": "Owner explicitly approved intentional project separation ONLY; OAuth protocol integration/permissions/token verification not tested.",
+    "native_oauth_setup_owner_status": "not_created_yet_deferred_to_development"
+  }
+}

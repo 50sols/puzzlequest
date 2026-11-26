@@ -1,0 +1,115 @@
+{
+  "id": "ADM03",
+  "title_ar": "إعدادات المرحلة",
+  "kind": "backend_admin_design_only",
+  "status": "static_editable_layout_unimplemented",
+  "not_game_product_screen": true,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "palette_source": "02_DESIGN/DESIGN_TOKENS.json",
+  "specification": {
+    "summary_ar": "إعداد المرحلة: الأصول والأزمنة والـRevision قبل النشر",
+    "header_cards": [
+      [
+        "المرحلة",
+        "1-5"
+      ],
+      [
+        "العالم",
+        "Green Valley"
+      ],
+      [
+        "القطع",
+        "100"
+      ],
+      [
+        "مكافأة أول إكمال",
+        "500 Coin"
+      ]
+    ],
+    "table": {
+      "title": "بيانات المرحلة 1-5",
+      "columns": [
+        "الحقل",
+        "القيمة",
+        "المصدر",
+        "الحالة"
+      ],
+      "rows": [
+        [
+          "Level ID",
+          "level_005_autumn_tree",
+          "LEVEL_CATALOG",
+          "معتمد"
+        ],
+        [
+          "Manifest",
+          "100.manifest.v1.json",
+          "المصدر الحالي",
+          "موجود"
+        ],
+        [
+          "3 Stars Threshold",
+          "900 ثانية",
+          "Q05-T",
+          "معتمد"
+        ],
+        [
+          "2 Stars Threshold",
+          "1440 ثانية",
+          "Q05-T",
+          "معتمد"
+        ],
+        [
+          "Level Time Limit",
+          "1800 ثانية (30:00)",
+          "Q05-T",
+          "معتمد"
+        ]
+      ]
+    },
+    "callouts": [
+      "Draft → رفع → تحقق → جاهز → نشر بعد تحقق التوقيت والأصول",
+      "لا ترقية حزمة غير متوافقة مع عميل Flutter/Flame",
+      "100 قطعة تستلزم فحص جهاز قبل نشر محتوى جديد",
+      "Extra Time غير مستخدم في V1؛ العد تنازلي وعتبات النجوم زمن منقضٍ"
+    ],
+    "workflow_buttons": [
+      "رفع صورة وقطع",
+      "فحص Manifest",
+      "نشر المرحلة"
+    ],
+    "content_editor": {
+      "existing_admin_screen": true,
+      "fields": [
+        "world_id",
+        "level_id",
+        "world_sequence",
+        "selected_piece_count",
+        "master_image",
+        "thumbnail",
+        "pieces_and_masks",
+        "manifest",
+        "version_sha256",
+        "3star_seconds",
+        "2star_seconds",
+        "level_time_limit_seconds",
+        "publish_status"
+      ],
+      "validation_contract": "02_DESIGN/CONTENT_PUBLISHING_CONTRACT.json",
+      "publish_disabled_without_Q05T_or_asset_validation": false,
+      "publish_disabled_without_valid_asset_or_timing": true
+    }
+  },
+  "original_scope": "Existing PuzzleQuest gameplay, economy, content, identity, village, ads, and compulsory Laravel system updates only",
+  "approval_questions": [],
+  "interactions": "visual wireframe only; all mutation and permission rules require Backend implementation and approved policy",
+  "data_policy": "Owner approved Q01-Q21; proposed ages require Q34/Q35. No synthetic player data or runtime claims.",
+  "figma_like_editable_source": "LAYOUT.svg",
+  "preview": "PREVIEW.png",
+  "responsive_guidance": "Desktop 1440×900. Smaller admin sizes: collapse nav and use row scroll/stack, do not reduce control hit targets; no UI implementation supplied.",
+  "dynamic_catalog_contract": "02_DESIGN/CONTENT_PUBLISHING_CONTRACT.json",
+  "supports_content_only_app_update_free_levels": true
+}

@@ -1,0 +1,885 @@
+{
+  "schema_version": "1.0.0",
+  "level_id": "level_003_snow_castle",
+  "difficulty_piece_count": 36,
+  "grid": {
+    "rows": 6,
+    "columns": 6
+  },
+  "board_size_px": [
+    960,
+    960
+  ],
+  "master_image_path": "master.png",
+  "snap_threshold_board_px": 35,
+  "cell_size_px": 160,
+  "padding_px": 44,
+  "piece_ordering": "row_major",
+  "pieces": [
+    {
+      "id": "piece_000",
+      "index": 0,
+      "row": 0,
+      "column": 0,
+      "image_path": "36_pieces/piece_000.png",
+      "mask_path": "36_masks_svg/piece_000.svg",
+      "target_rect_px": [
+        -44,
+        -44,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        0,
+        0
+      ],
+      "edges": {
+        "top": 0,
+        "right": -1,
+        "bottom": -1,
+        "left": 0
+      }
+    },
+    {
+      "id": "piece_001",
+      "index": 1,
+      "row": 0,
+      "column": 1,
+      "image_path": "36_pieces/piece_001.png",
+      "mask_path": "36_masks_svg/piece_001.svg",
+      "target_rect_px": [
+        116,
+        -44,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        160,
+        0
+      ],
+      "edges": {
+        "top": 0,
+        "right": 1,
+        "bottom": -1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_002",
+      "index": 2,
+      "row": 0,
+      "column": 2,
+      "image_path": "36_pieces/piece_002.png",
+      "mask_path": "36_masks_svg/piece_002.svg",
+      "target_rect_px": [
+        276,
+        -44,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        320,
+        0
+      ],
+      "edges": {
+        "top": 0,
+        "right": 1,
+        "bottom": 1,
+        "left": -1
+      }
+    },
+    {
+      "id": "piece_003",
+      "index": 3,
+      "row": 0,
+      "column": 3,
+      "image_path": "36_pieces/piece_003.png",
+      "mask_path": "36_masks_svg/piece_003.svg",
+      "target_rect_px": [
+        436,
+        -44,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        480,
+        0
+      ],
+      "edges": {
+        "top": 0,
+        "right": -1,
+        "bottom": 1,
+        "left": -1
+      }
+    },
+    {
+      "id": "piece_004",
+      "index": 4,
+      "row": 0,
+      "column": 4,
+      "image_path": "36_pieces/piece_004.png",
+      "mask_path": "36_masks_svg/piece_004.svg",
+      "target_rect_px": [
+        596,
+        -44,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        640,
+        0
+      ],
+      "edges": {
+        "top": 0,
+        "right": -1,
+        "bottom": 1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_005",
+      "index": 5,
+      "row": 0,
+      "column": 5,
+      "image_path": "36_pieces/piece_005.png",
+      "mask_path": "36_masks_svg/piece_005.svg",
+      "target_rect_px": [
+        756,
+        -44,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        800,
+        0
+      ],
+      "edges": {
+        "top": 0,
+        "right": 0,
+        "bottom": 1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_006",
+      "index": 6,
+      "row": 1,
+      "column": 0,
+      "image_path": "36_pieces/piece_006.png",
+      "mask_path": "36_masks_svg/piece_006.svg",
+      "target_rect_px": [
+        -44,
+        116,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        0,
+        160
+      ],
+      "edges": {
+        "top": 1,
+        "right": 1,
+        "bottom": -1,
+        "left": 0
+      }
+    },
+    {
+      "id": "piece_007",
+      "index": 7,
+      "row": 1,
+      "column": 1,
+      "image_path": "36_pieces/piece_007.png",
+      "mask_path": "36_masks_svg/piece_007.svg",
+      "target_rect_px": [
+        116,
+        116,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        160,
+        160
+      ],
+      "edges": {
+        "top": 1,
+        "right": -1,
+        "bottom": -1,
+        "left": -1
+      }
+    },
+    {
+      "id": "piece_008",
+      "index": 8,
+      "row": 1,
+      "column": 2,
+      "image_path": "36_pieces/piece_008.png",
+      "mask_path": "36_masks_svg/piece_008.svg",
+      "target_rect_px": [
+        276,
+        116,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        320,
+        160
+      ],
+      "edges": {
+        "top": -1,
+        "right": -1,
+        "bottom": -1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_009",
+      "index": 9,
+      "row": 1,
+      "column": 3,
+      "image_path": "36_pieces/piece_009.png",
+      "mask_path": "36_masks_svg/piece_009.svg",
+      "target_rect_px": [
+        436,
+        116,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        480,
+        160
+      ],
+      "edges": {
+        "top": -1,
+        "right": -1,
+        "bottom": 1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_010",
+      "index": 10,
+      "row": 1,
+      "column": 4,
+      "image_path": "36_pieces/piece_010.png",
+      "mask_path": "36_masks_svg/piece_010.svg",
+      "target_rect_px": [
+        596,
+        116,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        640,
+        160
+      ],
+      "edges": {
+        "top": -1,
+        "right": -1,
+        "bottom": 1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_011",
+      "index": 11,
+      "row": 1,
+      "column": 5,
+      "image_path": "36_pieces/piece_011.png",
+      "mask_path": "36_masks_svg/piece_011.svg",
+      "target_rect_px": [
+        756,
+        116,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        800,
+        160
+      ],
+      "edges": {
+        "top": -1,
+        "right": 0,
+        "bottom": -1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_012",
+      "index": 12,
+      "row": 2,
+      "column": 0,
+      "image_path": "36_pieces/piece_012.png",
+      "mask_path": "36_masks_svg/piece_012.svg",
+      "target_rect_px": [
+        -44,
+        276,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        0,
+        320
+      ],
+      "edges": {
+        "top": 1,
+        "right": -1,
+        "bottom": -1,
+        "left": 0
+      }
+    },
+    {
+      "id": "piece_013",
+      "index": 13,
+      "row": 2,
+      "column": 1,
+      "image_path": "36_pieces/piece_013.png",
+      "mask_path": "36_masks_svg/piece_013.svg",
+      "target_rect_px": [
+        116,
+        276,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        160,
+        320
+      ],
+      "edges": {
+        "top": 1,
+        "right": 1,
+        "bottom": -1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_014",
+      "index": 14,
+      "row": 2,
+      "column": 2,
+      "image_path": "36_pieces/piece_014.png",
+      "mask_path": "36_masks_svg/piece_014.svg",
+      "target_rect_px": [
+        276,
+        276,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        320,
+        320
+      ],
+      "edges": {
+        "top": 1,
+        "right": 1,
+        "bottom": 1,
+        "left": -1
+      }
+    },
+    {
+      "id": "piece_015",
+      "index": 15,
+      "row": 2,
+      "column": 3,
+      "image_path": "36_pieces/piece_015.png",
+      "mask_path": "36_masks_svg/piece_015.svg",
+      "target_rect_px": [
+        436,
+        276,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        480,
+        320
+      ],
+      "edges": {
+        "top": -1,
+        "right": -1,
+        "bottom": 1,
+        "left": -1
+      }
+    },
+    {
+      "id": "piece_016",
+      "index": 16,
+      "row": 2,
+      "column": 4,
+      "image_path": "36_pieces/piece_016.png",
+      "mask_path": "36_masks_svg/piece_016.svg",
+      "target_rect_px": [
+        596,
+        276,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        640,
+        320
+      ],
+      "edges": {
+        "top": -1,
+        "right": -1,
+        "bottom": 1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_017",
+      "index": 17,
+      "row": 2,
+      "column": 5,
+      "image_path": "36_pieces/piece_017.png",
+      "mask_path": "36_masks_svg/piece_017.svg",
+      "target_rect_px": [
+        756,
+        276,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        800,
+        320
+      ],
+      "edges": {
+        "top": 1,
+        "right": 0,
+        "bottom": 1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_018",
+      "index": 18,
+      "row": 3,
+      "column": 0,
+      "image_path": "36_pieces/piece_018.png",
+      "mask_path": "36_masks_svg/piece_018.svg",
+      "target_rect_px": [
+        -44,
+        436,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        0,
+        480
+      ],
+      "edges": {
+        "top": 1,
+        "right": 1,
+        "bottom": 1,
+        "left": 0
+      }
+    },
+    {
+      "id": "piece_019",
+      "index": 19,
+      "row": 3,
+      "column": 1,
+      "image_path": "36_pieces/piece_019.png",
+      "mask_path": "36_masks_svg/piece_019.svg",
+      "target_rect_px": [
+        116,
+        436,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        160,
+        480
+      ],
+      "edges": {
+        "top": 1,
+        "right": 1,
+        "bottom": 1,
+        "left": -1
+      }
+    },
+    {
+      "id": "piece_020",
+      "index": 20,
+      "row": 3,
+      "column": 2,
+      "image_path": "36_pieces/piece_020.png",
+      "mask_path": "36_masks_svg/piece_020.svg",
+      "target_rect_px": [
+        276,
+        436,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        320,
+        480
+      ],
+      "edges": {
+        "top": -1,
+        "right": -1,
+        "bottom": -1,
+        "left": -1
+      }
+    },
+    {
+      "id": "piece_021",
+      "index": 21,
+      "row": 3,
+      "column": 3,
+      "image_path": "36_pieces/piece_021.png",
+      "mask_path": "36_masks_svg/piece_021.svg",
+      "target_rect_px": [
+        436,
+        436,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        480,
+        480
+      ],
+      "edges": {
+        "top": -1,
+        "right": 1,
+        "bottom": -1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_022",
+      "index": 22,
+      "row": 3,
+      "column": 4,
+      "image_path": "36_pieces/piece_022.png",
+      "mask_path": "36_masks_svg/piece_022.svg",
+      "target_rect_px": [
+        596,
+        436,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        640,
+        480
+      ],
+      "edges": {
+        "top": -1,
+        "right": 1,
+        "bottom": -1,
+        "left": -1
+      }
+    },
+    {
+      "id": "piece_023",
+      "index": 23,
+      "row": 3,
+      "column": 5,
+      "image_path": "36_pieces/piece_023.png",
+      "mask_path": "36_masks_svg/piece_023.svg",
+      "target_rect_px": [
+        756,
+        436,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        800,
+        480
+      ],
+      "edges": {
+        "top": -1,
+        "right": 0,
+        "bottom": 1,
+        "left": -1
+      }
+    },
+    {
+      "id": "piece_024",
+      "index": 24,
+      "row": 4,
+      "column": 0,
+      "image_path": "36_pieces/piece_024.png",
+      "mask_path": "36_masks_svg/piece_024.svg",
+      "target_rect_px": [
+        -44,
+        596,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        0,
+        640
+      ],
+      "edges": {
+        "top": -1,
+        "right": -1,
+        "bottom": -1,
+        "left": 0
+      }
+    },
+    {
+      "id": "piece_025",
+      "index": 25,
+      "row": 4,
+      "column": 1,
+      "image_path": "36_pieces/piece_025.png",
+      "mask_path": "36_masks_svg/piece_025.svg",
+      "target_rect_px": [
+        116,
+        596,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        160,
+        640
+      ],
+      "edges": {
+        "top": -1,
+        "right": 1,
+        "bottom": -1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_026",
+      "index": 26,
+      "row": 4,
+      "column": 2,
+      "image_path": "36_pieces/piece_026.png",
+      "mask_path": "36_masks_svg/piece_026.svg",
+      "target_rect_px": [
+        276,
+        596,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        320,
+        640
+      ],
+      "edges": {
+        "top": 1,
+        "right": -1,
+        "bottom": -1,
+        "left": -1
+      }
+    },
+    {
+      "id": "piece_027",
+      "index": 27,
+      "row": 4,
+      "column": 3,
+      "image_path": "36_pieces/piece_027.png",
+      "mask_path": "36_masks_svg/piece_027.svg",
+      "target_rect_px": [
+        436,
+        596,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        480,
+        640
+      ],
+      "edges": {
+        "top": 1,
+        "right": -1,
+        "bottom": -1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_028",
+      "index": 28,
+      "row": 4,
+      "column": 4,
+      "image_path": "36_pieces/piece_028.png",
+      "mask_path": "36_masks_svg/piece_028.svg",
+      "target_rect_px": [
+        596,
+        596,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        640,
+        640
+      ],
+      "edges": {
+        "top": 1,
+        "right": -1,
+        "bottom": 1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_029",
+      "index": 29,
+      "row": 4,
+      "column": 5,
+      "image_path": "36_pieces/piece_029.png",
+      "mask_path": "36_masks_svg/piece_029.svg",
+      "target_rect_px": [
+        756,
+        596,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        800,
+        640
+      ],
+      "edges": {
+        "top": -1,
+        "right": 0,
+        "bottom": 1,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_030",
+      "index": 30,
+      "row": 5,
+      "column": 0,
+      "image_path": "36_pieces/piece_030.png",
+      "mask_path": "36_masks_svg/piece_030.svg",
+      "target_rect_px": [
+        -44,
+        756,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        0,
+        800
+      ],
+      "edges": {
+        "top": 1,
+        "right": 1,
+        "bottom": 0,
+        "left": 0
+      }
+    },
+    {
+      "id": "piece_031",
+      "index": 31,
+      "row": 5,
+      "column": 1,
+      "image_path": "36_pieces/piece_031.png",
+      "mask_path": "36_masks_svg/piece_031.svg",
+      "target_rect_px": [
+        116,
+        756,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        160,
+        800
+      ],
+      "edges": {
+        "top": 1,
+        "right": -1,
+        "bottom": 0,
+        "left": -1
+      }
+    },
+    {
+      "id": "piece_032",
+      "index": 32,
+      "row": 5,
+      "column": 2,
+      "image_path": "36_pieces/piece_032.png",
+      "mask_path": "36_masks_svg/piece_032.svg",
+      "target_rect_px": [
+        276,
+        756,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        320,
+        800
+      ],
+      "edges": {
+        "top": 1,
+        "right": 1,
+        "bottom": 0,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_033",
+      "index": 33,
+      "row": 5,
+      "column": 3,
+      "image_path": "36_pieces/piece_033.png",
+      "mask_path": "36_masks_svg/piece_033.svg",
+      "target_rect_px": [
+        436,
+        756,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        480,
+        800
+      ],
+      "edges": {
+        "top": 1,
+        "right": -1,
+        "bottom": 0,
+        "left": -1
+      }
+    },
+    {
+      "id": "piece_034",
+      "index": 34,
+      "row": 5,
+      "column": 4,
+      "image_path": "36_pieces/piece_034.png",
+      "mask_path": "36_masks_svg/piece_034.svg",
+      "target_rect_px": [
+        596,
+        756,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        640,
+        800
+      ],
+      "edges": {
+        "top": -1,
+        "right": 1,
+        "bottom": 0,
+        "left": 1
+      }
+    },
+    {
+      "id": "piece_035",
+      "index": 35,
+      "row": 5,
+      "column": 5,
+      "image_path": "36_pieces/piece_035.png",
+      "mask_path": "36_masks_svg/piece_035.svg",
+      "target_rect_px": [
+        756,
+        756,
+        248,
+        248
+      ],
+      "snap_anchor_px": [
+        800,
+        800
+      ],
+      "edges": {
+        "top": -1,
+        "right": 0,
+        "bottom": 0,
+        "left": -1
+      }
+    }
+  ],
+  "reward_policy": "calculated_on_server_not_in_asset_manifest"
+}

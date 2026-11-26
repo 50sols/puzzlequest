@@ -1,0 +1,98 @@
+{
+  "id": "ADM05",
+  "title_ar": "المكافآت اليومية",
+  "kind": "backend_admin_design_only",
+  "status": "static_editable_layout_unimplemented",
+  "not_game_product_screen": true,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "palette_source": "02_DESIGN/DESIGN_TOKENS.json",
+  "specification": {
+    "summary_ar": "دورة 7 أيام مع تحديد يوم UTC وخادم موثوق",
+    "header_cards": [
+      [
+        "طول الدورة",
+        "7 أيام"
+      ],
+      [
+        "نقطة إعادة الضبط",
+        "00:00 UTC"
+      ],
+      [
+        "إجمالي العملات",
+        "1,000 Coins"
+      ],
+      [
+        "إجمالي التلميحات",
+        "4 Hints"
+      ]
+    ],
+    "table": {
+      "title": "الجدول المعتمد",
+      "columns": [
+        "اليوم",
+        "العملات",
+        "التلميحات",
+        "المطالبة"
+      ],
+      "rows": [
+        [
+          "Day 1",
+          "50",
+          "0",
+          "صريحة"
+        ],
+        [
+          "Day 2",
+          "75",
+          "0",
+          "صريحة"
+        ],
+        [
+          "Day 3",
+          "100",
+          "1",
+          "صريحة"
+        ],
+        [
+          "Day 4",
+          "125",
+          "0",
+          "صريحة"
+        ],
+        [
+          "Day 5",
+          "150",
+          "1",
+          "صريحة"
+        ],
+        [
+          "Day 6",
+          "200",
+          "0",
+          "صريحة"
+        ],
+        [
+          "Day 7",
+          "300",
+          "2",
+          "صريحة"
+        ]
+      ]
+    },
+    "callouts": [
+      "عدم تسجيل الدخول يومًا لا يعيد الدورة للبداية",
+      "يوم UTC واحد = مطالبة واحدة",
+      "اليوم 7 ← اليوم 1 في اليوم UTC التالي فقط"
+    ]
+  },
+  "original_scope": "Existing PuzzleQuest gameplay, economy, content, identity, village, ads, and compulsory Laravel system updates only",
+  "approval_questions": [],
+  "interactions": "visual wireframe only; all mutation and permission rules require Backend implementation and approved policy",
+  "data_policy": "Only approved owner Q01–Q12 values are actual configured data. Dashes denote undefined; no player/operations mock data invented.",
+  "figma_like_editable_source": "LAYOUT.svg",
+  "preview": "PREVIEW.png",
+  "responsive_guidance": "Desktop 1440×900. Smaller admin sizes: collapse nav and use row scroll/stack, do not reduce control hit targets; no UI implementation supplied."
+}

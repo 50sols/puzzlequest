@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="760" viewBox="0 0 1120 760"><title>Email and deletion states inside existing player screens</title><rect width="1120" height="760" fill="#131030"/>
+<text x="1080" y="55" direction="rtl" font-family="Noto Sans Arabic" font-size="26" fill="#FFC447">حالات الحساب — ليست شاشات لاعب جديدة</text>
+<rect x="34" y="90" width="509" height="600" rx="22" fill="#25154B" stroke="#514075"/>
+<text x="514" y="143" direction="rtl" font-family="Noto Sans Arabic" font-size="23" fill="#FAF7FF">27 — تغيير البريد</text>
+<rect x="58" y="181" width="460" height="77" rx="12" fill="#2E1F59"/>
+<text x="484" y="226" direction="rtl" font-family="Noto Sans Arabic" font-size="17" fill="#FAF7FF">أدخل البريد الجديد</text>
+<rect x="58" y="285" width="460" height="77" rx="12" fill="#2E1F59"/>
+<text x="484" y="330" direction="rtl" font-family="Noto Sans Arabic" font-size="17" fill="#FAF7FF">أعد التحقق من هويتك</text>
+<rect x="58" y="389" width="460" height="77" rx="12" fill="#2E1F59"/>
+<text x="484" y="434" direction="rtl" font-family="Noto Sans Arabic" font-size="17" fill="#FAF7FF">OTP على البريد الجديد</text>
+<rect x="58" y="493" width="460" height="77" rx="12" fill="#2E1F59"/>
+<text x="484" y="538" direction="rtl" font-family="Noto Sans Arabic" font-size="17" fill="#FAF7FF">يبقى البريد القديم فعالًا حتى النجاح</text>
+<rect x="62" y="612" width="453" height="51" rx="12" fill="#39D45E"/>
+<text x="470" y="645" direction="rtl" font-family="Noto Sans Arabic" font-weight="bold" font-size="18" fill="#131030">تأكيد بعد التحقق</text>
+<rect x="576" y="90" width="509" height="600" rx="22" fill="#25154B" stroke="#514075"/>
+<text x="1056" y="143" direction="rtl" font-family="Noto Sans Arabic" font-size="23" fill="#FAF7FF">30 — حذف الحساب</text>
+<rect x="600" y="181" width="460" height="77" rx="12" fill="#2E1F59"/>
+<text x="1026" y="226" direction="rtl" font-family="Noto Sans Arabic" font-size="17" fill="#FAF7FF">إعادة تحقق آمنة</text>
+<rect x="600" y="285" width="460" height="77" rx="12" fill="#2E1F59"/>
+<text x="1026" y="330" direction="rtl" font-family="Noto Sans Arabic" font-size="17" fill="#FAF7FF">كتابة DELETE + تأكيد</text>
+<rect x="600" y="389" width="460" height="77" rx="12" fill="#2E1F59"/>
+<text x="1026" y="434" direction="rtl" font-family="Noto Sans Arabic" font-size="17" fill="#FAF7FF">مهلة استرجاع 30 يومًا</text>
+<rect x="600" y="493" width="460" height="77" rx="12" fill="#2E1F59"/>
+<text x="1026" y="538" direction="rtl" font-family="Noto Sans Arabic" font-size="17" fill="#FAF7FF">لا عودة بعد الحذف النهائي</text>
+<rect x="604" y="612" width="453" height="51" rx="12" fill="#39D45E"/>
+<text x="1012" y="645" direction="rtl" font-family="Noto Sans Arabic" font-weight="bold" font-size="18" fill="#131030">تأكيد بعد التحقق</text>
+</svg>

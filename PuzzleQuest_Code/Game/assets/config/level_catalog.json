@@ -1,0 +1,169 @@
+{
+  "levels": [
+    {
+      "level_folder": "level_001",
+      "level_id": "green_valley_house_001",
+      "available_difficulties": [
+        16,
+        36,
+        64,
+        100
+      ],
+      "master_image_path": "00_SHARED/puzzles/level_001/master.png",
+      "manifest_pattern": "00_SHARED/puzzles/level_001/{piece_count}.manifest.v1.json",
+      "design_status": "established_art_and_geometry_reference_not_runtime_tested",
+      "world_id": "green_valley",
+      "world_level_number": 1,
+      "display_code": "1-1",
+      "order": 1,
+      "selected_piece_count": 16,
+      "active_manifest_path": "00_SHARED/puzzles/level_001/16.manifest.v1.json",
+      "published_at_launch": true,
+      "content_state": "ready_for_level_asset_verification",
+      "unlock_rule": "first_level_auto",
+      "rating_time_thresholds_seconds": {
+        "three_stars": 150,
+        "two_stars": 270
+      },
+      "rating_time_thresholds_status": "owner_approved_Q05_T",
+      "first_completion_coins": 500,
+      "max_rating_stars": 3,
+      "level_time_limit_seconds": 360,
+      "countdown_initial_seconds": 360,
+      "failure_rule": "timeout_if_not_completed_before_countdown_expiry",
+      "time_measurement": "elapsed_active_play_seconds_with_pause_background_ad_frozen"
+    },
+    {
+      "level_folder": "level_002_windmill_spring",
+      "level_id": "level_002_windmill_spring",
+      "available_difficulties": [
+        16,
+        36,
+        64,
+        100
+      ],
+      "master_image_path": "00_SHARED/puzzles/level_002_windmill_spring/master.png",
+      "manifest_pattern": "00_SHARED/puzzles/level_002_windmill_spring/{piece_count}.manifest.v1.json",
+      "design_status": "established_art_and_geometry_reference_not_runtime_tested",
+      "world_id": "green_valley",
+      "world_level_number": 2,
+      "display_code": "1-2",
+      "order": 2,
+      "selected_piece_count": 16,
+      "active_manifest_path": "00_SHARED/puzzles/level_002_windmill_spring/16.manifest.v1.json",
+      "published_at_launch": true,
+      "content_state": "ready_for_level_asset_verification",
+      "unlock_rule": "previous_level_completed_with_at_least_one_star",
+      "rating_time_thresholds_seconds": {
+        "three_stars": 150,
+        "two_stars": 270
+      },
+      "rating_time_thresholds_status": "owner_approved_Q05_T",
+      "first_completion_coins": 500,
+      "max_rating_stars": 3,
+      "level_time_limit_seconds": 360,
+      "countdown_initial_seconds": 360,
+      "failure_rule": "timeout_if_not_completed_before_countdown_expiry",
+      "time_measurement": "elapsed_active_play_seconds_with_pause_background_ad_frozen"
+    },
+    {
+      "level_folder": "level_003_snow_castle",
+      "level_id": "level_003_snow_castle",
+      "available_difficulties": [
+        16,
+        36,
+        64,
+        100
+      ],
+      "master_image_path": "00_SHARED/puzzles/level_003_snow_castle/master.png",
+      "manifest_pattern": "00_SHARED/puzzles/level_003_snow_castle/{piece_count}.manifest.v1.json",
+      "design_status": "established_art_and_geometry_reference_not_runtime_tested",
+      "world_id": "green_valley",
+      "world_level_number": 3,
+      "display_code": "1-3",
+      "order": 3,
+      "selected_piece_count": 36,
+      "active_manifest_path": "00_SHARED/puzzles/level_003_snow_castle/36.manifest.v1.json",
+      "published_at_launch": true,
+      "content_state": "ready_for_level_asset_verification",
+      "unlock_rule": "previous_level_completed_with_at_least_one_star",
+      "rating_time_thresholds_seconds": {
+        "three_stars": 270,
+        "two_stars": 450
+      },
+      "rating_time_thresholds_status": "owner_approved_Q05_T",
+      "first_completion_coins": 500,
+      "max_rating_stars": 3,
+      "level_time_limit_seconds": 600,
+      "countdown_initial_seconds": 600,
+      "failure_rule": "timeout_if_not_completed_before_countdown_expiry",
+      "time_measurement": "elapsed_active_play_seconds_with_pause_background_ad_frozen"
+    },
+    {
+      "level_folder": "level_004_sky_balloon",
+      "level_id": "level_004_sky_balloon",
+      "available_difficulties": [
+        16,
+        36,
+        64,
+        100
+      ],
+      "master_image_path": "00_SHARED/puzzles/level_004_sky_balloon/master.png",
+      "manifest_pattern": "00_SHARED/puzzles/level_004_sky_balloon/{piece_count}.manifest.v1.json",
+      "design_status": "established_art_and_geometry_reference_not_runtime_tested",
+      "world_id": "green_valley",
+      "world_level_number": 4,
+      "display_code": "1-4",
+      "order": 4,
+      "selected_piece_count": 64,
+      "active_manifest_path": "00_SHARED/puzzles/level_004_sky_balloon/64.manifest.v1.json",
+      "published_at_launch": true,
+      "content_state": "ready_for_level_asset_verification",
+      "unlock_rule": "previous_level_completed_with_at_least_one_star",
+      "rating_time_thresholds_seconds": {
+        "three_stars": 480,
+        "two_stars": 840
+      },
+      "rating_time_thresholds_status": "owner_approved_Q05_T",
+      "first_completion_coins": 500,
+      "max_rating_stars": 3,
+      "level_time_limit_seconds": 1080,
+      "countdown_initial_seconds": 1080,
+      "failure_rule": "timeout_if_not_completed_before_countdown_expiry",
+      "time_measurement": "elapsed_active_play_seconds_with_pause_background_ad_frozen"
+    },
+    {
+      "level_folder": "level_005_autumn_tree",
+      "level_id": "level_005_autumn_tree",
+      "available_difficulties": [
+        16,
+        36,
+        64,
+        100
+      ],
+      "master_image_path": "00_SHARED/puzzles/level_005_autumn_tree/master.png",
+      "manifest_pattern": "00_SHARED/puzzles/level_005_autumn_tree/{piece_count}.manifest.v1.json",
+      "design_status": "established_art_and_geometry_reference_not_runtime_tested",
+      "world_id": "green_valley",
+      "world_level_number": 5,
+      "display_code": "1-5",
+      "order": 5,
+      "selected_piece_count": 100,
+      "active_manifest_path": "00_SHARED/puzzles/level_005_autumn_tree/100.manifest.v1.json",
+      "published_at_launch": true,
+      "content_state": "ready_for_level_asset_verification",
+      "unlock_rule": "previous_level_completed_with_at_least_one_star",
+      "rating_time_thresholds_seconds": {
+        "three_stars": 900,
+        "two_stars": 1440
+      },
+      "rating_time_thresholds_status": "owner_approved_Q05_T",
+      "first_completion_coins": 500,
+      "max_rating_stars": 3,
+      "level_time_limit_seconds": 1800,
+      "countdown_initial_seconds": 1800,
+      "failure_rule": "timeout_if_not_completed_before_countdown_expiry",
+      "time_measurement": "elapsed_active_play_seconds_with_pause_background_ad_frozen"
+    }
+  ]
+}

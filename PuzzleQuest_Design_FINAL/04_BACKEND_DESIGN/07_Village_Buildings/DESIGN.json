@@ -1,0 +1,86 @@
+{
+  "id": "ADM07",
+  "title_ar": "القرية والمباني",
+  "kind": "backend_admin_design_only",
+  "status": "static_editable_layout_unimplemented",
+  "not_game_product_screen": true,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "palette_source": "02_DESIGN/DESIGN_TOKENS.json",
+  "specification": {
+    "summary_ar": "مبنيان من Ruined (0) إلى Upgraded (4) برسوم Coins فقط",
+    "header_cards": [
+      [
+        "المباني",
+        "2"
+      ],
+      [
+        "الحالات لكل مبنى",
+        "5"
+      ],
+      [
+        "Cottage إجمالي",
+        "1000 Coins"
+      ],
+      [
+        "Windmill إجمالي",
+        "1200 Coins"
+      ]
+    ],
+    "table": {
+      "title": "شروط الترقية المعتمدة — خطوة واحدة في كل مرة",
+      "columns": [
+        "الحالة",
+        "المعرّف",
+        "Cottage: مرحلة / Coins",
+        "Windmill: مرحلة / Coins"
+      ],
+      "rows": [
+        [
+          "0",
+          "ruined",
+          "بداية",
+          "بداية"
+        ],
+        [
+          "1",
+          "scaffold",
+          "1-1 / 100",
+          "1-2 / 150"
+        ],
+        [
+          "2",
+          "repairing",
+          "1-2 / 200",
+          "1-3 / 250"
+        ],
+        [
+          "3",
+          "restored",
+          "1-3 / 300",
+          "1-4 / 350"
+        ],
+        [
+          "4",
+          "upgraded",
+          "1-4 / 400",
+          "1-5 / 450"
+        ]
+      ]
+    },
+    "callouts": [
+      "كل مبنى يبدأ Ruined؛ المرحلة المكتملة تفتح فقط",
+      "Upgrade يخصم Coins ويغيّر الحالة ذريًا",
+      "الرصيد الناقص يعطّل Upgrade، لا خصم جزئي"
+    ]
+  },
+  "original_scope": "Existing PuzzleQuest gameplay, economy, content, identity, village, ads, and compulsory Laravel system updates only",
+  "approval_questions": [],
+  "interactions": "visual wireframe only; all mutation and permission rules require Backend implementation and approved policy",
+  "data_policy": "Owner approved Q01-Q21; proposed ages require Q34/Q35. No synthetic player data or runtime claims.",
+  "figma_like_editable_source": "LAYOUT.svg",
+  "preview": "PREVIEW.png",
+  "responsive_guidance": "Desktop 1440×900. Smaller admin sizes: collapse nav and use row scroll/stack, do not reduce control hit targets; no UI implementation supplied."
+}

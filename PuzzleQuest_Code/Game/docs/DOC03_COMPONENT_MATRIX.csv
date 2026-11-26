@@ -1,0 +1,21 @@
+component,Dart implementation,supported states,integration status,GATE pending
+PrimaryCTA,PQCTA(primary),PNG 5 states,reusable; PQAction uses affirmative by default,"BUTTON goldens, disabled and no double tap"
+SecondaryCTA,PQCTA(secondary),PNG 5 states,wired to outlined actions,RTL focus and low-width
+IconButton,PQIconAction,"normal/focused/disabled, >=48dp",wired to gameplay pause,keyboard focus and accessibility
+HUDCurrency,PQHUDCurrency,settled/pending/insufficient,wired to top bar and gameplay HUD,live backend wallet audit
+HUDTimer,PQHUDTimer,running/paused/background/expired,wired to gameplay stopwatch,device monotonic resume and background test
+StarRating,PQStarRating,0/1/2/3/pending,wired to server-confirmed results,server result E2E and golden
+LevelTile,PQLevelTile,locked/available/completed/perfect,wired to level list; completed/perfect presentation exposed,backend progress/state mapping
+WorldCard,PQWorldCard,locked/active/complete,wired to world list; future worlds locked,content publish E2E
+PuzzlePiece,PQPuzzlePieceView,idle/dragging/nearSlot/correct/wrong,wired to tray; hitmask states partial,alpha polygon hitbox and 100-piece device tests
+PuzzleBoard,PuzzleBoardGame + PQBoardStatusBanner,loading/interactive/paused/complete,Flame board wired; overlay presentation reusable,seam/clip/performance device tests
+WalletPurchase,PQWalletPurchase,checking/confirm/success/declined,wired to shop confirmation,server idempotency E2E
+RewardDialog,PQRewardDialog,loading/collectible/claimed,wired to daily claim,one-time server claim E2E
+AdChoice,PQAdChoice,eligible/unavailable/loading/verified/canceled,reusable only; live AdMob controlled by RewardedAdsService,SSV verified AdMob environment
+BuildingCard,PQBuildingCard,ruined/ready/insufficient/upgrading/completed,reusable only; current village uses server flows,building art atlas + eligibility contract
+MissionRow,PQMissionRow,open/progress/claimable/claimed,wired to daily/weekly missions,reset cycle + server claim E2E
+TrophyBadge,PQTrophyBadge,locked/earned,wired to collections and achievements,owner-approved generic trophy asset and criterion goldens
+LanguageSwitcher,PQLanguageSwitcher,AR/EN,wired to profile settings,RTL state continuity + narrow layout
+NotificationTile,PQNotificationTile,unread/read/expired,wired to inbox,deep links and expiry validity
+InlineStatus,PQInlineStatus,loading/empty/offline/error,wired to network views,E2E retry and accessibility
+ConfirmationSheet,PQConfirmationSheet,idle/busy/resolved,reusable; not wired in all legacy dialogs,"modal focus trap, back & double tap"

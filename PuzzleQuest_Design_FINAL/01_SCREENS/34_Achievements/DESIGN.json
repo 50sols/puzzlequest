@@ -1,0 +1,313 @@
+{
+  "id": 34,
+  "slug": "Achievements",
+  "title": "Badges",
+  "description": "Unclaimed/locked/earned states and rewards",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/34_Achievements/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_backgrounds_bright",
+      "path": "00_SHARED/art/backgrounds/bright.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/bright.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_check_circle",
+      "path": "00_SHARED/icons/png/check_circle.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/check_circle.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_check_circle",
+      "path": "00_SHARED/icons/svg/check_circle.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/check_circle.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_leaderboard",
+      "path": "00_SHARED/icons/png/leaderboard.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/leaderboard.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_leaderboard",
+      "path": "00_SHARED/icons/svg/leaderboard.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/leaderboard.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_star",
+      "path": "00_SHARED/icons/png/star.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/star.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_star",
+      "path": "00_SHARED/icons/svg/star.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/star.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_disabled",
+      "path": "00_SHARED/ui/buttons/neutral_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_disabled.png",
+        "svg": "00_SHARED/ui/buttons/neutral_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_normal",
+      "path": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_normal.png",
+        "svg": "00_SHARED/ui/buttons/neutral_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_pressed",
+      "path": "00_SHARED/ui/buttons/neutral_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_pressed.png",
+        "svg": "00_SHARED/ui/buttons/neutral_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_disabled",
+      "path": "00_SHARED/ui/buttons/primary_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_disabled.png",
+        "svg": "00_SHARED/ui/buttons/primary_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_normal",
+      "path": "00_SHARED/ui/buttons/primary_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_normal.png",
+        "svg": "00_SHARED/ui/buttons/primary_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_pressed",
+      "path": "00_SHARED/ui/buttons/primary_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_pressed.png",
+        "svg": "00_SHARED/ui/buttons/primary_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Home_My_Village"
+  ],
+  "widgets": [
+    {
+      "id": "achievements",
+      "kind": "list",
+      "role": "list",
+      "text_key": "ui_achievements",
+      "focusable": false,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "rect_dp": [
+        24,
+        152,
+        342,
+        448
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "collection",
+        "note": "Read existing progress; no unapproved new reward claim action."
+      },
+      "disabled_while_pending": false,
+      "layer": "content",
+      "child_min_touch_dp": 48,
+      "semantics_policy": "Container is not one clickable/focusable button; actionable visible children expose separate 48dp targets and semantics. Decorative or disabled children are not actionable."
+    },
+    {
+      "id": "back",
+      "kind": "icon_button",
+      "role": "button",
+      "text_key": "ui_back",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Home_My_Village"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "explore_achievements",
+      "kind": "button",
+      "rect_dp": [
+        32,
+        656,
+        326,
+        56
+      ],
+      "text_key": "ui_explore_achievements",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "local",
+        "event": "focus_existing_achievement_list",
+        "note": "The reference button does not introduce a second achievements screen."
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "layer": "content"
+    },
+    {
+      "id": "screen_heading",
+      "kind": "heading",
+      "rect_dp": [
+        72,
+        16,
+        246,
+        48
+      ],
+      "text_key": "screen_34_title",
+      "label_role": "visible_localized_text",
+      "interactive": false,
+      "focusable": false,
+      "decorative": false,
+      "role": "heading",
+      "renderer": "Flutter",
+      "states": [
+        "default"
+      ],
+      "layer": "content",
+      "min_hit_size_dp": null
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/34_Achievements/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win.",
+  "layout_preview": "01_SCREENS/34_Achievements/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Home_My_Village"
+  },
+  "approved_product_rules": {
+    "source": "02_DESIGN/APPROVED_PRODUCT_RULES.json",
+    "applicable_policies": [
+      "achievements",
+      "collections"
+    ],
+    "design_rule": "5 automatic badges, no economic prize; use generic trophy with title until unique approved art Reference screenshot numerals and old Gems art are not runtime strings. Historical image is preserved as art.",
+    "approved_through": "Q21"
+  },
+  "badge_visual_approval": {
+    "source": "Owner decision 2026-11-25",
+    "use_existing_generic_trophy_for_all_five": true,
+    "badge_identity": "approved_achievement_id + AR/EN text",
+    "do_not_fabricate_five_distinct_badges": true,
+    "existing_trophy_asset_bindings": {
+      "locked": "00_SHARED/icons/states/trophy__disabled.svg",
+      "unlocked": "00_SHARED/icons/states/trophy__normal.svg",
+      "focused": "00_SHARED/icons/states/trophy__active.svg"
+    },
+    "achievement_ids": [
+      "first_steps",
+      "green_valley_explorer",
+      "perfect_solver",
+      "star_collector",
+      "puzzle_master"
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "ADM12",
+  "title_ar": "إدارة الإشعارات والجدولة",
+  "kind": "backend_admin_design_only",
+  "status": "static_editable_layout_unimplemented",
+  "not_game_product_screen": true,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "palette_source": "02_DESIGN/DESIGN_TOKENS.json",
+  "screens": [
+    "LAYOUT.svg",
+    "COMPOSE_SCHEDULE.svg",
+    "DELIVERY_STATES.svg"
+  ],
+  "preview": [
+    "PREVIEW.png",
+    "COMPOSE_SCHEDULE_PREVIEW.png",
+    "DELIVERY_STATES_PREVIEW.png"
+  ],
+  "no_runtime_code": true,
+  "scope": "Approved transactional system-only V1, local-recipient delivery scheduling, 2 nonessential Push rolling 24h, 22:00–08:00 quiet hours, six-hour grace; no marketing; existing player screens only.",
+  "requirements_source": "02_DESIGN/PUSH_NOTIFICATION_CONTRACT.json",
+  "existing_player_links": [
+    12,
+    28,
+    35,
+    36,
+    40
+  ],
+  "views": {
+    "list": [
+      "draft",
+      "scheduled",
+      "dispatching",
+      "sent_to_provider",
+      "partially_failed",
+      "failed",
+      "cancelled"
+    ],
+    "editor": [
+      "title_body_ar_en",
+      "type",
+      "existing_target",
+      "eligible_recipients",
+      "os_preview",
+      "validate",
+      "save_draft"
+    ],
+    "schedule": [
+      "send_now",
+      "schedule_once_per_recipient_local_wall_time",
+      "recipient_IANA_zone",
+      "persist_recipient_UTC_due",
+      "recalculate_future_on_timezone_change",
+      "filter_unknown_timezone",
+      "quiet_22_to_08",
+      "rolling_24h_max_two_normal",
+      "late_ordinary_expiry_6h",
+      "critical_security_exception",
+      "cancel_pre_dispatch"
+    ],
+    "delivery": [
+      "audit",
+      "provider_accepted_not_delivered",
+      "duplicate_suppression",
+      "retry_policy_status"
+    ]
+  },
+  "interactions": {
+    "compose": "draft->validate->schedule or send now with authorization",
+    "schedule": "Local wall-clock 18:00 each eligible recipient; calculate due UTC per IANA timezone. 22:00–08:00 local quiet, no unknown-zone normal scheduling, 2 normal Push per rolling 24h.",
+    "cancel": "allowed before dispatch, with audit",
+    "send": "Recheck opt-in/OS/token, real event validity, 2/rolling24h, quiet hours and expiry at dispatch; critical security only exception; never deliver marketing V1.",
+    "failure": "Overdue ordinary >6h suppress Push, Inbox independent; critical only if still relevant; no burst or duplicate retries. Provider acceptance != device delivery.",
+    "preview": "Official approved PuzzleQuest icon from shipped brand kit; actual system icon determined by built app package."
+  },
+  "privacy_gates": [
+    "marketing off",
+    "no payload private data",
+    "minor/regional legal gate",
+    "app permission is not marketing consent"
+  ],
+  "pending_signoff": [
+    "live provider and credentials, cPanel worker/scheduler, TLS/consent compliance",
+    "real Android and iOS notification layout/delivery/icon-mask tests",
+    "DST boundary handling convention and timezone fallback tested"
+  ],
+  "brand_contract": "02_DESIGN/BRAND_INTEGRATION_CONTRACT.json",
+  "source_owner_decisions": [
+    "Q39",
+    "Q40",
+    "PN01",
+    "PN02",
+    "PN03",
+    "PN04"
+  ],
+  "related_admin_settings": "04_BACKEND_DESIGN/13_System_Settings/DESIGN.json",
+  "client_config_source": "03_HANDOFF/MOBILE_CONFIG_REFERENCES/CONFIG_VALIDATION.json"
+}

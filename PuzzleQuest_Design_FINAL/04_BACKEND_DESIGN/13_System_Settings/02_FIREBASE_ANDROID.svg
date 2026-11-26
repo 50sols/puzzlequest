@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="900" viewBox="0 0 1440 900" role="img">
+<title>إعدادات Firebase — Android</title>
+<desc>ربط ملف العميل وتوثيق جاهزية FCM وGoogle Login — Static editable backend design; no live configuration, data, keys or executed settings.</desc>
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#12102B"/>
+<rect x="1184" y="0" width="256" height="900" rx="0" fill="#1D133E"/>
+<line x1="1184" y1="0" x2="1184" y2="900" stroke="#4B3A72"/>
+<image href="../../00_SHARED/branding/exports/store/PuzzleQuest_AppIcon_512x512.png" x="1205" y="22" width="43" height="43"/>
+<text x="1261" y="53" font-family="Lato,Arial,sans-serif" font-size="19" font-weight="800" fill="#F9C452" text-anchor="start" direction="ltr">PuzzleQuest</text>
+<text x="1390" y="102" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="15" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لوحة الإدارة · تصميم فقط</text>
+<text x="1391" y="145" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">نظرة عامة</text>
+<text x="1391" y="207" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">العوالم والمراحل</text>
+<text x="1391" y="269" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">اللاعبون والتقدم</text>
+<text x="1391" y="331" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الاقتصاد والمكافآت</text>
+<text x="1391" y="393" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الإشعارات</text>
+<text x="1391" y="455" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الحساب والخصوصية</text>
+<rect x="1200" y="488" width="226" height="44" rx="10" fill="#302356"/>
+<rect x="1411" y="493" width="4" height="34" rx="2" fill="#43D98C"/>
+<text x="1391" y="517" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="700" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">إعدادات النظام</text>
+<text x="1391" y="579" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تحديثات النظام</text>
+<rect x="1205" y="812" width="218" height="60" rx="10" fill="#302356"/>
+<text x="1408" y="842" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="700" fill="#F9C452" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لا بيانات حية</text>
+<text x="1408" y="862" font-family="Lato,Arial,sans-serif" font-size="11" font-weight="600" fill="#C6BCD9" text-anchor="start" direction="ltr">STATIC DESIGN / MOCKUP</text>
+<text x="1145" y="64" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="29" font-weight="800" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">إعدادات Firebase — Android</text>
+<text x="1145" y="97" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ربط ملف العميل وتوثيق جاهزية FCM وGoogle Login</text>
+<rect x="66" y="38" width="130" height="30" rx="9" fill="#302356"/><text x="182" y="58" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="650" fill="#F9C452" text-anchor="start" direction="rtl" unicode-bidi="plaintext">DESIGN ONLY</text>
+<rect x="65" y="125" width="146" height="42" rx="9" fill="#302356"/>
+<text x="200" y="153" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="550" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">عام</text>
+<rect x="221" y="125" width="146" height="42" rx="9" fill="#43D98C"/>
+<text x="356" y="153" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="750" fill="#12102B" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Firebase Android</text>
+<rect x="377" y="125" width="146" height="42" rx="9" fill="#302356"/>
+<text x="512" y="153" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="550" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Firebase iOS</text>
+<rect x="533" y="125" width="146" height="42" rx="9" fill="#302356"/>
+<text x="668" y="153" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="550" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">سياسة Push</text>
+<rect x="689" y="125" width="146" height="42" rx="9" fill="#302356"/>
+<text x="824" y="153" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="550" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الحساب والأمان</text>
+<rect x="845" y="125" width="146" height="42" rx="9" fill="#302356"/>
+<text x="980" y="153" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="550" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الخصوصية والدعم</text>
+<rect x="1001" y="125" width="146" height="42" rx="9" fill="#302356"/>
+<text x="1136" y="153" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="550" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الاستضافة والمهام</text>
+<rect x="65" y="193" width="1075" height="260" rx="16" fill="#241943" stroke="#4B3A72" stroke-width="1.2"/>
+<text x="1119" y="230" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="20" font-weight="760" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تطبيق Android — ملف العميل</text>
+<text x="1119" y="255" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ملف google-services.json مرفق دون تعديل؛ قيم API الخاصة لا تُعرض هنا</text>
+<rect x="92" y="276" width="480" height="54" rx="9" fill="#302356"/>
+<text x="558" y="297" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="12" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Firebase Project ID</text>
+<text x="558" y="319" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="700" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">puzzlequest50sols</text>
+<rect x="600" y="276" width="509" height="54" rx="9" fill="#302356"/>
+<text x="1095" y="297" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="12" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Package ID</text>
+<text x="1095" y="319" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="700" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">com.puzzlequest50sols.com</text>
+<rect x="92" y="350" width="480" height="54" rx="9" fill="#302356"/>
+<text x="558" y="371" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="12" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">FCM Sender ID</text>
+<text x="558" y="393" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="700" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">مطابق لملف iOS</text>
+<rect x="600" y="350" width="509" height="54" rx="9" fill="#302356"/>
+<text x="1095" y="371" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="12" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ملف العميل</text>
+<text x="1095" y="393" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="700" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">موجود · لم يُختبر التطبيق</text>
+<rect x="65" y="472" width="525" height="304" rx="16" fill="#241943" stroke="#4B3A72" stroke-width="1.2"/>
+<text x="569" y="509" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="20" font-weight="760" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">قنوات النظام والإذن</text>
+<text x="569" y="534" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تصميم حالات قابلة للتنفيذ لاحقًا</text>
+<text x="552" y="557" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">• Notification channel: فحص أثناء التنفيذ</text>
+<text x="552" y="602" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#FFAA7E" text-anchor="start" direction="rtl" unicode-bidi="plaintext">• Android 13+ permission: لم يُختبر</text>
+<text x="552" y="647" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#FFAA7E" text-anchor="start" direction="rtl" unicode-bidi="plaintext">• Small icon أحادية اللون: الأصل قيد التحقق</text>
+<text x="552" y="692" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">• Token refresh / logout: اختبار لاحق</text>
+<rect x="607" y="472" width="533" height="304" rx="16" fill="#241943" stroke="#4B3A72" stroke-width="1.2"/>
+<text x="1119" y="509" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="20" font-weight="760" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">جاهزية الخدمات المرتبطة</text>
+<text x="1119" y="534" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لا تخلط ملف العميل مع اعتماد الخادم</text>
+<text x="1102" y="557" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">• Google Login: مُعتمد منتجًا</text>
+<text x="1102" y="602" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#FFAA7E" text-anchor="start" direction="rtl" unicode-bidi="plaintext">• OAuth clients في JSON: 0</text>
+<text x="1102" y="647" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#FFAA7E" text-anchor="start" direction="rtl" unicode-bidi="plaintext">• SHA fingerprints / OAuth: تحتاج تحقق</text>
+<text x="1102" y="692" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#FFAA7E" text-anchor="start" direction="rtl" unicode-bidi="plaintext">• FCM HTTP v1: صلاحيات الخادم غير مرفقة</text>
+<rect x="65" y="819" width="1075" height="52" rx="11" fill="#302356"/>
+<text x="1119" y="851" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">مخطط قابل للتعديل — لا تكوين فعلي، لا إرسال Push، ولا مفاتيح خادم داخل التصميم.</text>
+</svg>

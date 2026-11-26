@@ -1,0 +1,717 @@
+{
+  "scope": "PNG pixel comparison excluding8px alpha boundary neighborhood, full-board alpha coverage, reciprocal seam signs, piece/mask canvas sizes",
+  "note": "Rechecked this round with source PNG bytes and mask/anchor geometry; older PASS cannot certify visual uniqueness or device performance.",
+  "manifests": 20,
+  "pieces": 1080,
+  "compared_pixels": 13675297,
+  "results": [
+    {
+      "manifest": "00_SHARED/puzzles/level_001/100.manifest.v1.json",
+      "pieces": 100,
+      "fully_opaque_pixels_compared": 1018310,
+      "edge_inclusive_pixels_different_from_master": 110260,
+      "core_pixels_compared": 585997,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7984
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_001/16.manifest.v1.json",
+      "pieces": 16,
+      "fully_opaque_pixels_compared": 953479,
+      "edge_inclusive_pixels_different_from_master": 36432,
+      "core_pixels_compared": 786007,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7792
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_001/36.manifest.v1.json",
+      "pieces": 36,
+      "fully_opaque_pixels_compared": 975291,
+      "edge_inclusive_pixels_different_from_master": 61697,
+      "core_pixels_compared": 715235,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7856
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_001/64.manifest.v1.json",
+      "pieces": 64,
+      "fully_opaque_pixels_compared": 996242,
+      "edge_inclusive_pixels_different_from_master": 85336,
+      "core_pixels_compared": 647824,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7920
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_002_windmill_spring/100.manifest.v1.json",
+      "pieces": 100,
+      "fully_opaque_pixels_compared": 1018306,
+      "edge_inclusive_pixels_different_from_master": 109879,
+      "core_pixels_compared": 585995,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7984
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_002_windmill_spring/16.manifest.v1.json",
+      "pieces": 16,
+      "fully_opaque_pixels_compared": 953477,
+      "edge_inclusive_pixels_different_from_master": 36155,
+      "core_pixels_compared": 786005,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7792
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_002_windmill_spring/36.manifest.v1.json",
+      "pieces": 36,
+      "fully_opaque_pixels_compared": 975287,
+      "edge_inclusive_pixels_different_from_master": 61322,
+      "core_pixels_compared": 715231,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7856
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_002_windmill_spring/64.manifest.v1.json",
+      "pieces": 64,
+      "fully_opaque_pixels_compared": 996245,
+      "edge_inclusive_pixels_different_from_master": 85015,
+      "core_pixels_compared": 647824,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7920
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_003_snow_castle/100.manifest.v1.json",
+      "pieces": 100,
+      "fully_opaque_pixels_compared": 1018274,
+      "edge_inclusive_pixels_different_from_master": 107014,
+      "core_pixels_compared": 585979,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7984
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_003_snow_castle/16.manifest.v1.json",
+      "pieces": 16,
+      "fully_opaque_pixels_compared": 953481,
+      "edge_inclusive_pixels_different_from_master": 35323,
+      "core_pixels_compared": 786009,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7792
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_003_snow_castle/36.manifest.v1.json",
+      "pieces": 36,
+      "fully_opaque_pixels_compared": 975293,
+      "edge_inclusive_pixels_different_from_master": 59682,
+      "core_pixels_compared": 715237,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7856
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_003_snow_castle/64.manifest.v1.json",
+      "pieces": 64,
+      "fully_opaque_pixels_compared": 996250,
+      "edge_inclusive_pixels_different_from_master": 83018,
+      "core_pixels_compared": 647824,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7920
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_004_sky_balloon/100.manifest.v1.json",
+      "pieces": 100,
+      "fully_opaque_pixels_compared": 1018304,
+      "edge_inclusive_pixels_different_from_master": 109823,
+      "core_pixels_compared": 585994,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7984
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_004_sky_balloon/16.manifest.v1.json",
+      "pieces": 16,
+      "fully_opaque_pixels_compared": 953479,
+      "edge_inclusive_pixels_different_from_master": 36110,
+      "core_pixels_compared": 786007,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7792
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_004_sky_balloon/36.manifest.v1.json",
+      "pieces": 36,
+      "fully_opaque_pixels_compared": 975290,
+      "edge_inclusive_pixels_different_from_master": 61408,
+      "core_pixels_compared": 715234,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7856
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_004_sky_balloon/64.manifest.v1.json",
+      "pieces": 64,
+      "fully_opaque_pixels_compared": 996248,
+      "edge_inclusive_pixels_different_from_master": 85000,
+      "core_pixels_compared": 647824,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7920
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_005_autumn_tree/100.manifest.v1.json",
+      "pieces": 100,
+      "fully_opaque_pixels_compared": 1018306,
+      "edge_inclusive_pixels_different_from_master": 109870,
+      "core_pixels_compared": 585995,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7984
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_005_autumn_tree/16.manifest.v1.json",
+      "pieces": 16,
+      "fully_opaque_pixels_compared": 953478,
+      "edge_inclusive_pixels_different_from_master": 36125,
+      "core_pixels_compared": 786006,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7792
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_005_autumn_tree/36.manifest.v1.json",
+      "pieces": 36,
+      "fully_opaque_pixels_compared": 975302,
+      "edge_inclusive_pixels_different_from_master": 61314,
+      "core_pixels_compared": 715246,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7856
+    },
+    {
+      "manifest": "00_SHARED/puzzles/level_005_autumn_tree/64.manifest.v1.json",
+      "pieces": 64,
+      "fully_opaque_pixels_compared": 996248,
+      "edge_inclusive_pixels_different_from_master": 85015,
+      "core_pixels_compared": 647824,
+      "core_pixels_different_from_master": 0,
+      "uncovered_board_pixels": 0,
+      "opaque_pixels_outside_board": 7920
+    }
+  ],
+  "errors": [],
+  "status": "STATIC_MANIFEST_RECORDS_OK_Q40_IMAGE_UNIQUENESS_AND_DEVICE_TESTS_OPEN",
+  "source_art_content_review": [
+    {
+      "level_id": "green_valley_house_001",
+      "grid": "10x10",
+      "low_detail_cells": 24,
+      "total_cells": 100,
+      "method": "Maximum per-channel standard deviation <8 on 4px sample grid; content risk indicator, not a puzzle difficulty rating"
+    },
+    {
+      "level_id": "level_002_windmill_spring",
+      "grid": "10x10",
+      "low_detail_cells": 34,
+      "total_cells": 100,
+      "method": "Maximum per-channel standard deviation <8 on 4px sample grid; content risk indicator, not a puzzle difficulty rating"
+    },
+    {
+      "level_id": "level_003_snow_castle",
+      "grid": "10x10",
+      "low_detail_cells": 44,
+      "total_cells": 100,
+      "method": "Maximum per-channel standard deviation <8 on 4px sample grid; content risk indicator, not a puzzle difficulty rating"
+    },
+    {
+      "level_id": "level_004_sky_balloon",
+      "grid": "10x10",
+      "low_detail_cells": 38,
+      "total_cells": 100,
+      "method": "Maximum per-channel standard deviation <8 on 4px sample grid; content risk indicator, not a puzzle difficulty rating"
+    },
+    {
+      "level_id": "level_005_autumn_tree",
+      "grid": "10x10",
+      "low_detail_cells": 34,
+      "total_cells": 100,
+      "method": "Maximum per-channel standard deviation <8 on 4px sample grid; content risk indicator, not a puzzle difficulty rating"
+    }
+  ],
+  "independent_manifest_geometry_audit": {
+    "manifests_checked": 20,
+    "piece_textures_and_svg_masks_checked": 1080,
+    "geometry_errors": 0,
+    "checks": [
+      "grid and cell dimensions",
+      "row-major IDs",
+      "snap anchors",
+      "target rectangles including padding",
+      "reciprocal adjacent edge signs",
+      "flat outer edges",
+      "piece/mask existence, dimensions and SVG viewBox",
+      "master dimensions"
+    ],
+    "alpha_svg_mask_threshold": 127,
+    "silhouette_iou_min": 0.8538,
+    "pieces_with_silhouette_iou_below_0_88": 115,
+    "interpretation": "PNG has painted stroke outside exact SVG shape, measured up to about 2.83 source pixels in spot-checked cases; SVG path is geometric mask, not full PNG alpha-hit silhouette",
+    "zero_geometry_errors_does_not_certify_gameplay": true,
+    "snap_threshold_100_at_358dp": 7.83,
+    "cell_width_100_at_358dp": 35.8,
+    "per_manifest_min_iou": [
+      {
+        "manifest": "00_SHARED/puzzles/level_001/16.manifest.v1.json",
+        "min_iou": 0.9455
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_001/36.manifest.v1.json",
+        "min_iou": 0.9078
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_001/64.manifest.v1.json",
+        "min_iou": 0.8802
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_001/100.manifest.v1.json",
+        "min_iou": 0.8538
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_002_windmill_spring/16.manifest.v1.json",
+        "min_iou": 0.9435
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_002_windmill_spring/36.manifest.v1.json",
+        "min_iou": 0.9177
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_002_windmill_spring/64.manifest.v1.json",
+        "min_iou": 0.8802
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_002_windmill_spring/100.manifest.v1.json",
+        "min_iou": 0.8538
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_003_snow_castle/16.manifest.v1.json",
+        "min_iou": 0.9455
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_003_snow_castle/36.manifest.v1.json",
+        "min_iou": 0.9078
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_003_snow_castle/64.manifest.v1.json",
+        "min_iou": 0.8802
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_003_snow_castle/100.manifest.v1.json",
+        "min_iou": 0.8538
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_004_sky_balloon/16.manifest.v1.json",
+        "min_iou": 0.9491
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_004_sky_balloon/36.manifest.v1.json",
+        "min_iou": 0.9177
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_004_sky_balloon/64.manifest.v1.json",
+        "min_iou": 0.8802
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_004_sky_balloon/100.manifest.v1.json",
+        "min_iou": 0.8538
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_005_autumn_tree/16.manifest.v1.json",
+        "min_iou": 0.9435
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_005_autumn_tree/36.manifest.v1.json",
+        "min_iou": 0.9078
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_005_autumn_tree/64.manifest.v1.json",
+        "min_iou": 0.8802
+      },
+      {
+        "manifest": "00_SHARED/puzzles/level_005_autumn_tree/100.manifest.v1.json",
+        "min_iou": 0.8538
+      }
+    ],
+    "device_test": "NOT RUN; touch ergonomics and snap threshold require real game/device verification"
+  },
+  "fresh_2026_11_25_100_piece_quality_audit": {
+    "fresh_static_audit": true,
+    "basis": "piece PNG alpha≥250 compared with master RGB at manifest target_rect placement; not a real-time renderer test",
+    "per_manifest": [
+      {
+        "level": "level_001",
+        "pieces": 100,
+        "present": 100,
+        "unique_png_hashes": 98,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 94877,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 13.582,
+        "opaque_sample_pixels": 1019069,
+        "bad_pixel_ratio_over_15": 0.1063
+      },
+      {
+        "level": "level_001",
+        "pieces": 16,
+        "present": 16,
+        "unique_png_hashes": 16,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 32371,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 4.75,
+        "opaque_sample_pixels": 954259,
+        "bad_pixel_ratio_over_15": 0.03803
+      },
+      {
+        "level": "level_001",
+        "pieces": 36,
+        "present": 36,
+        "unique_png_hashes": 36,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 53412,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 7.758,
+        "opaque_sample_pixels": 975812,
+        "bad_pixel_ratio_over_15": 0.06152
+      },
+      {
+        "level": "level_001",
+        "pieces": 64,
+        "present": 64,
+        "unique_png_hashes": 64,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 74280,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 10.707,
+        "opaque_sample_pixels": 997448,
+        "bad_pixel_ratio_over_15": 0.08428
+      },
+      {
+        "level": "level_002_windmill_spring",
+        "pieces": 100,
+        "present": 100,
+        "unique_png_hashes": 97,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 94873,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 6.839,
+        "opaque_sample_pixels": 1019065,
+        "bad_pixel_ratio_over_15": 0.10309
+      },
+      {
+        "level": "level_002_windmill_spring",
+        "pieces": 16,
+        "present": 16,
+        "unique_png_hashes": 16,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 32354,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 2.476,
+        "opaque_sample_pixels": 954242,
+        "bad_pixel_ratio_over_15": 0.03684
+      },
+      {
+        "level": "level_002_windmill_spring",
+        "pieces": 36,
+        "present": 36,
+        "unique_png_hashes": 36,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 53412,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 3.942,
+        "opaque_sample_pixels": 975812,
+        "bad_pixel_ratio_over_15": 0.05983
+      },
+      {
+        "level": "level_002_windmill_spring",
+        "pieces": 64,
+        "present": 64,
+        "unique_png_hashes": 64,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 74284,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 5.477,
+        "opaque_sample_pixels": 997452,
+        "bad_pixel_ratio_over_15": 0.08166
+      },
+      {
+        "level": "level_003_snow_castle",
+        "pieces": 100,
+        "present": 100,
+        "unique_png_hashes": 97,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 94852,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 4.254,
+        "opaque_sample_pixels": 1019044,
+        "bad_pixel_ratio_over_15": 0.06978
+      },
+      {
+        "level": "level_003_snow_castle",
+        "pieces": 16,
+        "present": 16,
+        "unique_png_hashes": 16,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 32367,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 1.602,
+        "opaque_sample_pixels": 954255,
+        "bad_pixel_ratio_over_15": 0.026
+      },
+      {
+        "level": "level_003_snow_castle",
+        "pieces": 36,
+        "present": 36,
+        "unique_png_hashes": 36,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 53416,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 2.523,
+        "opaque_sample_pixels": 975816,
+        "bad_pixel_ratio_over_15": 0.04141
+      },
+      {
+        "level": "level_003_snow_castle",
+        "pieces": 64,
+        "present": 64,
+        "unique_png_hashes": 63,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 74283,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 3.428,
+        "opaque_sample_pixels": 997451,
+        "bad_pixel_ratio_over_15": 0.05624
+      },
+      {
+        "level": "level_004_sky_balloon",
+        "pieces": 100,
+        "present": 100,
+        "unique_png_hashes": 99,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 94871,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 6.381,
+        "opaque_sample_pixels": 1019063,
+        "bad_pixel_ratio_over_15": 0.1027
+      },
+      {
+        "level": "level_004_sky_balloon",
+        "pieces": 16,
+        "present": 16,
+        "unique_png_hashes": 16,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 32357,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 2.406,
+        "opaque_sample_pixels": 954245,
+        "bad_pixel_ratio_over_15": 0.03672
+      },
+      {
+        "level": "level_004_sky_balloon",
+        "pieces": 36,
+        "present": 36,
+        "unique_png_hashes": 36,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 53416,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 3.778,
+        "opaque_sample_pixels": 975816,
+        "bad_pixel_ratio_over_15": 0.06025
+      },
+      {
+        "level": "level_004_sky_balloon",
+        "pieces": 64,
+        "present": 64,
+        "unique_png_hashes": 64,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 74278,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 5.081,
+        "opaque_sample_pixels": 997446,
+        "bad_pixel_ratio_over_15": 0.08158
+      },
+      {
+        "level": "level_005_autumn_tree",
+        "pieces": 100,
+        "present": 100,
+        "unique_png_hashes": 97,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 94869,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 6.781,
+        "opaque_sample_pixels": 1019061,
+        "bad_pixel_ratio_over_15": 0.10317
+      },
+      {
+        "level": "level_005_autumn_tree",
+        "pieces": 16,
+        "present": 16,
+        "unique_png_hashes": 16,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 32359,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 2.479,
+        "opaque_sample_pixels": 954247,
+        "bad_pixel_ratio_over_15": 0.03668
+      },
+      {
+        "level": "level_005_autumn_tree",
+        "pieces": 36,
+        "present": 36,
+        "unique_png_hashes": 36,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 53426,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 3.967,
+        "opaque_sample_pixels": 975826,
+        "bad_pixel_ratio_over_15": 0.05957
+      },
+      {
+        "level": "level_005_autumn_tree",
+        "pieces": 64,
+        "present": 64,
+        "unique_png_hashes": 64,
+        "index_errors": 0,
+        "edge_errors": 0,
+        "pixels_uncovered_at_full_alpha": 0,
+        "pixels_overlapped_at_full_alpha": 74284,
+        "mean_abs_rgb_diff_of_opaque_piece_samples": 5.418,
+        "opaque_sample_pixels": 997452,
+        "bad_pixel_ratio_over_15": 0.08164
+      }
+    ],
+    "counts": {
+      "manifests": 20,
+      "piece_records": 1080,
+      "missing_or_duplicate_records": 0,
+      "geometric_record_errors": 0,
+      "edge_errors": 0
+    },
+    "errors": [],
+    "device_touch_and_performance_tested": false,
+    "identical_png_groups_at_100_pieces": [
+      {
+        "level": "level_001",
+        "piece_count": 100,
+        "identical_png_groups": [
+          [
+            "piece_001.png",
+            "piece_006.png"
+          ],
+          [
+            "piece_002.png",
+            "piece_007.png"
+          ]
+        ],
+        "duplicate_png_count": 2
+      },
+      {
+        "level": "level_002_windmill_spring",
+        "piece_count": 100,
+        "identical_png_groups": [
+          [
+            "piece_001.png",
+            "piece_005.png"
+          ],
+          [
+            "piece_002.png",
+            "piece_006.png"
+          ],
+          [
+            "piece_093.png",
+            "piece_094.png"
+          ]
+        ],
+        "duplicate_png_count": 3
+      },
+      {
+        "level": "level_003_snow_castle",
+        "piece_count": 100,
+        "identical_png_groups": [
+          [
+            "piece_001.png",
+            "piece_002.png",
+            "piece_004.png"
+          ],
+          [
+            "piece_077.png",
+            "piece_082.png"
+          ]
+        ],
+        "duplicate_png_count": 3
+      },
+      {
+        "level": "level_004_sky_balloon",
+        "piece_count": 100,
+        "identical_png_groups": [
+          [
+            "piece_002.png",
+            "piece_006.png"
+          ]
+        ],
+        "duplicate_png_count": 1
+      },
+      {
+        "level": "level_005_autumn_tree",
+        "piece_count": 100,
+        "identical_png_groups": [
+          [
+            "piece_002.png",
+            "piece_005.png"
+          ],
+          [
+            "piece_003.png",
+            "piece_006.png"
+          ],
+          [
+            "piece_079.png",
+            "piece_089.png"
+          ]
+        ],
+        "duplicate_png_count": 3
+      }
+    ],
+    "interpretation": {
+      "piece_records_and_edges": "STATIC PASS: every 100 manifest contains exactly 100 records, matching grid positions and opposite edge codes, but that does NOT prove 100 distinct visual cutouts.",
+      "identical_files": "Some PNG bytes are identical at different piece IDs (e.g. flat source colors and same silhouette); images intentionally preserved per user Q40. A product/art QA decision is needed on whether these constitute unacceptable visual duplicates.",
+      "overlap": "Opaque sample overlaps computed by target-rect projection are not equal to a verified visual renderer overlap or runtime clipping error. Validate actual renderer clipping / z-order and seams.",
+      "colour": "Reported MAE includes antialias/texture and border effects, not a direct proof of image corruption.",
+      "dynamic_gate": "NOT DONE: actual Flame reassembly, tapability at small device sizes, memory, frame rate, Android/iOS devices."
+    }
+  }
+}

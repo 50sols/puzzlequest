@@ -1,0 +1,482 @@
+{
+  "id": 7,
+  "slug": "Level_Complete",
+  "title": "Level Complete",
+  "description": "Reward claim and village object activation",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/07_Level_Complete/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_rewards_coins_stack",
+      "path": "00_SHARED/art/rewards/coins_stack.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/coins_stack.png"
+      }
+    },
+    {
+      "asset_id": "art_buildings_cottage",
+      "path": "00_SHARED/art/buildings/cottage.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/buildings/cottage.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_master_art_1024",
+      "path": "00_SHARED/puzzles/level_001/master_art_1024.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/master_art_1024.png"
+      }
+    },
+    {
+      "asset_id": "art_rewards_puzzle_piece",
+      "path": "00_SHARED/art/rewards/puzzle_piece.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/puzzle_piece.png"
+      }
+    },
+    {
+      "asset_id": "art_rewards_stars_three",
+      "path": "00_SHARED/art/rewards/stars_three.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/stars_three.png"
+      }
+    },
+    {
+      "asset_id": "art_rewards_treasure_chest",
+      "path": "00_SHARED/art/rewards/treasure_chest.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/treasure_chest.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_celebrate",
+      "path": "00_SHARED/art/backgrounds/celebrate.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/celebrate.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_coin",
+      "path": "00_SHARED/icons/png/coin.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/coin.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_coin",
+      "path": "00_SHARED/icons/svg/coin.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/coin.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_home",
+      "path": "00_SHARED/icons/png/home.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/home.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_home",
+      "path": "00_SHARED/icons/svg/home.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/home.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_play",
+      "path": "00_SHARED/icons/png/play.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/play.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_play",
+      "path": "00_SHARED/icons/svg/play.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/play.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_puzzle",
+      "path": "00_SHARED/icons/png/puzzle.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/puzzle.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_puzzle",
+      "path": "00_SHARED/icons/svg/puzzle.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/puzzle.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_restart",
+      "path": "00_SHARED/icons/png/restart.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/restart.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_restart",
+      "path": "00_SHARED/icons/svg/restart.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/restart.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_star",
+      "path": "00_SHARED/icons/png/star.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/star.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_star",
+      "path": "00_SHARED/icons/svg/star.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/star.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_disabled",
+      "path": "00_SHARED/ui/buttons/primary_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_disabled.png",
+        "svg": "00_SHARED/ui/buttons/primary_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_normal",
+      "path": "00_SHARED/ui/buttons/primary_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_normal.png",
+        "svg": "00_SHARED/ui/buttons/primary_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_pressed",
+      "path": "00_SHARED/ui/buttons/primary_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_pressed.png",
+        "svg": "00_SHARED/ui/buttons/primary_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "art_buildings_stages_cottage_stage_3",
+      "path": "00_SHARED/art/buildings/stages/cottage_stage_3.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/buildings/stages/cottage_stage_3.png"
+      }
+    },
+    {
+      "asset_id": "ui_effects_reward_burst_4frames",
+      "path": "00_SHARED/ui/effects/reward_burst_4frames.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/effects/reward_burst_4frames.png"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Level_Preview",
+    "Puzzle_Gameplay",
+    "Puzzle_Levels"
+  ],
+  "widgets": [
+    {
+      "id": "completion_stars",
+      "kind": "art",
+      "role": "image",
+      "text_key": "ui_completion_stars",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        72,
+        48,
+        246,
+        104
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": true,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "confirmed_result.rating",
+        "note": "Do not show three earned stars before a rating has been supplied."
+      }
+    },
+    {
+      "id": "completed_scene",
+      "kind": "image",
+      "role": "image",
+      "text_key": "ui_completed_scene",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        64,
+        184,
+        262,
+        262
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "completed_level.master_image"
+      }
+    },
+    {
+      "id": "coins",
+      "kind": "counter",
+      "role": "image",
+      "text_key": "ui_coins",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        16,
+        470,
+        112,
+        64
+      ],
+      "label_role": "dynamic_value_with_localized_label",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "confirmed_result.first_completion_coins_only; otherwise 0"
+      }
+    },
+    {
+      "id": "stars_awarded",
+      "kind": "counter",
+      "role": "image",
+      "text_key": "ui_stars_awarded",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        139,
+        470,
+        112,
+        64
+      ],
+      "label_role": "dynamic_value_with_localized_label",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "confirmed_result.positive_best_star_delta_only"
+      }
+    },
+    {
+      "id": "village_resource",
+      "kind": "counter",
+      "role": "image",
+      "text_key": "ui_village_resource",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        262,
+        470,
+        112,
+        64
+      ],
+      "label_role": "dynamic_value_with_localized_label",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "confirmed_result.existing_collection_unlock_if_any",
+        "note": "Do not show Gem/currency reward here. This is not an economic reward; empty/none when no collection unlock."
+      }
+    },
+    {
+      "id": "next_level",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_next_level",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        624,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Level_Preview",
+        "requires": "next level exists and is unlocked",
+        "otherwise": "Puzzle_Levels"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "replay",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_replay",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        696,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Puzzle_Gameplay"
+      },
+      "layer": "content"
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/07_Level_Complete/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win.",
+  "layout_preview": "01_SCREENS/07_Level_Complete/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Home_My_Village"
+  },
+  "art_policy": "Canonical master/thumbnail from the selected level governs displayed puzzle art. Original reference screenshot is composition-only and is not a promise of identical pixels to the packaged master. Never mix art from different levels or sizes.",
+  "approved_product_rules": {
+    "source": "02_DESIGN/APPROVED_PRODUCT_RULES.json",
+    "applicable_policies": [
+      "rating",
+      "first_completion_reward",
+      "leaderboard"
+    ],
+    "design_rule": "first completion confirmed +500 Coins and star delta; repeat +0 Coins, only positive star improvement; no Gems or phantom collection currency Reference screenshot numerals and old Gems art are not runtime strings. Historical image is preserved as art.",
+    "approved_through": "Q21"
+  },
+  "approved_timing_source": "00_SHARED/puzzles/LEVEL_CATALOG.json; first 5 stages owner-approved; MM:SS countdown begins at active play; stars based on elapsed active play; V1 has no Extra Time."
+}

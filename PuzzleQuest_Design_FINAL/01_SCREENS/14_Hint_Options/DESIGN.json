@@ -1,0 +1,468 @@
+{
+  "id": 14,
+  "slug": "Hint_Options",
+  "title": "Use a Hint?",
+  "description": "Reveal placement via in-game currency or optional video",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/14_Hint_Options/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_rewards_coins_stack",
+      "path": "00_SHARED/art/rewards/coins_stack.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/coins_stack.png"
+      }
+    },
+    {
+      "asset_id": "art_rewards_hint_bulb",
+      "path": "00_SHARED/art/rewards/hint_bulb.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/hint_bulb.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_standard",
+      "path": "00_SHARED/art/backgrounds/standard.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/standard.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_close",
+      "path": "00_SHARED/icons/png/close.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/close.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_close",
+      "path": "00_SHARED/icons/svg/close.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/close.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_coin",
+      "path": "00_SHARED/icons/png/coin.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/coin.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_coin",
+      "path": "00_SHARED/icons/svg/coin.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/coin.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_hint",
+      "path": "00_SHARED/icons/png/hint.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/hint.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_hint",
+      "path": "00_SHARED/icons/svg/hint.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/hint.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_video",
+      "path": "00_SHARED/icons/png/video.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/video.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_video",
+      "path": "00_SHARED/icons/svg/video.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/video.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_modal",
+      "path": "00_SHARED/ui/panels/modal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/modal.png",
+        "svg": "00_SHARED/ui/panels/modal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_disabled",
+      "path": "00_SHARED/ui/buttons/neutral_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_disabled.png",
+        "svg": "00_SHARED/ui/buttons/neutral_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_normal",
+      "path": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_normal.png",
+        "svg": "00_SHARED/ui/buttons/neutral_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_pressed",
+      "path": "00_SHARED/ui/buttons/neutral_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_pressed.png",
+        "svg": "00_SHARED/ui/buttons/neutral_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_pink_disabled",
+      "path": "00_SHARED/ui/buttons/pink_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/pink_disabled.png",
+        "svg": "00_SHARED/ui/buttons/pink_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_pink_normal",
+      "path": "00_SHARED/ui/buttons/pink_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/pink_normal.png",
+        "svg": "00_SHARED/ui/buttons/pink_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_pink_pressed",
+      "path": "00_SHARED/ui/buttons/pink_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/pink_pressed.png",
+        "svg": "00_SHARED/ui/buttons/pink_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_effects_hint_highlight_4frames",
+      "path": "00_SHARED/ui/effects/hint_highlight_4frames.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/effects/hint_highlight_4frames.png"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Puzzle_Gameplay",
+    "Rewarded_Ad_Unavailable"
+  ],
+  "widgets": [
+    {
+      "id": "dimmed_gameplay",
+      "kind": "backdrop",
+      "role": "image",
+      "text_key": "ui_dimmed_gameplay",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        0,
+        0,
+        390,
+        844
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": true,
+      "renderer": "Flutter",
+      "layer": "modal_barrier"
+    },
+    {
+      "id": "dialog",
+      "kind": "panel",
+      "role": "image",
+      "text_key": "ui_dialog",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        24,
+        210,
+        342,
+        430
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": true,
+      "renderer": "Flutter",
+      "layer": "modal_panel"
+    },
+    {
+      "id": "hint_illustration",
+      "kind": "art",
+      "role": "image",
+      "text_key": "ui_hint_illustration",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        147,
+        288,
+        96,
+        96
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": true,
+      "renderer": "Flutter",
+      "parent_id": "dialog",
+      "layer": "modal_content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "hint_illustration"
+      }
+    },
+    {
+      "id": "use_hint",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_use_hint",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "loading",
+        "error"
+      ],
+      "disabled_while_pending": true,
+      "rect_dp": [
+        48,
+        456,
+        294,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "submission",
+        "event": "spend_one_hint",
+        "on_success": "Puzzle_Gameplay",
+        "on_error": "stay_and_preserve_context",
+        "requires": "balance >= 1 and at least one unplaced piece"
+      },
+      "parent_id": "dialog",
+      "layer": "modal_content"
+    },
+    {
+      "id": "watch_ad_hint",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_watch_ad_hint",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "loading",
+        "error"
+      ],
+      "disabled_while_pending": true,
+      "rect_dp": [
+        48,
+        528,
+        294,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "rewarded_flow",
+        "event": "request_one_hint_reward",
+        "on_verified": "Puzzle_Gameplay",
+        "on_unavailable": "Rewarded_Ad_Unavailable",
+        "requires": "at most 3 verified hint ads per UTC day and 1 per attempt, verified grant only; never count failed/cancelled"
+      },
+      "parent_id": "dialog",
+      "layer": "modal_content"
+    },
+    {
+      "id": "close",
+      "kind": "icon_button",
+      "role": "button",
+      "text_key": "ui_close",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        294,
+        222,
+        48,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Puzzle_Gameplay"
+      },
+      "parent_id": "dialog",
+      "layer": "modal_content"
+    },
+    {
+      "id": "dialog_title",
+      "kind": "heading",
+      "rect_dp": [
+        48,
+        234,
+        238,
+        48
+      ],
+      "text_key": "screen_14_dialog_title",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": false,
+      "focusable": false,
+      "min_hit_size_dp": null,
+      "role": "heading",
+      "states": [
+        "default"
+      ],
+      "parent_id": "dialog",
+      "layer": "modal_content"
+    },
+    {
+      "id": "dialog_message",
+      "kind": "text",
+      "rect_dp": [
+        48,
+        392,
+        294,
+        48
+      ],
+      "text_key": "screen_14_dialog_message",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": false,
+      "focusable": false,
+      "min_hit_size_dp": null,
+      "role": "image",
+      "states": [
+        "default"
+      ],
+      "parent_id": "dialog",
+      "layer": "modal_content"
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/14_Hint_Options/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win.",
+  "layout_preview": "01_SCREENS/14_Hint_Options/LAYOUT.svg",
+  "presentation": "modal",
+  "return_policy": {
+    "system_back": "dismiss_top_modal_without_restarting_game",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Home_My_Village"
+  },
+  "approved_product_rules": {
+    "source": "02_DESIGN/APPROVED_PRODUCT_RULES.json",
+    "applicable_policies": [
+      "rewarded_hint",
+      "advertising"
+    ],
+    "design_rule": "AdMob SSV before +1 Hint; 3 per UTC day, 1 per attempt Reference screenshot numerals and old Gems art are not runtime strings. Historical image is preserved as art.",
+    "approved_through": "Q21"
+  }
+}

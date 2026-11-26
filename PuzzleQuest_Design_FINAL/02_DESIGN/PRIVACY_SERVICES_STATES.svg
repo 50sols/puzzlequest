@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1450" height="930" viewBox="0 0 1450 930" role="img">
+<title>Privacy and Support existing screen states</title><desc>Three in-context subviews attached to existing player Screens 28, 30, 36; not new product screens.</desc>
+<rect x="0" y="0" width="1450" height="930" rx="0" fill="#131030"/>
+<text x="1400" y="62" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="29" font-weight="800" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">حالات الخدمة داخل الشاشات القائمة</text>
+<rect x="40" y="102" width="432" height="754" rx="24" fill="#1B113A" stroke="#514075" stroke-width="1"/>
+<text x="440" y="150" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">28 — الأجهزة الموثوقة</text>
+<rect x="68" y="209" width="372" height="147" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="410" y="257" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="18" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">هذا الجهاز · Android</text>
+<text x="410" y="300" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">آخر نشاط الآن · نشط</text>
+<rect x="68" y="401" width="372" height="147" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="410" y="449" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="18" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">iOS</text>
+<text x="410" y="492" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">آخر نشاط أمس · نشط</text>
+<rect x="68" y="593" width="372" height="147" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="410" y="641" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="18" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Log Out All Other Devices</text>
+<text x="410" y="684" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تأكيد + إعادة تحقق</text>
+<rect x="70" y="756" width="370" height="64" rx="15" fill="#2E1F59"/>
+<text x="403" y="794" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">حالة ضمن الشاشة نفسها · لا نافذة جديدة</text>
+<rect x="505" y="102" width="432" height="754" rx="24" fill="#1B113A" stroke="#514075" stroke-width="1"/>
+<text x="905" y="150" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">28 — تصدير البيانات</text>
+<rect x="533" y="209" width="372" height="147" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="875" y="257" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="18" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">طلب نسخة بياناتك</text>
+<text x="875" y="300" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">إعادة تحقق</text>
+<rect x="533" y="401" width="372" height="147" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="875" y="449" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="18" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">جارٍ تجهيز ZIP</text>
+<text x="875" y="492" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">JSON + CSV + README</text>
+<rect x="533" y="593" width="372" height="147" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="875" y="641" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="18" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">رابط خاص 7 أيام</text>
+<text x="875" y="684" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الهدف 72 ساعة / 30 يوم حد أقصى</text>
+<rect x="535" y="756" width="370" height="64" rx="15" fill="#2E1F59"/>
+<text x="868" y="794" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">حالة ضمن الشاشة نفسها · لا نافذة جديدة</text>
+<rect x="970" y="102" width="432" height="754" rx="24" fill="#1B113A" stroke="#514075" stroke-width="1"/>
+<text x="1370" y="150" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">36 — طلب الدعم</text>
+<rect x="998" y="209" width="372" height="147" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1340" y="257" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="18" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">موضوع المشكلة</text>
+<text x="1340" y="300" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Account / Gameplay / ...</text>
+<rect x="998" y="401" width="372" height="147" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1340" y="449" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="18" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">عنوان ووصف</text>
+<text x="1340" y="492" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">مع صورة اختيارية</text>
+<rect x="998" y="593" width="372" height="147" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1340" y="641" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="18" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">My Support Requests</text>
+<text x="1340" y="684" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Open / In Progress / Resolved</text>
+<rect x="1000" y="756" width="370" height="64" rx="15" fill="#2E1F59"/>
+<text x="1333" y="794" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">حالة ضمن الشاشة نفسها · لا نافذة جديدة</text>
+</svg>

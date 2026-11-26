@@ -1,0 +1,626 @@
+{
+  "kind": "owner_approval_questions",
+  "date": "2026-11-25",
+  "source": "Owner Q01–Q42 incl. official Q39 brand kit, conditional Q40, PN01–PN04 approved November 25, 2026; legal/device validation remain separate.",
+  "new_features_proposed": false,
+  "all_answers_approved": true,
+  "questions": [
+    {
+      "id": "Q01",
+      "category": "content",
+      "question_ar": "هل تعتمد إطلاق النطاق الحالي بخمس مراحل فعلية فقط، أم ستوفر صورًا/قطعًا/Manifests معتمدة لمراحل إضافية؟ اذكر العدد النهائي بالضبط وتاريخ توفر كل أصل. أرقام 12 و36/45 في الصور أمثلة لا تُعتمد تلقائيًا.",
+      "gate": "مانع",
+      "source_paths": "00_SHARED/puzzles/LEVEL_CATALOG.json; 01_SCREENS/04–06",
+      "status": "owner_approved",
+      "answer": "الإطلاق خمس مراحل فعلية بأصول مكتملة؛ إضافة مراحل جديدة من البيانات دون شاشة جديدة.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q02",
+      "category": "content",
+      "question_ar": "ما ترتيب العوالم الموجودة، وما معرّف العالم الذي تنتمي إليه كل مرحلة من المراحل المعتمدة؟ اكتب world_id → level_ids دون اختراع عوالم جديدة.",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/03–04; 00_SHARED/puzzles/LEVEL_CATALOG.json",
+      "status": "owner_approved",
+      "answer": "Green Valley يضم 1-1 إلى 1-5. Snow Land وDesert Ruins مغلقان حتى نشر محتوى مكتمل.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q03",
+      "category": "content",
+      "question_ar": "ما شرط فتح كل عالم وكل مرحلة بالضبط: إكمال سابقة أو عدد نجوم أو شرط موجود آخر؟ حدّد قيمة الشرط لكل عنصر وحالة البداية.",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/03–05",
+      "status": "owner_approved",
+      "answer": "1-1 مفتوحة تلقائيًا، كل تالية بعد إكمال السابقة بنجمة على الأقل. لا شرط نجوم تراكمي؛ العالم التالي عند إتمام السابق ونشر محتواه.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q04",
+      "category": "content",
+      "question_ar": "أيّ من هندسات 16/36/64/100 قطعة تُسنَد لكل مرحلة وبأي ترتيب أو قاعدة موجودة؟ من أين يأتي الاختيار في الواجهة الحالية التي لا تحتوي على زر صعوبة جديد؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/05–06; 02_DESIGN/GAMEPLAY_AR.md",
+      "status": "owner_approved",
+      "answer": "16،16،36،64،100 للخمسة حسب تعريف المستوى، بلا شاشة اختيار صعوبة.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q05",
+      "category": "content",
+      "question_ar": "كيف تُحسب نجوم تقييم المرحلة (0–3) بمعادلة وحدود دقيقة؟ هل تعتمد على الزمن أو التلميحات أو غيرهما من القياسات الموجودة، وكيف يُحتفظ بأفضل نتيجة عند Replay؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/07; 02_DESIGN/VILLAGE_AND_ECONOMY_AR.md",
+      "status": "owner_approved",
+      "answer": "التنازلي: 1-1 360/150/270، 1-2 360/150/270، 1-3 600/270/450، 1-4 1080/480/840، 1-5 1800/900/1440 ثانية. فشل عند انتهاء الوقت قبل الإكمال. Pause/Background/Ads توقف الساعة؛ Extra Time غير مستخدم في V1.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q06",
+      "category": "economy",
+      "question_ar": "ما المكافأة المعتمدة لإكمال كل مرحلة/صعوبة: نوع الرصيد والكمية وشروط أول إكمال مقابل إعادة اللعب؟ حدّد هل تُمنح مرة واحدة أم وفق سياسة محددة، من دون خلق عملة جديدة.",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/07,29; 02_DESIGN/VILLAGE_AND_ECONOMY_AR.md",
+      "status": "owner_approved",
+      "answer": "500 Coins للإكمال الأول فقط، مع 1–3 نجوم حسب أفضل تقييم؛ في الإعادة لا عملات ثانية، ويضاف فرق تحسين النجوم فقط؛ منع مطالبة مكررة خلفيًا.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q07",
+      "category": "economy",
+      "question_ar": "ما الرصيد المبدئي للضيف والحساب الجديد من العناصر القائمة (عملات وتلميحات وأي نقاط موثقة)، وما الفرق بين نجوم التقييم ومكافأة النجوم إن كان كلاهما ظاهرًا؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/02,07,11,14",
+      "status": "owner_approved",
+      "answer": "جديد/ضيف: 300 Coins + 2 Hint مرة واحدة للهوية، تنتقل عند التسجيل بلا مضاعفة؛ نفس نجوم تقييم التقدم وغير قابلة للصرف/الشراء أو فتح المراحل.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q08",
+      "category": "economy",
+      "question_ar": "ما أسعار ونوع الدفع والمحتوى بالضبط لكل عنصر متجر موجود: Hint وShuffle وFull Image وStarter Pack؟ إن كان أيّ منها شراءً نقديًا، ما المنتج/البلد/العملة ومعرّف متجر النظام المعتمد؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/11; 02_DESIGN/VILLAGE_AND_ECONOMY_AR.md",
+      "status": "owner_approved",
+      "answer": "Hint:1/100; Shuffle:1/150; Full Image:30s use/200; Starter Pack:5 hints +1 Full Image/400 مرة واحدة. Coins فقط، لا مشتريات نقدية.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q09",
+      "category": "economy",
+      "question_ar": "ما استحقاق وتكلفة Shuffle بالضبط: هل هو رصيد/شراء قائم؟ كم يُخصم وعند أي نجاح؟ معناها الحركي حُسم بالفعل: ترتيب غير المثبت فقط.",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/11; 02_DESIGN/GAMEPLAY_AR.md",
+      "status": "owner_approved",
+      "answer": "Shuffle لغير المثبت فقط؛ لا يُطبّق دون قطعتين غير مثبتتين؛ شراء منفصل يضيف use بعد نجاح الخصم؛ شراء مباشر وتطبيق ذري؛ المخزن يستهلك عند نجاح التأثير فقط.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q10",
+      "category": "economy",
+      "question_ar": "هل استحقاق Full Image القادم من المتجر مرتبط بالمحاولة الجارية فقط أم يستمر لمدة/عدد استخدامات معتمد؟ وكيف يتفاعل مع معاينة الإعلان القائمة ذات 10 ثوانٍ دون حق دائم مفترض؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/11,13,17",
+      "status": "owner_approved",
+      "answer": "Full Image مدفوع: استخدام مخزّن واحد 30 ثانية عند التفعيل مرتبط بالمحاولة. إعلان مكتمل: 10 ثوانٍ. لا تداخل أو تجميع. توقف ساعة اللعب أثناء الإعلان فقط.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q11",
+      "category": "economy",
+      "question_ar": "كم يضيف إعلان التلميح الواحد بعد التحقق: تلميح واحد أم كمية أخرى معتمدة؟ وما حدود الاستحقاق اليومي أو لكل محاولة، إن كانت موجودة؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/14,38; 02_DESIGN/REWARDS_AND_ADS_AR.md",
+      "status": "owner_approved",
+      "answer": "إعلان تلميح مكتمل يضيف Hint واحد. حد 3 يوميًا و1 لكل محاولة. الملغى/الفاشل لا يحتسب؛ الاحتساب كمساعدة عند الاستخدام فقط.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q12",
+      "category": "economy",
+      "question_ar": "ما جدول الجائزة اليومية كاملًا (اليوم → نوع/كمية)، وتوقيت إعادة التعيين والمنطقة الزمنية، وطول الدورة، وسياسة اليوم الفائت، وطريقة عودة Pending؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/33",
+      "status": "owner_approved",
+      "answer": "7 أيام UTC تبدأ 00:00: 50/75/100+Hint/125/150+Hint/200/300+2Hints. لا سقوط لسلسلة عند تفويت يوم، المطالبة صريحة مرة لكل تاريخ UTC، يلي السابع اليوم الأول في اليوم UTC التالي.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q13",
+      "category": "content",
+      "question_ar": "ما المهام الفعلية الموجودة عند الإطلاق، ولكل مهمة: ID والحدث الذي يزيدها والهدف والموعد ومكافأة Claim وشروط انتهاء صلاحيتها؟ لو لا توجد مهام حاليًا، هل نعتمد شاشة Empty القائمة؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/08",
+      "status": "owner_approved",
+      "answer": "خمس مهام: Daily Player إكمال محاولة ناجحة=50 Coins؛ Puzzle Builder تثبيت 30 قطعة صحيحة=50؛ Perfect Play إكمال بلا مساعدات=75. Weekly Explorer خمس محاولات ناجحة=150؛ Puzzle Expert تثبيت 200 قطعة صحيحة=200. Daily UTC00:00 وWeekly الاثنين UTC00:00؛ Claim صريح مرة للدورة؛ غير المستلم ينتهي؛ إعادة اللعب تحتسب.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q14",
+      "category": "content",
+      "question_ar": "ما الأحداث الموجودة عند الإطلاق: ID والموعد/المنطقة الزمنية والمشاركة وشروط الإكمال والمكافأة؟ لو لا يوجد حدث، هل نعتمد Empty الموجودة؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/08",
+      "status": "owner_approved",
+      "answer": "Events عند الإطلاق فارغة؛ النص More exciting events are coming soon!، ولا حدث/مكافأة أو مؤقت تجريبي. دعم بيانات أحداث مستقبلية بتاريخ بدء/انتهاء وشروط ومكافآت دون شاشة إضافية.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q15",
+      "category": "content",
+      "question_ar": "ما المقتنيات القائمة في Collections، وشرط فتح كل مقتنى، وأهلية ظهور الصندوق وقيمة محتوياته؟ لا تعتبر الصورة إثباتًا لامتلاك عنصر.",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/09,16",
+      "status": "owner_approved",
+      "answer": "Collections صور المراحل الخمس عند أول إكمال + خمس Badges لإنجازات Q16. Chest يستحق بعد إكمال الخمس و10 نجوم من 15؛ Claim واحد فقط يمنح 300 Coins و2 Hints. الصور لا تُشترى.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q16",
+      "category": "content",
+      "question_ar": "ما قائمة Achievements الفعلية ومعيار إكمال كل إنجاز وقيمة التقدم؛ هل أيّ إنجاز يمنح مكافأة تلقائية أم عرض فقط؟ لا تضف زر Claim غير موجود.",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/34",
+      "status": "owner_approved",
+      "answer": "خمسة إنجازات: First Steps (أول إكمال)، Green Valley Explorer (الخمس)، Perfect Solver (3 نجوم لمرحلة)، Star Collector (10 نجوم)، Puzzle Master (3 نجوم في ثلاث مراحل). Badges دائمة تلقائية بلا أي عملة/تلميح.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q17",
+      "category": "content",
+      "question_ar": "كيف يُحسب ترتيب Leaderboard من القيم القائمة؟ ما نطاق القائمة (عام/موسم)، طول الموسم وتاريخه، كسر التعادل، ظهور الضيف وظهور الاسم العام أو المخفي؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/10,27",
+      "status": "owner_approved",
+      "answer": "Weekly Global فقط؛ الاثنين 00:00 UTC إلى الاثنين التالي، أفضل محاولة لكل مرحلة بالموسم؛ Score = clamp(1000+floor(500×max(0,1−elapsed_seconds/level_time_limit_seconds))−100×Hint−100×Shuffle−100×FullImage, 0, 1500). لا Extra Time في V1. كسر التعادل بالنقاط ثم النجوم ثم أقل زمن ثم الأسبق للوصول للنتيجة. الضيف وPrivate لا يظهران في القائمة العامة. إخفاء All-time تمامًا في V1 مع إبقاء العرض الأسبوعي فقط.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q18",
+      "category": "village",
+      "question_ar": "ما حالة البدء (0..4) لكل من cottage وwindmill، وما الشرط الدقيق للانتقال 0→1 و1→2 و2→3 و3→4 لكل مبنى؟",
+      "gate": "مانع",
+      "source_paths": "02_DESIGN/BUILDING_STATES.json; 01_SCREENS/02,32",
+      "status": "owner_approved",
+      "answer": "Cottage وWindmill يبدآن Ruined stage 0، وينتقلان تدريجيًا من Scaffold→Repairing→Restored→Upgraded عبر Upgrade بعد إكمال المراحل: Cottage 1-1/1-2/1-3/1-4؛ Windmill 1-2/1-3/1-4/1-5. لا ترميم تلقائي.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q19",
+      "category": "village",
+      "question_ar": "كم تكلفة كل انتقال مبنى ونوع الرصيد/المطلب ونتيجة عدم كفايته؟ هل يتم الخصم عند نجاح الترميم المؤكد فقط؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/32; 02_DESIGN/VILLAGE_AND_ECONOMY_AR.md",
+      "status": "owner_approved",
+      "answer": "أسعار Cottage 100/200/300/400، Windmill 150/250/350/450 Coins، الإجمالي 2200. عرض السعر والعجز وتعطيل التنفيذ عند عدم الكفاية؛ خصم وترقية ذريان دون تكرار.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q20",
+      "category": "ads",
+      "question_ar": "ما الحد العددي للإعلان البيني الموجود بعد إكمال المرحلة لكل جلسة، ومدة Cooldown، وما الحالات التي تمنع عرضه؟ لا مواضع إعلانات جديدة.",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/07; 02_DESIGN/AD_PLACEMENTS.json",
+      "status": "owner_approved",
+      "answer": "Interstitial بعد Claim إكمال المرحلة، لا بعد أول إكمال للجلسة، ويمكن بدءًا من الإكمال الثاني. حد 2/جلسة، فاصل 180 ثانية، حد 6/يوم UTC، خمول 30 دقيقة ينهي الجلسة. لا أثناء اللعب/السحب/Claim؛ لا مكافأة.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q21",
+      "category": "ads",
+      "question_ar": "من مزود إعلانات الفيديو المكافأة الحالي (مثل AdMob إن اخترته)، وما مفاتيح بيئات الاختبار/الإنتاج، وما البلدان/الأعمار التي تتاح فيها المكافأة؟ هل يعتمد إثبات الاستحقاق على Callback موقّع من المزود؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/13,14,38; 02_DESIGN/REWARDS_AND_ADS_AR.md",
+      "status": "owner_approved",
+      "answer": "Google AdMob مع Rewarded Hint/Full Image وInterstitial، التحقق SSV الموقّع إلزامي من Laravel، مع معرف طلب وإعادة استخدام transaction_id لا تمنح ثانية، Pending حتى callback. الأسواق الكويت والسعودية والإمارات ومصر والعمر 13+ مقترحة لا نهائية حتى الخصوصية Q34/35؛ لا إنتاج قبل الموافقات والاختبارات.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q22",
+      "category": "account",
+      "question_ar": "هل يُفعّل تسجيل Google على Android/iOS وتسجيل Apple على iOS أو غيره؟ ما حسابات/معرّفات التطبيق لدى المزودين، وما سلوك الإلغاء وعدم الدعم في نفس الشاشة؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/19–20",
+      "status": "owner_approved",
+      "answer": "Google على Android وiOS، Apple ملغى بالكامل V1، Email/Password والضيف على المنصتين؛ إلغاء OAuth صامت إلى نفس الشاشة، فشل الشبكة Retry، Google الناجح بلا OTP إضافي؛ بعد 5 كلمات مرور خاطئة متتالية يُفرض بريد OTP إلى أن ينجح ثم يُصفّر العداد.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q23",
+      "category": "account",
+      "question_ar": "كم صلاحية OTP البريد، وكم مهلة Resend، والحد الأقصى للمحاولات وإعادة الإرسال، وحدود إيقاف المحاولة؟ رمز تحقق الحساب منفصل عن رمز إعادة كلمة المرور.",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/21–23",
+      "status": "owner_approved",
+      "answer": "OTP ستة أرقام/10 دقائق، Resend بعد 60 ثانية، 5 إدخالات لكل رمز، 3 إعادة إرسال/15 دقيقة و10/24 ساعة، رمز جديد يُلغي السابق. بعد 5 أخطاء يُلغى؛ حظر مؤقت 15 دقيقة عند تكرار الإخفاق؛ قيود حسب الحساب والجهاز والشبكة. سياقات: توثيق البريد والاستعادة ودخول OTP الإجباري.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q24",
+      "category": "account",
+      "question_ar": "ما قواعد اسم الحساب وكلمة المرور (الحد الأدنى/الأقصى والرموز)، وهل يُسمح بالدخول قبل توثيق البريد؟ وكيف يتم التعامل مع حساب سبق التسجيل ببريده؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/19–23",
+      "status": "owner_approved",
+      "answer": "الاسم 2–40 حرفًا بالعربية أو الإنجليزية ومسافات، ليس فريدًا. كلمة السر 6–64 حرفًا بلا تعقيد إلزامي، رفض كلمات شائعة/مكشوفة مثل 123456، إظهار/إخفاء؛ بعد 5 إخفاقات متتالية Mandatory OTP (لا محاولة سادسة). اللعب متاح قبل توثيق البريد، لكن مزامنة الأجهزة ومكافآت الهوية معلقة؛ بريد مكرر يوجه إلى Login/Forgot دون حساب جديد.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q25",
+      "category": "account",
+      "question_ar": "إذا كان هناك تقدم ضيف وتقدم حساب مختلفان، أيهما يُحفظ حسب الحالة؟ حدّد قواعد التعارض للمستويات/الأرصدة/المقتنيات، وماذا تظهر شاشة 29 عند تعارض غير قابل للحسم بلا إضافة شاشة دمج.",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/24,26,29",
+      "status": "owner_approved",
+      "answer": "Smart Merge مرة واحدة لبيانات كل ضيف: اتحاد المراحل المكتملة، أعلى نجوم وأفضل زمن صحيح لكل مرحلة، اتحاد الإنجازات/الشارات/الكؤوس، إعادة حساب القيم المشتقة. الرصيد المسجل أساس، وإضافة مكافآت الضيف المؤكدة غير المصروفة سابقًا فقط، دون تكرار مشتريات/منح. نافذة Merge Progress حالة في الشاشة 29 الموجودة قبل التأكيد؛ عند الفشل حفظ بيانات الضيف مع Retry.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q26",
+      "category": "account",
+      "question_ar": "عند اللعب دون اتصال ثم تسجيل الدخول على جهاز ثانٍ، ما أولوية نتيجة السيرفر مقابل البيانات المحلية وكيف تُعرض المكافآت المعلّقة؟ هل يفقد الضيف تقدمه عند تغيير الجهاز كما تنص رسالة الضيف؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/24,29,37",
+      "status": "owner_approved",
+      "answer": "Offline-First Gameplay + Cloud-Authoritative Rewards. محاولات محلية ومزامنة آلية عند الاتصال، أفضل نتيجة صحيحة لكل مرحلة، اتحاد الإنجازات. Ledger والمكافآت/المشتريات خادم مصدر نهائي؛ Pending غير قابل للصرف. أدوات مشتركة لا تُستخدم Offline إلا برصيد محجوز مصرح به؛ عدم حذف طابور العمليات قبل Ack، ولا تعطيل اللعب عند انقطاع اتصال. مؤشر Offline صغير.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q27",
+      "category": "account",
+      "question_ar": "ما أثر Preferred World الظاهر في اختيار Avatar؟ هل هو تفضيل عرض محلي أم اختيار محفوظ بالحساب أم يؤثر على ترتيب العوالم دون فتحها؟ حدّد الحفظ والإلغاء.",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/25",
+      "status": "owner_approved",
+      "answer": "عرض العالم المفضل أولاً فقط دون فتح المحتوى؛ محلي للضيف ويزامن للمسجل. التعديل Offline يزامن عند العودة، وآخر كتابة يقبلها الخادم هي المرجح. عند غياب العالم اختر أول عالم متاح ولا تمح التفضيل.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q28",
+      "category": "privacy",
+      "question_ar": "ما المعنى العملي لكل اختيار Profile Visibility: Public / Friends / Private؟ خصوصًا Friends مع عدم وجود نظام أصدقاء معتمد؛ هل لديك تعريف مصدر علاقات قائم أم يجب اعتماد حالة غير متاحة دون إضافة ميزة؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/27,28",
+      "status": "owner_approved",
+      "answer": "إلغاء Friends؛ Public يعرض الاسم المستعار والصورة والنتائج في الترتيب العالمي دون معلومات شخصية؛ Private يخفي النتائج العامة، افتراضي Private. يستمر اللعب والتقدم في الوضعين.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q29",
+      "category": "account",
+      "question_ar": "ماذا يفعل Signed-in Devices داخل الصفحة القائمة؟ ما البيانات المعروضة، وهل يُسمح بإبطال جلسة جهاز، وما حالة عدم وجود أجهزة أخرى/فشل الاستعلام؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/28",
+      "status": "owner_approved",
+      "answer": "عرض اسم ونوع ومنصة الجهاز، آخر نشاط، حالة الجلسة وتمييز الحالي؛ Logout للجهاز أو لجميع الأجهزة الأخرى بتأكيد وإعادة تحقق عند الحاجة؛ الإلغاء على الخادم فوري والعميل Offline يطبقه عند عودة الاتصال دون فقد تقدم محلي غير متزامن.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q30",
+      "category": "privacy",
+      "question_ar": "ما نطاق Export My Data وصيغة الملف وطريقة التسليم ومهلة الطلب، وما رسالة الانتظار/الفشل/النجاح في الشاشة الحالية؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/28",
+      "status": "owner_approved",
+      "answer": "تصدير ZIP يحتوي JSON/CSV/README وبيانات الحساب والتقدم والرصيد والإنجازات والخصوصية والدعم والأجهزة؛ دون أسرار أو كلمات مرور. إعادة تحقق، رابط خاص صالح 7 أيام وإشعار عند الجاهزية، الهدف خلال 72 ساعة وبحد أقصى 30 يوماً أو الأقصر قانوناً.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q31",
+      "category": "account",
+      "question_ar": "عند تعديل البريد في Edit Profile: كيف يُتحقق من العنوان الجديد، وهل يُسمح باستعمال القديم لحين التحقق، وأين تعود الشاشة عند إلغاء العملية؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/27,21",
+      "status": "owner_approved",
+      "answer": "تغيير البريد بعد إعادة تحقق وإرسال OTP للبريد الجديد، القديم يظل فعالاً حتى التوثيق، منع البريد المكرر والطلبات المتزامنة، إخطار أمني للبريدين، دون تأثير على التقدم.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q32",
+      "category": "privacy",
+      "question_ar": "في حذف الحساب: هل يُطلب إعادة تحقق بجانب كتابة DELETE، وما سياسة الحذف/مدة الاحتفاظ/تعامل المكافآت والطلبات المعلقة/إزالة هوية Google أو Apple؟ أرسل صياغة التحذير النهائية.",
+      "gate": "مانع للخصوصية",
+      "source_paths": "01_SCREENS/28,30",
+      "status": "owner_approved",
+      "answer": "حذف مؤكد مع إعادة تحقق وتعطيل الحساب وإلغاء الجلسات؛ استرداد خلال 30 يوم؛ بعدها الحذف/إخفاء الهوية للبيانات المؤهلة خلال 30 يوماً من انتهاء الفترة أو أقصر قانوناً؛ تنظيف النسخ الاحتياطية خلال 90 يوماً بعد الحذف النشط، واستثناء البيانات المحفوظة قانونياً مع عزلها.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q33",
+      "category": "service",
+      "question_ar": "ما رابط Help Center المعتمد والقناة الحقيقية للتواصل (بريد/رابط/مزود) للمواضيع الأربعة القائمة؟ وكيف تُعرض نتيجة إرسال الطلب ضمن نفس الصفحة؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/36",
+      "status": "owner_approved",
+      "answer": "مركز مساعدة Backend AR/EN مع تذاكر دعم ضمن Help الحالية: أنواع 7، حقول نوع/عنوان/وصف/صورة اختيارية/بريد رد عند اللزوم؛ الحالات Open/In Progress/Waiting for Player/Resolved/Closed؛ بريد info@50sols.com. استلام الرسائل فعلياً يحتاج اختبار قبل النشر.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q34",
+      "category": "privacy",
+      "question_ar": "ما الدول واللغات والفئة العمرية المستهدفة عند الإطلاق؟ وهل يُسمح للقاصرين، وما سياسة جمع البيانات والإعلانات الخاصة بهم؟",
+      "gate": "مانع للخصوصية",
+      "source_paths": "01_SCREENS/18,20,40",
+      "status": "owner_approved_design_policy_legal_gate",
+      "answer": "نطاق عالمي؛ اللغتان العربية والإنجليزية في V1؛ سياسة مستهدفة 13+ دون استهداف دون 13، مع امتثال إقليمي وموافقة ولي الأمر أو تقييد التسجيل إن لزم؛ الاعتماد التنظيمي النهائي مع فريق النشر/القانون.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q35",
+      "category": "privacy",
+      "question_ar": "ما النصوص الرسمية المعتمدة لشروط الاستخدام وسياسة الخصوصية وتفاصيل الخيارات الحالية (ضروري/تخصيص/إشعارات)، والروابط ونوع موافقة المستخدم؟ ما القيم الأولية القانونية لكل خيار غير ضروري؟",
+      "gate": "مانع للخصوصية",
+      "source_paths": "01_SCREENS/20,28,40; 02_DESIGN/COPY_AR.json / COPY_EN.json",
+      "status": "owner_approved_design_policy_legal_gate",
+      "answer": "وثائق Privacy/Terms/Retention/Tracking/Ads/Minors تستضيفها Laravel وتُعتمد بعد مراجعة قانونية. جميع التحليلات الاختيارية والتخصيص والتسويق والتتبع OFF افتراضياً، لا مساواة بين موافقة الشروط وبين التسويق؛ حفظ نسخة الموافقة وتاريخها. الإعلانات غير المخصصة مشروطة بالتوافق القانوني.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q36",
+      "category": "service",
+      "question_ar": "ما أنواع رسائل Inbox الحالية ومتى تُرسل، ومتى تنتهي، وكيف يتصرف Mark all as read والإشعار المرتبط بمستوى/صندوق مقفول؟",
+      "gate": "مانع",
+      "source_paths": "01_SCREENS/35",
+      "status": "owner_approved",
+      "answer": "Inbox: System/Rewards/Achievements/Progress/Account & Security/Support/Events (Events غير مفعلة بالإطلاق). الاحتفاظ بالعادية 90 يوماً والأمنية 180؛ Mark all read على الرسائل الموجودة لحظة الأمر فقط، دون Claim؛ المزامنة Offline آمنة. Push تصاميم وجدولة إضافية بطلب المالك دون فرض التسويق.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q37",
+      "category": "content",
+      "question_ar": "هل تعتمد عناوين المراحل/العوالم والجوائز وأوصاف المتجر والمهمات ورسائل النظام بالعربية والإنجليزية وفق ملفات COPY الحالية، أم ستزود النصوص النهائية المختلفة؟ حدّد أي نص قانوني أو ترويجي يجب تغييره.",
+      "gate": "مانع",
+      "source_paths": "02_DESIGN/COPY_AR.json; 02_DESIGN/COPY_EN.json",
+      "status": "owner_approved_design_policy_legal_gate",
+      "answer": "اعتماد COPY_AR/COPY_EN الحالية كمرجع تصميمي، مع توحيد المصطلحات وتصحيح اللغة وإضافة حالات Q22-Q36، وإبقاء النص القانوني بانتظار مراجعة، واعتماد النص النهائي مشروط باختبار الواجهات والحالات.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q38",
+      "category": "font",
+      "question_ar": "ملفات Tajawal 400/500/700 وLato 400/700 موجودة في مرفقاتك، لكن Lato Medium 500 غير موجود. هل ترفق Lato Medium الأصلي المطابق للعائلة أم تعتمد رسميًا تعديل وزن Lato 500 إلى وزن موجود؟",
+      "gate": "مانع للتسليم النهائي",
+      "source_paths": "00_SHARED/fonts/FONT_SOURCE_MANIFEST.json; 02_DESIGN/DESIGN_TOKENS.json",
+      "status": "owner_approved",
+      "answer": "اعتماد تعديل Lato 500 legacy إلى ملف Regular 400 الأصلي؛ خطوط TTF الستة عشر/السبعة عشر مضمنة في ZIP بالفعل وبصماتها محفوظة.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q39",
+      "category": "branding",
+      "question_ar": "هل لديك أصل كلمة شعار PuzzleQuest منفصل ومعتمد مطابق للتأثيرات المرئية، أم تعتمد كتابة الشعار بالنص الحي Tajawal/Lato الموجود بدل ملف صورة؟",
+      "gate": "قرار تصميم قبل تجميد الشعار",
+      "source_paths": "01_SCREENS/01,18; 02_DESIGN/RELEASE_GATES_AR.md",
+      "status": "owner_approved",
+      "answer": "Official PuzzleQuest brand identity kit supplied with original store icon, official raster wordmark, splash/marketing and platform exports. Use unchanged supplied images; no text or icon recreation.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q40",
+      "category": "art",
+      "question_ar": "هل تعتمد صور البازل الخمس الحالية وجودة تفاصيلها كأصول لعب نهائية، خصوصًا عند 100 قطعة، أم ستسلم صورًا بديلة مع قطع وأقنعة وManifests مطابقة لنفس المستويات؟",
+      "gate": "مانع قبول الأصول",
+      "source_paths": "00_SHARED/puzzles/LEVEL_CATALOG.json; 02_DESIGN/GAMEPLAY_AR.md",
+      "status": "owner_approved_conditional_technical_qa_open",
+      "answer": "Keep exactly the existing five puzzle images and existing shapes, no new visuals; accept as design baseline CONDITIONALLY upon verification of unique 100-piece assets, correct reconstruction, quality and Android/iOS touch/performance. Files not claimed device-validated.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q41",
+      "category": "release",
+      "question_ar": "ما الاستضافة المستهدفة للـBackend (cPanel Shared أم VPS)، والدومين ونسخة PHP/MySQL المتاحة وصلاحيات Cron/Queue؟ لا حاجة لإرسال أي كلمة مرور أو بيانات سرية هنا.",
+      "gate": "قرار هندسي للبناء/النشر",
+      "source_paths": "03_HANDOFF/BACKEND_DEVELOPMENT_PLAN_AR.md",
+      "status": "owner_approved",
+      "answer": "استضافة cPanel، PHP متاح حتى 8.4، الدومين http://puzzlequest.50sols.com/؛ الإصدارات والإضافات والـTLS وMySQL بحاجة فحص عملي.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    },
+    {
+      "id": "Q42",
+      "category": "release",
+      "question_ar": "هل يتطلب النشر Android فقط أم Android وiOS معًا؟ وما منصات الشراء/الإعلان المعتمدة لكل منصة؟",
+      "gate": "قرار هندسي/نشر",
+      "source_paths": "01_SCREENS/19,20,11,13; 03_HANDOFF/BACKEND_DEVELOPMENT_PLAN_AR.md",
+      "status": "owner_approved",
+      "answer": "الإصدار الأول Android وiOS معًا.",
+      "owner": "مالك المنتج أو صاحب الاختصاص المعتمد",
+      "approved_on": "2026-11-25"
+    }
+  ],
+  "approved_questions": [
+    "Q01",
+    "Q02",
+    "Q03",
+    "Q04",
+    "Q05",
+    "Q06",
+    "Q07",
+    "Q08",
+    "Q09",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28",
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32",
+    "Q33",
+    "Q34",
+    "Q35",
+    "Q36",
+    "Q37",
+    "Q38",
+    "Q39",
+    "Q40",
+    "Q41",
+    "Q42"
+  ],
+  "pending_questions": [],
+  "owner_approved_policies_not_all_numeric_fields_complete": [
+    "Q40 technical asset reconstruction/touch/performance conditions open; no missing product decision"
+  ],
+  "extra_precision_questions": [
+    {
+      "id": "Q05-T",
+      "category": "scoring",
+      "status": "owner_approved",
+      "question_ar": "لكل مرحلة 1-1، 1-2، 1-3، 1-4، 1-5: ما حد الثواني للحصول على 3 نجوم وحد الثواني للحصول على نجمتين (أرقام محددة)؟ هل العداد تصاعدي أم تنازلي، وما المدة الابتدائية وشروط انتهاء الوقت والفشل؟",
+      "source_paths": [
+        "00_SHARED/puzzles/LEVEL_CATALOG.json",
+        "01_SCREENS/05_Level_Preview",
+        "01_SCREENS/06_Puzzle_Gameplay"
+      ],
+      "answer": "Stage countdown+star thresholds approved in level catalog"
+    },
+    {
+      "id": "Q05-X",
+      "category": "scoring",
+      "status": "owner_approved",
+      "question_ar": "ما معنى «الوقت الإضافي» المعتمد في تجربة اللعب الحالية: مصدره، وكيف يحصل عليه اللاعب/يُفعّله، وما مقدار الزيادة؟ إذا غير موجود فعليًا هل يظل قيد تقييم غير مستعمل؟ لا نضيف زرًا أو منتجًا جديدًا.",
+      "source_paths": [
+        "02_DESIGN/GAMEPLAY_AR.md",
+        "01_SCREENS/06_Puzzle_Gameplay"
+      ],
+      "answer": "No Extra Time in V1"
+    },
+    {
+      "id": "Q10-BG",
+      "category": "preview",
+      "status": "owner_approved",
+      "question_ar": "عند خروج التطبيق إلى الخلفية أثناء نافذة الـ30 ثانية المدفوعة: هل يتوقف عدّ العرض مثل نافذة الإعلان 10 ثوانٍ، أم يستمر الوقت الجداري؟",
+      "source_paths": [
+        "01_SCREENS/17_Full_Image_After_Rewarded",
+        "02_DESIGN/REWARDS_AND_ADS_AR.md"
+      ],
+      "answer": "Paid 30s previews paused in background and resume remaining for same attempt after app restart"
+    },
+    {
+      "id": "Q09-UI",
+      "category": "interaction",
+      "status": "owner_approved",
+      "question_ar": "من أي زر/صف موجود في الشاشات الأربعين ينفّذ اللاعب Shuffle المخزّن أو الشراء المباشر أثناء اللعب؟ شاشة 06 الحالية لا تحتوي عنصر Shuffle في DESIGN.json. حدد المسار بين الأزرار الموجودة دون طلب زر جديد.",
+      "source_paths": [
+        "01_SCREENS/06_Puzzle_Gameplay/DESIGN.json",
+        "01_SCREENS/11_Shop/DESIGN.json"
+      ],
+      "answer": "Shuffle in existing Pause modal (15), owned uses and confirm direct 150 Coins purchase"
+    },
+    {
+      "id": "Q10-USE",
+      "category": "interaction",
+      "status": "owner_approved",
+      "question_ar": "عند وجود Full Image مشتَرى في المخزون، هل زر Show Full Image الحالي (الشاشة 06) يستهلكه مباشرة لفتح عرض 30s، أم يحتاج تأكيدًا ضمن عنصر موجود؟ ماذا يحصل عند وجود الاستحقاق المدفوع وخيار الإعلان معًا؟ لا تضف أزرارًا جديدة.",
+      "source_paths": [
+        "01_SCREENS/06_Puzzle_Gameplay/DESIGN.json",
+        "01_SCREENS/13_Show_Full_Image_Rewarded/DESIGN.json",
+        "01_SCREENS/17_Full_Image_After_Rewarded/DESIGN.json"
+      ],
+      "answer": "Existing Screen 13 lets user explicitly choose stored 30s or verified ad 10s"
+    }
+  ],
+  "legal_review_pending": [
+    "Q32 regional retention legal constraints",
+    "Q34 global 13+ age gating",
+    "Q35 finalized legal text and regional consent",
+    "Q37 legal copy and final device review"
+  ],
+  "push_notification_delivery_decisions_pending": [],
+  "push_notification_decisions_approved": {
+    "PN01": "V1 approved system categories only; Events only if active; marketing never dispatched in V1, separate future opt-in",
+    "PN02": "2 nonessential Push per rolling 24-hour period; quiet hours 22:00–08:00 recipient local; critical security only exception",
+    "PN03": "recipient IANA local wall-clock schedule; UTC stored per recipient; changed zone recalculates future; unknown zone suppress normal scheduled Push",
+    "PN04": "ordinary late Push up to 6 hours only if eligible and event valid; defer through quiet only if within grace; security critical still relevant can send after recovery; Inbox independent"
+  },
+  "remaining_visual_owner_choices": [],
+  "technical_and_legal_gates_pending": [
+    "Q40 per-device 100-piece interaction/performance and noted duplicate pixel-identical piece assets",
+    "Brand transparent derived logo alpha edge and Android adaptive icon source/mask quality",
+    "regional legal/age/consent sign-off",
+    "real push transport, iOS/Android devices, cron/queue and HTTPS",
+    "Apple App Store login policy check with Google only",
+    "Firebase FCM/APNs connection and app permissions not proved by client configs; Google Sign-In OAuth/SHA verification pending"
+  ],
+  "badge_art_decision": {
+    "approved": "2026-11-25",
+    "policy": "Reuse one existing generic Trophy artwork for all five permanent achievement badges; identity comes from each approved achievement ID and localized title, not unique art. No new images or extra achievement rewards."
+  },
+  "all_time_v1_owner_decision": {
+    "status": "owner_approved",
+    "date": "2026-11-25",
+    "choice": "hide_completely",
+    "no_disabled_tab": true,
+    "ranking_modes": [
+      "weekly_global"
+    ],
+    "target": "01_SCREENS/10_Leaderboard"
+  },
+  "google_cloud_firebase_owner_decision": {
+    "status": "owner_approved_architecture_intent",
+    "date": "2026-11-25",
+    "google_signin_cloud_project": "puzzlequest-515809",
+    "firebase_mobile_push_project": "puzzlequest50sols",
+    "projects_intentionally_separate": true,
+    "app_identifier_android_ios": "com.puzzlequest50sols.com",
+    "native_oauth_creation": "deferred_until_development_phase_after_app_signing_information_exists",
+    "google_signin_runtime_verified": false,
+    "integration_mode": "not_selected_yet_by_implementer_and_must_be_validated",
+    "scope": "Google Sign-In Android and iOS; no Apple Login"
+  }
+}

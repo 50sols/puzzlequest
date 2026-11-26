@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="900" viewBox="0 0 1440 900" role="img">
+<title>Google OAuth — إعداد عميل Web والتحقق من منصتي Android وiOS</title>
+<desc>Static editable PuzzleQuest admin design: public OAuth client metadata and owner-approved separation of Google Cloud login and Firebase mobile projects. No secrets, credentials, live status, or code.</desc>
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#12102B"/>
+<rect x="1184" y="0" width="256" height="900" rx="0" fill="#1D133E"/>
+<line x1="1184" y1="0" x2="1184" y2="900" stroke="#4C3C70" stroke-width="1.4"/>
+<image href="../../00_SHARED/branding/exports/store/PuzzleQuest_AppIcon_512x512.png" x="1206" y="21" width="45" height="45"/>
+<text x="1260" y="51" font-family="Lato,Arial,sans-serif" font-size="20" font-weight="800" fill="#F9C452" text-anchor="start" direction="ltr" unicode-bidi="plaintext">PuzzleQuest</text>
+<text x="1402" y="101" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لوحة الإدارة · تصميم فقط</text>
+<text x="1400" y="157" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">نظرة عامة</text>
+<text x="1400" y="217" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">العوالم والمراحل</text>
+<text x="1400" y="277" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">اللاعبون والتقدم</text>
+<text x="1400" y="337" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الإشعارات</text>
+<text x="1400" y="397" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="500" fill="#C6BCD9" text-anchor="start" direction="rtl" unicode-bidi="plaintext">إعدادات النظام</text>
+<rect x="1200" y="427" width="220" height="49" rx="12" fill="#392958"/>
+<text x="1400" y="457" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="700" fill="#F9C452" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Google OAuth</text>
+<text x="1400" y="858" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="12" font-weight="500" fill="#E7A7AF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لا تعرض أي أسرار OAuth</text>
+<text x="1139" y="64" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="30" font-weight="750" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ربط Google OAuth — بيانات مرجعية</text>
+<text x="1138" y="92" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="15" font-weight="500" fill="#BDB5D2" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لا تعتبر العميل متصلاً حتى اختبارات Google / Android / iOS / Laravel</text>
+<rect x="80" y="111" width="1066" height="38" rx="9" fill="#3B2A4E"/>
+<text x="1118" y="136" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="700" fill="#FFD77B" text-anchor="start" direction="rtl" unicode-bidi="plaintext">فصل المشاريع معتمد — إعداد OAuth والتجربة لم ينفذا بعد</text>
+<rect x="81" y="166" width="250" height="86" rx="12" fill="#241A44" stroke="#514073"/>
+<text x="310" y="192" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="500" fill="#BBB2D3" text-anchor="start" direction="rtl" unicode-bidi="plaintext">عميل OAuth</text>
+<text x="309" y="227" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="15" font-weight="700" fill="#F7F3FE" text-anchor="start" direction="rtl" unicode-bidi="plaintext">PuzzleQuest-Backend</text>
+<rect x="353" y="166" width="250" height="86" rx="12" fill="#241A44" stroke="#514073"/>
+<text x="582" y="192" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="500" fill="#BBB2D3" text-anchor="start" direction="rtl" unicode-bidi="plaintext">نوع العميل</text>
+<text x="581" y="227" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="15" font-weight="700" fill="#F7F3FE" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Web application</text>
+<rect x="625" y="166" width="250" height="86" rx="12" fill="#241A44" stroke="#514073"/>
+<text x="854" y="192" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="500" fill="#BBB2D3" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Google Cloud</text>
+<text x="853" y="227" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="15" font-weight="700" fill="#F7F3FE" text-anchor="start" direction="rtl" unicode-bidi="plaintext">puzzlequest-515809</text>
+<rect x="897" y="166" width="250" height="86" rx="12" fill="#241A44" stroke="#514073"/>
+<text x="1126" y="192" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="500" fill="#BBB2D3" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Firebase</text>
+<text x="1125" y="227" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="15" font-weight="700" fill="#F7F3FE" text-anchor="start" direction="rtl" unicode-bidi="plaintext">puzzlequest50sols</text>
+<rect x="81" y="270" width="1066" height="156" rx="14" fill="#241943" stroke="#52416E"/>
+<text x="1124" y="303" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="19" font-weight="750" fill="#F9C452" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Web Client ID — قيمة عامة من لقطة Google Cloud</text>
+<rect x="102" y="318" width="1023" height="53" rx="8" fill="#302356"/>
+<text x="116" y="350" font-family="Lato,Arial,sans-serif" font-size="16" font-weight="600" fill="#F6F2FF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">669275008728-h75erb2344tipd76enr2fahcd4h5frea.apps.googleusercontent.com</text>
+<text x="1124" y="399" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="13" font-weight="500" fill="#BEB6D2" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Authorized Origins / Redirect URIs: فارغة في الصورة — لا تخترع Callback</text>
+<rect x="81" y="448" width="512" height="270" rx="14" fill="#241943" stroke="#514073"/>
+<rect x="613" y="448" width="534" height="270" rx="14" fill="#241943" stroke="#514073"/>
+<text x="569" y="483" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="20" font-weight="700" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">متطلبات تفعيل Android</text>
+<text x="569" y="513" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#CCC4DE" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Package: com.puzzlequest50sols.com</text>
+<rect x="548" y="541" width="15" height="15" rx="4" fill="#68475C"/>
+<text x="536" y="554" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#EDE7FA" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تسجيل OAuth Android Native</text>
+<rect x="548" y="575" width="15" height="15" rx="4" fill="#68475C"/>
+<text x="536" y="588" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#EDE7FA" text-anchor="start" direction="rtl" unicode-bidi="plaintext">SHA-1 / SHA-256 للتوقيع الفعلي</text>
+<rect x="548" y="609" width="15" height="15" rx="4" fill="#68475C"/>
+<text x="536" y="622" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#EDE7FA" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تجربة Google Login على جهاز</text>
+<rect x="548" y="643" width="15" height="15" rx="4" fill="#68475C"/>
+<text x="536" y="656" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#EDE7FA" text-anchor="start" direction="rtl" unicode-bidi="plaintext">التحقق من Audience داخل Laravel</text>
+<text x="1122" y="483" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="20" font-weight="700" fill="#F6F2FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">متطلبات تفعيل iOS</text>
+<text x="1122" y="513" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#CCC4DE" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Bundle: com.puzzlequest50sols.com</text>
+<rect x="1099" y="541" width="15" height="15" rx="4" fill="#68475C"/>
+<text x="1085" y="554" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#EDE7FA" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تسجيل عميل OAuth iOS Native</text>
+<rect x="1099" y="575" width="15" height="15" rx="4" fill="#68475C"/>
+<text x="1085" y="588" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#EDE7FA" text-anchor="start" direction="rtl" unicode-bidi="plaintext">CLIENT_ID / URL Scheme غير ظاهرين</text>
+<rect x="1099" y="609" width="15" height="15" rx="4" fill="#68475C"/>
+<text x="1085" y="622" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#EDE7FA" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تجربة Google Login على جهاز</text>
+<rect x="1099" y="643" width="15" height="15" rx="4" fill="#68475C"/>
+<text x="1085" y="656" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#EDE7FA" text-anchor="start" direction="rtl" unicode-bidi="plaintext">فحص App Store Guideline 4.8</text>
+<rect x="81" y="743" width="1066" height="112" rx="12" fill="#302356"/>
+<text x="1125" y="775" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="16" font-weight="700" fill="#F8E0A2" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تصميم فقط — لا يُحفظ OAuth Secret أو مفاتيح Firebase داخل الحزمة</text>
+<text x="1125" y="801" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#D1C9E1" text-anchor="start" direction="rtl" unicode-bidi="plaintext">مشروع الدخول منفصل بقرار المالك؛ التحقق من العملاء والتوكن أثناء التطوير</text>
+<text x="1125" y="825" font-family="Tajawal,Noto Sans Arabic,sans-serif" font-size="14" font-weight="500" fill="#D1C9E1" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لا تضاف Apple Login أو Screens لاعب أو عناوين Redirect افتراضية</text>
+</svg>

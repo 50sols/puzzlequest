@@ -1,0 +1,77 @@
+{
+  "id": "ADM01",
+  "title_ar": "نظرة عامة",
+  "kind": "backend_admin_design_only",
+  "status": "static_editable_layout_unimplemented",
+  "not_game_product_screen": true,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "palette_source": "02_DESIGN/DESIGN_TOKENS.json",
+  "specification": {
+    "summary_ar": "إطلاق فعلي: خمس مراحل؛ الأرقام من سياسات Q01–Q21",
+    "header_cards": [
+      [
+        "العوالم المنشورة",
+        "1"
+      ],
+      [
+        "المراحل المنشورة",
+        "5"
+      ],
+      [
+        "العوالم المغلقة",
+        "2"
+      ],
+      [
+        "عروض المتجر",
+        "4"
+      ]
+    ],
+    "table": {
+      "title": "محتوى الإطلاق",
+      "columns": [
+        "العالم",
+        "المحتوى",
+        "الحالة",
+        "الملاحظة"
+      ],
+      "rows": [
+        [
+          "Green Valley",
+          "5 مراحل · 16/16/36/64/100",
+          "منشور",
+          "1-1 إلى 1-5"
+        ],
+        [
+          "Snow Land",
+          "لا مراحل منشورة",
+          "مغلق",
+          "حتى اكتمال المحتوى"
+        ],
+        [
+          "Desert Ruins",
+          "لا مراحل منشورة",
+          "مغلق",
+          "حتى اكتمال المحتوى"
+        ]
+      ]
+    },
+    "callouts": [
+      "Q05-T: جدول الثواني ما زال غير معتمد",
+      "Cottage=1000 وWindmill=1200 Coins للتطوير الكامل",
+      "لا مستخدمين وهميين ولا Events عند الإطلاق"
+    ]
+  },
+  "original_scope": "Existing PuzzleQuest gameplay, economy, content, identity, village, ads, and compulsory Laravel system updates only",
+  "approval_questions": [
+    "Q05-T"
+  ],
+  "interactions": "visual wireframe only; all mutation and permission rules require Backend implementation and approved policy",
+  "data_policy": "Owner approved Q01-Q21; proposed ages require Q34/Q35. No synthetic player data or runtime claims.",
+  "figma_like_editable_source": "LAYOUT.svg",
+  "preview": "PREVIEW.png",
+  "responsive_guidance": "Desktop 1440×900. Smaller admin sizes: collapse nav and use row scroll/stack, do not reduce control hit targets; no UI implementation supplied.",
+  "owner_timing_status": "approved Q05-T; time-based scoring active by contract, not yet executed"
+}

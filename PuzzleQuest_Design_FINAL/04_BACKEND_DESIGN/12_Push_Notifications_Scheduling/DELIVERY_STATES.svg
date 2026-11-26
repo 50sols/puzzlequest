@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img">
+<title>حالة الإشعارات والسجلات</title><desc>Editable design delivery audit and pending-failure states; no fake delivery rates.</desc>
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#131030"/>
+<rect x="1184" y="0" width="256" height="900" rx="0" fill="#1B113A"/>
+<line x1="1184" y1="0" x2="1184" y2="900" stroke="#514075" stroke-width="1"/>
+<image href="../../00_SHARED/branding/exports/store/PuzzleQuest_AppIcon_512x512.png" x="1194" y="18" width="44" height="44"/><text x="1247" y="49" font-family="Lato, DejaVu Sans, sans-serif" font-size="18" font-weight="900" fill="#FFC447" text-anchor="start" direction="ltr" unicode-bidi="plaintext">PuzzleQuest</text>
+<text x="1390" y="82" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لوحة الإدارة — تصاميم فقط</text>
+<text x="1390" y="132" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">نظرة عامة</text>
+<text x="1390" y="189" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">العوالم والمراحل</text>
+<text x="1390" y="246" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">المتجر والاقتصاد</text>
+<text x="1390" y="303" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">المكافآت اليومية</text>
+<text x="1390" y="360" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">اللاعبون والتقدم</text>
+<text x="1390" y="417" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">القرية والمباني</text>
+<text x="1390" y="474" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الأنشطة والمقتنيات</text>
+<text x="1390" y="531" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الإعلانات</text>
+<text x="1390" y="588" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الحساب والخصوصية</text>
+<rect x="1201" y="618" width="222" height="44" rx="10" fill="#2E1F59"/>
+<rect x="1407" y="623" width="5" height="34" rx="2" fill="#39D45E"/>
+<text x="1390" y="645" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الإشعارات</text>
+<text x="1390" y="702" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تحديثات النظام</text>
+<rect x="1202" y="817" width="220" height="54" rx="10" fill="#2E1F59"/>
+<text x="1238" y="840" font-family="Lato, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFC447" text-anchor="start" direction="ltr" unicode-bidi="plaintext">DESIGN MOCKUP</text>
+<text x="1392" y="862" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="12" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">بدون بيانات تشغيل</text>
+<text x="1138" y="66" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="30" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">متابعة الإرسال والسجل</text>
+<text x="1138" y="97" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تمييز Accepted by provider عن Opened؛ لا ندّعي وصول الجهاز</text>
+<rect x="60" y="40" width="170" height="30" rx="12" fill="#2E1F59"/>
+<text x="218" y="61" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">DESIGN ONLY</text>
+<rect x="60" y="138" width="252" height="112" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="290" y="173" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الطلبات المرسلة</text>
+<text x="290" y="222" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#7BBDFF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">—</text>
+<rect x="327" y="138" width="252" height="112" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="557" y="173" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">قبول المزوّد</text>
+<text x="557" y="222" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#39D45E" text-anchor="start" direction="rtl" unicode-bidi="plaintext">—</text>
+<rect x="594" y="138" width="252" height="112" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="824" y="173" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الطلبات الفاشلة</text>
+<text x="824" y="222" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#FF8CA7" text-anchor="start" direction="rtl" unicode-bidi="plaintext">—</text>
+<rect x="861" y="138" width="279" height="112" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1118" y="173" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تأكيد فتح الرسالة</text>
+<text x="1118" y="222" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">—</text>
+<rect x="60" y="293" width="1080" height="390" rx="18" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1116" y="330" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="20" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الحدث المحاسبي للإشعار</text>
+<rect x="78" y="343" width="1044" height="40" rx="9" fill="#2E1F59"/>
+<text x="1102.0" y="370" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الحالة</text>
+<text x="898.8" y="370" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">السبب</text>
+<text x="695.6" y="370" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الربط</text>
+<text x="492.4000000000001" y="370" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">التوقيت</text>
+<text x="289.20000000000005" y="370" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الإجراء</text>
+<text x="1102.0" y="416" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="600" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Scheduled</text>
+<text x="898.8" y="416" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">بانتظار الموعد المحلي</text>
+<text x="695.6" y="416" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">notification_id</text>
+<text x="492.4000000000001" y="416" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">—</text>
+<text x="289.20000000000005" y="416" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Cancel</text>
+<rect x="78" y="441" width="1044" height="54" rx="5" fill="#1B113A"/>
+<text x="1102.0" y="474" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="600" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Dispatching</text>
+<text x="898.8" y="474" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">قيد الإرسال</text>
+<text x="695.6" y="474" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">delivery_attempt_id</text>
+<text x="492.4000000000001" y="474" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">—</text>
+<text x="289.20000000000005" y="474" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">View</text>
+<text x="1102.0" y="532" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="600" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Provider accepted</text>
+<text x="898.8" y="532" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ليس إثبات عرض على الجهاز</text>
+<text x="695.6" y="532" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">provider_message_id</text>
+<text x="492.4000000000001" y="532" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">—</text>
+<text x="289.20000000000005" y="532" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Audit</text>
+<rect x="78" y="557" width="1044" height="54" rx="5" fill="#1B113A"/>
+<text x="1102.0" y="590" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="600" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Failed</text>
+<text x="898.8" y="590" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Retry with same idempotency key</text>
+<text x="695.6" y="590" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">reason_code</text>
+<text x="492.4000000000001" y="590" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">—</text>
+<text x="289.20000000000005" y="590" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Retry policy</text>
+<text x="1102.0" y="648" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="600" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Cancelled</text>
+<text x="898.8" y="648" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">مسموح قبل بدء الإرسال</text>
+<text x="695.6" y="648" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">actor_id</text>
+<text x="492.4000000000001" y="648" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">—</text>
+<text x="289.20000000000005" y="648" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Audit</text>
+<rect x="60" y="710" width="1080" height="127" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1110" y="746" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="19" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">حماية البيانات والمراجعة</text>
+<text x="1110" y="779" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لا تحفظ محتوى خاصًا في Payload الإشعار • سجّل من عدّل ومن جدول ومن ألغى</text>
+<text x="1110" y="811" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">يسجل Audit المنطقة الزمنية والحظر والمهلة؛ رموز «—» ليست اختبارات إرسال</text>
+</svg>

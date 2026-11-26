@@ -1,0 +1,430 @@
+{
+  "id": 16,
+  "slug": "Reward_Chest",
+  "title": "Reward Chest",
+  "description": "Server verified claim and reward presentation",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/16_Reward_Chest/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_rewards_coins_stack",
+      "path": "00_SHARED/art/rewards/coins_stack.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/coins_stack.png"
+      }
+    },
+    {
+      "asset_id": "art_rewards_puzzle_piece",
+      "path": "00_SHARED/art/rewards/puzzle_piece.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/puzzle_piece.png"
+      }
+    },
+    {
+      "asset_id": "art_rewards_stars_three",
+      "path": "00_SHARED/art/rewards/stars_three.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/stars_three.png"
+      }
+    },
+    {
+      "asset_id": "art_rewards_treasure_chest",
+      "path": "00_SHARED/art/rewards/treasure_chest.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/treasure_chest.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_celebrate",
+      "path": "00_SHARED/art/backgrounds/celebrate.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/celebrate.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_check",
+      "path": "00_SHARED/icons/png/check.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/check.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_check",
+      "path": "00_SHARED/icons/svg/check.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/check.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_chest",
+      "path": "00_SHARED/icons/png/chest.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/chest.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_chest",
+      "path": "00_SHARED/icons/svg/chest.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/chest.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_close",
+      "path": "00_SHARED/icons/png/close.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/close.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_close",
+      "path": "00_SHARED/icons/svg/close.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/close.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_coin",
+      "path": "00_SHARED/icons/png/coin.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/coin.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_coin",
+      "path": "00_SHARED/icons/svg/coin.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/coin.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_puzzle",
+      "path": "00_SHARED/icons/png/puzzle.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/puzzle.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_puzzle",
+      "path": "00_SHARED/icons/svg/puzzle.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/puzzle.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_star",
+      "path": "00_SHARED/icons/png/star.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/star.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_star",
+      "path": "00_SHARED/icons/svg/star.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/star.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_modal",
+      "path": "00_SHARED/ui/panels/modal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/modal.png",
+        "svg": "00_SHARED/ui/panels/modal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Home_My_Village",
+    "return_to_origin"
+  ],
+  "widgets": [
+    {
+      "id": "dimmed_gameplay",
+      "kind": "backdrop",
+      "rect_dp": [
+        0,
+        0,
+        390,
+        844
+      ],
+      "text_key": "ui_dimmed_gameplay",
+      "label_role": "semantics_or_reference_only",
+      "decorative": true,
+      "renderer": "Flutter",
+      "interactive": false,
+      "focusable": false,
+      "min_hit_size_dp": null,
+      "role": "image",
+      "states": [
+        "default"
+      ],
+      "layer": "modal_barrier"
+    },
+    {
+      "id": "dialog",
+      "kind": "panel",
+      "rect_dp": [
+        24,
+        170,
+        342,
+        530
+      ],
+      "text_key": "ui_dialog",
+      "label_role": "semantics_or_reference_only",
+      "decorative": true,
+      "renderer": "Flutter",
+      "interactive": false,
+      "focusable": false,
+      "min_hit_size_dp": null,
+      "role": "image",
+      "states": [
+        "default"
+      ],
+      "layer": "modal_panel"
+    },
+    {
+      "id": "reward_chest",
+      "kind": "art",
+      "role": "image",
+      "text_key": "ui_reward_chest",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        115,
+        260,
+        160,
+        160
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": true,
+      "renderer": "Flutter",
+      "parent_id": "dialog",
+      "layer": "modal_content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "reward_chest"
+      }
+    },
+    {
+      "id": "reward_breakdown",
+      "kind": "card",
+      "role": "image",
+      "text_key": "ui_reward_breakdown",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        48,
+        440,
+        294,
+        96
+      ],
+      "label_role": "dynamic_value_with_localized_label",
+      "decorative": false,
+      "renderer": "Flutter",
+      "parent_id": "dialog",
+      "layer": "modal_content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "approved_chest.contents_when_eligible",
+        "approved": {
+          "coins": 300,
+          "hints": 2
+        }
+      }
+    },
+    {
+      "id": "claim",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_claim",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "loading",
+        "error",
+        "success"
+      ],
+      "disabled_while_pending": true,
+      "rect_dp": [
+        48,
+        568,
+        294,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "submission",
+        "event": "claim_reward",
+        "requires": "all five fixed Green Valley launch stages complete + ≥10 best stars of launch 15 + not previously Claimed; one stable claim id",
+        "on_success": "mark_claimed_only_after_authoritative_confirmation",
+        "on_pending": "show_pending_without_confirmed_balance",
+        "on_error": "stay_with_same_claim_identifier_and_allow_safe_retry",
+        "idempotency": "same claim identifier for retries; do not issue a second grant"
+      },
+      "parent_id": "dialog",
+      "layer": "modal_content"
+    },
+    {
+      "id": "close",
+      "kind": "icon_button",
+      "role": "button",
+      "text_key": "ui_close",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        294,
+        182,
+        48,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "local",
+        "event": "dismiss_modal_to_origin",
+        "on_success": "return_to_origin",
+        "requires": "dismissal before any claim is confirmation, not a claim"
+      },
+      "parent_id": "dialog",
+      "layer": "modal_content"
+    },
+    {
+      "id": "dialog_title",
+      "kind": "heading",
+      "rect_dp": [
+        48,
+        194,
+        238,
+        48
+      ],
+      "text_key": "screen_16_dialog_title",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": false,
+      "focusable": false,
+      "min_hit_size_dp": null,
+      "role": "heading",
+      "states": [
+        "default"
+      ],
+      "parent_id": "dialog",
+      "layer": "modal_content"
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/16_Reward_Chest/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win.",
+  "layout_preview": "01_SCREENS/16_Reward_Chest/LAYOUT.svg",
+  "presentation": "modal",
+  "return_policy": {
+    "system_back": "dismiss_modal_to_origin",
+    "origin_context": "Collections or Home_My_Village (the actual caller), with selection/scroll preserved",
+    "fallback": "Home_My_Village"
+  },
+  "approved_product_rules": {
+    "source": "02_DESIGN/APPROVED_PRODUCT_RULES.json",
+    "applicable_policies": [
+      "collections"
+    ],
+    "design_rule": "Chest +300 Coins/2 Hints only when 5 stages completed and best stars≥10; never multiple grants Reference screenshot numerals and old Gems art are not runtime strings. Historical image is preserved as art.",
+    "approved_through": "Q21"
+  }
+}

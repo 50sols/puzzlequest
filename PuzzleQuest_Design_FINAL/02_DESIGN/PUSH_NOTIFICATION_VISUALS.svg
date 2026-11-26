@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1470" height="1050" viewBox="0 0 1470 1050" role="img">
+<title>PuzzleQuest push visuals Android and iOS</title><desc>Player visual design states. OS layout is approximated and cannot guarantee pixel-accurate Android/iOS system rendering. Official supplied PuzzleQuest store icon is used in this illustrative mockup. Real OS status icon derives from the installed app package.</desc>
+<rect x="0" y="0" width="1470" height="1050" rx="0" fill="#131030"/>
+<text x="75" y="74" font-family="Lato, DejaVu Sans, sans-serif" font-size="28" font-weight="800" fill="#FFC447" text-anchor="start" direction="ltr" unicode-bidi="plaintext">PUSH NOTIFICATIONS — VISUAL STATES</text>
+<text x="1390" y="107" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="17" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">معاينات تصميمية فقط · Android / iOS / Inbox / Settings</text>
+<rect x="60" y="149" width="310" height="730" rx="40" fill="#1B113A" stroke="#514075" stroke-width="2"/>
+<rect x="75" y="194" width="280" height="651" rx="24" fill="#131030"/>
+<rect x="172" y="165" width="86" height="9" rx="6" fill="#2E1F59"/>
+<text x="78" y="935" font-family="Lato, DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">Android — collapsed</text>
+<rect x="400" y="149" width="310" height="730" rx="40" fill="#1B113A" stroke="#514075" stroke-width="2"/>
+<rect x="415" y="194" width="280" height="651" rx="24" fill="#131030"/>
+<rect x="512" y="165" width="86" height="9" rx="6" fill="#2E1F59"/>
+<text x="418" y="935" font-family="Lato, DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">iOS — lock screen</text>
+<rect x="740" y="149" width="310" height="730" rx="40" fill="#1B113A" stroke="#514075" stroke-width="2"/>
+<rect x="755" y="194" width="280" height="651" rx="24" fill="#131030"/>
+<rect x="852" y="165" width="86" height="9" rx="6" fill="#2E1F59"/>
+<text x="758" y="935" font-family="Lato, DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">Inbox — screen 35</text>
+<rect x="1080" y="149" width="310" height="730" rx="40" fill="#1B113A" stroke="#514075" stroke-width="2"/>
+<rect x="1095" y="194" width="280" height="651" rx="24" fill="#131030"/>
+<rect x="1192" y="165" width="86" height="9" rx="6" fill="#2E1F59"/>
+<text x="1098" y="935" font-family="Lato, DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">Settings — screen 12/28</text>
+<text x="99" y="235" font-family="Lato, DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#C9C0DF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">09:41</text>
+<rect x="87" y="280" width="256" height="148" rx="19" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<rect x="103" y="299" width="51" height="51" rx="11" fill="#2E1F59" stroke="#FFC447" stroke-width="1.5"/>
+<image x="103" y="299" width="51" height="51" href="../00_SHARED/branding/exports/store/PuzzleQuest_AppIcon_512x512.png" preserveAspectRatio="xMidYMid meet"/>
+<text x="166" y="319" font-family="Lato, DejaVu Sans, sans-serif" font-size="14" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">PuzzleQuest</text>
+<text x="166" y="339" font-family="Lato, DejaVu Sans, sans-serif" font-size="11" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">now</text>
+<text x="103" y="378" font-family="Lato, DejaVu Sans, sans-serif" font-size="19" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">Reward ready</text>
+<text x="103" y="404" font-family="Lato, DejaVu Sans, sans-serif" font-size="12" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">Claim your reward in the app</text>
+<rect x="87" y="459" width="256" height="125" rx="19" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<rect x="103" y="474" width="42" height="42" rx="9" fill="#2E1F59" stroke="#FFC447" stroke-width="1.5"/>
+<image x="103" y="474" width="42" height="42" href="../00_SHARED/branding/exports/store/PuzzleQuest_AppIcon_512x512.png" preserveAspectRatio="xMidYMid meet"/>
+<text x="156" y="498" font-family="Lato, DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">Security notice</text>
+<text x="102" y="538" font-family="Lato, DejaVu Sans, sans-serif" font-size="12" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">Open the game to review</text>
+<text x="102" y="556" font-family="Lato, DejaVu Sans, sans-serif" font-size="12" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">your account change</text>
+<text x="89" y="622" font-family="Lato, DejaVu Sans, sans-serif" font-size="11" font-weight="400" fill="#FFC447" text-anchor="start" direction="ltr" unicode-bidi="plaintext">Icon from installed app binary</text>
+<text x="89" y="642" font-family="Lato, DejaVu Sans, sans-serif" font-size="11" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">No secrets on lockscreen</text>
+<text x="505" y="288" font-family="Lato, DejaVu Sans, sans-serif" font-size="53" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">9:41</text>
+<text x="513" y="322" font-family="Lato, DejaVu Sans, sans-serif" font-size="13" font-weight="600" fill="#C9C0DF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">Wednesday</text>
+<rect x="429" y="555" width="253" height="141" rx="24" fill="#2E1F59" stroke="#514075" stroke-width="1"/>
+<rect x="448" y="575" width="42" height="42" rx="9" fill="#2E1F59" stroke="#FFC447" stroke-width="1.5"/>
+<image x="448" y="575" width="42" height="42" href="../00_SHARED/branding/exports/store/PuzzleQuest_AppIcon_512x512.png" preserveAspectRatio="xMidYMid meet"/>
+<text x="505" y="595" font-family="Lato, DejaVu Sans, sans-serif" font-size="11" font-weight="700" fill="#C9C0DF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">PUZZLEQUEST</text>
+<text x="448" y="629" font-family="Lato, DejaVu Sans, sans-serif" font-size="17" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">Support reply</text>
+<text x="448" y="655" font-family="Lato, DejaVu Sans, sans-serif" font-size="12" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">You have a new response</text>
+<text x="450" y="676" font-family="Lato, DejaVu Sans, sans-serif" font-size="12" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="ltr" unicode-bidi="plaintext">in your support request.</text>
+<text x="780" y="235" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الإشعارات</text>
+<rect x="764" y="267" width="262" height="102" rx="15" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<circle cx="997" cy="295" r="7" fill="#FF8CA7"/>
+<text x="975" y="296" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تنبيه أمني</text>
+<text x="974" y="324" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="11" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">راجع تغييراً في حسابك</text>
+<text x="974" y="349" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="10" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الآن</text>
+<rect x="764" y="384" width="262" height="102" rx="15" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<circle cx="997" cy="412" r="7" fill="#FFC447"/>
+<text x="975" y="413" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">مكافأة تنتظر</text>
+<text x="974" y="441" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="11" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لديك جائزة جاهزة للاستلام</text>
+<text x="974" y="466" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="10" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">منذ ساعة</text>
+<rect x="764" y="501" width="262" height="102" rx="15" fill="#2E1F59" stroke="#514075" stroke-width="1"/>
+<circle cx="997" cy="529" r="7" fill="#7BBDFF"/>
+<text x="975" y="530" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">رد من الدعم</text>
+<text x="974" y="558" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="11" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لديك رد جديد</text>
+<text x="974" y="583" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="10" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">أمس</text>
+<rect x="764" y="618" width="262" height="102" rx="15" fill="#2E1F59" stroke="#514075" stroke-width="1"/>
+<circle cx="997" cy="646" r="7" fill="#39D45E"/>
+<text x="975" y="647" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تقدم اللعبة</text>
+<text x="974" y="675" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="11" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تم حفظ تقدمك</text>
+<text x="974" y="700" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="10" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">أمس</text>
+<rect x="779" y="752" width="230" height="45" rx="12" fill="#39D45E"/>
+<text x="988" y="779" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="800" fill="#131030" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تحديد الكل كمقروء</text>
+<text x="1118" y="236" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الإعدادات</text>
+<text x="1354" y="284" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="18" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">إشعارات اللعبة</text>
+<rect x="1116" y="296" width="238" height="48" rx="12" fill="#25154B"/>
+<text x="1335" y="327" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Push — إذن النظام</text>
+<rect x="1127" y="311" width="43" height="22" rx="11" fill="#39D45E"/>
+<circle cx="1159" cy="322" r="9" fill="#FAF7FF"/>
+<rect x="1115" y="382" width="245" height="61" rx="12" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1334" y="409" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">المكافآت</text>
+<text x="1330" y="431" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="11" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">OFF</text>
+<rect x="1115" y="460" width="245" height="61" rx="12" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1334" y="487" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الإنجازات</text>
+<text x="1330" y="509" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="11" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">OFF</text>
+<rect x="1115" y="538" width="245" height="61" rx="12" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1334" y="565" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تقدم اللعبة</text>
+<text x="1330" y="587" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="11" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">OFF</text>
+<rect x="1115" y="616" width="245" height="61" rx="12" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1334" y="643" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">التسويق</text>
+<text x="1330" y="665" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="11" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">OFF افتراضيًا</text>
+<text x="1354" y="750" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="11" font-weight="500" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">رسائل Inbox مستقلة عن إذن Push</text>
+<rect x="60" y="973" width="1350" height="47" rx="12" fill="#2E1F59"/>
+<text x="1384" y="1003" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الأيقونة الرسمية معتمدة من حزمة الهوية؛ الرسم تمثيلي، ورمز النظام الفعلي تحدده حزمة التطبيق. لا تظهر أسرار على شاشة القفل.</text>
+<text x="1352" y="793" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="12" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">حد Push العادي: ٢ خلال ٢٤ ساعة</text>
+<text x="1352" y="818" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="12" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ساعات الصمت: ٢٢:٠٠–٠٨:٠٠ محلي</text>
+</svg>

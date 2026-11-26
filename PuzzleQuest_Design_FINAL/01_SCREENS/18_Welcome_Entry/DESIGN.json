@@ -1,0 +1,383 @@
+{
+  "id": 18,
+  "slug": "Welcome_Entry",
+  "title": "Welcome",
+  "description": "Onboarding: register, sign-in or guest",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/18_Welcome_Entry/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_buildings_cottage",
+      "path": "00_SHARED/art/buildings/cottage.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/buildings/cottage.png"
+      }
+    },
+    {
+      "asset_id": "art_worlds_floating_island",
+      "path": "00_SHARED/art/worlds/floating_island.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/worlds/floating_island.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_village",
+      "path": "00_SHARED/art/backgrounds/village.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/village.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_arrow_right",
+      "path": "00_SHARED/icons/png/arrow_right.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/arrow_right.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_arrow_right",
+      "path": "00_SHARED/icons/svg/arrow_right.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/arrow_right.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_play",
+      "path": "00_SHARED/icons/png/play.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/play.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_play",
+      "path": "00_SHARED/icons/svg/play.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/play.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_puzzle",
+      "path": "00_SHARED/icons/png/puzzle.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/puzzle.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_puzzle",
+      "path": "00_SHARED/icons/svg/puzzle.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/puzzle.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_user",
+      "path": "00_SHARED/icons/png/user.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/user.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_user",
+      "path": "00_SHARED/icons/svg/user.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/user.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_disabled",
+      "path": "00_SHARED/ui/buttons/neutral_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_disabled.png",
+        "svg": "00_SHARED/ui/buttons/neutral_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_normal",
+      "path": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_normal.png",
+        "svg": "00_SHARED/ui/buttons/neutral_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_pressed",
+      "path": "00_SHARED/ui/buttons/neutral_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_pressed.png",
+        "svg": "00_SHARED/ui/buttons/neutral_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_disabled",
+      "path": "00_SHARED/ui/buttons/primary_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_disabled.png",
+        "svg": "00_SHARED/ui/buttons/primary_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_normal",
+      "path": "00_SHARED/ui/buttons/primary_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_normal.png",
+        "svg": "00_SHARED/ui/buttons/primary_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_pressed",
+      "path": "00_SHARED/ui/buttons/primary_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_pressed.png",
+        "svg": "00_SHARED/ui/buttons/primary_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "brand_official_logo_transparent_derived",
+      "path": "00_SHARED/branding/exports/logo/official_logo_transparent_derived.png",
+      "usage": "brand_logo_supplied_raster",
+      "formats": {
+        "png": "00_SHARED/branding/exports/logo/official_logo_transparent_derived.png"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Sign_In",
+    "Create_Account",
+    "Play_As_Guest",
+    "Privacy_Consent_Options"
+  ],
+  "widgets": [
+    {
+      "id": "logo",
+      "kind": "art",
+      "role": "image",
+      "text_key": "ui_logo",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        96,
+        72,
+        198,
+        160
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": true,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "raster_image",
+        "asset_id": "brand_official_logo_transparent_derived",
+        "path": "00_SHARED/branding/exports/logo/official_logo_transparent_derived.png",
+        "fit": "contain",
+        "canonical_original": "00_SHARED/branding/masters/official_logo_original.png",
+        "note": "Supplied official PuzzleQuest wordmark (raster), never recreate as text. Transparent derived cutout requires alpha-edge QA."
+      }
+    },
+    {
+      "id": "sign_in",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_sign_in",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        628,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Sign_In"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "create_account",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_create_account",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        556,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Create_Account"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "play_guest",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_play_guest",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        700,
+        326,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Play_As_Guest"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "privacy",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_privacy",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        764,
+        326,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Privacy_Consent_Options"
+      },
+      "layer": "content"
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/18_Welcome_Entry/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets.",
+  "layout_preview": "01_SCREENS/18_Welcome_Entry/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Home_My_Village"
+  },
+  "brand_source": "02_DESIGN/BRAND_INTEGRATION_CONTRACT.json"
+}

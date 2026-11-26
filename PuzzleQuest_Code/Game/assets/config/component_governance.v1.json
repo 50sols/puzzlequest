@@ -1,0 +1,25 @@
+{
+  "document": "DOC 03/08 — Component Library & Design Tokens",
+  "authority": "User supplied DOC 03 text (25 November 2026), PuzzleQuest_Design_FINAL/02_DESIGN/*",
+  "version": "1.2.0",
+  "approved_design_source": "assets/config/design_tokens.approved.v1.json",
+  "component_source": "assets/config/components.approved.v1.json",
+  "motion_source": "assets/config/motion.approved.v1.json",
+  "visual_mappings_status": "provisional until golden/device owner signoff",
+  "font_conflict": {
+    "user_doc03_en": "Nunito",
+    "approved_design_final_en": "Lato",
+    "implementation": "Lato",
+    "resolution": "Preserve final owner-approved brand integration Lato; require explicit owner approval before replacing with Nunito"
+  },
+  "source_assets": "assets/ui/buttons/{primary,success,neutral,danger}_{normal,pressed,disabled,focused,loading}.png",
+  "state_mapping": {
+    "enabled": "normal",
+    "pressed": "pressed",
+    "loading": "loading",
+    "disabled": "disabled",
+    "focused": "focused"
+  },
+  "economy": "server-authoritative; UI never grants rewards or spends balances locally",
+  "android_build_observation": "On 2026-11-25 user showed Android emulator running PuzzleQuest after Gradle hotfix 1.1.4; live services still showed unconfigured warning."
+}

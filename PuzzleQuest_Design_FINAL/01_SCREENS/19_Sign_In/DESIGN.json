@@ -1,0 +1,547 @@
+{
+  "id": 19,
+  "slug": "Sign_In",
+  "title": "Sign In",
+  "description": "Email/password + Google on Android/iOS; no Apple Sign-In in V1; mandatory OTP after 5 password failures",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/19_Sign_In/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_characters_hero_avatar",
+      "path": "00_SHARED/art/characters/hero_avatar.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/characters/hero_avatar.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_standard",
+      "path": "00_SHARED/art/backgrounds/standard.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/standard.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_back",
+      "path": "00_SHARED/icons/png/back.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/back.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_back",
+      "path": "00_SHARED/icons/svg/back.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/back.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_eye",
+      "path": "00_SHARED/icons/png/eye.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/eye.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_eye",
+      "path": "00_SHARED/icons/svg/eye.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/eye.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_lock",
+      "path": "00_SHARED/icons/png/lock.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/lock.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_lock",
+      "path": "00_SHARED/icons/svg/lock.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/lock.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_mail",
+      "path": "00_SHARED/icons/png/mail.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/mail.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_mail",
+      "path": "00_SHARED/icons/svg/mail.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/mail.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_user",
+      "path": "00_SHARED/icons/png/user.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/user.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_user",
+      "path": "00_SHARED/icons/svg/user.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/user.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_input",
+      "path": "00_SHARED/ui/panels/input.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/input.png",
+        "svg": "00_SHARED/ui/panels/input.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_disabled",
+      "path": "00_SHARED/ui/buttons/neutral_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_disabled.png",
+        "svg": "00_SHARED/ui/buttons/neutral_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_normal",
+      "path": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_normal.png",
+        "svg": "00_SHARED/ui/buttons/neutral_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_pressed",
+      "path": "00_SHARED/ui/buttons/neutral_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_pressed.png",
+        "svg": "00_SHARED/ui/buttons/neutral_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_states_error",
+      "path": "00_SHARED/ui/states/error.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/states/error.png"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Forgot_Password",
+    "Home_My_Village",
+    "Create_Account"
+  ],
+  "widgets": [
+    {
+      "id": "sign_in_title",
+      "kind": "heading",
+      "role": "heading",
+      "text_key": "ui_sign_in_title",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        72,
+        16,
+        246,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content"
+    },
+    {
+      "id": "avatar",
+      "kind": "image",
+      "role": "image",
+      "text_key": "ui_avatar",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        147,
+        96,
+        96,
+        96
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "static",
+        "asset": "00_SHARED/art/characters/hero_avatar.png"
+      }
+    },
+    {
+      "id": "email",
+      "kind": "text_field",
+      "role": "textbox",
+      "text_key": "ui_email",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        232,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "edit",
+        "event": "edit_email"
+      },
+      "layer": "content",
+      "field": {
+        "label_key": "ui_email",
+        "text_direction": "ltr",
+        "secure": false,
+        "error_placement": "inline_below_field",
+        "keyboard": "appropriate_to_content",
+        "note": "Field height excludes the separate label/error rows; reflow moves following controls."
+      }
+    },
+    {
+      "id": "password",
+      "kind": "password_field",
+      "role": "textbox",
+      "text_key": "ui_password",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        320,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "edit",
+        "event": "edit_password"
+      },
+      "layer": "content",
+      "field": {
+        "label_key": "ui_password",
+        "text_direction": "locale",
+        "secure": true,
+        "error_placement": "inline_below_field",
+        "keyboard": "appropriate_to_content",
+        "note": "Field height excludes the separate label/error rows; reflow moves following controls.",
+        "trailing_action": {
+          "label_ar": "إظهار / إخفاء",
+          "label_en": "Show / Hide",
+          "min_hit_size_dp": 48,
+          "changes": "obscuring only; value and selection are preserved"
+        },
+        "max_length": 64,
+        "min_length": 6,
+        "show_hide_toggle": true
+      }
+    },
+    {
+      "id": "forgot_password",
+      "kind": "text_link",
+      "role": "button",
+      "text_key": "ui_forgot_password",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        170,
+        388,
+        188,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Forgot_Password"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "sign_in",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_sign_in",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "loading",
+        "error",
+        "mandatory_otp_locked"
+      ],
+      "disabled_while_pending": true,
+      "rect_dp": [
+        32,
+        460,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "submission",
+        "event": "sign_in",
+        "on_success": "Home_My_Village",
+        "on_error": "stay_and_preserve_context",
+        "on_password_failure": "stay_show_attempts_remaining_or_after_fifth_route_existing_Email_Verification_OTP_in_mandatory_login_mode",
+        "requires": "not_mandatory_otp_locked",
+        "on_network_error": "show_retry_preserve_guest"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "create_account",
+      "kind": "text_link",
+      "role": "button",
+      "text_key": "ui_create_account",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        652,
+        326,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Create_Account"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "google_sign_in",
+      "kind": "button",
+      "rect_dp": [
+        32,
+        556,
+        326,
+        56
+      ],
+      "text_key": "ui_google_sign_in",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "submission",
+        "event": "google_sign_in",
+        "providers": [
+          "android",
+          "ios"
+        ],
+        "on_cancel": "return_to_origin_without_error",
+        "on_connection_error": "stay_show_retry",
+        "on_success": "Home_My_Village_or_Guest_Save_Progress_merge_if_guest_conflict",
+        "requires_backend_token_validation": true
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "loading",
+        "error"
+      ],
+      "disabled_while_pending": true,
+      "design_status": "owner_approved_Q22",
+      "layer": "content"
+    },
+    {
+      "id": "back",
+      "kind": "icon_button",
+      "rect_dp": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "text_key": "ui_back",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "local",
+        "event": "return_to_origin"
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "layer": "content"
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/19_Sign_In/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets.",
+  "layout_preview": "01_SCREENS/19_Sign_In/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Welcome_Entry"
+  },
+  "auth_state_binding": {
+    "normal": "Google/Email Password only (no Apple)",
+    "wrong_password": "show_remaining_attempts_4_to_0",
+    "on_fifth_consecutive_failure": "disable_password_sign_in_and_open_existing_screen21_with_purpose_mandatory_login",
+    "otp_success": "reset_failure_counter_enter_same_account_no_password_change",
+    "provider_cancel": "silent_return_to_exact_screen",
+    "network_failure": "retry_current_attempt_preserve_guest",
+    "no_account_enumeration": true,
+    "same_on_android_ios": true,
+    "presentation": "reuse_existing_input_error_area_and_hidden_feedback_visual_state",
+    "reference_png_is_historical": "Apple seen in original image is not approved; LAYOUT.svg is authoritative"
+  },
+  "google_oauth_configuration_reference": "02_DESIGN/GOOGLE_OAUTH_DESIGN_CONTRACT.json",
+  "google_oauth_state_contract": {
+    "on_tap": "use_native_google_signin_with_configured_client_for_this_platform",
+    "canceled": "stay_on_origin_without_error_or_guest_loss",
+    "connection_failed": "show_retry_stay_no_progress_loss",
+    "token_validation_pending": "disable_submit_keep_origin_and_guest_progress",
+    "verification_failed": "stay_offer_retry_no_local_login_claim",
+    "verified": "server_issues_session_then_merge_guest_only_after_confirmed_transaction",
+    "configuration_unavailable": "hide_or_disable_google_action_with_explanation_no_fake_success",
+    "web_client_id_public_reference_only": "02_DESIGN/GOOGLE_OAUTH_DESIGN_CONTRACT.json",
+    "no_apple_login": true
+  }
+}

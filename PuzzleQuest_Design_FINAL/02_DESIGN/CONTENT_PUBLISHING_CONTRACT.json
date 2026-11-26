@@ -1,0 +1,123 @@
+{
+  "kind": "content_publishing_design_contract_not_runtime_code",
+  "version": 1,
+  "owner_intent": "Add future levels/world content via Laravel admin without shipping a new Flutter/Flame binary; launch has exactly five real levels",
+  "allowed_player_ui": [
+    "03 Worlds Map",
+    "04 Puzzle Levels",
+    "05 Level Preview",
+    "06 Puzzle Gameplay"
+  ],
+  "backend_admin_design": [
+    "ADM02 Worlds And Levels",
+    "ADM03 Level Details"
+  ],
+  "world_ids": [
+    "green_valley",
+    "snow_land",
+    "desert_ruins"
+  ],
+  "launch_published_level_ids": [
+    "green_valley_house_001",
+    "level_002_windmill_spring",
+    "level_003_snow_castle",
+    "level_004_sky_balloon",
+    "level_005_autumn_tree"
+  ],
+  "no_fake_levels": true,
+  "immutable_level_id": true,
+  "published_revision_immutable": true,
+  "level_payload_fields": [
+    "level_id",
+    "world_id",
+    "world_sequence",
+    "display_code",
+    "is_published",
+    "available_after_level_id",
+    "selected_piece_count",
+    "master_image_url",
+    "master_image_sha256",
+    "thumbnail_url",
+    "thumbnail_sha256",
+    "manifest_url",
+    "manifest_sha256",
+    "asset_revision",
+    "three_star_seconds",
+    "two_star_seconds",
+    "level_time_limit_seconds",
+    "schema_version"
+  ],
+  "published_runtime_source": "signed/validated/versioned Laravel catalog response; never a hardcoded array of five in Flutter",
+  "supported_geometry_piece_counts": [
+    16,
+    36,
+    64,
+    100
+  ],
+  "authoring_process": [
+    "draft level in existing ADM02/ADM03",
+    "upload licensed master/thumbnail and complete pieces/masks/manifest for the selected geometry",
+    "server checks bytes and file types, dimensions, reference paths and puzzle geometry",
+    "validate SHA-256, all piece indices, reciprocal edges, masks/anchors/coordinates and master coverage",
+    "supply approved timing thresholds and fail/timeout rules from Q05-T before publish",
+    "preview and mark ready only after required device/compatibility acceptance for the new content",
+    "publish atomic catalog revision after access check; invalidate cached catalog, serve immutable versioned assets",
+    "previous attempt pinned to prior asset_revision, do not replace in-flight image/geometry",
+    "new levels appear in existing world/level grids after catalog refresh, no extra app screen or release"
+  ],
+  "publish_gate": {
+    "all_needed_assets_exist": true,
+    "no_missing_or_foreign_asset_urls": true,
+    "supported_schema_and_piece_count": true,
+    "valid_manifest_and_masks": true,
+    "required_timing_present": true,
+    "localized_labels_present": true,
+    "right_to_publish_role": "authorized content administrator",
+    "verified_device_content_tests": "required before production publish; not claimed performed"
+  },
+  "failure_and_states": [
+    "Draft",
+    "Validating",
+    "Invalid (with actionable errors)",
+    "Ready (all hard gates green)",
+    "Published",
+    "Unpublished (not visible to new starts)"
+  ],
+  "compatibility": "If new geometry, behavior, or manifest schema exceeds shipped client capability: block publish and require app release; content-only compatible additions require no app release.",
+  "asset_hosting": "controlled object storage/CDN or Laravel managed files; immutable revision URL + checksum; secrets never in catalog",
+  "offline": "cache last verified catalog/assets; new unverified content not offered offline; verify content_version before opening a new attempt",
+  "player_integrity": "server recomputes unlocked access and reward eligibility; client never grants coins, stars, weekly score or chest from untrusted dynamic content",
+  "republication": "never overwrite asset bytes for active revision; use new revision and preserve referenced assets for saved attempts",
+  "missing_owner_decisions": [
+    "Q40 visual/device validation conditional; legal regional deployment gating (Q34/Q35 product policy already approved)"
+  ],
+  "launch_level_timers_approved": {
+    "1-1": {
+      "limit_seconds": 360,
+      "3star_seconds": 150,
+      "2star_seconds": 270
+    },
+    "1-2": {
+      "limit_seconds": 360,
+      "3star_seconds": 150,
+      "2star_seconds": 270
+    },
+    "1-3": {
+      "limit_seconds": 600,
+      "3star_seconds": 270,
+      "2star_seconds": 450
+    },
+    "1-4": {
+      "limit_seconds": 1080,
+      "3star_seconds": 480,
+      "2star_seconds": 840
+    },
+    "1-5": {
+      "limit_seconds": 1800,
+      "3star_seconds": 900,
+      "2star_seconds": 1440
+    }
+  },
+  "future_level_timing_rule": "Admin must supply approved level_time_limit_seconds, 3/2-star elapsed limits; countdown, no Extra Time V1. Validate 0 < three_star ≤ two_star ≤ limit.",
+  "deploy_context": "cPanel/Laravel, global distribution, Android+iOS; production API must use tested HTTPS/TLS."
+}

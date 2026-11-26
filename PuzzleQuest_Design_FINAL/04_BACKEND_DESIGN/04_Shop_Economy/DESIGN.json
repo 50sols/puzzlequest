@@ -1,0 +1,80 @@
+{
+  "id": "ADM04",
+  "title_ar": "المتجر والاقتصاد",
+  "kind": "backend_admin_design_only",
+  "status": "static_editable_layout_unimplemented",
+  "not_game_product_screen": true,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "palette_source": "02_DESIGN/DESIGN_TOKENS.json",
+  "specification": {
+    "summary_ar": "أربع منتجات داخلية فقط — بدون مدفوعات حقيقية",
+    "header_cards": [
+      [
+        "بداية اللاعب",
+        "300 Coins"
+      ],
+      [
+        "تلميحات البداية",
+        "2 Hints"
+      ],
+      [
+        "مكافأة الإكمال",
+        "500 Coins"
+      ],
+      [
+        "الشراء النقدي",
+        "غير متاح"
+      ]
+    ],
+    "table": {
+      "title": "المنتجات الموجودة",
+      "columns": [
+        "العرض",
+        "السعر",
+        "المحتوى",
+        "قيود الشراء"
+      ],
+      "rows": [
+        [
+          "Hint",
+          "100 Coins",
+          "1 Hint",
+          "قابل للتكرار"
+        ],
+        [
+          "Shuffle",
+          "150 Coins",
+          "1 Use",
+          "عند نجاح التأثير"
+        ],
+        [
+          "Full Image",
+          "200 Coins",
+          "30 ثانية · مرة",
+          "يرتبط بالمحاولة عند التفعيل"
+        ],
+        [
+          "Starter Pack",
+          "400 Coins",
+          "5 Hints + 1 Full Image",
+          "مرة واحدة لكل هوية"
+        ]
+      ]
+    },
+    "callouts": [
+      "الرصيد يأتي من Ledger مؤكد؛ Pending لا يُصرف",
+      "شراء مباشر مع Shuffle تطبيق ذري لا يُكرر الخصم",
+      "نجوم التقييم غير قابلة للشراء أو الصرف"
+    ]
+  },
+  "original_scope": "Existing PuzzleQuest gameplay, economy, content, identity, village, ads, and compulsory Laravel system updates only",
+  "approval_questions": [],
+  "interactions": "visual wireframe only; all mutation and permission rules require Backend implementation and approved policy",
+  "data_policy": "Only approved owner Q01–Q12 values are actual configured data. Dashes denote undefined; no player/operations mock data invented.",
+  "figma_like_editable_source": "LAYOUT.svg",
+  "preview": "PREVIEW.png",
+  "responsive_guidance": "Desktop 1440×900. Smaller admin sizes: collapse nav and use row scroll/stack, do not reduce control hit targets; no UI implementation supplied."
+}

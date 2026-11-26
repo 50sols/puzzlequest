@@ -1,0 +1,40 @@
+{
+  "bundle": "PuzzleQuest complete source merged",
+  "game_version": "1.2.0+5",
+  "base_full_archive": "PuzzleQuest_Full_Source_Flutter_Flame_v1.1.0.zip",
+  "base_full_archive_sha256": "d4c3c800287ff17faa60c82fc3c37fa9fa28764e4e2c9a39037e9ece9d947e90",
+  "game_patch_archive": "PuzzleQuest_Game_Full_Source_DOC03_v1.2.0.zip",
+  "game_patch_archive_sha256": "d6e47692b4928669a119689846276598a9f28b89339db368931ab0d53c57fa04",
+  "base_game_files": 362,
+  "game_v1_2_files": 395,
+  "restored_owner_fonts": [
+    "assets/fonts/Lato-Bold.ttf",
+    "assets/fonts/Lato-Regular.ttf",
+    "assets/fonts/Tajawal-Bold.ttf",
+    "assets/fonts/Tajawal-Medium.ttf",
+    "assets/fonts/Tajawal-Regular.ttf"
+  ],
+  "added_vs_full_v1_1": 38,
+  "replaced_vs_full_v1_1": 18,
+  "local_checks": [
+    {
+      "command": "python3 tool/check_source_integrity.py",
+      "exit_code": 0,
+      "output": "PuzzleQuest source integrity: PASS\nDart files: 17  in lib; tests: 6",
+      "stderr": ""
+    },
+    {
+      "command": "python3 tool/verify_doc03.py",
+      "exit_code": 0,
+      "output": "PASS approved_color_background 0xFF131030\nPASS approved_color_surface 0xFF23134A\nPASS approved_color_primary 0xFF8F3DF4\nPASS approved_color_purple 0xFF7D4DFF\nPASS approved_color_gold 0xFFFFBB31\nPASS approved_color_danger 0xFFF76B87\nPASS approved_color_success 0xFF39D45E\nPASS approved_color_actionGreen 0xFF23C41C\nPASS approved_color_white 0xFFF7F4FF\nPASS approved_color_muted 0xFFBFB8D6\nPASS button_primary_normal \nPASS button_primary_pressed \nPASS button_primary_focused \nPASS button_primary_loading \nPASS button_primary_disabled \nPASS button_success_normal \nPASS button_success_pressed \nPASS button_success_focused \nPASS button_success_loading \nPASS button_success_disabled \nPASS button_neutral_normal \nPASS button_neutral_pressed \nPASS button_neutral_focused \nPASS button_neutral_loading \nPASS button_neutral_disabled \nPASS button_danger_normal \nPASS button_danger_pressed \nPASS button_danger_focused \nPASS button_danger_loading \nPASS button_danger_disabled \nPASS 20_components \nPASS all_component_classes \nPASS exists_lib/widgets/component_library.dart \nPASS exists_lib/widgets/component_preview.dart \nPASS exists_test/component_contract_test.dart \nPASS exists_tool/component_gallery_main.dart \nPASS gradle_8_14_3 \nPASS agp_8_13_2 \nPASS kgp_2_3_0 \nPASS java17_compilerOptions \nPASS resource_shrink_compatible \nPASS share_plus_13_3_1 \nPASS game_version \nPASS artwork_assets_declared \nPASS production_api \nPASS 40_screen_ids \nPASS 5_levels \nPASS manifest_1-1 16 pieces\nPASS manifest_1-2 16 pieces\nPASS manifest_1-3 36 pieces\nPASS manifest_1-4 64 pieces\nPASS manifest_1-5 100 pieces\nDOC03 static check: PASS 52 checks",
+      "stderr": ""
+    }
+  ],
+  "flutter_analyze_on_merged": "NOT_RUN_NO_FLUTTER_SDK",
+  "flutter_test_on_merged": "NOT_RUN_NO_FLUTTER_SDK",
+  "android_ios_build_on_merged": "NOT_RUN_NO_FLUTTER_XCODE_SDK",
+  "previous_user_verified_android": "v1.1.4 application launched on emulator; production services were unconfigured",
+  "not_live_server_snapshot": true,
+  "backend_version": "v1.0.2 source baseline carried through unchanged",
+  "setup_package": "cPanel_Setup/PuzzleQuest-Setup-v1.0.2-cPanel-Subdomain.zip (unchanged; NOT an admin update)"
+}

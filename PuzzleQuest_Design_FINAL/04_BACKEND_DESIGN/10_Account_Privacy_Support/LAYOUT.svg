@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img">
+<title>الحساب والخصوصية — تصميم محدّث</title><desc>Updated existing admin screen ADM10. Design only.</desc>
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#131030"/>
+<rect x="1184" y="0" width="256" height="900" rx="0" fill="#1B113A"/>
+<line x1="1184" y1="0" x2="1184" y2="900" stroke="#514075" stroke-width="1"/>
+<image href="../../00_SHARED/branding/exports/store/PuzzleQuest_AppIcon_512x512.png" x="1194" y="18" width="44" height="44"/><text x="1247" y="49" font-family="Lato, DejaVu Sans, sans-serif" font-size="18" font-weight="900" fill="#FFC447" text-anchor="start" direction="ltr" unicode-bidi="plaintext">PuzzleQuest</text>
+<text x="1390" y="82" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">لوحة الإدارة — تصاميم فقط</text>
+<text x="1390" y="132" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">نظرة عامة</text>
+<text x="1390" y="189" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">العوالم والمراحل</text>
+<text x="1390" y="246" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">المتجر والاقتصاد</text>
+<text x="1390" y="303" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">المكافآت اليومية</text>
+<text x="1390" y="360" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">اللاعبون والتقدم</text>
+<text x="1390" y="417" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">القرية والمباني</text>
+<text x="1390" y="474" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الأنشطة والمقتنيات</text>
+<text x="1390" y="531" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الإعلانات</text>
+<rect x="1201" y="561" width="222" height="44" rx="10" fill="#2E1F59"/>
+<rect x="1407" y="566" width="5" height="34" rx="2" fill="#39D45E"/>
+<text x="1390" y="588" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="700" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الحساب والخصوصية</text>
+<text x="1390" y="645" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الإشعارات</text>
+<text x="1390" y="702" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">تحديثات النظام</text>
+<rect x="1202" y="817" width="220" height="54" rx="10" fill="#2E1F59"/>
+<text x="1238" y="840" font-family="Lato, DejaVu Sans, sans-serif" font-size="12" font-weight="800" fill="#FFC447" text-anchor="start" direction="ltr" unicode-bidi="plaintext">DESIGN MOCKUP</text>
+<text x="1392" y="862" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="12" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">بدون بيانات تشغيل</text>
+<text x="1138" y="66" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="30" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الحساب والخصوصية</text>
+<text x="1138" y="97" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">إدارة العقود المرتبطة بشاشات اللاعب الحالية</text>
+<rect x="60" y="40" width="170" height="30" rx="12" fill="#2E1F59"/>
+<text x="218" y="61" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">DESIGN ONLY</text>
+<rect x="60" y="130" width="255" height="112" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="293" y="165" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الظهور</text>
+<text x="293" y="214" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Private افتراضيًا</text>
+<rect x="330" y="130" width="255" height="112" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="563" y="165" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الأجهزة</text>
+<text x="563" y="214" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">إلغاء جلسات آمن</text>
+<rect x="600" y="130" width="255" height="112" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="833" y="165" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">التصدير</text>
+<text x="833" y="214" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ZIP / JSON + CSV</text>
+<rect x="870" y="130" width="255" height="112" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1103" y="165" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="15" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الدعم</text>
+<text x="1103" y="214" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="22" font-weight="800" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">info@50sols.com</text>
+<rect x="60" y="273" width="1080" height="390" rx="18" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1116" y="310" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="20" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الصفحات الحالية — سياسات معتمدة تصميمياً</text>
+<rect x="78" y="323" width="1044" height="40" rx="9" fill="#2E1F59"/>
+<text x="1102.0" y="350" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الخدمة</text>
+<text x="848.0" y="350" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الشاشة</text>
+<text x="594.0" y="350" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">القرار</text>
+<text x="340.0" y="350" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="700" fill="#FFC447" text-anchor="start" direction="rtl" unicode-bidi="plaintext">البوابة</text>
+<text x="1102.0" y="396" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="600" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Public / Private</text>
+<text x="848.0" y="396" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">27 / 10</text>
+<text x="594.0" y="396" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Friends ملغى</text>
+<text x="340.0" y="396" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">معتمد Q28</text>
+<rect x="78" y="421" width="1044" height="54" rx="5" fill="#1B113A"/>
+<text x="1102.0" y="454" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="600" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Devices / Export</text>
+<text x="848.0" y="454" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">28</text>
+<text x="594.0" y="454" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">جلسات + ZIP خاص</text>
+<text x="340.0" y="454" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">معتمد Q29/30</text>
+<text x="1102.0" y="512" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="600" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Email / Delete</text>
+<text x="848.0" y="512" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">27 / 30</text>
+<text x="594.0" y="512" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">OTP + مهلة 30 يوم</text>
+<text x="340.0" y="512" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">قانوني Q31/32</text>
+<rect x="78" y="537" width="1044" height="54" rx="5" fill="#1B113A"/>
+<text x="1102.0" y="570" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="600" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Support / Inbox</text>
+<text x="848.0" y="570" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">36 / 35</text>
+<text x="594.0" y="570" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Tickets + 7 أنواع</text>
+<text x="340.0" y="570" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">معتمد Q33/36</text>
+<text x="1102.0" y="628" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="600" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">Consent / Legal</text>
+<text x="848.0" y="628" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">40 / 28</text>
+<text x="594.0" y="628" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">اختياري OFF</text>
+<text x="340.0" y="628" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="13" font-weight="400" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">مراجعة قانونية Q34/35</text>
+<rect x="60" y="710" width="1080" height="130" rx="16" fill="#25154B" stroke="#514075" stroke-width="1"/>
+<text x="1112" y="748" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="19" font-weight="800" fill="#FAF7FF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">بوابات النشر القانونية</text>
+<text x="1112" y="783" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">الموافقات غير الضرورية OFF • Private افتراضيًا • مستندات قانونية تحتاج اعتماد المختص</text>
+<text x="1112" y="812" font-family="Tajawal, Noto Sans Arabic, sans-serif" font-size="14" font-weight="500" fill="#C9C0DF" text-anchor="start" direction="rtl" unicode-bidi="plaintext">استضافة السياسة والحذف والمساعدة على Backend مع TLS حقيقي؛ فحص تشغيلي مستقل</text>
+</svg>

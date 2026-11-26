@@ -1,0 +1,142 @@
+{
+  "provenance": {
+    "input": "app.rar",
+    "file": "app/Services/Content.php",
+    "method": "Content::validate",
+    "date": "2026-11-26",
+    "authority": "owner-supplied backend source"
+  },
+  "required_level_json_root_keys": [
+    "level_id",
+    "world_id",
+    "display_code",
+    "position",
+    "title",
+    "piece_count",
+    "level_time_limit_seconds",
+    "three_star_seconds",
+    "two_star_seconds"
+  ],
+  "field_types": {
+    "level_id": "string regex ^[a-z0-9_]{3,100}$",
+    "world_id": "must exist in database worlds.id",
+    "display_code": "string regex ^[0-9]+-[0-9]+$",
+    "position": "integer >=1",
+    "title": "object with nonempty ar and en",
+    "piece_count": "integer enum 16,36,64,100",
+    "level_time_limit_seconds": "integer <=7200",
+    "three_star_seconds": "integer >0 <= two_star_seconds",
+    "two_star_seconds": "integer >=three_star_seconds <=total"
+  },
+  "manifest_root": {
+    "schema_version": "1.0.0",
+    "board_size_px": [
+      960,
+      960
+    ],
+    "difficulty_piece_count": "same as level piece_count",
+    "level_id": "equal level.json.level_id",
+    "grid": "rows=columns=sqrt(piece_count)",
+    "padding_px": "integer 0..cell_px",
+    "snap_threshold_board_px": "0 < value <= cell_px/2",
+    "master_image_path": "master.png — root 960x960 PNG",
+    "pieces": "array exactly piece_count long",
+    "cell_size_px": "960 // sqrt(piece_count)",
+    "piece_ordering": "row_major",
+    "reward_policy": "calculated_on_server_not_in_asset_manifest"
+  },
+  "manifest_piece_fields": {
+    "id": "piece_000 .. piece_NNN",
+    "row": "0..grid-1 int",
+    "column": "0..grid-1 int",
+    "snap_anchor_px": "[column*cell,row*cell]",
+    "target_rect_px": "[column*cell-padding,row*cell-padding,cell+2*padding,cell+2*padding]",
+    "image_path": "<N>_pieces/piece_NNN.png",
+    "mask_path": "<N>_masks_svg/piece_NNN.svg",
+    "edges": "top,right,bottom,left each -1/0/1; outer 0 and reciprocal internal sides",
+    "index": "zero-based row_major array index"
+  },
+  "zip_limits": {
+    "max_entries": 1500,
+    "max_uncompressed_bytes": 134217728,
+    "allowed_extensions": [
+      "json",
+      "png",
+      "jpg",
+      "jpeg",
+      "webp",
+      "svg"
+    ],
+    "no_symlink": true,
+    "no_path_traversal": true
+  },
+  "sample_level_json": {
+    "display_code": "1-6",
+    "level_id": "level_006_green_valley",
+    "level_time_limit_seconds": 1800,
+    "piece_count": 100,
+    "position": 6,
+    "previous_level_id": "level_005_autumn_tree",
+    "revision_uuid": "76f26f79-9663-4456-add0-d253c71c2a65",
+    "three_star_seconds": 900,
+    "title": {
+      "ar": "طاحونة الوادي الأخضر",
+      "en": "Green Valley Watermill"
+    },
+    "two_star_seconds": 1440,
+    "world_id": "green_valley"
+  },
+  "sample_manifest_without_pieces": {
+    "board_size_px": [
+      960,
+      960
+    ],
+    "difficulty_piece_count": 100,
+    "grid": {
+      "columns": 10,
+      "rows": 10
+    },
+    "level_id": "level_006_green_valley",
+    "master_image_path": "master.png",
+    "padding_px": 26,
+    "revision_uuid": "76f26f79-9663-4456-add0-d253c71c2a65",
+    "schema_version": "1.0.0",
+    "snap_threshold_board_px": 35,
+    "cell_size_px": 96,
+    "piece_ordering": "row_major",
+    "reward_policy": "calculated_on_server_not_in_asset_manifest"
+  },
+  "unverified_online_gates": [
+    "worlds.id exists",
+    "PHP GD extension present",
+    "staging path writable",
+    "server upload/DB transaction",
+    "device QA and publication"
+  ],
+  "revision_note": "local revision_uuid differs from server generated content_revisions.id; server revision string calculated from SHA-256",
+  "canonical_zip_layout": [
+    "level.json",
+    "manifest.json",
+    "master.png",
+    "<N>_pieces/piece_000.png .. piece_NNN.png",
+    "<N>_masks_svg/piece_000.svg .. piece_NNN.svg"
+  ],
+  "36_piece_sample_exact": {
+    "cell_size_px": 160,
+    "padding_px": 44,
+    "piece_ordering": "row_major",
+    "snap_threshold_board_px": 35,
+    "first_piece_target_rect_px": [
+      -44,
+      -44,
+      248,
+      248
+    ],
+    "last_piece_target_rect_px": [
+      756,
+      756,
+      248,
+      248
+    ]
+  }
+}

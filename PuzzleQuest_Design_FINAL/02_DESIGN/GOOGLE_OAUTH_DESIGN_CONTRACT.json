@@ -1,0 +1,127 @@
+{
+  "kind": "puzzlequest_google_oauth_public_reference_design_only",
+  "date": "2026-11-25",
+  "source": "Owner supplied Google Cloud OAuth Clients screenshot plus explicit 2026-11-25 decision to keep Google Sign-In and Firebase in separate projects; public metadata only.",
+  "source_verified_as": "visible_screenshot_fields_only_not_live_cloud_console_validation",
+  "owner_approved_product_scope": {
+    "google_signin_platforms": [
+      "android",
+      "ios"
+    ],
+    "email_password": true,
+    "guest": true,
+    "apple_signin": false,
+    "keep_existing_player_screens": true,
+    "backend": "Laravel on cPanel PHP up to 8.4",
+    "app_id_android": "com.puzzlequest50sols.com",
+    "bundle_id_ios": "com.puzzlequest50sols.com"
+  },
+  "web_oauth_client_from_screenshot": {
+    "name": "PuzzleQuest-Backend",
+    "client_type": "Web application",
+    "client_id": "669275008728-h75erb2344tipd76enr2fahcd4h5frea.apps.googleusercontent.com",
+    "google_cloud_console_project_id_visible_in_url": "puzzlequest-515809",
+    "javascript_origins_visible": [],
+    "redirect_uris_visible": [],
+    "empty_origins_redirects_interpretation": "Not necessarily an error when this Web client is used as a mobile native ID-token audience; if the implementer chooses browser-based code redirect, exact HTTPS redirect/origins must be authorized first.",
+    "client_secret_handling": "Do not copy any secret, partially masked secret, or screenshot into design artifacts, repository, app binary, admin preview, or release ZIP.",
+    "photo_shows_secrets": "yes masked; at least one entry shows Disabled; status of remaining secret cannot be verified from cropped screenshot",
+    "production_verification_status": "reference_received_not_authorized_or_tested"
+  },
+  "firebase_mobile_project_from_uploaded_client_configs": {
+    "firebase_project_id": "puzzlequest50sols",
+    "sender_project_number": "834581911975",
+    "android_config": "03_HANDOFF/MOBILE_CONFIG_REFERENCES/android/google-services.json",
+    "ios_config": "03_HANDOFF/MOBILE_CONFIG_REFERENCES/ios/GoogleService-Info.plist",
+    "android_oauth_clients_listed_in_file": 0,
+    "ios_client_id_key_present": false,
+    "ios_reversed_client_id_key_present": false,
+    "google_cloud_project_differs_from_firebase_project": true,
+    "interpretation": "Owner explicitly confirms Google Cloud puzzlequest-515809 is for login and Firebase puzzlequest50sols remains for mobile configuration/push. Distinct projects are intentional, NOT a pending owner decision; native OAuth client configuration, actual token aud, integration choice and tests remain engineering work."
+  },
+  "authentication_design_contract": {
+    "existing_player_entry_points": [
+      "01_SCREENS/19_Sign_In",
+      "01_SCREENS/20_Create_Account"
+    ],
+    "selected_product_behavior": "Native Google Sign-In on Android/iOS then Laravel verifies the provider ID token; provider cancel returns silently, network error can retry, guest progress remains intact, Apple Sign-In stays absent.",
+    "technical_integration_choice_requires_implementation_review": "Owner approved separate Google Cloud login and Firebase mobile/push projects; engineers must select a compatible Google ID token acquisition and Laravel verification flow, never assume Firebase Authentication in a separate project automatically trusts this Web OAuth client.",
+    "backend_validation_requirements": [
+      "Validate ID token signature against Google keys",
+      "Validate aud matches an explicitly accepted Web client ID, not an untrusted user-provided ID",
+      "Validate issuer and expiration and required replay/nonce protections as applicable",
+      "Key account on stable provider subject (sub), not display name or email alone",
+      "Server performs idempotent guest merge and preserves ledger; never trust a success flag from Flutter"
+    ],
+    "android_missing_evidence": [
+      "Android OAuth client registration for package + SHA-1/SHA-256 actual debug and Play App Signing certificates",
+      "Google provider enablement/consent screen publication/tester and verified token accepted by Laravel"
+    ],
+    "ios_missing_evidence": [
+      "iOS OAuth client registration for bundle ID",
+      "Native client ID and reversed URL-scheme configuration (keys absent from supplied plist)",
+      "iOS Google Sign-In token validation tested on device"
+    ],
+    "apple_app_store_review_gate": "Apple App Review Guideline 4.8 may require an equivalent privacy-preserving login option; current Email+Password and Guest alone are not a verified exemption. Keep Apple disabled per owner and request explicit launch-compliance resolution rather than adding unapproved login UI.",
+    "oauth_redirects": "None registered in screenshot; DO NOT fabricate endpoints. A native ID-token-to-backend design does not require inventing a Google browser callback URL. A future redirect flow must separately approve and register its actual HTTPS callback.",
+    "never_embed": [
+      "OAuth client secret",
+      "service account JSON / private key",
+      "Firebase Admin service credentials",
+      "APNs .p8 private key",
+      "OTP/session/refresh tokens"
+    ]
+  },
+  "admin_design": {
+    "existing_module": "04_BACKEND_DESIGN/13_System_Settings",
+    "view": "08_GOOGLE_OAUTH_BACKEND",
+    "configured_status": "owner_project_separation_approved_native_clients_not_yet_created_runtime_unverified",
+    "approve_status_requires": [
+      "Android debug/release sign-in",
+      "iOS sign-in",
+      "Laravel aud verification",
+      "Firebase/project mapping validated",
+      "App Store 4.8 decision"
+    ]
+  },
+  "decision_and_execution_gates": [
+    {
+      "id": "AUTH-P1",
+      "severity": "technical_integration_action_during_development",
+      "question": "Owner approved separate projects. Implementation team chooses compatible native Google ID-token acquisition and server verification, checks aud against approved Web client, and documents Firebase usage boundaries; no extra owner choice needed.",
+      "owner": "Product technical lead / Google Cloud project administrator",
+      "evidence": "Cloud project in screenshot differs from Firebase client config project; neither mobile client config shows native OAuth client IDs."
+    },
+    {
+      "id": "AUTH-P2",
+      "severity": "deferred_platform_configuration_during_development_before_signin_QA",
+      "question": "Owner has not created native OAuth Android/iOS clients. Developer registers Android client for package + actual signing SHA-1/SHA-256 and iOS client for bundle ID + URL scheme once signing/build data exists, then tests on both platforms. Never claim ready beforehand.",
+      "owner": "Android/iOS release engineer + Google Cloud administrator",
+      "evidence": "Native credential entries absent from supplied files, not proof that they are absent from Console."
+    },
+    {
+      "id": "AUTH-P3",
+      "severity": "iOS_distribution_gate",
+      "question": "Confirm how iOS Google Login without Apple Login will satisfy Apple App Review 4.8 or provide reviewer-confirmed exemption.",
+      "owner": "Product owner + iOS App Store compliance reviewer",
+      "evidence": "Google sign-in is approved for iOS but Apple Login explicitly excluded in Q22."
+    }
+  ],
+  "official_references": [
+    "https://developers.google.com/identity/sign-in/android/backend-auth",
+    "https://developers.google.com/identity/sign-in/ios/backend-auth",
+    "https://developers.google.com/identity/sign-in/ios/start-integrating",
+    "https://developer.apple.com/app-store/review/guidelines/#4.8",
+    "https://firebase.google.com/docs/auth/android/google-signin"
+  ],
+  "owner_approved_project_separation": {
+    "status": "confirmed",
+    "google_identity_cloud_project": "puzzlequest-515809",
+    "firebase_for_mobile_config_and_push": "puzzlequest50sols",
+    "decision": "intentionally keep projects separate, not an accidental mismatch",
+    "firebase_auth_provider_choice": "not decided by owner; technical implementation must choose and validate compatible authentication/token flow",
+    "registered_native_clients": "not_created_yet_per_owner",
+    "setup_timing": "during development after Android signing certificate SHA and iOS bundle integration details are available; never postpone beyond Google login integration/acceptance tests",
+    "sign_in_runtime_status": "not_configured_not_tested"
+  }
+}

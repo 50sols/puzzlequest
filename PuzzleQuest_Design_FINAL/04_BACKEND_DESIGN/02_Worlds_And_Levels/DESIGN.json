@@ -1,0 +1,114 @@
+{
+  "id": "ADM02",
+  "title_ar": "العوالم والمراحل",
+  "kind": "backend_admin_design_only",
+  "status": "static_editable_layout_unimplemented",
+  "not_game_product_screen": true,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "palette_source": "02_DESIGN/DESIGN_TOKENS.json",
+  "specification": {
+    "summary_ar": "المستويات الجديدة: رفع → تحقق → نشر بيانات دون تحديث التطبيق",
+    "header_cards": [
+      [
+        "Green Valley",
+        "5 منشورة"
+      ],
+      [
+        "Snow Land",
+        "غير منشور"
+      ],
+      [
+        "Desert Ruins",
+        "غير منشور"
+      ],
+      [
+        "المراحل الجديدة",
+        "من لوحة الإدارة"
+      ]
+    ],
+    "table": {
+      "title": "Green Valley · ترتيب المراحل",
+      "columns": [
+        "المرحلة",
+        "المصدر الفني",
+        "القطع",
+        "أهلية الفتح"
+      ],
+      "rows": [
+        [
+          "1-1",
+          "green_valley_house_001",
+          "16",
+          "مفتوحة تلقائيًا"
+        ],
+        [
+          "1-2",
+          "level_002_windmill_spring",
+          "16",
+          "إكمال 1-1 بنجمة"
+        ],
+        [
+          "1-3",
+          "level_003_snow_castle",
+          "36",
+          "إكمال 1-2 بنجمة"
+        ],
+        [
+          "1-4",
+          "level_004_sky_balloon",
+          "64",
+          "إكمال 1-3 بنجمة"
+        ],
+        [
+          "1-5",
+          "level_005_autumn_tree",
+          "100",
+          "إكمال 1-4 بنجمة"
+        ]
+      ]
+    },
+    "callouts": [
+      "رفع Master والقطع والأقنعة وManifest كاملة",
+      "تحقق SHA-256 والهندسة والمحتوى والزمن قبل النشر",
+      "نشر Revision متوافق فقط؛ يظهر في التطبيق تلقائيًا"
+    ],
+    "workflow_buttons": [
+      "رفع الأصول",
+      "تحقق الحزمة",
+      "نشر معتمد"
+    ],
+    "content_editor": {
+      "existing_admin_screen": true,
+      "actions": [
+        "upload_art_pack",
+        "verify_art_pack",
+        "preview_draft",
+        "publish_ready_catalog_revision"
+      ],
+      "validation_contract": "02_DESIGN/CONTENT_PUBLISHING_CONTRACT.json",
+      "current_live_count": 5,
+      "immutable_revision": true,
+      "states": [
+        "Draft",
+        "Validating",
+        "Invalid",
+        "Ready",
+        "Published"
+      ],
+      "no_client_release_for_compatible_content": true,
+      "publish_disabled_without_Q05T_or_asset_validation": true
+    }
+  },
+  "original_scope": "Existing PuzzleQuest gameplay, economy, content, identity, village, ads, and compulsory Laravel system updates only",
+  "approval_questions": [],
+  "interactions": "visual wireframe only; all mutation and permission rules require Backend implementation and approved policy",
+  "data_policy": "Owner approved Q01-Q21; proposed ages require Q34/Q35. No synthetic player data or runtime claims.",
+  "figma_like_editable_source": "LAYOUT.svg",
+  "preview": "PREVIEW.png",
+  "responsive_guidance": "Desktop 1440×900. Smaller admin sizes: collapse nav and use row scroll/stack, do not reduce control hit targets; no UI implementation supplied.",
+  "dynamic_catalog_contract": "02_DESIGN/CONTENT_PUBLISHING_CONTRACT.json",
+  "supports_content_only_app_update_free_levels": true
+}

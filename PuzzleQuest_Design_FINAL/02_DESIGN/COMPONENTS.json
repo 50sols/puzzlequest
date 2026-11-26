@@ -1,0 +1,129 @@
+{
+  "kind": "design_spec_not_code",
+  "reference_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "buttons": {
+    "primary": {
+      "gradient": [
+        "#B94AFF",
+        "#6E24DA"
+      ],
+      "label": "#FFFFFF",
+      "default_asset": "00_SHARED/ui/buttons/primary_normal.svg",
+      "state_filename_pattern": "00_SHARED/ui/buttons/primary_{state}.{format}"
+    },
+    "affirmative": {
+      "gradient": [
+        "#78FF43",
+        "#08A314"
+      ],
+      "label": "#131030",
+      "default_asset": "00_SHARED/ui/buttons/success_normal.svg",
+      "state_filename_pattern": "00_SHARED/ui/buttons/success_{state}.{format}"
+    },
+    "secondary": {
+      "label": "#FFFFFF",
+      "default_asset": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "state_filename_pattern": "00_SHARED/ui/buttons/neutral_{state}.{format}"
+    },
+    "destructive": {
+      "label": "#FFFFFF",
+      "default_asset": "00_SHARED/ui/buttons/danger_normal.svg",
+      "state_filename_pattern": "00_SHARED/ui/buttons/danger_{state}.{format}"
+    },
+    "state_names": {
+      "default": "normal",
+      "pressed": "pressed",
+      "disabled": "disabled",
+      "focused": "focused",
+      "loading": "loading"
+    },
+    "feedback": "error and success are inline/message states; do not switch to a second incompatible button library"
+  },
+  "inputs": {
+    "asset_family": "00_SHARED/ui/inputs",
+    "states": [
+      "default",
+      "focused",
+      "disabled",
+      "error",
+      "success"
+    ],
+    "label": "persistent above input",
+    "error": "below input; wrap and reflow following controls",
+    "height_dp": 56,
+    "trailing_action_min_dp": 48,
+    "trailing_action": "48dp tap region inside field width, reserved from text; does not extend into neighboring controls"
+  },
+  "dialogs": {
+    "max_width_dp": 342,
+    "margin_dp": 24,
+    "min_action_height_dp": 56,
+    "stack_gap_dp": 16,
+    "small_height": "scroll dialog body; keep title and dismissal accessible; no button outside its panel"
+  },
+  "lists": {
+    "min_row_hit_dp": 48,
+    "selection": "single selected tab, no hidden automatic navigation"
+  },
+  "progress": {
+    "value": "actual data only",
+    "unknown": "indeterminate state, never fake percentage"
+  },
+  "semantic_colors": "DESIGN_TOKENS.json",
+  "note": "PNG/SVG are artwork exports. Repeated local filename aliases have been removed; asset_id and path identify the canonical file.",
+  "visual_states": "02_DESIGN/COMPONENT_STATES.svg",
+  "loading": "Source loading shells contain a drawn spinner. The UI should draw one live indicator in this slot, not overlay a second spinner on top. Use the matching disabled shell as backing if needed.",
+  "svg_policy": "SVG is an editable visual source; some existing shells contain gradients and Gaussian blur filters. Compare rendered output to supplied PNG and use PNG fallback when the target renderer does not reproduce the effect. No package-specific rendering compatibility is claimed.",
+  "push_design_states": {
+    "notification_list_row": {
+      "scope": "existing_screen35_list_child",
+      "min_touch_target_dp": 48,
+      "row_height_dp": 81,
+      "states": [
+        "unread",
+        "read",
+        "expired",
+        "offline_read_pending",
+        "locked_target"
+      ],
+      "text": "1 title + 2 body lines with semantic expandable content",
+      "rtl": "list direction reverses; game artwork not mirrored"
+    },
+    "push_settings_toggle": {
+      "scope": "existing_screen12/28/40",
+      "os_permission_distinct_from_app_choice": true,
+      "states": [
+        "on",
+        "off",
+        "os_denied",
+        "saving",
+        "failed"
+      ],
+      "marketing_default": false
+    },
+    "native_notification": {
+      "scope": "OS chrome not part of Flutter app widget",
+      "brand_asset": "00_SHARED/branding/exports/store/PuzzleQuest_AppIcon_512x512.png; OS built app icon for real notification; small Android monochrome icon pending production test",
+      "payload_security": "never expose PII on lock screen"
+    },
+    "admin_schedule": {
+      "scope": "ADM12 final PN01-PN04 policies; per-player IANA local time with UTC storage; 2 per rolling 24h, quiet 22:00-08:00; max six-hour grace",
+      "states": [
+        "draft",
+        "validated",
+        "scheduled",
+        "dispatching",
+        "provider_accepted",
+        "failed",
+        "cancelled"
+      ],
+      "format": "UTC persisted; local-time scheduling policy pending owner"
+    }
+  }
+}

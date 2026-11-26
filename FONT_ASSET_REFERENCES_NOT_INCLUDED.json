@@ -1,0 +1,95 @@
+{
+  "notice": "Binary font files are not included in this source package; only file references and license documents are kept.",
+  "items": [
+    {
+      "path": "PuzzleQuest_Code/backend/public/fonts/Tajawal-Regular.ttf",
+      "sha256": "386997fcfcd22020b47265f9c02587791867e4df5f74a36be36ad6264a50d321",
+      "size_bytes": 56088
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Lato/Lato-Light.ttf",
+      "sha256": "fb5343c4375c38b1c3026336d355335e6a5b8531cbc9c6506eb4b6f6d67c152f",
+      "size_bytes": 77208
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Lato/Lato-Italic.ttf",
+      "sha256": "3be26bf6973f49df6a7dfd130041017354342bfbb023e6b9610b42daeba6de34",
+      "size_bytes": 75792
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Lato/Lato-Black.ttf",
+      "sha256": "abf64cfa14645043a7c33f76435125f8b3de79c510adb938a1c16085518d4341",
+      "size_bytes": 69500
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Lato/Lato-Bold.ttf",
+      "sha256": "d7f0b7f2570f2f28b504da1181b4d71b1420b10be2c4fd690927f1c8ee3b19c3",
+      "size_bytes": 73332
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Lato/Lato-LightItalic.ttf",
+      "sha256": "6d5176f3babd0ccba79845088f8e9ede5dbb7b408fb40161963daa95a71cef2e",
+      "size_bytes": 49080
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Lato/Lato-BoldItalic.ttf",
+      "sha256": "e38611f4c0ff3251a58fe751991c39784d8f9be420b004891e0b9277228ec32f",
+      "size_bytes": 77732
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Lato/Lato-Thin.ttf",
+      "sha256": "fee1bd1daaa5efbcb93c8d074c61378dce155df0d32e00199b6a9457e427bc45",
+      "size_bytes": 69976
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Lato/Lato-BlackItalic.ttf",
+      "sha256": "e1eb271de3a571d566e534d3e521cfa46becfc789821257bc347455167d586f3",
+      "size_bytes": 72000
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Lato/Lato-Regular.ttf",
+      "sha256": "e82542aed8293f49fc83c4aaea566b1f6b4fc7a9ab5da11e6fb9bc0973b5324b",
+      "size_bytes": 75152
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Lato/Lato-ThinItalic.ttf",
+      "sha256": "8130560da30ad6f19994fd410f71985acafca1576592235161ffb75757635594",
+      "size_bytes": 48864
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Tajawal/Tajawal-ExtraLight.ttf",
+      "sha256": "06603b5106e66749d6d61d5f7a3cb367fdc61bc3846c38c73672babd3711cb48",
+      "size_bytes": 52444
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Tajawal/Tajawal-ExtraBold.ttf",
+      "sha256": "1ffc2aabc32f42bb20890337e932dacb897966b0da0d46b08c9f6adc5d268544",
+      "size_bytes": 56292
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Tajawal/Tajawal-Black.ttf",
+      "sha256": "b319ff52f315e410f74936ea7b9e9ae77a30504e620251627677b30ef28ba897",
+      "size_bytes": 55712
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Tajawal/Tajawal-Medium.ttf",
+      "sha256": "645a2a68685c36fb22ab6be730fc14a733111dc02feed6191ee2c20f3f4ea7df",
+      "size_bytes": 57360
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Tajawal/Tajawal-Light.ttf",
+      "sha256": "0e17d7b721696a0c12db918f9d96afde5ef1aa1215fc43fb07af7cb9036699b7",
+      "size_bytes": 57320
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Tajawal/Tajawal-Regular.ttf",
+      "sha256": "386997fcfcd22020b47265f9c02587791867e4df5f74a36be36ad6264a50d321",
+      "size_bytes": 56088
+    },
+    {
+      "path": "PuzzleQuest_Design_FINAL/00_SHARED/fonts/Tajawal/Tajawal-Bold.ttf",
+      "sha256": "ca2c8ca040b6725b6b058c8470fe5bbf5c4c2b77356fe8c38c41716decb206bd",
+      "size_bytes": 56568
+    }
+  ]
+}

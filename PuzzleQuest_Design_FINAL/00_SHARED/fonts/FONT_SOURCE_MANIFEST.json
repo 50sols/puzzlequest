@@ -1,0 +1,269 @@
+{
+  "kind": "font_source_manifest_and_license_handoff",
+  "review_date": "2026-11-25",
+  "font_file_count_provided_by_user": 17,
+  "binaries_embedded_in_this_delivered_zip": true,
+  "binaries_from_user_uploads_examined": true,
+  "description_ar": "17 ملف TTF أصلي مضمن فعليًا بعد التحقق من SHA-256 لكل ملف؛ تراخيص OFL محفوظة. تم نقل Lato weight 500 إلى الوزن 400 المتاح باعتماد المالك؛ لا توهّم توفر ملف Lato Medium.",
+  "original_file_checksums_sha256": {
+    "Tajawal.zip": "889b71614bae182b1d01786e3c9896f1e50d97d1ec868f3a3df3a52e6069d113",
+    "Lato,Tajawal.zip": "d4ef4d1a26994d655125e13861dca5037074d313a35b6b771fa78f136eaf534d",
+    "OFL.txt": "04f4f5e3ff39bafcc63b9ff6aedf1d42aa26ab04e109dd2964fb537f1d0e5c45",
+    "OFL (1).txt": "74ba064d03f1f1c4a952da936c3eb71866c34404916734de3cae73b34357e59e",
+    "Lato,Tajawal(1).zip": "d4ef4d1a26994d655125e13861dca5037074d313a35b6b771fa78f136eaf534d"
+  },
+  "required_weights_in_design_tokens": {
+    "Tajawal": [
+      400,
+      500,
+      700
+    ],
+    "Lato": [
+      400,
+      700
+    ]
+  },
+  "verified_available_upright_weights": {
+    "Tajawal": [
+      400,
+      500,
+      700
+    ],
+    "Lato": [
+      400,
+      700
+    ]
+  },
+  "missing_declared_weight": {
+    "family": "Lato",
+    "weight": 500,
+    "status": "RESOLVED_BY_OWNER_APPROVED_TOKEN_CHANGE",
+    "approved_alternative_weight": 400,
+    "explanation_ar": "لم يُصنع خط Medium. تم ربط استخدامات Lato ذات 500 إلى Lato Regular 400 الأصلي؛ احتفظ Tajawal بوزن 500 الحقيقي."
+  },
+  "duplicate_check": "ملفات Tajawal.zip مكررة مطابقة byte-for-byte لملفات Tajawal داخل Lato,Tajawal.zip (7 TTF + OFL).",
+  "font_binaries": [
+    {
+      "family": "Lato",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Lato/Lato-Black.ttf",
+      "bytes": 69500,
+      "sha256": "abf64cfa14645043a7c33f76435125f8b3de79c510adb938a1c16085518d4341",
+      "weight_class": 900,
+      "italic": false,
+      "license_path": "00_SHARED/fonts/licenses/Lato_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Lato/Lato-Black.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Lato",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Lato/Lato-BlackItalic.ttf",
+      "bytes": 72000,
+      "sha256": "e1eb271de3a571d566e534d3e521cfa46becfc789821257bc347455167d586f3",
+      "weight_class": 900,
+      "italic": true,
+      "license_path": "00_SHARED/fonts/licenses/Lato_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Lato/Lato-BlackItalic.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Lato",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Lato/Lato-Bold.ttf",
+      "bytes": 73332,
+      "sha256": "d7f0b7f2570f2f28b504da1181b4d71b1420b10be2c4fd690927f1c8ee3b19c3",
+      "weight_class": 700,
+      "italic": false,
+      "license_path": "00_SHARED/fonts/licenses/Lato_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Lato/Lato-Bold.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Lato",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Lato/Lato-BoldItalic.ttf",
+      "bytes": 77732,
+      "sha256": "e38611f4c0ff3251a58fe751991c39784d8f9be420b004891e0b9277228ec32f",
+      "weight_class": 700,
+      "italic": true,
+      "license_path": "00_SHARED/fonts/licenses/Lato_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Lato/Lato-BoldItalic.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Lato",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Lato/Lato-Italic.ttf",
+      "bytes": 75792,
+      "sha256": "3be26bf6973f49df6a7dfd130041017354342bfbb023e6b9610b42daeba6de34",
+      "weight_class": 400,
+      "italic": true,
+      "license_path": "00_SHARED/fonts/licenses/Lato_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Lato/Lato-Italic.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Lato",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Lato/Lato-Light.ttf",
+      "bytes": 77208,
+      "sha256": "fb5343c4375c38b1c3026336d355335e6a5b8531cbc9c6506eb4b6f6d67c152f",
+      "weight_class": 300,
+      "italic": false,
+      "license_path": "00_SHARED/fonts/licenses/Lato_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Lato/Lato-Light.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Lato",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Lato/Lato-LightItalic.ttf",
+      "bytes": 49080,
+      "sha256": "6d5176f3babd0ccba79845088f8e9ede5dbb7b408fb40161963daa95a71cef2e",
+      "weight_class": 300,
+      "italic": true,
+      "license_path": "00_SHARED/fonts/licenses/Lato_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Lato/Lato-LightItalic.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Lato",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Lato/Lato-Regular.ttf",
+      "bytes": 75152,
+      "sha256": "e82542aed8293f49fc83c4aaea566b1f6b4fc7a9ab5da11e6fb9bc0973b5324b",
+      "weight_class": 400,
+      "italic": false,
+      "license_path": "00_SHARED/fonts/licenses/Lato_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Lato/Lato-Regular.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Lato",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Lato/Lato-Thin.ttf",
+      "bytes": 69976,
+      "sha256": "fee1bd1daaa5efbcb93c8d074c61378dce155df0d32e00199b6a9457e427bc45",
+      "weight_class": 250,
+      "italic": false,
+      "license_path": "00_SHARED/fonts/licenses/Lato_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Lato/Lato-Thin.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Lato",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Lato/Lato-ThinItalic.ttf",
+      "bytes": 48864,
+      "sha256": "8130560da30ad6f19994fd410f71985acafca1576592235161ffb75757635594",
+      "weight_class": 250,
+      "italic": true,
+      "license_path": "00_SHARED/fonts/licenses/Lato_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Lato/Lato-ThinItalic.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Tajawal",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Tajawal/Tajawal-Black.ttf",
+      "bytes": 55712,
+      "sha256": "b319ff52f315e410f74936ea7b9e9ae77a30504e620251627677b30ef28ba897",
+      "weight_class": 900,
+      "italic": false,
+      "license_path": "00_SHARED/fonts/licenses/Tajawal_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Tajawal/Tajawal-Black.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Tajawal",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Tajawal/Tajawal-Bold.ttf",
+      "bytes": 56568,
+      "sha256": "ca2c8ca040b6725b6b058c8470fe5bbf5c4c2b77356fe8c38c41716decb206bd",
+      "weight_class": 700,
+      "italic": false,
+      "license_path": "00_SHARED/fonts/licenses/Tajawal_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Tajawal/Tajawal-Bold.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Tajawal",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Tajawal/Tajawal-ExtraBold.ttf",
+      "bytes": 56292,
+      "sha256": "1ffc2aabc32f42bb20890337e932dacb897966b0da0d46b08c9f6adc5d268544",
+      "weight_class": 800,
+      "italic": false,
+      "license_path": "00_SHARED/fonts/licenses/Tajawal_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Tajawal/Tajawal-ExtraBold.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Tajawal",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Tajawal/Tajawal-ExtraLight.ttf",
+      "bytes": 52444,
+      "sha256": "06603b5106e66749d6d61d5f7a3cb367fdc61bc3846c38c73672babd3711cb48",
+      "weight_class": 275,
+      "italic": false,
+      "license_path": "00_SHARED/fonts/licenses/Tajawal_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Tajawal/Tajawal-ExtraLight.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Tajawal",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Tajawal/Tajawal-Light.ttf",
+      "bytes": 57320,
+      "sha256": "0e17d7b721696a0c12db918f9d96afde5ef1aa1215fc43fb07af7cb9036699b7",
+      "weight_class": 300,
+      "italic": false,
+      "license_path": "00_SHARED/fonts/licenses/Tajawal_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Tajawal/Tajawal-Light.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Tajawal",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Tajawal/Tajawal-Medium.ttf",
+      "bytes": 57360,
+      "sha256": "645a2a68685c36fb22ab6be730fc14a733111dc02feed6191ee2c20f3f4ea7df",
+      "weight_class": 500,
+      "italic": false,
+      "license_path": "00_SHARED/fonts/licenses/Tajawal_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Tajawal/Tajawal-Medium.ttf",
+      "asset_file_physically_in_final_zip": true
+    },
+    {
+      "family": "Tajawal",
+      "original_uploaded_archive": "Lato,Tajawal.zip",
+      "original_archive_member": "Tajawal/Tajawal-Regular.ttf",
+      "bytes": 56088,
+      "sha256": "386997fcfcd22020b47265f9c02587791867e4df5f74a36be36ad6264a50d321",
+      "weight_class": 400,
+      "italic": false,
+      "license_path": "00_SHARED/fonts/licenses/Tajawal_OFL.txt",
+      "suggested_integration_path": "00_SHARED/fonts/Tajawal/Tajawal-Regular.ttf",
+      "asset_file_physically_in_final_zip": true
+    }
+  ],
+  "licenses": [
+    {
+      "family": "Tajawal",
+      "path": "00_SHARED/fonts/licenses/Tajawal_OFL.txt",
+      "license": "SIL Open Font License 1.1",
+      "rights": "Original font binary copyright and OFL conditions retained",
+      "provided_with_fonts": true
+    },
+    {
+      "family": "Lato",
+      "path": "00_SHARED/fonts/licenses/Lato_OFL.txt",
+      "license": "SIL Open Font License 1.1",
+      "rights": "Original font binary copyright and OFL conditions retained",
+      "provided_with_fonts": true
+    }
+  ],
+  "font_file_count_embedded": 17,
+  "font_placement_mapping_complete": true
+}

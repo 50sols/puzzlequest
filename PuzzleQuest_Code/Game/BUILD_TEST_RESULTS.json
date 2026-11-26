@@ -1,0 +1,6 @@
+{
+  "version": "1.2.0+5",
+  "status": "NOT_RUN",
+  "reason": "Flutter/Dart SDK not available on artifact creation host",
+  "previous_user_mac_evidence": "11 tests passed and app opened on Android emulator for v1.1.4, not validated for v1.2.0"
+}

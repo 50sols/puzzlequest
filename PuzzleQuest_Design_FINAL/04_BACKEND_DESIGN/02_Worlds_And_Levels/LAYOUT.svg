@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img">
+<title>العوالم والمراحل — PuzzleQuest Admin Design Only</title>
+<desc>Editable admin UI design. Not functional code. Arabic RTL.</desc>
+<rect x="0" y="0" width="1440" height="900" rx="0" fill="#131030" />
+<rect x="1184" y="0" width="256" height="900" rx="0" fill="#1B113A" />
+<rect x="1184" y="0" width="1" height="900" rx="0" fill="#4B3970" />
+<text x="1390" y="54" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="25" font-weight="900" fill="#FFBB31" direction="rtl" unicode-bidi="plaintext">PUZZLEQUEST</text>
+<text x="1390" y="78" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">لوحة إدارة المحتوى</text>
+<text x="1389" y="135" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="16" font-weight="500" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">نظرة عامة</text>
+<rect x="1203" y="169" width="216" height="45" rx="12" fill="#2E1F59" />
+<rect x="1407" y="173" width="5" height="38" rx="2" fill="#39D45E" />
+<text x="1389" y="196" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="16" font-weight="700" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">العوالم والمراحل</text>
+<text x="1389" y="257" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="16" font-weight="500" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">المتجر والاقتصاد</text>
+<text x="1389" y="318" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="16" font-weight="500" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">المكافآت اليومية</text>
+<text x="1389" y="379" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="16" font-weight="500" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">اللاعبون والتقدم</text>
+<text x="1389" y="440" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="16" font-weight="500" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">القرية والمباني</text>
+<text x="1389" y="501" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="16" font-weight="500" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">الأنشطة والمقتنيات</text>
+<text x="1389" y="562" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="16" font-weight="500" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">الإعلانات</text>
+<text x="1389" y="623" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="16" font-weight="500" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">الحساب والخصوصية</text>
+<text x="1389" y="684" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="16" font-weight="500" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">تحديثات النظام</text>
+<rect x="1210" y="804" width="204" height="56" rx="12" fill="#2E1F59" />
+<text x="1393" y="827" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="700" fill="#FFBB31" direction="rtl" unicode-bidi="plaintext">DESIGN / PREVIEW</text>
+<text x="1393" y="847" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="12" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">لا يوجد اتصال بخادم</text>
+<text x="1140" y="62" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="31" font-weight="700" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">العوالم والمراحل</text>
+<text x="1140" y="93" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="15" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">المستويات الجديدة: رفع → تحقق → نشر بيانات دون تحديث التطبيق</text>
+<rect x="97" y="42" width="176" height="30" rx="14" fill="#2E1F59" /><text x="259" y="63" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="700" fill="#39D45E" direction="rtl" unicode-bidi="plaintext">تصميم فقط • ADM02</text>
+<rect x="60" y="128" width="256" height="105" rx="16" fill="#25154B" stroke="#4B3970" stroke-width="1" />
+<text x="291" y="161" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="15" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">Green Valley</text>
+<text x="291" y="205" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="23" font-weight="700" fill="#FFBB31" direction="rtl" unicode-bidi="plaintext">5 منشورة</text>
+<rect x="335" y="128" width="256" height="105" rx="16" fill="#25154B" stroke="#4B3970" stroke-width="1" />
+<text x="566" y="161" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="15" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">Snow Land</text>
+<text x="566" y="205" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="23" font-weight="700" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">غير منشور</text>
+<rect x="610" y="128" width="256" height="105" rx="16" fill="#25154B" stroke="#4B3970" stroke-width="1" />
+<text x="841" y="161" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="15" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">Desert Ruins</text>
+<text x="841" y="205" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="23" font-weight="700" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">غير منشور</text>
+<rect x="885" y="128" width="256" height="105" rx="16" fill="#25154B" stroke="#4B3970" stroke-width="1" />
+<text x="1116" y="161" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="15" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">المراحل الجديدة</text>
+<text x="1116" y="205" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="23" font-weight="700" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">من لوحة الإدارة</text>
+<rect x="60" y="260" width="1080" height="394" rx="18" fill="#25154B" stroke="#4B3970" stroke-width="1" />
+<text x="1112" y="297" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="22" font-weight="700" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">Green Valley · ترتيب المراحل</text>
+<rect x="83" y="311" width="1034" height="45" rx="10" fill="#2E1F59" />
+<text x="1086.0" y="340" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFBB31" direction="rtl" unicode-bidi="plaintext">المرحلة</text>
+<text x="831.0" y="340" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFBB31" direction="rtl" unicode-bidi="plaintext">المصدر الفني</text>
+<text x="576.0" y="340" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFBB31" direction="rtl" unicode-bidi="plaintext">القطع</text>
+<text x="321.0" y="340" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="700" fill="#FFBB31" direction="rtl" unicode-bidi="plaintext">أهلية الفتح</text>
+<rect x="83" y="360" width="1034" height="49" rx="4" fill="#1B113A" />
+<text x="1086.0" y="392.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="600" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">1-1</text>
+<text x="831.0" y="392.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">green_valley_house_001</text>
+<text x="576.0" y="392.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">16</text>
+<text x="321.0" y="392.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">مفتوحة تلقائيًا</text>
+<text x="1086.0" y="441.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="600" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">1-2</text>
+<text x="831.0" y="441.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">level_002_windmill_spring</text>
+<text x="576.0" y="441.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">16</text>
+<text x="321.0" y="441.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">إكمال 1-1 بنجمة</text>
+<rect x="83" y="458" width="1034" height="49" rx="4" fill="#1B113A" />
+<text x="1086.0" y="490.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="600" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">1-3</text>
+<text x="831.0" y="490.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">level_003_snow_castle</text>
+<text x="576.0" y="490.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">36</text>
+<text x="321.0" y="490.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">إكمال 1-2 بنجمة</text>
+<text x="1086.0" y="539.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="600" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">1-4</text>
+<text x="831.0" y="539.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">level_004_sky_balloon</text>
+<text x="576.0" y="539.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">64</text>
+<text x="321.0" y="539.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">إكمال 1-3 بنجمة</text>
+<rect x="83" y="556" width="1034" height="49" rx="4" fill="#1B113A" />
+<text x="1086.0" y="588.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="600" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">1-5</text>
+<text x="831.0" y="588.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">level_005_autumn_tree</text>
+<text x="576.0" y="588.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">100</text>
+<text x="321.0" y="588.83" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="13" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">إكمال 1-4 بنجمة</text>
+<rect x="60" y="674" width="1080" height="172" rx="18" fill="#25154B" stroke="#4B3970" stroke-width="1" />
+<text x="1112" y="713" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="20" font-weight="700" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">قواعد النشر</text>
+<circle cx="1114" cy="742" r="4" fill="#FFBB31" />
+<text x="1097" y="748" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="500" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">رفع Master والقطع والأقنعة وManifest كاملة</text>
+<circle cx="1114" cy="771" r="4" fill="#FFBB31" />
+<text x="1097" y="777" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="500" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">تحقق SHA-256 والهندسة والمحتوى والزمن قبل النشر</text>
+<circle cx="1114" cy="800" r="4" fill="#FFBB31" />
+<text x="1097" y="806" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="500" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">نشر Revision متوافق فقط؛ يظهر في التطبيق تلقائيًا</text>
+<text x="400" y="881" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="12" font-weight="400" fill="#BFB8D6" direction="rtl" unicode-bidi="plaintext">PuzzleQuest · Backoffice design · SVG editable · no runtime data</text>
+<rect x="87" y="729" width="150" height="41" rx="12" fill="#225836" stroke="#39D45E" stroke-width="1" /><text x="219" y="754" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="700" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">رفع الأصول</text><rect x="249" y="729" width="150" height="41" rx="12" fill="#225836" stroke="#39D45E" stroke-width="1" /><text x="381" y="754" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="700" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">تحقق الحزمة</text><rect x="411" y="729" width="150" height="41" rx="12" fill="#225836" stroke="#39D45E" stroke-width="1" /><text x="543" y="754" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="14" font-weight="700" fill="#F7F4FF" direction="rtl" unicode-bidi="plaintext">نشر معتمد</text><text x="545" y="812" text-anchor="start" font-family="Tajawal,Arial,sans-serif" font-size="12" font-weight="500" fill="#FFBB31" direction="rtl" unicode-bidi="plaintext">تصميم أزرار إدارة • لا كود يعمل</text></svg>

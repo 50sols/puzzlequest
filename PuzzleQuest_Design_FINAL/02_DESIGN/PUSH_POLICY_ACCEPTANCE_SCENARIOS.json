@@ -1,0 +1,114 @@
+{
+  "kind": "design_only_test_cases_not_executed",
+  "source": [
+    "PN01",
+    "PN02",
+    "PN03",
+    "PN04"
+  ],
+  "scenarios": [
+    {
+      "id": "PN01-01",
+      "condition": "marketing_editor_draft",
+      "input": "V1",
+      "expected": "Rejected/suppressed; no marketing dispatch regardless of OS permission"
+    },
+    {
+      "id": "PN01-02",
+      "condition": "events_no_active_event",
+      "input": "launch",
+      "expected": "No Events Push; Inbox event placeholder not fabricated"
+    },
+    {
+      "id": "PN02-01",
+      "condition": "normal_third_push",
+      "input": "2 pushes in preceding rolling 24h",
+      "expected": "Suppress third Push, Inbox content persists"
+    },
+    {
+      "id": "PN02-02",
+      "condition": "normal_quiet_hours",
+      "input": "22:30 recipient local",
+      "expected": "Defer until earliest valid 08:00 in timezone, if not expired"
+    },
+    {
+      "id": "PN02-03",
+      "condition": "security_critical_quiet_hours",
+      "input": "verified security event at 23:00 local",
+      "expected": "May send immediately if still relevant; no secrets in lockscreen payload"
+    },
+    {
+      "id": "PN02-04",
+      "condition": "same_event_retry",
+      "input": "duplicate worker delivery",
+      "expected": "Same logical recipient+event+channel key prevents duplicate"
+    },
+    {
+      "id": "PN03-01",
+      "condition": "local_18h_multizone",
+      "input": "Asia/Kuwait and America/New_York",
+      "expected": "Each receives at 18:00 local on its own UTC instant"
+    },
+    {
+      "id": "PN03-02",
+      "condition": "timezone_unknown",
+      "input": "recipient lacks reliable IANA zone",
+      "expected": "No ordinary scheduled remote Push; keep Inbox"
+    },
+    {
+      "id": "PN03-03",
+      "condition": "timezone_change",
+      "input": "scheduled before zone change and still unsent",
+      "expected": "Recompute UTC schedule to preserve intended new local time"
+    },
+    {
+      "id": "PN03-04",
+      "condition": "dst_boundary",
+      "input": "zone with DST transition",
+      "expected": "Use tz database; deterministic ambiguities tested and documented before production"
+    },
+    {
+      "id": "PN04-01",
+      "condition": "ordinary_outage_under_6h",
+      "input": "3h late and outside quiet and event valid and within cap",
+      "expected": "Can send once"
+    },
+    {
+      "id": "PN04-02",
+      "condition": "ordinary_outage_over_6h",
+      "input": "6h1m late",
+      "expected": "Cancel Push; keep relevant Inbox"
+    },
+    {
+      "id": "PN04-03",
+      "condition": "late_with_quiet_conflict",
+      "input": "catchup at 23:00, next allowed 08:00 exceeds 6h",
+      "expected": "Cancel Push; do not bypass quiet"
+    },
+    {
+      "id": "PN04-04",
+      "condition": "event_expired_before_catchup",
+      "input": "2h late but event expired",
+      "expected": "Cancel Push even inside six hours"
+    },
+    {
+      "id": "PN04-05",
+      "condition": "critical_outage",
+      "input": "security critical and still relevant",
+      "expected": "Send once on recovery; exclude normal cap/quiet"
+    },
+    {
+      "id": "PN04-06",
+      "condition": "backlog_burst",
+      "input": "hundreds queued after outage",
+      "expected": "Prevent repeated stale sends and apply cap/eligibility per recipient"
+    },
+    {
+      "id": "PN04-07",
+      "condition": "inbox_only",
+      "input": "OS permission disabled",
+      "expected": "Preserve Inbox state; no OS push"
+    }
+  ],
+  "executed": false
+}

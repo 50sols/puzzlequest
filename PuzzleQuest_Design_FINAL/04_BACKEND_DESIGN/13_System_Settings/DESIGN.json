@@ -1,0 +1,127 @@
+{
+  "id": "ADM13",
+  "kind": "backend_admin_settings_design_only",
+  "design_only": true,
+  "status": "noninteractive_static_mockups_no_runtime",
+  "player_screen_count_unchanged": 40,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "brand_source": "02_DESIGN/BRAND_INTEGRATION_CONTRACT.json",
+  "source_client_configuration_validation": "03_HANDOFF/MOBILE_CONFIG_REFERENCES/CONFIG_VALIDATION.json",
+  "source_product_rules": "02_DESIGN/APPROVED_PRODUCT_RULES.json",
+  "source_push_policy": "02_DESIGN/PUSH_NOTIFICATION_CONTRACT.json",
+  "views": [
+    {
+      "name": "01_GENERAL",
+      "svg": "04_BACKEND_DESIGN/13_System_Settings/01_GENERAL.svg",
+      "preview": "04_BACKEND_DESIGN/13_System_Settings/01_GENERAL_PREVIEW.png",
+      "title_ar": "إعدادات التطبيق العامة",
+      "description_ar": "بيانات اللعبة والهوية ونطاق النشر المعتمد"
+    },
+    {
+      "name": "02_FIREBASE_ANDROID",
+      "svg": "04_BACKEND_DESIGN/13_System_Settings/02_FIREBASE_ANDROID.svg",
+      "preview": "04_BACKEND_DESIGN/13_System_Settings/02_FIREBASE_ANDROID_PREVIEW.png",
+      "title_ar": "إعدادات Firebase — Android",
+      "description_ar": "ربط ملف العميل وتوثيق جاهزية FCM وGoogle Login"
+    },
+    {
+      "name": "03_FIREBASE_IOS",
+      "svg": "04_BACKEND_DESIGN/13_System_Settings/03_FIREBASE_IOS.svg",
+      "preview": "04_BACKEND_DESIGN/13_System_Settings/03_FIREBASE_IOS_PREVIEW.png",
+      "title_ar": "إعدادات Firebase وAPNs — iOS",
+      "description_ar": "تهيئة إشعارات Apple عبر Firebase وليس Apple Login"
+    },
+    {
+      "name": "04_PUSH_POLICY",
+      "svg": "04_BACKEND_DESIGN/13_System_Settings/04_PUSH_POLICY.svg",
+      "preview": "04_BACKEND_DESIGN/13_System_Settings/04_PUSH_POLICY_PREVIEW.png",
+      "title_ar": "سياسة الإشعارات والجدولة",
+      "description_ar": "PN01–PN04: حد الإرسال والصمت والإرسال المتأخر"
+    },
+    {
+      "name": "05_AUTH_SECURITY",
+      "svg": "04_BACKEND_DESIGN/13_System_Settings/05_AUTH_SECURITY.svg",
+      "preview": "04_BACKEND_DESIGN/13_System_Settings/05_AUTH_SECURITY_PREVIEW.png",
+      "title_ar": "إعدادات الحساب والأمان",
+      "description_ar": "Google / Email / Guest وOTP وحماية الجلسات"
+    },
+    {
+      "name": "06_PRIVACY_SUPPORT",
+      "svg": "04_BACKEND_DESIGN/13_System_Settings/06_PRIVACY_SUPPORT.svg",
+      "preview": "04_BACKEND_DESIGN/13_System_Settings/06_PRIVACY_SUPPORT_PREVIEW.png",
+      "title_ar": "إعدادات الخصوصية والدعم",
+      "description_ar": "موافقات اللعب والدعم والتصدير والحذف والاحتفاظ"
+    },
+    {
+      "name": "07_HOSTING_JOBS",
+      "svg": "04_BACKEND_DESIGN/13_System_Settings/07_HOSTING_JOBS.svg",
+      "preview": "04_BACKEND_DESIGN/13_System_Settings/07_HOSTING_JOBS_PREVIEW.png",
+      "title_ar": "إعدادات الاستضافة والمهام",
+      "description_ar": "cPanel وQueue وCron وHTTPS وZIP Updates"
+    },
+    {
+      "name": "08_GOOGLE_OAUTH_BACKEND",
+      "svg": "04_BACKEND_DESIGN/13_System_Settings/08_GOOGLE_OAUTH_BACKEND.svg",
+      "preview": "04_BACKEND_DESIGN/13_System_Settings/08_GOOGLE_OAUTH_BACKEND_PREVIEW.png",
+      "title_ar": "Google OAuth — ربط Web Client والتحقق من Android وiOS",
+      "description_ar": "اعتماد فصل مشروعي Google Login وFirebase؛ إنشاء عملاء OAuth للمنصتين أثناء التطوير والتحقق من التوكن قبل اعتبار الدخول مفعلًا"
+    }
+  ],
+  "no_new_player_products": true,
+  "requirements": [
+    "No credentials entered into UI mockups or ZIP; later secure provisioning via protected environment only",
+    "No marketing push in V1",
+    "Google sign-in on iOS is not Apple login",
+    "APNs private key remains outside project and screenshots",
+    "Client configs do not prove production delivery or OAuth readiness",
+    "Protect admin RBAC and audit when implemented",
+    "Never change owner-approved numeric policy through illustrative placeholders",
+    "Cloud puzzlequest-515809 for Google Login and Firebase puzzlequest50sols for mobile/push are intentionally separate by owner approval; not a mismatch needing a product decision. Native Android/iOS OAuth + Laravel audience checks still NOT configured/tested.",
+    "Never show or save masked/clear OAuth secrets or screenshot inside admin designs or ZIP",
+    "iOS Google login without Apple remains owner decision; App Store Guideline 4.8 review remains a publishing gate"
+  ],
+  "states": [
+    "empty",
+    "loading",
+    "invalid_config",
+    "not_connected",
+    "permission_denied",
+    "read_only",
+    "saved",
+    "failed",
+    "pending_external_verification"
+  ],
+  "actions_design_only": [
+    "view_and_verify_metadata",
+    "show masked secret presence only",
+    "validate without exposing key",
+    "save changes after RBAC/re-auth",
+    "test only in runtime future; no fake success in mockups"
+  ],
+  "missing_live_evidence": [
+    "Firebase Cloud Messaging HTTP v1 server credentials/permissions NOT supplied or tested",
+    "iOS APNs token authentication key not supplied; Firebase Console APNs linkage has not been verified",
+    "iOS Push Notifications capability, Background Modes and provisioned entitlements not verified",
+    "Android notification channel and runtime POST_NOTIFICATIONS permission not tested",
+    "Android Google Sign-In OAuth client list is empty in supplied JSON; correct OAuth/SHA fingerprint config not yet verified",
+    "Google Login on iOS does not imply Sign in with Apple; Apple Login remains excluded by Q22",
+    "FCM token registration/refresh/revoke, user opt-in, locale/timezone and logout behavior not tested",
+    "Production HTTPS, cPanel cron queue worker, delivery, click routes, 24h cap, quiet hours, DST, 6h grace untested"
+  ],
+  "oauth_web_client_contract": "02_DESIGN/GOOGLE_OAUTH_DESIGN_CONTRACT.json",
+  "oauth_web_client_ready": false,
+  "oauth_screen_states": [
+    "config_reference_loaded",
+    "provider_missing",
+    "native_client_missing",
+    "token_validation_failed",
+    "verified_by_runtime_test",
+    "save_forbidden_without_RBAC",
+    "owner_approved_separate_projects_native_setup_pending"
+  ],
+  "google_project_separation_owner_approved": true,
+  "native_oauth_clients_created": false
+}

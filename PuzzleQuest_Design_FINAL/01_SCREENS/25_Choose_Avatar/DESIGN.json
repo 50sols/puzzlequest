@@ -1,0 +1,476 @@
+{
+  "id": 25,
+  "slug": "Choose_Avatar",
+  "title": "Choose Avatar",
+  "description": "Avatar selection and name",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/25_Choose_Avatar/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_characters_hero_avatar",
+      "path": "00_SHARED/art/characters/hero_avatar.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/characters/hero_avatar.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_standard",
+      "path": "00_SHARED/art/backgrounds/standard.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/standard.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_back",
+      "path": "00_SHARED/icons/png/back.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/back.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_back",
+      "path": "00_SHARED/icons/svg/back.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/back.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_camera",
+      "path": "00_SHARED/icons/png/camera.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/camera.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_camera",
+      "path": "00_SHARED/icons/svg/camera.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/camera.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_check",
+      "path": "00_SHARED/icons/png/check.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/check.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_check",
+      "path": "00_SHARED/icons/svg/check.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/check.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_edit",
+      "path": "00_SHARED/icons/png/edit.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/edit.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_edit",
+      "path": "00_SHARED/icons/svg/edit.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/edit.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_user",
+      "path": "00_SHARED/icons/png/user.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/user.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_user",
+      "path": "00_SHARED/icons/svg/user.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/user.svg"
+      }
+    },
+    {
+      "asset_id": "ui_progress_bar_fill",
+      "path": "00_SHARED/ui/progress/bar_fill.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/bar_fill.png"
+      }
+    },
+    {
+      "asset_id": "ui_progress_bar_track",
+      "path": "00_SHARED/ui/progress/bar_track.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/bar_track.png"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_input",
+      "path": "00_SHARED/ui/panels/input.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/input.png",
+        "svg": "00_SHARED/ui/panels/input.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_progress_xp_fill",
+      "path": "00_SHARED/ui/progress/xp_fill.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/xp_fill.png"
+      }
+    },
+    {
+      "asset_id": "art_characters_avatars_explorer_boy_blue",
+      "path": "00_SHARED/art/characters/avatars/explorer_boy_blue.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/characters/avatars/explorer_boy_blue.png"
+      }
+    },
+    {
+      "asset_id": "art_characters_avatars_explorer_boy_glasses",
+      "path": "00_SHARED/art/characters/avatars/explorer_boy_glasses.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/characters/avatars/explorer_boy_glasses.png"
+      }
+    },
+    {
+      "asset_id": "art_characters_avatars_explorer_elder_scout",
+      "path": "00_SHARED/art/characters/avatars/explorer_elder_scout.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/characters/avatars/explorer_elder_scout.png"
+      }
+    },
+    {
+      "asset_id": "art_characters_avatars_explorer_elder_turquoise",
+      "path": "00_SHARED/art/characters/avatars/explorer_elder_turquoise.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/characters/avatars/explorer_elder_turquoise.png"
+      }
+    },
+    {
+      "asset_id": "art_characters_avatars_explorer_girl_orange",
+      "path": "00_SHARED/art/characters/avatars/explorer_girl_orange.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/characters/avatars/explorer_girl_orange.png"
+      }
+    },
+    {
+      "asset_id": "art_characters_avatars_explorer_girl_purple",
+      "path": "00_SHARED/art/characters/avatars/explorer_girl_purple.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/characters/avatars/explorer_girl_purple.png"
+      }
+    },
+    {
+      "asset_id": "art_characters_avatars_explorer_man_orange",
+      "path": "00_SHARED/art/characters/avatars/explorer_man_orange.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/characters/avatars/explorer_man_orange.png"
+      }
+    },
+    {
+      "asset_id": "art_characters_avatars_explorer_woman_yellow",
+      "path": "00_SHARED/art/characters/avatars/explorer_woman_yellow.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/characters/avatars/explorer_woman_yellow.png"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Home_My_Village"
+  ],
+  "widgets": [
+    {
+      "id": "avatar_title",
+      "kind": "heading",
+      "role": "heading",
+      "text_key": "ui_avatar_title",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        72,
+        16,
+        246,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content"
+    },
+    {
+      "id": "avatar_options",
+      "kind": "grid",
+      "role": "grid",
+      "text_key": "ui_avatar_options",
+      "focusable": false,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "selected"
+      ],
+      "rect_dp": [
+        32,
+        152,
+        326,
+        224
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "selection",
+        "value": "avatar_id",
+        "note": "Single selection; save only after Continue."
+      },
+      "disabled_while_pending": false,
+      "layer": "content",
+      "child_min_touch_dp": 48,
+      "semantics_policy": "Container is not one clickable/focusable button; actionable visible children expose separate 48dp targets and semantics. Decorative or disabled children are not actionable."
+    },
+    {
+      "id": "display_name",
+      "kind": "text_field",
+      "role": "textbox",
+      "text_key": "ui_display_name",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        424,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "edit",
+        "event": "edit_player_name"
+      },
+      "layer": "content",
+      "field": {
+        "label_key": "ui_display_name",
+        "text_direction": "locale",
+        "secure": false,
+        "error_placement": "inline_below_field",
+        "keyboard": "appropriate_to_content",
+        "note": "Field height excludes the separate label/error rows; reflow moves following controls."
+      }
+    },
+    {
+      "id": "continue",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_continue",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "loading",
+        "error"
+      ],
+      "disabled_while_pending": true,
+      "rect_dp": [
+        32,
+        656,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "submission",
+        "event": "save_player_identity",
+        "on_success": "Home_My_Village",
+        "on_error": "stay_and_preserve_context"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "favorite_world",
+      "kind": "select",
+      "rect_dp": [
+        32,
+        528,
+        326,
+        56
+      ],
+      "text_key": "ui_favorite_world",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "selection",
+        "event": "select_favorite_world",
+        "semantic": "preferred_world_display_order_only",
+        "effects_on_unlocking": false,
+        "saved_on_existing_continue": true
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "selected"
+      ],
+      "disabled_while_pending": false,
+      "design_status": "owner_approved_Q27",
+      "layer": "content",
+      "child_min_touch_dp": 48
+    },
+    {
+      "id": "back",
+      "kind": "icon_button",
+      "rect_dp": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "text_key": "ui_back",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "local",
+        "event": "return_to_origin"
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "layer": "content"
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/25_Choose_Avatar/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets.",
+  "layout_preview": "01_SCREENS/25_Choose_Avatar/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Welcome_Entry",
+    "unsaved_changes": "confirm_discard_in_existing_modal_pattern"
+  },
+  "preferred_world_policy": {
+    "affects": "home_and_worlds_display_order_only",
+    "unlocking": "no_effect",
+    "guest_storage": "local",
+    "registered_storage": "server_synced",
+    "conflict_resolution": "last_server_successfully_saved_change",
+    "if_unavailable": "display_first_available_world_but_keep_saved_preference",
+    "save_on": "existing_Choose_Avatar_continue_or_existing_profile_save"
+  }
+}

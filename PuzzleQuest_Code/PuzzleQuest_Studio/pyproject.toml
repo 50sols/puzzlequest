@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "puzzlequest-studio"
+version = "1.1.1"
+description = "Offline puzzle builder and online PuzzleQuest CMS manager with UUID revisions and Quality Gate"
+requires-python = ">=3.10"
+dependencies = ["Pillow>=10.4,<13", "numpy>=1.26,<3"]
+
+[project.scripts]
+puzzlequest-studio = "puzzlequest_studio.cli:run"
+
+[tool.setuptools.packages.find]
+include = ["puzzlequest_studio*"]

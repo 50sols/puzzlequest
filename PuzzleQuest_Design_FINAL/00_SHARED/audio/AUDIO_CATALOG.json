@@ -1,0 +1,20 @@
+{
+  "origin": "Synthesized original sounds for this design pack; not external copyrighted recordings",
+  "format": "WAV PCM 16-bit mono 22050Hz",
+  "effects": {
+    "puzzle_snap": "puzzle_snap.wav",
+    "ui_tap": "ui_tap.wav",
+    "hint_reveal": "hint_reveal.wav",
+    "reward_collect": "reward_collect.wav",
+    "error_soft": "error_soft.wav",
+    "building_restored": "building_restored.wav"
+  },
+  "music": "ambient_village_loop.wav",
+  "gameplay_rules": {
+    "sound_toggle": "mute effects independently",
+    "music_toggle": "mute background loop independently",
+    "pause": "pause or fade ambient; resume on focus"
+  },
+  "audio_status": "synthesized illustrative assets, volume/mix/boundary to be QA-tested on devices",
+  "status": "Illustrative source retained, not final mastered production audio"
+}

@@ -1,0 +1,1006 @@
+{
+  "id": 6,
+  "slug": "Puzzle_Gameplay",
+  "title": "Puzzle Gameplay — selected level from catalog",
+  "description": "Flame drag/drop board with dynamic puzzle piece textures, rewarded image preview",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/06_Puzzle_Gameplay/reference.png",
+  "assets": [
+    {
+      "asset_id": "puzzles_level_001_board_100_0pct",
+      "path": "00_SHARED/puzzles/level_001/board_100_0pct.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/board_100_0pct.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_board_36_100pct",
+      "path": "00_SHARED/puzzles/level_001/board_36_100pct.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/board_36_100pct.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_board_36_13pct",
+      "path": "00_SHARED/puzzles/level_001/board_36_13pct.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/board_36_13pct.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_board_36_33pct",
+      "path": "00_SHARED/puzzles/level_001/board_36_33pct.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/board_36_33pct.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_board_36_67pct",
+      "path": "00_SHARED/puzzles/level_001/board_36_67pct.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/board_36_67pct.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_board_36_93pct",
+      "path": "00_SHARED/puzzles/level_001/board_36_93pct.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/board_36_93pct.png"
+      }
+    },
+    {
+      "asset_id": "art_rewards_hint_bulb",
+      "path": "00_SHARED/art/rewards/hint_bulb.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/hint_bulb.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_master",
+      "path": "00_SHARED/puzzles/level_001/master.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/master.png"
+      }
+    },
+    {
+      "asset_id": "art_rewards_puzzle_piece",
+      "path": "00_SHARED/art/rewards/puzzle_piece.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/puzzle_piece.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_standard",
+      "path": "00_SHARED/art/backgrounds/standard.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/standard.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_back",
+      "path": "00_SHARED/icons/png/back.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/back.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_back",
+      "path": "00_SHARED/icons/svg/back.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/back.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_hint",
+      "path": "00_SHARED/icons/png/hint.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/hint.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_hint",
+      "path": "00_SHARED/icons/svg/hint.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/hint.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_pause",
+      "path": "00_SHARED/icons/png/pause.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/pause.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_pause",
+      "path": "00_SHARED/icons/svg/pause.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/pause.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_puzzle",
+      "path": "00_SHARED/icons/png/puzzle.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/puzzle.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_puzzle",
+      "path": "00_SHARED/icons/svg/puzzle.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/puzzle.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_shuffle",
+      "path": "00_SHARED/icons/png/shuffle.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/shuffle.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_shuffle",
+      "path": "00_SHARED/icons/svg/shuffle.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/shuffle.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_video",
+      "path": "00_SHARED/icons/png/video.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/video.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_video",
+      "path": "00_SHARED/icons/svg/video.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/video.svg"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_000",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_000.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_000.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_001",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_001.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_001.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_002",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_002.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_002.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_003",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_003.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_003.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_004",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_004.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_004.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_005",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_005.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_005.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_006",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_006.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_006.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_007",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_007.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_007.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_008",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_008.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_008.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_009",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_009.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_009.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_010",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_010.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_010.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_011",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_011.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_011.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_012",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_012.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_012.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_013",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_013.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_013.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_014",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_014.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_014.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_015",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_015.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_015.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_016",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_016.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_016.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_017",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_017.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_017.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_018",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_018.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_018.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_019",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_019.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_019.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_020",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_020.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_020.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_021",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_021.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_021.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_022",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_022.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_022.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_023",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_023.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_023.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_024",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_024.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_024.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_025",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_025.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_025.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_026",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_026.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_026.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_027",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_027.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_027.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_028",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_028.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_028.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_029",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_029.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_029.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_030",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_030.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_030.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_031",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_031.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_031.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_032",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_032.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_032.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_033",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_033.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_033.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_034",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_034.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_034.png"
+      }
+    },
+    {
+      "asset_id": "puzzles_level_001_36_pieces_piece_035",
+      "path": "00_SHARED/puzzles/level_001/36_pieces/piece_035.png",
+      "usage": "puzzle_art_or_geometry_reference",
+      "formats": {
+        "png": "00_SHARED/puzzles/level_001/36_pieces/piece_035.png"
+      }
+    },
+    {
+      "asset_id": "ui_progress_bar_fill",
+      "path": "00_SHARED/ui/progress/bar_fill.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/bar_fill.png"
+      }
+    },
+    {
+      "asset_id": "ui_progress_bar_track",
+      "path": "00_SHARED/ui/progress/bar_track.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/bar_track.png"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_disabled",
+      "path": "00_SHARED/ui/buttons/neutral_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_disabled.png",
+        "svg": "00_SHARED/ui/buttons/neutral_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_normal",
+      "path": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_normal.png",
+        "svg": "00_SHARED/ui/buttons/neutral_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_pressed",
+      "path": "00_SHARED/ui/buttons/neutral_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_pressed.png",
+        "svg": "00_SHARED/ui/buttons/neutral_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_disabled",
+      "path": "00_SHARED/ui/buttons/primary_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_disabled.png",
+        "svg": "00_SHARED/ui/buttons/primary_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_normal",
+      "path": "00_SHARED/ui/buttons/primary_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_normal.png",
+        "svg": "00_SHARED/ui/buttons/primary_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_pressed",
+      "path": "00_SHARED/ui/buttons/primary_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_pressed.png",
+        "svg": "00_SHARED/ui/buttons/primary_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_progress_xp_fill",
+      "path": "00_SHARED/ui/progress/xp_fill.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/xp_fill.png"
+      }
+    },
+    {
+      "asset_id": "ui_tutorial_tutorial_1",
+      "path": "00_SHARED/ui/tutorial/tutorial_1.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/tutorial/tutorial_1.png"
+      }
+    },
+    {
+      "asset_id": "ui_tutorial_tutorial_2",
+      "path": "00_SHARED/ui/tutorial/tutorial_2.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/tutorial/tutorial_2.png"
+      }
+    },
+    {
+      "asset_id": "ui_tutorial_tutorial_3",
+      "path": "00_SHARED/ui/tutorial/tutorial_3.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/tutorial/tutorial_3.png"
+      }
+    },
+    {
+      "asset_id": "screen_art_06_Puzzle_Gameplay_gameplay_board_empty_100",
+      "path": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/board_empty_100.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/board_empty_100.png",
+        "svg": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/board_empty_100.svg"
+      }
+    },
+    {
+      "asset_id": "screen_art_06_Puzzle_Gameplay_gameplay_board_empty_16",
+      "path": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/board_empty_16.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/board_empty_16.png",
+        "svg": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/board_empty_16.svg"
+      }
+    },
+    {
+      "asset_id": "screen_art_06_Puzzle_Gameplay_gameplay_board_empty_36",
+      "path": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/board_empty_36.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/board_empty_36.png",
+        "svg": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/board_empty_36.svg"
+      }
+    },
+    {
+      "asset_id": "screen_art_06_Puzzle_Gameplay_gameplay_board_empty_64",
+      "path": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/board_empty_64.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/board_empty_64.png",
+        "svg": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/board_empty_64.svg"
+      }
+    },
+    {
+      "asset_id": "screen_art_06_Puzzle_Gameplay_gameplay_piece_ghost_idle",
+      "path": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/piece_ghost_idle.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/piece_ghost_idle.png"
+      }
+    },
+    {
+      "asset_id": "screen_art_06_Puzzle_Gameplay_gameplay_piece_ghost_invalid",
+      "path": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/piece_ghost_invalid.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/piece_ghost_invalid.png"
+      }
+    },
+    {
+      "asset_id": "screen_art_06_Puzzle_Gameplay_gameplay_piece_ghost_snap",
+      "path": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/piece_ghost_snap.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/piece_ghost_snap.png"
+      }
+    },
+    {
+      "asset_id": "screen_art_06_Puzzle_Gameplay_gameplay_progress_000",
+      "path": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/progress_000.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/progress_000.png"
+      }
+    },
+    {
+      "asset_id": "screen_art_06_Puzzle_Gameplay_gameplay_progress_025",
+      "path": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/progress_025.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/progress_025.png"
+      }
+    },
+    {
+      "asset_id": "screen_art_06_Puzzle_Gameplay_gameplay_progress_050",
+      "path": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/progress_050.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/progress_050.png"
+      }
+    },
+    {
+      "asset_id": "screen_art_06_Puzzle_Gameplay_gameplay_progress_075",
+      "path": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/progress_075.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/screen_art/06_Puzzle_Gameplay/gameplay/progress_075.png"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Hint_Options",
+    "Show_Full_Image_Rewarded",
+    "Pause_Menu",
+    "Level_Complete"
+  ],
+  "widgets": [
+    {
+      "id": "level_progress",
+      "kind": "progress",
+      "role": "progressbar",
+      "text_key": "ui_level_progress",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        72,
+        16,
+        144,
+        48
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "attempt.placed_and_total"
+      }
+    },
+    {
+      "id": "timer",
+      "kind": "text",
+      "role": "image",
+      "text_key": "ui_timer",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "running",
+        "paused",
+        "background_paused",
+        "ad_paused",
+        "timeout_failed",
+        "success"
+      ],
+      "rect_dp": [
+        230,
+        16,
+        144,
+        48
+      ],
+      "label_role": "dynamic_value_with_localized_label",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "display_semantics": "elapsed active play time; no countdown failure is introduced",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "attempt.remaining_active_seconds from selected level revision countdown_initial_seconds; render MM:SS, pause on Pause/background/ads, fail if zero without completion"
+      }
+    },
+    {
+      "id": "puzzle_board",
+      "kind": "flame_board",
+      "role": "group",
+      "text_key": "ui_puzzle_board",
+      "focusable": false,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "data_source": "00_SHARED/puzzles/LEVEL_CATALOG.json",
+      "rect_dp": [
+        16,
+        96,
+        358,
+        358
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": false,
+      "renderer": "Flame",
+      "interaction": {
+        "type": "drag",
+        "event": "piece_drag_drop",
+        "specification": "02_DESIGN/GAMEPLAY_AR.md"
+      },
+      "disabled_while_pending": false,
+      "layer": "game_canvas",
+      "child_min_touch_dp": 48
+    },
+    {
+      "id": "pieces_tray",
+      "kind": "flame_tray",
+      "role": "group",
+      "text_key": "ui_pieces_tray",
+      "focusable": false,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "data_source": "00_SHARED/puzzles/LEVEL_CATALOG.json",
+      "rect_dp": [
+        16,
+        490,
+        358,
+        112
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": false,
+      "renderer": "Flame",
+      "interaction": {
+        "type": "drag",
+        "event": "piece_drag_drop",
+        "specification": "02_DESIGN/GAMEPLAY_AR.md"
+      },
+      "disabled_while_pending": false,
+      "layer": "game_canvas",
+      "child_min_touch_dp": 48
+    },
+    {
+      "id": "hint",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_hint",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        16,
+        680,
+        112,
+        72
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Hint_Options"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "show_full_image",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_show_full_image",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        139,
+        680,
+        112,
+        72
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Show_Full_Image_Rewarded",
+        "note": "Open Screen 13 selection; no automatic paid use or rewarded claim"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "pause",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_pause",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        262,
+        680,
+        112,
+        72
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Pause_Menu",
+        "note": "Pause countdown and access Shuffle within Screen 15 existing modal"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "back",
+      "kind": "icon_button",
+      "rect_dp": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "text_key": "ui_back",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "navigation",
+        "target": "Pause_Menu"
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "layer": "content"
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/06_Puzzle_Gameplay/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win.",
+  "layout_preview": "01_SCREENS/06_Puzzle_Gameplay/LAYOUT.svg",
+  "flow": {
+    "on_last_piece": "Level_Complete",
+    "on_back": "Pause_Menu"
+  },
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Home_My_Village"
+  },
+  "art_policy": "Canonical master/thumbnail from the selected level governs displayed puzzle art. Original reference screenshot is composition-only and is not a promise of identical pixels to the packaged master. Never mix art from different levels or sizes.",
+  "approved_product_rules": {
+    "source": "02_DESIGN/APPROVED_PRODUCT_RULES.json",
+    "applicable_policies": [
+      "rating",
+      "leaderboard",
+      "missions"
+    ],
+    "design_rule": "Stage-specific countdown and elapsed star thresholds in APPROVED_PRODUCT_RULES; no V1 Extra Time. Shuffle via Pause screen 15; Full Image explicit paid 30s / verified ad 10s choice in existing screen 13.",
+    "approved_through": "Q21"
+  },
+  "dynamic_content_policy_ref": "02_DESIGN/CONTENT_PUBLISHING_CONTRACT.json",
+  "timer_contract": {
+    "source": "00_SHARED/puzzles/LEVEL_CATALOG.json",
+    "countdown": true,
+    "time_format": "MM:SS",
+    "paused_by": [
+      "Pause",
+      "background",
+      "ad playback"
+    ],
+    "not_paused_by": [
+      "visible Full Image 30s/10s preview itself"
+    ],
+    "failure": "expired_without_completion",
+    "persist": "attempt ID + level revision + remaining active seconds; persist after placements and lifecycle changes; server decides valid completion/reward"
+  },
+  "offline_status_design": {
+    "id": "offline_status",
+    "kind": "non_interactive_status_indicator",
+    "rect_dp": [
+      232,
+      46,
+      138,
+      16
+    ],
+    "visible_when": "offline_or_unsynced",
+    "priority": "nonblocking",
+    "text_key": "ui_offline_indicator",
+    "overlays_existing_timer_card_footer": "yes_do_not_create_separate_touch_target",
+    "do_not_occlude_countdown_or_hud_touch": "place_in_timer_card_bottom_region",
+    "local_attempt_saved_and_syncs_automatically": true
+  }
+}

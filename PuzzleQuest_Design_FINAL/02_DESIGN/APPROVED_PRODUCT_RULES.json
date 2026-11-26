@@ -1,0 +1,772 @@
+{
+  "kind": "approved_product_rules_not_runtime_code",
+  "date": "2026-11-25",
+  "scope": "owner_approved_Q01_Q37_plus_Q05_precision_Q38_Q41_Q42; Q39_Q40_pending; legal_and_push_delivery_gates",
+  "source": "Owner decisions Q01–Q37 and supported V1 clarifications; legal copy and deployment subject to sign-off.",
+  "prohibits_new_product_features": true,
+  "content": {
+    "worlds": [
+      {
+        "world_id": "green_valley",
+        "name": "Green Valley",
+        "order": 1,
+        "launch_status": "published_with_five_playable_levels",
+        "unlock": "available_at_launch",
+        "level_ids": [
+          "green_valley_house_001",
+          "level_002_windmill_spring",
+          "level_003_snow_castle",
+          "level_004_sky_balloon",
+          "level_005_autumn_tree"
+        ]
+      },
+      {
+        "world_id": "snow_land",
+        "name": "Snow Land",
+        "order": 2,
+        "launch_status": "locked_until_complete_content_published",
+        "unlock": "previous_world_all_levels_completed_and_this_world_published",
+        "level_ids": []
+      },
+      {
+        "world_id": "desert_ruins",
+        "name": "Desert Ruins",
+        "order": 3,
+        "launch_status": "locked_until_complete_content_published",
+        "unlock": "previous_world_all_levels_completed_and_this_world_published",
+        "level_ids": []
+      }
+    ],
+    "launch_level_count": 5,
+    "level_catalog": "00_SHARED/puzzles/LEVEL_CATALOG.json",
+    "piece_counts_by_stage": [
+      16,
+      16,
+      36,
+      64,
+      100
+    ],
+    "future_levels": "published validated content metadata only; no additional product screen",
+    "no_cumulative_star_unlock": true,
+    "min_star_to_unlock_next_level": 1
+  },
+  "rating": {
+    "max_rating_per_level": 3,
+    "rule_priority": "Success only: 3 stars if elapsed ≤ stage.three_star_elapsed_max_seconds and zero Hint/Shuffle/Full Image used; else 2 stars if elapsed ≤ stage.two_star_elapsed_max_seconds and ≤1 assistance used; else 1 star. Failure at countdown expiry before completion: 0 stars. V1 has no Extra Time.",
+    "three_stars": {
+      "max_helps_used": 0,
+      "completion_elapsed_seconds_lte_level_threshold": "three_stars"
+    },
+    "two_stars": {
+      "max_helps_used": 1,
+      "completion_elapsed_seconds_lte_level_threshold": "two_stars"
+    },
+    "one_star": "successful completion outside higher rating eligibility; 2+ helps or extra time caps at 1",
+    "zero_stars": "failure only",
+    "help_types_counted_when_used": [
+      "hint",
+      "shuffle",
+      "full_image"
+    ],
+    "help_acquisition_does_not_affect_rating": true,
+    "level_time_thresholds": {
+      "required_per_stage": true,
+      "approved_values": true,
+      "time_basis": "elapsed_active_gameplay_seconds",
+      "countdown": true,
+      "failure": "time_remaining_reaches_zero_before_puzzle_completed",
+      "pause_conditions": [
+        "pause",
+        "app_background",
+        "advertisement_playback"
+      ],
+      "limits": [
+        {
+          "display_code": "1-1",
+          "level_time_limit_seconds": 360,
+          "three_star_elapsed_max_seconds": 150,
+          "two_star_elapsed_max_seconds": 270
+        },
+        {
+          "display_code": "1-2",
+          "level_time_limit_seconds": 360,
+          "three_star_elapsed_max_seconds": 150,
+          "two_star_elapsed_max_seconds": 270
+        },
+        {
+          "display_code": "1-3",
+          "level_time_limit_seconds": 600,
+          "three_star_elapsed_max_seconds": 270,
+          "two_star_elapsed_max_seconds": 450
+        },
+        {
+          "display_code": "1-4",
+          "level_time_limit_seconds": 1080,
+          "three_star_elapsed_max_seconds": 480,
+          "two_star_elapsed_max_seconds": 840
+        },
+        {
+          "display_code": "1-5",
+          "level_time_limit_seconds": 1800,
+          "three_star_elapsed_max_seconds": 900,
+          "two_star_elapsed_max_seconds": 1440
+        }
+      ],
+      "inclusive_thresholds": true
+    },
+    "extra_time_acquisition_policy": "V1 disabled: no Extra Time source, grant, purchase, action, or scoring penalty.",
+    "server_confirms_best_rating": true,
+    "extra_time_enabled": false
+  },
+  "first_completion_reward": {
+    "coins": 500,
+    "star_rating_min": 1,
+    "star_rating_max": 3,
+    "granted_once_per_player_level": true,
+    "replay_coins": 0,
+    "star_total_delta": "max(0, new_best_rating - previously_recorded_best_rating)",
+    "stars_currency": false,
+    "stars_spendable": false,
+    "reward_claim_idempotency_required": true,
+    "pending_not_spendable": true
+  },
+  "starting_balances": {
+    "new_player": {
+      "coins": 300,
+      "hints": 2
+    },
+    "guest": {
+      "coins": 300,
+      "hints": 2
+    },
+    "one_time_per_player_identity": true,
+    "guest_registration_migrates_progress_no_second_grant": true
+  },
+  "store": {
+    "currency": "Coins",
+    "real_money_purchases": false,
+    "offers": [
+      {
+        "id": "hint_pack",
+        "title": "Hint",
+        "price_coins": 100,
+        "grants": {
+          "hints": 1
+        },
+        "once_per_player": false
+      },
+      {
+        "id": "shuffle_pack",
+        "title": "Shuffle",
+        "price_coins": 150,
+        "grants": {
+          "shuffle_uses": 1
+        },
+        "once_per_player": false
+      },
+      {
+        "id": "full_image",
+        "title": "Full Image",
+        "price_coins": 200,
+        "grants": {
+          "full_image_uses": 1
+        },
+        "once_per_player": false,
+        "duration_seconds": 30
+      },
+      {
+        "id": "starter_pack",
+        "title": "Starter Pack",
+        "price_coins": 400,
+        "grants": {
+          "hints": 5,
+          "full_image_uses": 1
+        },
+        "once_per_player": true
+      }
+    ]
+  },
+  "shuffle": {
+    "only_unfixed_pieces": true,
+    "min_unfixed_pieces": 2,
+    "stored_use_consume_only_after_success": true,
+    "store_charge_only_after_successful_purchase": true,
+    "direct_purchase_and_apply_atomic": true,
+    "no_duplicate_charge": true,
+    "repeatable_if_eligible_and_balance": true,
+    "existing_gameplay_control_mapping": "Gameplay Pause → existing Pause Menu screen 15; selectable Shuffle use shows stored count, and on no use show Confirm buy for 150 Coins in same paused modal state. No new screen.",
+    "pause_modal_confirmation": {
+      "stored_count_visible": true,
+      "if_inventory_positive": "apply available use only after successful shuffle and ≥2 unfixed pieces",
+      "if_zero_inventory": "show 150 Coins confirm and deficit; direct purchase+effect atomic; no charge on failure",
+      "no_extra_dialog_screen": true,
+      "game_clock": "stays paused throughout selection, confirmation, request and return to active gameplay only by Resume",
+      "idempotency": "one attempt-scoped operation key; no double consumption"
+    }
+  },
+  "full_image": {
+    "purchased": {
+      "uses_per_purchase": 1,
+      "duration_seconds": 30,
+      "stored_until_activated": true,
+      "when_activated": "bound_to_active_attempt_only",
+      "nonoverlap": true,
+      "background_timer_behavior": "Pause visible preview countdown when app background, resume same attempt foreground; preserve remaining active-view seconds across app restart; never transfer to another attempt.",
+      "timer_source": "foreground active-preview-only elapsed time; persist attempt ID, entitlement claim ID, remaining seconds and state at lifecycle transitions."
+    },
+    "rewarded_ad": {
+      "duration_seconds": 10,
+      "requires_verified_reward": true
+    },
+    "timer": "game_timer_paused_only_while_ad_is_playing_not_during_awarded_preview",
+    "preview_overlap_allowed": false,
+    "duration_stack_allowed": false,
+    "paid_use_activation_existing_ui": "Screen 06 Show Full Image opens existing Screen 13 option modal; paid stored-use 30 sec or rewarded AdMob 10 sec are explicit mutually-exclusive selections; never auto-consume on opening screen.",
+    "selection_modal": "Screen 13 two existing-scope options: Use stored full image (if inventory>0), Watch rewarded ad; one active request per attempt, no overlapping previews; disabled paid option if no use, obtain in existing Shop.",
+    "lifecycle": "فتح نافذة الاختيار لا يستهلك استخدامًا. تستمر ساعة اللعب أثناء الاختيار والمعاينة المرئية، وتتوقف عند Pause أو انتقال التطبيق للخلفية أو أثناء تشغيل الإعلان الفعلي. مؤقت عرض Full Image المدفوع نفسه يتوقف بالخلفية ويُستأنف للمحاولة ذاتها فقط."
+  },
+  "rewarded_hint": {
+    "hints_per_verified_completed_ad": 1,
+    "daily_completed_ads_limit": 3,
+    "per_attempt_completed_ads_limit": 1,
+    "failed_or_cancelled_count": false,
+    "ad_granted_hint_stays_until_used": true,
+    "help_counted_at_use": true,
+    "day_boundary": "UTC 00:00 consistent with approved daily reward system"
+  },
+  "daily_reward": {
+    "timezone": "UTC",
+    "reset_utc": "00:00",
+    "cycle_days": 7,
+    "days": [
+      {
+        "day": 1,
+        "coins": 50,
+        "hints": 0
+      },
+      {
+        "day": 2,
+        "coins": 75,
+        "hints": 0
+      },
+      {
+        "day": 3,
+        "coins": 100,
+        "hints": 1
+      },
+      {
+        "day": 4,
+        "coins": 125,
+        "hints": 0
+      },
+      {
+        "day": 5,
+        "coins": 150,
+        "hints": 1
+      },
+      {
+        "day": 6,
+        "coins": 200,
+        "hints": 0
+      },
+      {
+        "day": 7,
+        "coins": 300,
+        "hints": 2
+      }
+    ],
+    "cycle_coins_total": 1000,
+    "cycle_hints_total": 4,
+    "missed_day": "retain next unclaimed day, no reset/no catch-up autogrant",
+    "after_day7": "next UTC calendar day starts day1",
+    "explicit_claim_required": true,
+    "one_claim_per_utc_date": true,
+    "server_clock_authoritative": true,
+    "idempotent_claim_required": true
+  },
+  "missions": {
+    "start": "date_of_publication",
+    "claim": "explicit_per_mission",
+    "completion_source": "server_validated_game_events",
+    "replay_successes_count": true,
+    "unclaimed_expire_at_cycle_end": true,
+    "daily_reset": "00:00 UTC",
+    "weekly_reset": "Monday 00:00 UTC",
+    "no_duplicate_claim_per_player_mission_cycle": true,
+    "daily": [
+      {
+        "id": "daily_player",
+        "name": "Daily Player",
+        "type": "successful_attempts",
+        "target": 1,
+        "reward_coins": 50
+      },
+      {
+        "id": "puzzle_builder",
+        "name": "Puzzle Builder",
+        "type": "unique_correct_piece_placements",
+        "target": 30,
+        "reward_coins": 50
+      },
+      {
+        "id": "perfect_play",
+        "name": "Perfect Play",
+        "type": "successful_attempt_without_any_used_assistance",
+        "target": 1,
+        "reward_coins": 75
+      }
+    ],
+    "weekly": [
+      {
+        "id": "weekly_explorer",
+        "name": "Weekly Explorer",
+        "type": "successful_attempts",
+        "target": 5,
+        "reward_coins": 150
+      },
+      {
+        "id": "puzzle_expert",
+        "name": "Puzzle Expert",
+        "type": "unique_correct_piece_placements",
+        "target": 200,
+        "reward_coins": 200
+      }
+    ],
+    "accounting": "Count each validated action/attempt once with event_id/attempt_id to avoid retries inflating mission progress; atomic Claim / confirmed ledger; no unearned amounts."
+  },
+  "events": {
+    "launch_items": [],
+    "empty_state_text_en": "More exciting events are coming soon!",
+    "future_support": "only after authored event dates/eligibility/rewards and reviewed assets; no pseudo-event, countdown or placeholder reward published",
+    "future_fields": [
+      "stable_id",
+      "start_at_utc",
+      "end_at_utc",
+      "participation_conditions",
+      "reward_specification",
+      "publish_status"
+    ]
+  },
+  "collections": {
+    "launch_level_image_ids": [
+      "green_valley_house_001",
+      "level_002_windmill_spring",
+      "level_003_snow_castle",
+      "level_004_sky_balloon",
+      "level_005_autumn_tree"
+    ],
+    "picture_unlock": "permanently_on_first_successful_completion_of_corresponding_level",
+    "pictures_purchasable": false,
+    "badge_achievement_ids": [
+      "first_steps",
+      "green_valley_explorer",
+      "perfect_solver",
+      "star_collector",
+      "puzzle_master"
+    ],
+    "badge_art_policy": "Owner approved 2026-11-25: use ONE existing generic Trophy asset for all five named badges; distinct achievement IDs and localized titles distinguish badges. No new badge art or economic reward.",
+    "reward_chest": {
+      "id": "green_valley_launch_completion_chest",
+      "eligible_only_if": {
+        "all_level_ids_completed": [
+          "green_valley_house_001",
+          "level_002_windmill_spring",
+          "level_003_snow_castle",
+          "level_004_sky_balloon",
+          "level_005_autumn_tree"
+        ],
+        "min_lifetime_best_stars_for_launch_levels": 10,
+        "max_stars_in_scope": 15
+      },
+      "coins": 300,
+      "hints": 2,
+      "once_per_player": true,
+      "explicit_claim": true,
+      "idempotent_claim_required": true
+    },
+    "shared_trophy_assets": {
+      "locked": "00_SHARED/icons/states/trophy__disabled.svg",
+      "unlocked": "00_SHARED/icons/states/trophy__normal.svg",
+      "focused": "00_SHARED/icons/states/trophy__active.svg"
+    }
+  },
+  "achievements": {
+    "entries": [
+      {
+        "id": "first_steps",
+        "name": "First Steps",
+        "condition": "first_successful_completion",
+        "badge_permanent": true,
+        "economic_reward": false
+      },
+      {
+        "id": "green_valley_explorer",
+        "name": "Green Valley Explorer",
+        "condition": "all_five_launch_levels_completed",
+        "badge_permanent": true,
+        "economic_reward": false
+      },
+      {
+        "id": "perfect_solver",
+        "name": "Perfect Solver",
+        "condition": "one_level_best_rating_three_stars",
+        "badge_permanent": true,
+        "economic_reward": false
+      },
+      {
+        "id": "star_collector",
+        "name": "Star Collector",
+        "condition": "lifetime_best_stars_at_least_10",
+        "badge_permanent": true,
+        "economic_reward": false
+      },
+      {
+        "id": "puzzle_master",
+        "name": "Puzzle Master",
+        "condition": "three_distinct_levels_have_best_three_stars",
+        "badge_permanent": true,
+        "economic_reward": false
+      }
+    ],
+    "unlock": "automatic_from_confirmed_progress",
+    "no_duplicate_badges": true,
+    "badge_asset": "00_SHARED/icons/states/trophy__normal.svg",
+    "badge_asset_binding_per_achievement": {
+      "first_steps": "00_SHARED/icons/states/trophy__normal.svg",
+      "green_valley_explorer": "00_SHARED/icons/states/trophy__normal.svg",
+      "perfect_solver": "00_SHARED/icons/states/trophy__normal.svg",
+      "star_collector": "00_SHARED/icons/states/trophy__normal.svg",
+      "puzzle_master": "00_SHARED/icons/states/trophy__normal.svg"
+    }
+  },
+  "leaderboard": {
+    "type": "weekly_global",
+    "season_start": "Monday 00:00 UTC",
+    "season_end": "next Monday 00:00 UTC",
+    "duration_days": 7,
+    "eligibility": "registered players only, verified outcomes; guest records do not appear before account linking and validation",
+    "score_formula": "clamp(1000 + floor(500 * max(0, 1 - elapsed_seconds / level_time_limit_seconds)) - 100*hints_used - 100*shuffles_used - 100*full_image_uses, 0, 1500)",
+    "failed_attempt_score": 0,
+    "max_success_score_per_level": 1500,
+    "launch_max_five_level_total": 7500,
+    "best_one_attempt_per_level_per_season": true,
+    "tie_break": [
+      "sum_of_best_attempt_scores_desc",
+      "sum_of_stars_on_season_best_attempts_desc",
+      "sum_elapsed_seconds_of_season_best_attempts_asc",
+      "time_at_which_final_score_first_reached_asc"
+    ],
+    "permanent_stars_and_achievements_survive_week_reset": true,
+    "top_rank_rewards": null,
+    "runtime_dependency": "Q05-T approved. Use stage level_time_limit_seconds of the immutable active content revision; do not use countdown remaining as elapsed. V1 Extra Time removed.",
+    "existing_tab_policy": "V1 OWNER APPROVED: Hide All-time completely. Weekly Global is the ONLY visible leaderboard period; no disabled tab, no All-time query or navigation.",
+    "all_time_v1": "hidden_not_rendered"
+  },
+  "village": {
+    "buildings": {
+      "cottage": {
+        "start_stage": 0,
+        "state_names": [
+          "ruined",
+          "scaffold",
+          "repairing",
+          "restored",
+          "upgraded"
+        ],
+        "transitions": [
+          {
+            "from_stage": 0,
+            "to_stage": 1,
+            "requires_level_completed": "1-1",
+            "price_coins": 100
+          },
+          {
+            "from_stage": 1,
+            "to_stage": 2,
+            "requires_level_completed": "1-2",
+            "price_coins": 200
+          },
+          {
+            "from_stage": 2,
+            "to_stage": 3,
+            "requires_level_completed": "1-3",
+            "price_coins": 300
+          },
+          {
+            "from_stage": 3,
+            "to_stage": 4,
+            "requires_level_completed": "1-4",
+            "price_coins": 400
+          }
+        ],
+        "total_cost_coins": 1000
+      },
+      "windmill": {
+        "start_stage": 0,
+        "state_names": [
+          "ruined",
+          "scaffold",
+          "repairing",
+          "restored",
+          "upgraded"
+        ],
+        "transitions": [
+          {
+            "from_stage": 0,
+            "to_stage": 1,
+            "requires_level_completed": "1-2",
+            "price_coins": 150
+          },
+          {
+            "from_stage": 1,
+            "to_stage": 2,
+            "requires_level_completed": "1-3",
+            "price_coins": 250
+          },
+          {
+            "from_stage": 2,
+            "to_stage": 3,
+            "requires_level_completed": "1-4",
+            "price_coins": 350
+          },
+          {
+            "from_stage": 3,
+            "to_stage": 4,
+            "requires_level_completed": "1-5",
+            "price_coins": 450
+          }
+        ],
+        "total_cost_coins": 1200
+      }
+    },
+    "total_cost_coins": 2200,
+    "one_stage_at_a_time": true,
+    "automatic_upgrade_on_level_completion": false,
+    "insufficient_balance": "show price and shortage, disable execution, never partially charge or advance",
+    "atomically_debit_and_advance": true,
+    "permanent_stages": true
+  },
+  "advertising": {
+    "provider": "Google AdMob",
+    "rewarded_types": [
+      "hint",
+      "full_image_preview_10_seconds"
+    ],
+    "interstitial_format": "existing post-completion placement only",
+    "interstitial": {
+      "max_per_session": 2,
+      "min_seconds_between": 180,
+      "max_per_player_utc_day": 6,
+      "session_inactive_timeout_seconds": 1800,
+      "never_after_first_completion_of_session": true,
+      "first_eligible_after_successful_completion_number": 2,
+      "only_after_confirmed_completion_reward_claim": true,
+      "never_during_piece_drag_or_gameplay_or_claim_modal": true,
+      "no_economic_reward": true,
+      "backend_authoritative_cap_with_local_counters": true
+    },
+    "ssv": {
+      "required_before_reward_or_view_entitlement": true,
+      "server_creates_unique_reward_request": true,
+      "bind_to_player_type_attempt_and_time": true,
+      "verify_google_signature_key_id_and_callback_authenticity": true,
+      "dedupe": [
+        "provider_transaction_id",
+        "reward_request_id"
+      ],
+      "callbacks_delayed": "pending_only; no unverified grant",
+      "failed_or_cancelled": "no grant; no coins deducted",
+      "secret_ids_not_in_design_package": true
+    },
+    "proposed_markets": [
+      "Kuwait",
+      "Saudi Arabia",
+      "United Arab Emirates",
+      "Egypt"
+    ],
+    "proposed_languages": [
+      "ar",
+      "en"
+    ],
+    "proposed_minimum_age": 13,
+    "age_and_market_final_approval": "awaiting Q34-Q35; 13+ label alone does not replace actual target audience/policies",
+    "go_live_gate": "approved privacy/consent, IDs and provider verification end-to-end, applicable child policies; not approved for live traffic now"
+  },
+  "worldwide_release_plan": {
+    "geographical_availability": "all_countries",
+    "localizations": "AR/EN supplied only; final supported languages not yet confirmed by owner",
+    "audience_age": "NOT_APPROVED (Q34 remains partial); no child-targeting inference or production AdMob enablement",
+    "mobile_platforms": [
+      "Android",
+      "iOS"
+    ],
+    "backend_hosting": "cPanel, PHP supported up to 8.4; specific deployed PHP, extensions, MySQL/MariaDB versions still to verify",
+    "requested_domain": "http://puzzlequest.50sols.com/",
+    "production_security": "Require TLS/HTTPS before authenticated API, OTP, consent, privacy, and AdMob SSV; do not treat user-provided HTTP link as proof of HTTPS readiness",
+    "privacy_help_delete_terms_links": "hosted by Laravel backend on same owned domain; final routes/content/retention Q32–Q35 pending"
+  },
+  "identity_and_sync": {
+    "decision_ids": [
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27"
+    ],
+    "supported_platforms": [
+      "android",
+      "ios"
+    ],
+    "sign_in_methods": [
+      "google_oauth",
+      "email_password",
+      "guest"
+    ],
+    "apple_sign_in_enabled": false,
+    "google_oauth": {
+      "on_cancel": "close_provider_and_return_to_exact_origin_without_error",
+      "on_network_error": "show_retry_keep_guest_progress",
+      "on_verified_success": "enter_without_email_otp_extra",
+      "never_trust_client_only": "validate_provider_identity_token_on_backend",
+      "public_web_client_reference": "02_DESIGN/GOOGLE_OAUTH_DESIGN_CONTRACT.json",
+      "current_external_configuration_state": "OAuth Web client screenshot registered; backend validation/platform-native credentials not verified; Firebase project differs from Cloud project"
+    },
+    "password": {
+      "min_length": 6,
+      "max_length": 64,
+      "requires_uppercase": false,
+      "requires_number": false,
+      "requires_special": false,
+      "reject_common_or_known_compromised": true,
+      "show_hide": true,
+      "consecutive_failure_limit": 5,
+      "after_limit": "mandatory_email_otp_only_until_verified",
+      "reset_failure_counter_on_mandatory_otp_success": true,
+      "never_delete_progress_on_failure": true,
+      "anti_lockout_abuse": "apply account+device+network limits without exposing existence"
+    },
+    "name": {
+      "min_chars": 2,
+      "max_chars": 40,
+      "supports": [
+        "Arabic",
+        "English",
+        "spaces"
+      ],
+      "unique": false
+    },
+    "otp": {
+      "length": 6,
+      "ttl_seconds": 600,
+      "resend_cooldown_seconds": 60,
+      "max_verify_attempts_per_code": 5,
+      "max_resends_15_minutes": 3,
+      "max_resends_24_hours": 10,
+      "new_code_invalidates_old": true,
+      "after_five_wrong": "invalidate_code",
+      "repeated_failure_temp_block_seconds": 900,
+      "purposes": [
+        "email_verification",
+        "password_recovery",
+        "mandatory_login_after_five_password_failures"
+      ],
+      "entry_support": [
+        "paste",
+        "system_autofill",
+        "Arabic_and_Latin_digits"
+      ],
+      "trust": "server_rate_limits_per_account_device_and_network",
+      "mandatory_login_success": "enter_directly_no_password_reset"
+    },
+    "registration": {
+      "can_play_before_email_verified": true,
+      "until_verified": "local/provisional progression; cross-device sync and identity-bound rewards remain pending",
+      "duplicate_email": "deny_new_account_offer_login_or_forgot_password",
+      "requires_terms_consent": "do_not_precheck; final Q35 legal text pending"
+    },
+    "guest_merge": {
+      "mode": "smart_merge",
+      "confirmation": "existing_Guest_Save_Progress_29_merge_modal_state_not_new_screen",
+      "idempotency": "once_per_guest_identity_per_target_account",
+      "completed_levels": "set_union",
+      "best_stars": "highest_valid_per_level",
+      "best_elapsed_seconds": "lowest_valid_per_level",
+      "badges_achievements_trophies": "set_union",
+      "derived_score": "recalculate_from_verified_results_not_add_both",
+      "coins_consumables": "registered_balance_plus_only_confirmed_unspent_guest_grants_not_previously_credited",
+      "no_double_start_grant": true,
+      "failure": "retain_guest_local_and_offer_retry",
+      "transaction": "server_atomic_with_auditable_ledger",
+      "score_integrity": "do_not_combine_fields_from_separate_attempts_into_fabricated_attempt"
+    },
+    "offline_sync": {
+      "mode": "offline_first_play_cloud_authoritative_rewards",
+      "gameplay_offline": true,
+      "local_attempt_journal": "durable_and_replayed_with_stable_event_ids",
+      "sync": "automatic_on_reconnect",
+      "best_valid_stars_per_level": "max",
+      "best_valid_elapsed": "min",
+      "achievements": "set_union",
+      "wallet": "server_ledger_only",
+      "pending_rewards_spendable": false,
+      "offline_boosters": "only_server_pre_reserved_authorized_allocation",
+      "device_conflict": "server_validates_each_event_idempotently",
+      "delete_pending_local_records": "only_after_server_confirmation",
+      "reject_bad_reward": "clear_explanation_preserve_valid_level_progress",
+      "offline_indicator": "small_non_blocking_existing_gameplay_HUD",
+      "weekly_leaderboard": "only_verified_attempt_scores_no_unverified_offline_scores"
+    },
+    "preferred_world": {
+      "affects": "home_and_worlds_display_order_only",
+      "unlocking": "no_effect",
+      "guest_storage": "local",
+      "registered_storage": "server_synced",
+      "conflict_resolution": "last_server_successfully_saved_change",
+      "if_unavailable": "display_first_available_world_but_keep_saved_preference",
+      "save_on": "existing_Choose_Avatar_continue_or_existing_profile_save"
+    }
+  },
+  "privacy_services": {
+    "contract": "02_DESIGN/PRIVACY_SERVICES_CONTRACT.json",
+    "approved_policy_ids": [
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35",
+      "Q36",
+      "Q37"
+    ],
+    "legal_release_gate": true,
+    "support_email": "info@50sols.com",
+    "public_profile_default": "private",
+    "social_friends_feature": false
+  },
+  "notifications": {
+    "contract": "02_DESIGN/PUSH_NOTIFICATION_CONTRACT.json",
+    "design_only": true,
+    "existing_player_screen_count": 40,
+    "backend_admin_design_count": 12,
+    "events_at_launch": false,
+    "marketing_push_default": false,
+    "scheduling_design": "one_time_recipient_local_time_with_UTC_storage",
+    "final_brand_asset_pending": false,
+    "delivery_implementation_or_tests_run": false,
+    "brand_contract": "02_DESIGN/BRAND_INTEGRATION_CONTRACT.json",
+    "PN01": "Existing system types only; Events only when event published, marketing DISABLED V1",
+    "PN02": "rolling 24h nonessential cap 2; quiet 22:00-08:00 recipient local; critical security excepted",
+    "PN03": "schedule wall time per recipient IANA timezone; UTC calculated/persisted; unknown timezone suppress normal scheduled push",
+    "PN04": "ordinary missed push max six hours, suppress on expiry/quiet beyond grace, no burst/doubles"
+  },
+  "five_badges_art_approval": {
+    "source": "owner 2026-11-25",
+    "use_shared_trophy_asset": true,
+    "one_named_badge_per_achievement_id": true,
+    "distinct_badge_art_required": false,
+    "new_reward_currency": false
+  }
+}

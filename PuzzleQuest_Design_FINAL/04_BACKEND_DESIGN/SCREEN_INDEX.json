@@ -1,0 +1,107 @@
+[
+  {
+    "id": "ADM01",
+    "screen": "01_Admin_Overview",
+    "design": "04_BACKEND_DESIGN/01_Admin_Overview/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/01_Admin_Overview/LAYOUT.svg",
+    "preview": "04_BACKEND_DESIGN/01_Admin_Overview/PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/01_Admin_Overview/README_AR.md"
+  },
+  {
+    "id": "ADM02",
+    "screen": "02_Worlds_And_Levels",
+    "design": "04_BACKEND_DESIGN/02_Worlds_And_Levels/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/02_Worlds_And_Levels/LAYOUT.svg",
+    "preview": "04_BACKEND_DESIGN/02_Worlds_And_Levels/PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/02_Worlds_And_Levels/README_AR.md"
+  },
+  {
+    "id": "ADM03",
+    "screen": "03_Level_Details",
+    "design": "04_BACKEND_DESIGN/03_Level_Details/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/03_Level_Details/LAYOUT.svg",
+    "preview": "04_BACKEND_DESIGN/03_Level_Details/PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/03_Level_Details/README_AR.md"
+  },
+  {
+    "id": "ADM04",
+    "screen": "04_Shop_Economy",
+    "design": "04_BACKEND_DESIGN/04_Shop_Economy/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/04_Shop_Economy/LAYOUT.svg",
+    "preview": "04_BACKEND_DESIGN/04_Shop_Economy/PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/04_Shop_Economy/README_AR.md"
+  },
+  {
+    "id": "ADM05",
+    "screen": "05_Daily_Rewards",
+    "design": "04_BACKEND_DESIGN/05_Daily_Rewards/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/05_Daily_Rewards/LAYOUT.svg",
+    "preview": "04_BACKEND_DESIGN/05_Daily_Rewards/PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/05_Daily_Rewards/README_AR.md"
+  },
+  {
+    "id": "ADM06",
+    "screen": "06_Players_Progress",
+    "design": "04_BACKEND_DESIGN/06_Players_Progress/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/06_Players_Progress/LAYOUT.svg",
+    "preview": "04_BACKEND_DESIGN/06_Players_Progress/PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/06_Players_Progress/README_AR.md"
+  },
+  {
+    "id": "ADM07",
+    "screen": "07_Village_Buildings",
+    "design": "04_BACKEND_DESIGN/07_Village_Buildings/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/07_Village_Buildings/LAYOUT.svg",
+    "preview": "04_BACKEND_DESIGN/07_Village_Buildings/PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/07_Village_Buildings/README_AR.md"
+  },
+  {
+    "id": "ADM08",
+    "screen": "08_Activities_Collection",
+    "design": "04_BACKEND_DESIGN/08_Activities_Collection/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/08_Activities_Collection/LAYOUT.svg",
+    "preview": "04_BACKEND_DESIGN/08_Activities_Collection/PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/08_Activities_Collection/README_AR.md"
+  },
+  {
+    "id": "ADM09",
+    "screen": "09_Ads_Controls",
+    "design": "04_BACKEND_DESIGN/09_Ads_Controls/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/09_Ads_Controls/LAYOUT.svg",
+    "preview": "04_BACKEND_DESIGN/09_Ads_Controls/PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/09_Ads_Controls/README_AR.md"
+  },
+  {
+    "id": "ADM10",
+    "screen": "10_Account_Privacy_Support",
+    "design": "04_BACKEND_DESIGN/10_Account_Privacy_Support/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/10_Account_Privacy_Support/LAYOUT.svg",
+    "preview": "04_BACKEND_DESIGN/10_Account_Privacy_Support/PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/10_Account_Privacy_Support/README_AR.md"
+  },
+  {
+    "id": "ADM11",
+    "screen": "11_System_Updates",
+    "design": "04_BACKEND_DESIGN/11_System_Updates/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/11_System_Updates/LAYOUT.svg",
+    "preview": "04_BACKEND_DESIGN/11_System_Updates/PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/11_System_Updates/README_AR.md"
+  },
+  {
+    "id": "ADM12",
+    "screen": "12_Push_Notifications_Scheduling",
+    "design": "04_BACKEND_DESIGN/12_Push_Notifications_Scheduling/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/12_Push_Notifications_Scheduling/LAYOUT.svg",
+    "preview": "04_BACKEND_DESIGN/12_Push_Notifications_Scheduling/PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/12_Push_Notifications_Scheduling/README_AR.md"
+  },
+  {
+    "id": "ADM13",
+    "screen": "13_System_Settings",
+    "design": "04_BACKEND_DESIGN/13_System_Settings/DESIGN.json",
+    "layout": "04_BACKEND_DESIGN/13_System_Settings/01_GENERAL.svg",
+    "preview": "04_BACKEND_DESIGN/13_System_Settings/01_GENERAL_PREVIEW.png",
+    "spec": "04_BACKEND_DESIGN/13_System_Settings/README_AR.md",
+    "settings_view_count": 8
+  }
+]

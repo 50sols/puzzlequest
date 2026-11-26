@@ -1,0 +1,439 @@
+{
+  "id": 30,
+  "slug": "Delete_Account_Confirmation",
+  "title": "Delete Account?",
+  "description": "Destructive confirmation with non-preselected action",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/30_Delete_Account_Confirmation/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_rewards_treasure_chest",
+      "path": "00_SHARED/art/rewards/treasure_chest.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/treasure_chest.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_standard",
+      "path": "00_SHARED/art/backgrounds/standard.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/standard.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_close",
+      "path": "00_SHARED/icons/png/close.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/close.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_close",
+      "path": "00_SHARED/icons/svg/close.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/close.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_delete",
+      "path": "00_SHARED/icons/png/delete.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/delete.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_delete",
+      "path": "00_SHARED/icons/svg/delete.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/delete.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_shield",
+      "path": "00_SHARED/icons/png/shield.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/shield.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_shield",
+      "path": "00_SHARED/icons/svg/shield.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/shield.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_warning",
+      "path": "00_SHARED/icons/png/warning.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/warning.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_warning",
+      "path": "00_SHARED/icons/svg/warning.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/warning.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_danger",
+      "path": "00_SHARED/ui/panels/danger.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/danger.png",
+        "svg": "00_SHARED/ui/panels/danger.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_danger_disabled",
+      "path": "00_SHARED/ui/buttons/danger_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/danger_disabled.png",
+        "svg": "00_SHARED/ui/buttons/danger_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_danger_normal",
+      "path": "00_SHARED/ui/buttons/danger_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/danger_normal.png",
+        "svg": "00_SHARED/ui/buttons/danger_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_danger_pressed",
+      "path": "00_SHARED/ui/buttons/danger_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/danger_pressed.png",
+        "svg": "00_SHARED/ui/buttons/danger_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_modal",
+      "path": "00_SHARED/ui/panels/modal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/modal.png",
+        "svg": "00_SHARED/ui/panels/modal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_disabled",
+      "path": "00_SHARED/ui/buttons/neutral_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_disabled.png",
+        "svg": "00_SHARED/ui/buttons/neutral_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_normal",
+      "path": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_normal.png",
+        "svg": "00_SHARED/ui/buttons/neutral_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_pressed",
+      "path": "00_SHARED/ui/buttons/neutral_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_pressed.png",
+        "svg": "00_SHARED/ui/buttons/neutral_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_states_error",
+      "path": "00_SHARED/ui/states/error.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/states/error.png"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Welcome_Entry",
+    "Privacy_Security"
+  ],
+  "widgets": [
+    {
+      "id": "dimmed_gameplay",
+      "kind": "backdrop",
+      "rect_dp": [
+        0,
+        0,
+        390,
+        844
+      ],
+      "text_key": "ui_dimmed_gameplay",
+      "label_role": "semantics_or_reference_only",
+      "decorative": true,
+      "renderer": "Flutter",
+      "interactive": false,
+      "focusable": false,
+      "min_hit_size_dp": null,
+      "role": "image",
+      "states": [
+        "default"
+      ],
+      "layer": "modal_barrier"
+    },
+    {
+      "id": "dialog",
+      "kind": "panel",
+      "rect_dp": [
+        24,
+        210,
+        342,
+        440
+      ],
+      "text_key": "ui_dialog",
+      "label_role": "semantics_or_reference_only",
+      "decorative": true,
+      "renderer": "Flutter",
+      "interactive": false,
+      "focusable": false,
+      "min_hit_size_dp": null,
+      "role": "image",
+      "states": [
+        "default"
+      ],
+      "layer": "modal_panel"
+    },
+    {
+      "id": "delete_warning",
+      "kind": "heading",
+      "role": "heading",
+      "text_key": "ui_delete_warning",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        48,
+        234,
+        294,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "parent_id": "dialog",
+      "layer": "modal_content",
+      "content_binding": {
+        "type": "text",
+        "note": "Warning heading; do not display the reward chest."
+      }
+    },
+    {
+      "id": "delete_explanation",
+      "kind": "text",
+      "role": "image",
+      "text_key": "ui_delete_explanation",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        48,
+        296,
+        294,
+        96
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "parent_id": "dialog",
+      "layer": "modal_content"
+    },
+    {
+      "id": "confirm_delete",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_confirm_delete",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "loading",
+        "error"
+      ],
+      "disabled_while_pending": true,
+      "rect_dp": [
+        48,
+        500,
+        294,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "submission",
+        "event": "start_account_deletion_with_30_day_recovery",
+        "requires": [
+          "reauth_Q22_Q23",
+          "typed_DELETE",
+          "final_confirm"
+        ],
+        "on_success": "invalidate_sessions_and_show_recovery_deadline_then_Welcome_Entry",
+        "on_error": "stay_no_partial_ui_success",
+        "legal_pending": "jurisdiction_review_needed"
+      },
+      "parent_id": "dialog",
+      "layer": "modal_content"
+    },
+    {
+      "id": "cancel",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_cancel",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        48,
+        572,
+        294,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "local",
+        "event": "cancel_delete_before_submission",
+        "on_success": "Privacy_Security",
+        "requires": "no successful deletion already confirmed"
+      },
+      "parent_id": "dialog",
+      "layer": "modal_content"
+    },
+    {
+      "id": "confirm_text",
+      "kind": "text_field",
+      "rect_dp": [
+        48,
+        416,
+        294,
+        56
+      ],
+      "text_key": "ui_confirm_text",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "textbox",
+      "interaction": {
+        "type": "edit",
+        "event": "edit_delete_confirmation"
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "parent_id": "dialog",
+      "layer": "modal_content",
+      "field": {
+        "label_key": "ui_confirm_text",
+        "text_direction": "ltr",
+        "secure": false,
+        "error_placement": "inline_below_field",
+        "keyboard": "appropriate_to_content",
+        "note": "Field height excludes the separate label/error rows; reflow moves following controls.",
+        "required_value": "DELETE",
+        "comparison": "trim whitespace then exact uppercase literal; never localize the required token"
+      }
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/30_Delete_Account_Confirmation/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets.",
+  "layout_preview": "01_SCREENS/30_Delete_Account_Confirmation/LAYOUT.svg",
+  "presentation": "modal",
+  "return_policy": {
+    "system_back": "cancel_delete_before_submission",
+    "origin_context": "Privacy_Security",
+    "fallback": "My_Account"
+  },
+  "delete_account_policy": {
+    "screens": [
+      28,
+      30
+    ],
+    "reauth_required": true,
+    "second_confirmation_required": true,
+    "cancel_sessions": true,
+    "hide_profile_immediately": true,
+    "recoverable_days": 30,
+    "active_delete_within_days_after_recovery": 30,
+    "backup_retention_max_days_after_active_deletion": 90,
+    "legal_exceptions_isolated": true,
+    "restore_after_final_delete": false,
+    "show_recovery_deadline": true,
+    "note": "Deletion & backup boundaries subject to region-specific legal signoff; do not implement before signoff."
+  }
+}

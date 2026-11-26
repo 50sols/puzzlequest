@@ -1,0 +1,443 @@
+{
+  "id": 21,
+  "slug": "Email_Verification_OTP",
+  "title": "Verify Email",
+  "description": "6 numeric code fields, resend timer",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/21_Email_Verification_OTP/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_rewards_coins_stack",
+      "path": "00_SHARED/art/rewards/coins_stack.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/coins_stack.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_standard",
+      "path": "00_SHARED/art/backgrounds/standard.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/standard.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_back",
+      "path": "00_SHARED/icons/png/back.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/back.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_back",
+      "path": "00_SHARED/icons/svg/back.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/back.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_check",
+      "path": "00_SHARED/icons/png/check.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/check.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_check",
+      "path": "00_SHARED/icons/svg/check.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/check.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_mail",
+      "path": "00_SHARED/icons/png/mail.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/mail.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_mail",
+      "path": "00_SHARED/icons/svg/mail.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/mail.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_restart",
+      "path": "00_SHARED/icons/png/restart.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/restart.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_restart",
+      "path": "00_SHARED/icons/svg/restart.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/restart.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_input",
+      "path": "00_SHARED/ui/panels/input.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/input.png",
+        "svg": "00_SHARED/ui/panels/input.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_states_error",
+      "path": "00_SHARED/ui/states/error.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/states/error.png"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Choose_Avatar",
+    "Create_Account"
+  ],
+  "widgets": [
+    {
+      "id": "verify_title",
+      "kind": "heading",
+      "role": "heading",
+      "text_key": "ui_verify_title",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        72,
+        16,
+        246,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "conditional",
+        "source": "otp.purpose",
+        "cases": {
+          "email_verification": "ui_verify_title",
+          "mandatory_login": "ui_mandatory_otp_title",
+          "password_recovery": "ui_recovery_otp_title"
+        }
+      }
+    },
+    {
+      "id": "otp_digits",
+      "kind": "otp_field",
+      "role": "textbox",
+      "text_key": "ui_otp_digits",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        296,
+        326,
+        64
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "edit",
+        "event": "edit_otp_code"
+      },
+      "layer": "content",
+      "field": {
+        "label_key": "ui_otp_digits",
+        "text_direction": "ltr",
+        "secure": false,
+        "error_placement": "inline_below_field",
+        "keyboard": "numeric",
+        "note": "One accessible field, six drawn cells; code expiry and resend use supplied timestamps.",
+        "logical_fields": 1,
+        "visual_cells": 6,
+        "paste": "distribute valid six digits; support normalized Arabic/Latin numerals",
+        "length": 6,
+        "system_autofill": true,
+        "paste_enabled": true
+      }
+    },
+    {
+      "id": "resend_timer",
+      "kind": "text",
+      "role": "image",
+      "text_key": "ui_resend_timer",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        32,
+        376,
+        326,
+        48
+      ],
+      "label_role": "dynamic_value_with_localized_label",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": [
+          "otp.resend_available_in_seconds",
+          "otp.expires_in_seconds"
+        ],
+        "template_key": "ui_otp_resend_status"
+      }
+    },
+    {
+      "id": "resend_code",
+      "kind": "text_link",
+      "role": "button",
+      "text_key": "ui_resend_code",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "loading",
+        "error"
+      ],
+      "rect_dp": [
+        80,
+        560,
+        230,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "submission",
+        "event": "resend_email_code",
+        "on_success": "stay_with_new_code_expiry",
+        "on_error": "stay_and_preserve_context",
+        "enabled_when": "resend_cooldown_done AND under_3_resends_15min AND under_10_resends_24h AND not_temporarily_blocked",
+        "max_resends_15min": 3,
+        "max_resends_24h": 10
+      },
+      "disabled_while_pending": true,
+      "layer": "content"
+    },
+    {
+      "id": "verify",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_verify",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "loading",
+        "error"
+      ],
+      "disabled_while_pending": true,
+      "rect_dp": [
+        32,
+        464,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "submission",
+        "event": "verify_otp_for_active_purpose",
+        "on_success": "mandatory_login->Home_My_Village (direct, reset_password_failure_counter); email_verification->preserve_current_game_context_or_Choose_Avatar; recovery->Reset_Password",
+        "on_error": "show_invalid_or_expired_or_blocked_preserve_context",
+        "max_attempts_per_code": 5
+      },
+      "layer": "content"
+    },
+    {
+      "id": "back",
+      "kind": "icon_button",
+      "role": "button",
+      "text_key": "ui_back",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Create_Account",
+        "context_routing": "mandatory_login->Sign_In; email_verification->Create_Account; password_recovery->Forgot_Password"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "change_email",
+      "kind": "text_link",
+      "rect_dp": [
+        32,
+        688,
+        326,
+        48
+      ],
+      "text_key": "ui_change_email",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "navigation",
+        "target": "Create_Account",
+        "context_routing": "email_verification->Create_Account; mandatory_login->hidden; password_recovery->hidden"
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "layer": "content",
+      "visible_when": "otp.purpose == email_verification"
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/21_Email_Verification_OTP/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets.",
+  "layout_preview": "01_SCREENS/21_Email_Verification_OTP/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Welcome_Entry"
+  },
+  "code_policies": {
+    "code_length": 6,
+    "ttl_seconds": 600,
+    "resend_cooldown_seconds": 60,
+    "max_attempts_per_code": 5,
+    "max_resends_per_15_min": 3,
+    "max_resends_per_24h": 10,
+    "new_code_invalidates_old": true,
+    "repeated_failed_code_lockout_seconds": 900,
+    "purposes": [
+      "email_verification",
+      "mandatory_login",
+      "password_recovery"
+    ],
+    "mandatory_login_success": "direct_enter_and_reset_counter",
+    "error_states": [
+      "invalid_remaining_count",
+      "expired",
+      "rate_limited",
+      "temporarily_blocked",
+      "network_retry"
+    ],
+    "time_authority": "server_timestamp_not_device_time",
+    "security": "hash_code_backend_and_limit_by_account_device_network",
+    "same_screen_no_extra_otp_page": true
+  }
+}

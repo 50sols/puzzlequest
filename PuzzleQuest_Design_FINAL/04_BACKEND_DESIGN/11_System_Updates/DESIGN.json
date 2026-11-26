@@ -1,0 +1,86 @@
+{
+  "id": "ADM11",
+  "title_ar": "تحديثات النظام",
+  "kind": "backend_admin_design_only",
+  "status": "static_editable_layout_unimplemented",
+  "not_game_product_screen": true,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "palette_source": "02_DESIGN/DESIGN_TOKENS.json",
+  "specification": {
+    "summary_ar": "واجهة التسليم وفق معيار ONE ZIP للـLaravel — تصميم فقط",
+    "header_cards": [
+      [
+        "Current Version",
+        "—"
+      ],
+      [
+        "Latest Version",
+        "—"
+      ],
+      [
+        "الحزمة",
+        "Update ZIP"
+      ],
+      [
+        "التحقق",
+        "SHA-256 + Signature"
+      ]
+    ],
+    "table": {
+      "title": "تسلسل التحديث من لوحة الإدارة",
+      "columns": [
+        "المرحلة",
+        "الخطوة",
+        "الحماية",
+        "النتيجة"
+      ],
+      "rows": [
+        [
+          "01",
+          "Upload → Verify",
+          "توافق إصدار + توقيع موثوق",
+          "Verified / Rejected"
+        ],
+        [
+          "02",
+          "Backup Now",
+          "نسخة ملفات وقاعدة بيانات قابلة للفحص",
+          "Backup OK / Failed"
+        ],
+        [
+          "03",
+          "Install Update",
+          "Lock + Maintenance + Migrations",
+          "Pending / In Progress"
+        ],
+        [
+          "04",
+          "Health Check",
+          "مراجعة ملفات وحفظ البيانات",
+          "Success / Recovery"
+        ],
+        [
+          "05",
+          "Update History",
+          "Release Notes / Manifest",
+          "سجل موثق"
+        ]
+      ]
+    },
+    "callouts": [
+      "Settings → System → System Updates",
+      "Recovery لا يفترض استعادة Migration غير قابلة للعكس",
+      "لا يعمل Upload/Install الآن: هذه تصاميم فقط لا كود Backend"
+    ]
+  },
+  "original_scope": "Existing PuzzleQuest gameplay, economy, content, identity, village, ads, and compulsory Laravel system updates only",
+  "approval_questions": [],
+  "interactions": "visual wireframe only; all mutation and permission rules require Backend implementation and approved policy",
+  "data_policy": "Only approved owner Q01–Q12 values are actual configured data. Dashes denote undefined; no player/operations mock data invented.",
+  "figma_like_editable_source": "LAYOUT.svg",
+  "preview": "PREVIEW.png",
+  "responsive_guidance": "Desktop 1440×900. Smaller admin sizes: collapse nav and use row scroll/stack, do not reduce control hit targets; no UI implementation supplied."
+}

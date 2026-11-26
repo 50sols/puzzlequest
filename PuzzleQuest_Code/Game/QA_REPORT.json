@@ -1,0 +1,60 @@
+{
+  "artifact": "PuzzleQuest Game source 1.2.0+5 (DOC 03 integration)",
+  "date": "2026-11-25",
+  "status": "SOURCE_DELIVERY_WITH_OPEN_RUNTIME_GATES",
+  "scope": "PuzzleQuest_Code/Game",
+  "user_mac_evidence_from_prior_build": {
+    "flutter_version": "3.47.6",
+    "dart": "3.13.5",
+    "flutter_pub_get": "PASS",
+    "flutter_analyze_before_DOC03": "2 warnings, no compile errors",
+    "flutter_test_before_DOC03": "11 passed",
+    "android_emulator_before_DOC03": "user screenshot shows app running (2026-11-25 around 21:29 Kuwait)",
+    "production_api_warning": "Service not configured on server; legal approval/gates require review"
+  },
+  "current_v1_2_0_runtime": {
+    "flutter_analyze": "NOT_RUN_IN_ARTIFACT_ENVIRONMENT",
+    "flutter_test": "NOT_RUN_IN_ARTIFACT_ENVIRONMENT",
+    "android_build": "NOT_RUN_IN_ARTIFACT_ENVIRONMENT",
+    "ios_build": "NOT_RUN_IN_ARTIFACT_ENVIRONMENT",
+    "real_backend_integration": "NOT_VERIFIED",
+    "golden_AR_EN_signoff": "NOT_VERIFIED"
+  },
+  "current_v1_2_0_checks": {
+    "source_integrity": "PASS",
+    "doc03_static_source_asset_contract": "PASS:52 checks",
+    "component_catalog": "20 documented and in Dart",
+    "approved_button_png_state_assets": "20 present; byte-identical to Design_FINAL",
+    "bundled_levels": "5",
+    "pieces": [
+      16,
+      16,
+      36,
+      64,
+      100
+    ],
+    "100_piece_identical_png_groups": 3
+  },
+  "native_build_baseline": {
+    "gradle": "8.14.3",
+    "android_gradle_plugin": "8.13.2",
+    "kotlin": "2.3.0",
+    "java": "17",
+    "share_plus": "13.3.1",
+    "resource_shrink": false
+  },
+  "missing_artifacts_for_portable_sdk_free_bundle": [
+    "android/gradle/wrapper/gradle-wrapper.jar",
+    "ios/Runner.xcodeproj/project.pbxproj"
+  ],
+  "needs_external_tests": [
+    "DOC03 golden AR/EN",
+    "13+ legal gate",
+    "AdMob SSV",
+    "Google OAuth",
+    "FCM/APNs",
+    "100-piece device image mask",
+    "APK AAB IPA signing"
+  ],
+  "font_policy": "Font binary files excluded from distributable ZIP; restore from the owner's previous PuzzleQuest archive using tool/restore_owner_fonts.py or retain existing Game/assets/fonts when applying over the Mac Game folder."
+}

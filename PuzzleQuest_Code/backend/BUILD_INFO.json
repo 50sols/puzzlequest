@@ -1,0 +1,171 @@
+{
+  "product": "PuzzleQuest",
+  "component": "Laravel Backend + Admin only",
+  "version": "1.0.2",
+  "release_stage": "release_candidate_not_production_verified",
+  "artifact": "PuzzleQuest-Setup-v1.0.2-cPanel-Subdomain.zip",
+  "created_at_utc": "2026-11-25T11:24:02.060349+00:00",
+  "git_sha": null,
+  "git_sha_note": "No Git commit supplied with uploaded RAR; do not fabricate a SHA",
+  "source_archive": "PuzzleQuest_Design_Handoff.rar",
+  "source_sha256": "5d6cdd59a3d5535b5eebed3cb505bcfa59ad759ee55a1bcc9d4d2478a7000e50",
+  "php_build_version": "8.4.24",
+  "framework": "laravel/framework 13.44.1",
+  "php_host_requirement": "8.3+",
+  "php_extensions_required": [
+    "ctype",
+    "curl",
+    "dom",
+    "fileinfo",
+    "mbstring",
+    "openssl",
+    "pdo",
+    "pdo_mysql",
+    "sodium",
+    "zip",
+    "gd",
+    "xml"
+  ],
+  "production_dependencies": {
+    "brick/math": "1.0.0",
+    "carbonphp/carbon-doctrine-types": "3.2.1",
+    "dflydev/dot-access-data": "v3.0.3",
+    "doctrine/inflector": "2.1.1",
+    "doctrine/lexer": "3.0.3",
+    "dragonmantank/cron-expression": "v3.6.1",
+    "egulias/email-validator": "4.0.5",
+    "firebase/php-jwt": "v7.2.2",
+    "fruitcake/php-cors": "v1.4.0",
+    "graham-campbell/result-type": "v1.2.0",
+    "guzzlehttp/guzzle": "8.6.0",
+    "guzzlehttp/promises": "3.2.0",
+    "guzzlehttp/psr7": "3.6.0",
+    "guzzlehttp/uri-template": "v2.0.1",
+    "laravel/framework": "v13.44.1",
+    "laravel/prompts": "v0.3.28",
+    "laravel/serializable-closure": "v2.2.0",
+    "laravel/tinker": "v3.2.0",
+    "league/commonmark": "2.10.8",
+    "league/config": "v1.2.0",
+    "league/flysystem": "3.36.0",
+    "league/flysystem-local": "3.35.3",
+    "league/mime-type-detection": "1.17.0",
+    "league/uri": "7.10.0",
+    "league/uri-interfaces": "7.10.0",
+    "monolog/monolog": "3.13.0",
+    "nesbot/carbon": "3.15.1",
+    "nette/schema": "v1.4.0",
+    "nette/utils": "v4.1.6",
+    "nikic/php-parser": "v5.9.0",
+    "nunomaduro/termwind": "v2.4.1",
+    "phpoption/phpoption": "1.10.0",
+    "psr/clock": "1.0.0",
+    "psr/container": "2.0.2",
+    "psr/event-dispatcher": "1.0.0",
+    "psr/http-client": "1.0.3",
+    "psr/http-factory": "1.1.0",
+    "psr/http-message": "2.0",
+    "psr/log": "3.0.2",
+    "psr/simple-cache": "3.0.0",
+    "psy/psysh": "v0.12.24",
+    "ramsey/collection": "2.1.1",
+    "ramsey/uuid": "4.10.0",
+    "symfony/clock": "v7.4.21",
+    "symfony/console": "v7.4.24",
+    "symfony/css-selector": "v7.4.22",
+    "symfony/deprecation-contracts": "v3.8.1",
+    "symfony/error-handler": "v7.4.22",
+    "symfony/event-dispatcher": "v7.4.17",
+    "symfony/event-dispatcher-contracts": "v3.8.1",
+    "symfony/finder": "v7.4.24",
+    "symfony/http-foundation": "v7.4.24",
+    "symfony/http-kernel": "v7.4.24",
+    "symfony/mailer": "v7.4.24",
+    "symfony/mime": "v7.4.24",
+    "symfony/polyfill-ctype": "v1.37.0",
+    "symfony/polyfill-intl-grapheme": "v1.43.3",
+    "symfony/polyfill-intl-idn": "v1.43.0",
+    "symfony/polyfill-intl-normalizer": "v1.43.0",
+    "symfony/polyfill-mbstring": "v1.43.3",
+    "symfony/polyfill-php80": "v1.43.0",
+    "symfony/polyfill-php82": "v1.43.0",
+    "symfony/polyfill-php83": "v1.43.0",
+    "symfony/polyfill-php84": "v1.43.0",
+    "symfony/polyfill-php85": "v1.44.0",
+    "symfony/polyfill-php86": "v1.43.0",
+    "symfony/polyfill-time": "v1.42.0",
+    "symfony/polyfill-uuid": "v1.43.0",
+    "symfony/process": "v7.4.24",
+    "symfony/routing": "v7.4.24",
+    "symfony/service-contracts": "v3.8.1",
+    "symfony/string": "v7.4.24",
+    "symfony/translation": "v7.4.24",
+    "symfony/translation-contracts": "v3.8.1",
+    "symfony/uid": "v7.4.21",
+    "symfony/var-dumper": "v7.4.24",
+    "tijsverkoyen/css-to-inline-styles": "v2.4.0",
+    "vlucas/phpdotenv": "v5.8.1",
+    "voku/portable-ascii": "2.1.1"
+  },
+  "migrations": [
+    {
+      "path": "database/migrations/0001_01_01_000000_create_users_table.php",
+      "sha256": "10d79883bc08ce46510f9ad8b1830b4d06d586dc56ae2c8bac3b3e491f69a90f"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000001_create_cache_table.php",
+      "sha256": "fbb4665e5a977e71df4e74ec75b3c06ca4f17ad0de7138fe9786639189978e77"
+    },
+    {
+      "path": "database/migrations/0001_01_01_000002_create_jobs_table.php",
+      "sha256": "df4910687180313a14a3f96a8bddd808ae145ed1b107cd772caf865c0dc2b746"
+    },
+    {
+      "path": "database/migrations/2026_11_25_000001_create_puzzlequest_tables.php",
+      "sha256": "38b1f0d58298818e3687a3d77c44c1bfb74fcfd0effd81bdef88d67c145b66f5"
+    },
+    {
+      "path": "database/migrations/2026_11_25_000002_create_ad_sessions.php",
+      "sha256": "a57faf7a3f83530ed7009b71fb32dcf1484c6426da180a4f7b23c7367ee9eabf"
+    },
+    {
+      "path": "database/migrations/2026_11_25_000003_create_support_access_and_inbox_snapshots.php",
+      "sha256": "626ceb4cefe250f047f26c3c47423b27221ff3b61edeb3851b42e8bd30cea1d1"
+    }
+  ],
+  "content_levels": [
+    {
+      "id": "green_valley_house_001",
+      "code": "1-1",
+      "pieces": 16
+    },
+    {
+      "id": "level_002_windmill_spring",
+      "code": "1-2",
+      "pieces": 16
+    },
+    {
+      "id": "level_003_snow_castle",
+      "code": "1-3",
+      "pieces": 36
+    },
+    {
+      "id": "level_004_sky_balloon",
+      "code": "1-4",
+      "pieces": 64
+    },
+    {
+      "id": "level_005_autumn_tree",
+      "code": "1-5",
+      "pieces": 100
+    }
+  ],
+  "source_testing": "See TEST_RESULTS.json for passes and unresolved acceptance gates",
+  "release_signature": "not_provided_until_trusted_CI_release_signing_key_configured",
+  "update_zip": "No signed Update ZIP created; update must declare deployment_layout=cpanel_fixed_subdomain_v1 and pass acceptance tests.",
+  "environment_variables": "Created only by web installer; package carries .env.example but no .env",
+  "deployment_layout": "cpanel_fixed_subdomain_v1",
+  "document_root": "public_html/puzzlequest.50sols.com",
+  "laravel_private_root": "puzzlequest_app",
+  "layout_note": "Private puzzlequest_app at home root; public files only inside subdomain Document Root. Main /public_html stays untouched."
+}

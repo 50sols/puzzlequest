@@ -1,0 +1,26 @@
+{
+  "version": "1.0.9",
+  "release_date": "2026-11-26",
+  "source_contract": "user-uploaded app.rar -> app/Services/Content.php and SafeZip.php",
+  "checks": {
+    "tests_new_laravel_contract": "13 passed",
+    "tests_bootstrap_and_windows": "8 passed",
+    "tests_selected_legacy_regressions": "4 passed",
+    "php_syntax": "app/Services/Content.php passes php -l",
+    "php_importer_pre_gd": "Content::validate() reached GD required for content pixel validation (environment GD absent)",
+    "local_100_piece_zip": "passed independent Laravel-format verifier with 13 checks",
+    "production_import": "NOT TESTED",
+    "world_id_exists_in_production": "NOT VERIFIED",
+    "real_device_QA": "NOT TESTED"
+  },
+  "example_package": {
+    "filename": "PuzzleQuest_Green_Valley_Level_6_Laravel_v1.0.9.zip",
+    "bytes": 7266274,
+    "sha256": "c581b5c8a49e1eb26b36de06ff733c5ab0ba2f64cfab90860a73c64dc2e45a27"
+  },
+  "notes": [
+    "Exact nine mandatory metadata keys in level.json ROOT.",
+    "Laravel manifest must have 960x960 PNG image, PNG tiles and SVG masks.",
+    "Server issues a different revision UUID."
+  ]
+}

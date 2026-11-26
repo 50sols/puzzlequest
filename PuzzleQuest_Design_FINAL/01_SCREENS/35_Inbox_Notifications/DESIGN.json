@@ -1,0 +1,353 @@
+{
+  "id": 35,
+  "slug": "Inbox_Notifications",
+  "title": "Messages",
+  "description": "Unread/read, empty inbox, promotions opt-in separate",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/35_Inbox_Notifications/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_backgrounds_standard",
+      "path": "00_SHARED/art/backgrounds/standard.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/standard.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_calendar",
+      "path": "00_SHARED/icons/png/calendar.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/calendar.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_calendar",
+      "path": "00_SHARED/icons/svg/calendar.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/calendar.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_gift",
+      "path": "00_SHARED/icons/png/gift.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/gift.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_gift",
+      "path": "00_SHARED/icons/svg/gift.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/gift.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_notification",
+      "path": "00_SHARED/icons/png/notification.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/notification.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_notification",
+      "path": "00_SHARED/icons/svg/notification.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/notification.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_disabled",
+      "path": "00_SHARED/ui/buttons/neutral_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_disabled.png",
+        "svg": "00_SHARED/ui/buttons/neutral_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_normal",
+      "path": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_normal.png",
+        "svg": "00_SHARED/ui/buttons/neutral_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_pressed",
+      "path": "00_SHARED/ui/buttons/neutral_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_pressed.png",
+        "svg": "00_SHARED/ui/buttons/neutral_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_disabled",
+      "path": "00_SHARED/ui/buttons/primary_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_disabled.png",
+        "svg": "00_SHARED/ui/buttons/primary_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_normal",
+      "path": "00_SHARED/ui/buttons/primary_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_normal.png",
+        "svg": "00_SHARED/ui/buttons/primary_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_pressed",
+      "path": "00_SHARED/ui/buttons/primary_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_pressed.png",
+        "svg": "00_SHARED/ui/buttons/primary_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Home_My_Village"
+  ],
+  "widgets": [
+    {
+      "id": "notification_list",
+      "kind": "list",
+      "role": "list",
+      "text_key": "ui_notification_list",
+      "focusable": false,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "rect_dp": [
+        24,
+        152,
+        342,
+        416
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "collection",
+        "item_actions": [
+          "read_existing_message",
+          "open_existing_message_target"
+        ],
+        "item_states": [
+          "unread",
+          "read",
+          "expired",
+          "locked_target",
+          "offline",
+          "read_sync_pending"
+        ],
+        "sort": "newest_first",
+        "no_auto_claim": true
+      },
+      "disabled_while_pending": false,
+      "layer": "content",
+      "child_min_touch_dp": 48,
+      "semantics_policy": "Container is not one clickable/focusable button; actionable visible children expose separate 48dp targets and semantics. Decorative or disabled children are not actionable.",
+      "item_layout_dp": {
+        "container": [
+          24,
+          152,
+          342,
+          416
+        ],
+        "min_row_height": 72,
+        "item_icon_dp": 40,
+        "item_hit_target_min_dp": 48,
+        "text_line_max": 2,
+        "uses_dynamic_type": true,
+        "rtl_mirrors_list_not_icon_brand": true
+      }
+    },
+    {
+      "id": "back",
+      "kind": "icon_button",
+      "role": "button",
+      "text_key": "ui_back",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Home_My_Village"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "mark_all_read",
+      "kind": "button",
+      "rect_dp": [
+        32,
+        656,
+        326,
+        56
+      ],
+      "text_key": "ui_mark_all_read",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "submission",
+        "event": "mark_all_read_snapshot",
+        "scope": "message_ids_visible_to_account_at_operation_snapshot",
+        "offline": "queue_idempotent_snapshot_operation",
+        "never": "claim_reward_or_delete_records",
+        "failure": "preserve_local_unread_or_show_pending_sync",
+        "success": "update_counter_immediately"
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "layer": "content"
+    },
+    {
+      "id": "screen_heading",
+      "kind": "heading",
+      "rect_dp": [
+        72,
+        16,
+        246,
+        48
+      ],
+      "text_key": "screen_35_title",
+      "label_role": "visible_localized_text",
+      "interactive": false,
+      "focusable": false,
+      "decorative": false,
+      "role": "heading",
+      "renderer": "Flutter",
+      "states": [
+        "default"
+      ],
+      "layer": "content",
+      "min_hit_size_dp": null
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/35_Inbox_Notifications/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets.",
+  "layout_preview": "01_SCREENS/35_Inbox_Notifications/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Home_My_Village"
+  },
+  "inbox_push_contract": {
+    "types": [
+      "system",
+      "rewards",
+      "achievements",
+      "progress",
+      "account_security",
+      "support",
+      "events"
+    ],
+    "ordinary_retention_days": 90,
+    "security_retention_days": 180,
+    "events_disabled_v1": true,
+    "player_states": [
+      "loading",
+      "empty",
+      "unread",
+      "read",
+      "offline_queued_read",
+      "marked_all",
+      "error",
+      "expired_target",
+      "push_permission_denied"
+    ],
+    "push_navigation": "verify published target and viewer ownership; otherwise stay/open Inbox",
+    "brand": "app icon set in compiled iOS/Android app, mockup typographic only"
+  },
+  "pn01_pn04_final_policy": {
+    "reference": "02_DESIGN/PUSH_NOTIFICATION_CONTRACT.json",
+    "noncritical_push_max_in_rolling_24h": 2,
+    "local_quiet_hours": "22:00–08:00 IANA player timezone",
+    "critical_security_can_bypass_only_when_necessary": true,
+    "time_zone_unknown": "inbox_available_but_no_normal_scheduled_push",
+    "push_settings_off_does_not_disable_inbox": true,
+    "no_marketing_in_V1": true
+  }
+}

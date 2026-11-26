@@ -1,0 +1,89 @@
+{
+  "id": "ADM09",
+  "title_ar": "الإعلانات والمكافآت",
+  "kind": "backend_admin_design_only",
+  "status": "static_editable_layout_unimplemented",
+  "not_game_product_screen": true,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "palette_source": "02_DESIGN/DESIGN_TOKENS.json",
+  "specification": {
+    "summary_ar": "AdMob + SSV، وحصص الإعلان البيني بعد استلام المكافأة",
+    "header_cards": [
+      [
+        "Rewarded Hint",
+        "1 Hint"
+      ],
+      [
+        "Interstitial/جلسة",
+        "2 حد أقصى"
+      ],
+      [
+        "Interstitial/يوم",
+        "6 حد أقصى"
+      ],
+      [
+        "Cooldown",
+        "180 ثانية"
+      ]
+    ],
+    "table": {
+      "title": "ضوابط إعلانات AdMob المعتمدة",
+      "columns": [
+        "النوع",
+        "المنح",
+        "الحد",
+        "حالة الاعتماد"
+      ],
+      "rows": [
+        [
+          "Hint Rewarded",
+          "1 Hint / SSV",
+          "3 UTC/يوم · 1/محاولة",
+          "معتمد Q11/21"
+        ],
+        [
+          "Full Image Rewarded",
+          "10 ثوانٍ / SSV",
+          "لا تداخل",
+          "معتمد Q10/21"
+        ],
+        [
+          "Full Image Paid",
+          "30 ثانية",
+          "شراء Coins فقط",
+          "معتمد Q10"
+        ],
+        [
+          "Interstitial",
+          "بلا مكافأة",
+          "2 جلسة/6 يوم/180ث",
+          "معتمد Q20"
+        ],
+        [
+          "Ad Provider",
+          "AdMob SSV",
+          "Callback موقّع",
+          "معتمد Q21"
+        ]
+      ]
+    },
+    "callouts": [
+      "لا إعلان أول إكمال؛ يبدأ بعد ثاني إكمال مؤكد",
+      "خمول 30 دقيقة ينهي الجلسة؛ لا إعلان أثناء اللعب",
+      "13+ والأسواق مقترحة: يلزم اعتماد Q34/Q35 قبل الإنتاج"
+    ]
+  },
+  "original_scope": "Existing PuzzleQuest gameplay, economy, content, identity, village, ads, and compulsory Laravel system updates only",
+  "approval_questions": [
+    "Q10",
+    "Q11"
+  ],
+  "interactions": "visual wireframe only; all mutation and permission rules require Backend implementation and approved policy",
+  "data_policy": "Owner approved Q01-Q21; proposed ages require Q34/Q35. No synthetic player data or runtime claims.",
+  "figma_like_editable_source": "LAYOUT.svg",
+  "preview": "PREVIEW.png",
+  "responsive_guidance": "Desktop 1440×900. Smaller admin sizes: collapse nav and use row scroll/stack, do not reduce control hit targets; no UI implementation supplied."
+}

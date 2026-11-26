@@ -1,0 +1,110 @@
+{
+  "id": "ADM10",
+  "title_ar": "الحساب والخصوصية",
+  "kind": "backend_admin_design_only",
+  "status": "static_editable_layout_unimplemented",
+  "not_game_product_screen": true,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "palette_source": "02_DESIGN/DESIGN_TOKENS.json",
+  "specification": {
+    "summary_ar": "عقود الخصوصية والخدمات Q28–Q37 مع اعتماد الدعم والبريد؛ المراجعة القانونية مستقلة",
+    "header_cards": [
+      [
+        "الظهور",
+        "Private افتراضيًا"
+      ],
+      [
+        "الأجهزة",
+        "إلغاء جلسات آمن"
+      ],
+      [
+        "التصدير",
+        "ZIP / JSON + CSV"
+      ],
+      [
+        "الدعم",
+        "info@50sols.com"
+      ]
+    ],
+    "table": {
+      "title": "الصفحات الحالية — سياسات معتمدة تصميمياً",
+      "columns": [
+        "الخدمة",
+        "الشاشة",
+        "القرار",
+        "البوابة"
+      ],
+      "rows": [
+        [
+          "Public / Private",
+          "27 / 10",
+          "Friends ملغى",
+          "معتمد Q28"
+        ],
+        [
+          "Devices / Export",
+          "28",
+          "جلسات + ZIP خاص",
+          "معتمد Q29/30"
+        ],
+        [
+          "Email / Delete",
+          "27 / 30",
+          "OTP + مهلة 30 يوم",
+          "قانوني Q31/32"
+        ],
+        [
+          "Support / Inbox",
+          "36 / 35",
+          "Tickets + 7 أنواع",
+          "معتمد Q33/36"
+        ],
+        [
+          "Consent / Legal",
+          "40 / 28",
+          "اختياري OFF",
+          "مراجعة قانونية Q34/35"
+        ]
+      ]
+    },
+    "callouts": [
+      "دعم: info@50sols.com — اختبار استقبال البريد قبل النشر",
+      "استهداف 13+ عالمي / AR+EN: اعتماد تصميمي مشروط بالامتثال المحلي",
+      "التصدير: ZIP يحتوي JSON وCSV ورابط 7 أيام — لا بيانات سرية",
+      "الحذف: استعادة 30 يومًا ثم معالجة الحذف وفق القانون",
+      "إشعارات التسويق OFF ولا تُفعل بإذن نظام التشغيل فقط",
+      "شعار التطبيق والنصوص القانونية النهائية ليست معتمدة بعد"
+    ]
+  },
+  "original_scope": "Existing PuzzleQuest gameplay, economy, content, identity, village, ads, and compulsory Laravel system updates only",
+  "approval_questions": [
+    "Q39 official brand asset",
+    "legal review Q34/35/37"
+  ],
+  "interactions": "visual wireframe only; all mutation and permission rules require Backend implementation and approved policy",
+  "data_policy": "Q28–Q37 design decisions recorded; final legal publication and real production testing pending.",
+  "figma_like_editable_source": "LAYOUT.svg",
+  "preview": "PREVIEW.png",
+  "responsive_guidance": "Desktop 1440×900. Smaller admin sizes: collapse nav and use row scroll/stack, do not reduce control hit targets; no UI implementation supplied.",
+  "privacy_document_design_contract": {
+    "hosted_in_existing_backend_site": true,
+    "domain_requested": "http://puzzlequest.50sols.com/",
+    "possible_routes_are_proposed_not_approved": [
+      "/privacy",
+      "/terms",
+      "/delete-account",
+      "/help"
+    ],
+    "published_https_required": true,
+    "no_content_invented": true,
+    "owner_approval_questions": [
+      "Q32",
+      "Q33",
+      "Q34",
+      "Q35"
+    ]
+  }
+}

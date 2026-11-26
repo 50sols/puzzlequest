@@ -1,0 +1,105 @@
+{
+  "id": "ADM08",
+  "title_ar": "الأنشطة والمقتنيات",
+  "kind": "backend_admin_design_only",
+  "status": "static_editable_layout_unimplemented",
+  "not_game_product_screen": true,
+  "width_px": 1440,
+  "height_px": 900,
+  "direction": "rtl",
+  "font_family": "Tajawal",
+  "palette_source": "02_DESIGN/DESIGN_TOKENS.json",
+  "specification": {
+    "summary_ar": "خمس مهام، Events فارغة، خمس صور وخمس شارات وصندوق واحد",
+    "header_cards": [
+      [
+        "المهام",
+        "3 يومية + 2 أسبوعية"
+      ],
+      [
+        "Events",
+        "0 عند الإطلاق"
+      ],
+      [
+        "الصندوق",
+        "300 عملة + تلميحان"
+      ],
+      [
+        "الترتيب",
+        "Weekly Global"
+      ]
+    ],
+    "table": {
+      "title": "المكونات والقرارات Q13–Q17",
+      "columns": [
+        "القسم",
+        "بيانات الإطلاق",
+        "شاشة اللاعب",
+        "الحالة"
+      ],
+      "rows": [
+        [
+          "Missions",
+          "3 يومية + 2 أسبوعية",
+          "08",
+          "معتمد Q13"
+        ],
+        [
+          "Events",
+          "Coming soon — Empty",
+          "08",
+          "معتمد Q14"
+        ],
+        [
+          "Collections / Chest",
+          "5 صور +5 Badges / 10★",
+          "09 / 16",
+          "معتمد Q15"
+        ],
+        [
+          "Achievements",
+          "5 تلقائية، Badge فقط",
+          "34",
+          "معتمد Q16"
+        ],
+        [
+          "Leaderboard",
+          "أسبوعي / أفضل نتيجة",
+          "10",
+          "Q05-T مطلوب"
+        ]
+      ]
+    },
+    "callouts": [
+      "المهام تسقط غير المستلم عند نهاية دورة UTC",
+      "الصندوق: الخمس مراحل + 10★؛ Claim مرة فقط",
+      "الترتيب بلا جوائز؛ نقاطه تنتظر Level Time Limit"
+    ]
+  },
+  "original_scope": "Existing PuzzleQuest gameplay, economy, content, identity, village, ads, and compulsory Laravel system updates only",
+  "approval_questions": [],
+  "interactions": "visual wireframe only; all mutation and permission rules require Backend implementation and approved policy",
+  "data_policy": "Owner approved Q01-Q21; proposed ages require Q34/Q35. No synthetic player data or runtime claims.",
+  "figma_like_editable_source": "LAYOUT.svg",
+  "preview": "PREVIEW.png",
+  "responsive_guidance": "Desktop 1440×900. Smaller admin sizes: collapse nav and use row scroll/stack, do not reduce control hit targets; no UI implementation supplied.",
+  "owner_timing_status": "approved Q05-T; weekly score formula now fully specified",
+  "badge_visual_approval": {
+    "source": "Owner decision 2026-11-25",
+    "use_existing_generic_trophy_for_all_five": true,
+    "badge_identity": "approved_achievement_id + AR/EN text",
+    "do_not_fabricate_five_distinct_badges": true,
+    "existing_trophy_asset_bindings": {
+      "locked": "00_SHARED/icons/states/trophy__disabled.svg",
+      "unlocked": "00_SHARED/icons/states/trophy__normal.svg",
+      "focused": "00_SHARED/icons/states/trophy__active.svg"
+    },
+    "achievement_ids": [
+      "first_steps",
+      "green_valley_explorer",
+      "perfect_solver",
+      "star_collector",
+      "puzzle_master"
+    ]
+  }
+}

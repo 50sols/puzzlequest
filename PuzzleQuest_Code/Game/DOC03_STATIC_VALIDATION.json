@@ -1,0 +1,273 @@
+{
+  "kind": "STATIC_SOURCE_ASSET_CHECK_ONLY",
+  "version": "1.2.0+5",
+  "passed": true,
+  "checks": [
+    {
+      "test": "approved_color_background",
+      "passed": true,
+      "details": "0xFF131030"
+    },
+    {
+      "test": "approved_color_surface",
+      "passed": true,
+      "details": "0xFF23134A"
+    },
+    {
+      "test": "approved_color_primary",
+      "passed": true,
+      "details": "0xFF8F3DF4"
+    },
+    {
+      "test": "approved_color_purple",
+      "passed": true,
+      "details": "0xFF7D4DFF"
+    },
+    {
+      "test": "approved_color_gold",
+      "passed": true,
+      "details": "0xFFFFBB31"
+    },
+    {
+      "test": "approved_color_danger",
+      "passed": true,
+      "details": "0xFFF76B87"
+    },
+    {
+      "test": "approved_color_success",
+      "passed": true,
+      "details": "0xFF39D45E"
+    },
+    {
+      "test": "approved_color_actionGreen",
+      "passed": true,
+      "details": "0xFF23C41C"
+    },
+    {
+      "test": "approved_color_white",
+      "passed": true,
+      "details": "0xFFF7F4FF"
+    },
+    {
+      "test": "approved_color_muted",
+      "passed": true,
+      "details": "0xFFBFB8D6"
+    },
+    {
+      "test": "button_primary_normal",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_primary_pressed",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_primary_focused",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_primary_loading",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_primary_disabled",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_success_normal",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_success_pressed",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_success_focused",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_success_loading",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_success_disabled",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_neutral_normal",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_neutral_pressed",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_neutral_focused",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_neutral_loading",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_neutral_disabled",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_danger_normal",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_danger_pressed",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_danger_focused",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_danger_loading",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "button_danger_disabled",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "20_components",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "all_component_classes",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "exists_lib/widgets/component_library.dart",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "exists_lib/widgets/component_preview.dart",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "exists_test/component_contract_test.dart",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "exists_tool/component_gallery_main.dart",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "gradle_8_14_3",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "agp_8_13_2",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "kgp_2_3_0",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "java17_compilerOptions",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "resource_shrink_compatible",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "share_plus_13_3_1",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "game_version",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "artwork_assets_declared",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "production_api",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "40_screen_ids",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "5_levels",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "test": "manifest_1-1",
+      "passed": true,
+      "details": "16 pieces"
+    },
+    {
+      "test": "manifest_1-2",
+      "passed": true,
+      "details": "16 pieces"
+    },
+    {
+      "test": "manifest_1-3",
+      "passed": true,
+      "details": "36 pieces"
+    },
+    {
+      "test": "manifest_1-4",
+      "passed": true,
+      "details": "64 pieces"
+    },
+    {
+      "test": "manifest_1-5",
+      "passed": true,
+      "details": "100 pieces"
+    }
+  ],
+  "limitations": [
+    "No Dart SDK / Flutter analyze or tests executed here",
+    "No Android/iOS build executed here",
+    "No real production authentication or rewards test",
+    "No owner signed golden tests"
+  ]
+}

@@ -1,0 +1,560 @@
+{
+  "id": 27,
+  "slug": "Edit_Profile",
+  "title": "Edit Profile",
+  "description": "Profile editor: nickname, avatar, email-change with OTP, public/private visibility only (no Friends)",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/27_Edit_Profile/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_characters_hero_avatar",
+      "path": "00_SHARED/art/characters/hero_avatar.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/characters/hero_avatar.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_standard",
+      "path": "00_SHARED/art/backgrounds/standard.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/standard.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_back",
+      "path": "00_SHARED/icons/png/back.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/back.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_back",
+      "path": "00_SHARED/icons/svg/back.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/back.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_camera",
+      "path": "00_SHARED/icons/png/camera.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/camera.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_camera",
+      "path": "00_SHARED/icons/svg/camera.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/camera.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_check",
+      "path": "00_SHARED/icons/png/check.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/check.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_check",
+      "path": "00_SHARED/icons/svg/check.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/check.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_edit",
+      "path": "00_SHARED/icons/png/edit.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/edit.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_edit",
+      "path": "00_SHARED/icons/svg/edit.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/edit.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_user",
+      "path": "00_SHARED/icons/png/user.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/user.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_user",
+      "path": "00_SHARED/icons/svg/user.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/user.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_input",
+      "path": "00_SHARED/ui/panels/input.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/input.png",
+        "svg": "00_SHARED/ui/panels/input.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_inputs_toggle_off",
+      "path": "00_SHARED/ui/inputs/toggle_off.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/inputs/toggle_off.png"
+      }
+    },
+    {
+      "asset_id": "ui_inputs_toggle_on",
+      "path": "00_SHARED/ui/inputs/toggle_on.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/inputs/toggle_on.png"
+      }
+    },
+    {
+      "asset_id": "ui_states_save_success",
+      "path": "00_SHARED/ui/states/save_success.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/states/save_success.png"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Choose_Avatar",
+    "Edit_Profile",
+    "My_Account"
+  ],
+  "widgets": [
+    {
+      "id": "avatar_edit",
+      "kind": "image",
+      "role": "button",
+      "text_key": "ui_avatar_edit",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "rect_dp": [
+        147,
+        96,
+        96,
+        96
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Choose_Avatar",
+        "return_to": "Edit_Profile"
+      },
+      "disabled_while_pending": false,
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "profile_draft.avatar",
+        "fallback": "00_SHARED/art/characters/hero_avatar.png"
+      }
+    },
+    {
+      "id": "username",
+      "kind": "text_field",
+      "role": "textbox",
+      "text_key": "ui_username",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        288,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "edit",
+        "event": "edit_username"
+      },
+      "layer": "content",
+      "field": {
+        "label_key": "ui_username",
+        "text_direction": "locale",
+        "secure": false,
+        "error_placement": "inline_below_field",
+        "keyboard": "appropriate_to_content",
+        "note": "Field height excludes the separate label/error rows; reflow moves following controls."
+      }
+    },
+    {
+      "id": "email",
+      "kind": "text_field",
+      "role": "textbox",
+      "text_key": "ui_email",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        32,
+        376,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "edit",
+        "event": "request_email_change",
+        "requires": [
+          "reauth",
+          "new_email_otp_Q23",
+          "email_not_assigned_other_account"
+        ],
+        "on_fail": "retain_old_email_and_edit_draft",
+        "on_success": "commit_new_email_and_security_notice_to_both_addresses"
+      },
+      "layer": "content",
+      "field": {
+        "label_key": "ui_email",
+        "text_direction": "ltr",
+        "secure": false,
+        "error_placement": "inline_below_field",
+        "keyboard": "appropriate_to_content",
+        "note": "Field height excludes the separate label/error rows; reflow moves following controls."
+      }
+    },
+    {
+      "id": "save_profile",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_save_profile",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "loading",
+        "error"
+      ],
+      "disabled_while_pending": true,
+      "rect_dp": [
+        32,
+        672,
+        326,
+        56
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "submission",
+        "event": "save_profile",
+        "on_success": "My_Account",
+        "on_error": "stay_and_preserve_context"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "change_avatar",
+      "kind": "text_link",
+      "rect_dp": [
+        96,
+        208,
+        198,
+        48
+      ],
+      "text_key": "ui_change_avatar",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "navigation",
+        "target": "Choose_Avatar"
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "layer": "content"
+    },
+    {
+      "id": "email_notice",
+      "kind": "text",
+      "rect_dp": [
+        32,
+        448,
+        326,
+        48
+      ],
+      "text_key": "ui_email_notice",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": false,
+      "focusable": false,
+      "min_hit_size_dp": null,
+      "role": "image",
+      "states": [
+        "default"
+      ],
+      "layer": "content"
+    },
+    {
+      "id": "visibility",
+      "kind": "select",
+      "rect_dp": [
+        32,
+        544,
+        326,
+        56
+      ],
+      "text_key": "ui_visibility",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "selection",
+        "event": "select_profile_visibility",
+        "enabled_values": [
+          "public",
+          "private"
+        ],
+        "default": "private",
+        "note": "Friends removed completely from V1; private player excluded from public weekly board; hidden data never public",
+        "removed_from_ui_v1": [
+          "friends"
+        ],
+        "visible_values_only": [
+          "public",
+          "private"
+        ]
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "selected"
+      ],
+      "disabled_while_pending": false,
+      "design_status": "visible_in_source_requires_details",
+      "pending_requirement": "Existing reference control; no new screen/provider/service flow is invented. See RELEASE_GATES_AR.md.",
+      "layer": "content",
+      "child_min_touch_dp": 48
+    },
+    {
+      "id": "back",
+      "kind": "icon_button",
+      "rect_dp": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "text_key": "ui_back",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "local",
+        "event": "return_to_origin"
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "layer": "content"
+    },
+    {
+      "id": "screen_heading",
+      "kind": "heading",
+      "rect_dp": [
+        72,
+        16,
+        246,
+        48
+      ],
+      "text_key": "screen_27_title",
+      "label_role": "visible_localized_text",
+      "interactive": false,
+      "focusable": false,
+      "decorative": false,
+      "role": "heading",
+      "renderer": "Flutter",
+      "states": [
+        "default"
+      ],
+      "layer": "content",
+      "min_hit_size_dp": null
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/27_Edit_Profile/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets.",
+  "layout_preview": "01_SCREENS/27_Edit_Profile/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Welcome_Entry",
+    "unsaved_changes": "confirm_discard_in_existing_modal_pattern"
+  },
+  "profile_save_policy": {
+    "name_length": [
+      2,
+      40
+    ],
+    "preferred_world_if_present": "display_preference_only",
+    "email_change": "reauth_and_OTP_new_email_then_atomic_commit_Q31",
+    "visibility": "public_private_only_Q28_default_private"
+  },
+  "profile_visibility_policy": {
+    "visibility_options": [
+      "public",
+      "private"
+    ],
+    "default": "private",
+    "friends_v1": false,
+    "public_fields": [
+      "nickname",
+      "avatar",
+      "public_rank_score"
+    ],
+    "never_public": [
+      "email",
+      "devices",
+      "personal_data"
+    ],
+    "private_excludes_public_leaderboard": true,
+    "preferred_world": "display_and_navigation_only",
+    "preferred_world_guest": "local",
+    "preferred_world_registered": "cloud",
+    "preferred_world_offline": "queue_pending_sync",
+    "conflict": "last_server_accepted_write",
+    "unavailable_world_fallback": "first_available_without_erasing_preference"
+  },
+  "change_email_policy": {
+    "screen": 27,
+    "input_new_email": true,
+    "reauth": true,
+    "otp_sent_to_new_email": true,
+    "old_email_active_until_verification": true,
+    "unique_email_check": true,
+    "security_notice_old_and_new": true,
+    "concurrent_conflict_safe": true,
+    "otp_rules_ref": "Q23"
+  }
+}

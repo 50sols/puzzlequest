@@ -1,0 +1,41 @@
+{
+  "disclaimer": "Final design timing targets; implementation validation pending",
+  "events": [
+    {
+      "event": "piece_pickup",
+      "duration_ms": 110,
+      "visual": "Lift the existing dragged piece, preserve its grab anchor; no magnifier or zoom tool",
+      "reduce_motion": "instant shadow only"
+    },
+    {
+      "event": "near_target",
+      "duration_ms": 130,
+      "visual": "soft ring around piece target; clear alignment affordance",
+      "reduce_motion": "static ring"
+    },
+    {
+      "event": "piece_snap",
+      "duration_ms": 170,
+      "visual": "scale settle with single gold dot burst; hide seam after completion",
+      "reduce_motion": "instant placement"
+    },
+    {
+      "event": "wrong_drop",
+      "duration_ms": 190,
+      "visual": "small rebound, soft red outline; remain playable",
+      "reduce_motion": "outline only"
+    },
+    {
+      "event": "level_complete",
+      "duration_ms": 650,
+      "visual": "Reveal seamless completed art, then show confirmed completion result. Never imply a fixed three-star reward.",
+      "reduce_motion": "instant image and stars"
+    },
+    {
+      "event": "building_restore",
+      "duration_ms": 500,
+      "visual": "crossfade between EXISTING stage assets with identical ground anchor",
+      "reduce_motion": "no transition"
+    }
+  ]
+}

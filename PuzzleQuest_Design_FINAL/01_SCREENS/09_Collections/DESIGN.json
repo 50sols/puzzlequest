@@ -1,0 +1,490 @@
+{
+  "id": 9,
+  "slug": "Collections",
+  "title": "Collections",
+  "description": "Collected picture cards and unlock badges",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/09_Collections/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_worlds_autumn_tree",
+      "path": "00_SHARED/art/worlds/autumn_tree.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/worlds/autumn_tree.png"
+      }
+    },
+    {
+      "asset_id": "art_buildings_cottage",
+      "path": "00_SHARED/art/buildings/cottage.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/buildings/cottage.png"
+      }
+    },
+    {
+      "asset_id": "art_worlds_hot_air_balloon",
+      "path": "00_SHARED/art/worlds/hot_air_balloon.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/worlds/hot_air_balloon.png"
+      }
+    },
+    {
+      "asset_id": "art_worlds_snow_castle",
+      "path": "00_SHARED/art/worlds/snow_castle.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/worlds/snow_castle.png"
+      }
+    },
+    {
+      "asset_id": "art_rewards_treasure_chest",
+      "path": "00_SHARED/art/rewards/treasure_chest.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/rewards/treasure_chest.png"
+      }
+    },
+    {
+      "asset_id": "art_buildings_windmill",
+      "path": "00_SHARED/art/buildings/windmill.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/buildings/windmill.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_bright",
+      "path": "00_SHARED/art/backgrounds/bright.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/bright.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_back",
+      "path": "00_SHARED/icons/png/back.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/back.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_back",
+      "path": "00_SHARED/icons/svg/back.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/back.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_check_circle",
+      "path": "00_SHARED/icons/png/check_circle.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/check_circle.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_check_circle",
+      "path": "00_SHARED/icons/svg/check_circle.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/check_circle.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_chest",
+      "path": "00_SHARED/icons/png/chest.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/chest.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_chest",
+      "path": "00_SHARED/icons/svg/chest.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/chest.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_collections",
+      "path": "00_SHARED/icons/png/collections.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/collections.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_collections",
+      "path": "00_SHARED/icons/svg/collections.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/collections.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_lock",
+      "path": "00_SHARED/icons/png/lock.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/lock.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_lock",
+      "path": "00_SHARED/icons/svg/lock.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/lock.svg"
+      }
+    },
+    {
+      "asset_id": "ui_ads_banner_320x50",
+      "path": "00_SHARED/ui/ads/banner_320x50.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/ads/banner_320x50.png",
+        "svg": "00_SHARED/ui/ads/banner_320x50.svg"
+      }
+    },
+    {
+      "asset_id": "ui_progress_bar_fill",
+      "path": "00_SHARED/ui/progress/bar_fill.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/bar_fill.png"
+      }
+    },
+    {
+      "asset_id": "ui_progress_bar_track",
+      "path": "00_SHARED/ui/progress/bar_track.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/bar_track.png"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_disabled",
+      "path": "00_SHARED/ui/buttons/primary_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_disabled.png",
+        "svg": "00_SHARED/ui/buttons/primary_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_normal",
+      "path": "00_SHARED/ui/buttons/primary_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_normal.png",
+        "svg": "00_SHARED/ui/buttons/primary_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_pressed",
+      "path": "00_SHARED/ui/buttons/primary_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_pressed.png",
+        "svg": "00_SHARED/ui/buttons/primary_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_progress_xp_fill",
+      "path": "00_SHARED/ui/progress/xp_fill.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/xp_fill.png"
+      }
+    },
+    {
+      "asset_id": "ui_states_empty",
+      "path": "00_SHARED/ui/states/empty.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/states/empty.png"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Reward_Chest"
+  ],
+  "widgets": [
+    {
+      "id": "collection_tabs",
+      "kind": "tabs",
+      "role": "tablist",
+      "text_key": "ui_collection_tabs",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "selected"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        16,
+        88,
+        358,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "selection",
+        "event": "filter_collection"
+      },
+      "layer": "content",
+      "child_min_touch_dp": 48
+    },
+    {
+      "id": "collection_grid",
+      "kind": "grid",
+      "role": "grid",
+      "text_key": "ui_collection_grid",
+      "focusable": false,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "selected"
+      ],
+      "rect_dp": [
+        16,
+        160,
+        358,
+        448
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "collection",
+        "item_actions": [
+          "inspect_existing_collectible"
+        ],
+        "note": "No extra detail screen is specified; retain the source grid."
+      },
+      "disabled_while_pending": false,
+      "layer": "content",
+      "child_min_touch_dp": 48,
+      "semantics_policy": "Container is not one clickable/focusable button; actionable visible children expose separate 48dp targets and semantics. Decorative or disabled children are not actionable.",
+      "content_binding": {
+        "type": "dynamic_collection",
+        "source": "collections.five_launch_pictures_plus_five_badge_awards"
+      }
+    },
+    {
+      "id": "collection_progress",
+      "kind": "progress",
+      "role": "progressbar",
+      "text_key": "ui_collection_progress",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "rect_dp": [
+        16,
+        640,
+        270,
+        64
+      ],
+      "label_role": "semantics_or_reference_only",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "content_binding": {
+        "type": "dynamic",
+        "source": "collection.owned_and_total"
+      }
+    },
+    {
+      "id": "reward_chest",
+      "kind": "button",
+      "role": "button",
+      "text_key": "ui_reward_chest",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        302,
+        640,
+        72,
+        64
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Reward_Chest",
+        "requires": "five fixed Green Valley launch levels completed, at least 10 lifetime best stars from those five; not already Claimed"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "banner_ad",
+      "kind": "ad_slot",
+      "role": "image",
+      "text_key": "ui_banner_ad",
+      "focusable": false,
+      "interactive": false,
+      "min_hit_size_dp": null,
+      "states": [
+        "default"
+      ],
+      "ad_provider_owns_surface": true,
+      "no_overlay_on_gameplay": true,
+      "layout_policy": "SDK-adaptive banner in its own Column slot; this reference rectangle is not an SDK size or fixed placement.",
+      "rect_dp": [
+        16,
+        768,
+        358,
+        50
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "layer": "content",
+      "layout_behavior": "provider-sized reserved footer only; 50dp is a design example, never a guaranteed SDK size; collapse when absent; do not shift an active touch"
+    },
+    {
+      "id": "back",
+      "kind": "icon_button",
+      "rect_dp": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "text_key": "ui_back",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "local",
+        "event": "return_to_origin"
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "layer": "content"
+    },
+    {
+      "id": "screen_heading",
+      "kind": "heading",
+      "rect_dp": [
+        72,
+        16,
+        246,
+        48
+      ],
+      "text_key": "screen_09_title",
+      "label_role": "visible_localized_text",
+      "interactive": false,
+      "focusable": false,
+      "decorative": false,
+      "role": "heading",
+      "renderer": "Flutter",
+      "states": [
+        "default"
+      ],
+      "layer": "content",
+      "min_hit_size_dp": null
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/09_Collections/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win.",
+  "layout_preview": "01_SCREENS/09_Collections/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Home_My_Village"
+  },
+  "approved_product_rules": {
+    "source": "02_DESIGN/APPROVED_PRODUCT_RULES.json",
+    "applicable_policies": [
+      "collections",
+      "achievements"
+    ],
+    "design_rule": "5 completion pictures + 5 badge records; chest gated by five level IDs and 10 stars, not global dynamic level count Reference screenshot numerals and old Gems art are not runtime strings. Historical image is preserved as art.",
+    "approved_through": "Q21"
+  },
+  "badge_visual_approval": {
+    "source": "Owner decision 2026-11-25",
+    "use_existing_generic_trophy_for_all_five": true,
+    "badge_identity": "approved_achievement_id + AR/EN text",
+    "do_not_fabricate_five_distinct_badges": true,
+    "existing_trophy_asset_bindings": {
+      "locked": "00_SHARED/icons/states/trophy__disabled.svg",
+      "unlocked": "00_SHARED/icons/states/trophy__normal.svg",
+      "focused": "00_SHARED/icons/states/trophy__active.svg"
+    },
+    "achievement_ids": [
+      "first_steps",
+      "green_valley_explorer",
+      "perfect_solver",
+      "star_collector",
+      "puzzle_master"
+    ]
+  }
+}

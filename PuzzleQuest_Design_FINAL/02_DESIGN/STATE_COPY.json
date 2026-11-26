@@ -1,0 +1,95 @@
+{
+  "kind": "copy for existing states, no new screen",
+  "states": [
+    {
+      "id": "loading",
+      "ar": "جارٍ تحميل المحتوى…",
+      "en": "Loading content…",
+      "action": null
+    },
+    {
+      "id": "empty",
+      "ar": "لا يوجد محتوى هنا بعد",
+      "en": "Nothing here yet",
+      "action": "explore_levels"
+    },
+    {
+      "id": "error",
+      "ar": "تعذر تحميل المحتوى. حاول مرة أخرى.",
+      "en": "Could not load content. Try again.",
+      "action": "retry_current_screen"
+    },
+    {
+      "id": "refresh_failed",
+      "ar": "تعذر التحديث. المعروض آخر بيانات محفوظة.",
+      "en": "Could not refresh. Showing the last saved data.",
+      "action": "retry_current_screen"
+    },
+    {
+      "id": "sync_pending",
+      "ar": "اكتملت الصورة. المكافأة قيد المزامنة.",
+      "en": "Puzzle complete. Reward confirmation pending.",
+      "action": "return_to_origin"
+    },
+    {
+      "id": "saved_local",
+      "ar": "تم حفظ تقدمك على هذا الجهاز",
+      "en": "Progress saved on this device",
+      "action": null
+    },
+    {
+      "id": "save_failed",
+      "ar": "تعذر حفظ آخر تغيير. أعد المحاولة قبل الخروج.",
+      "en": "Could not save the last change. Retry before leaving.",
+      "action": "retry_current_save"
+    },
+    {
+      "id": "login_invalid_password",
+      "ar": "كلمة المرور غير صحيحة. المتبقي {count} محاولات.",
+      "en": "Incorrect password. {count} attempts remaining.",
+      "action": "retry_login_if_not_locked"
+    },
+    {
+      "id": "mandatory_email_otp",
+      "ar": "يجب الدخول برمز البريد بعد خمس محاولات خاطئة.",
+      "en": "Sign in with email OTP after five incorrect password attempts.",
+      "action": "open_existing_email_otp_screen21"
+    },
+    {
+      "id": "otp_resend_wait",
+      "ar": "إعادة الإرسال بعد {seconds} ثانية.",
+      "en": "Resend in {seconds} seconds.",
+      "action": null
+    },
+    {
+      "id": "otp_rate_limited",
+      "ar": "الطلبات متوقفة مؤقتًا. أعد المحاولة عند انتهاء المهلة.",
+      "en": "Requests temporarily blocked. Retry after the cooldown.",
+      "action": null
+    },
+    {
+      "id": "email_pending_verification",
+      "ar": "تقدمك محفوظ، والمزامنة والمكافآت المرتبطة بالحساب معلقة حتى التحقق.",
+      "en": "Progress is saved; account sync and identity rewards await verification.",
+      "action": "optional_verify_on_screen21"
+    },
+    {
+      "id": "guest_merge_confirmation",
+      "ar": "تأكيد دمج تقدم الضيف؟ لن تتكرر المكافآت.",
+      "en": "Confirm merging guest progress? Rewards will not be duplicated.",
+      "action": "confirm_in_screen29"
+    },
+    {
+      "id": "guest_merge_failed",
+      "ar": "تعذر دمج البيانات. لم نفقد تقدم الضيف؛ أعد المحاولة.",
+      "en": "Merge failed. Guest progress is preserved. Retry.",
+      "action": "retry_merge_in_screen29"
+    },
+    {
+      "id": "cloud_reward_rejected",
+      "ar": "لم تُعتمد هذه المكافأة. تقدم المرحلة الصحيح ما زال محفوظًا.",
+      "en": "This reward was not confirmed. Valid level progress remains saved.",
+      "action": null
+    }
+  ]
+}

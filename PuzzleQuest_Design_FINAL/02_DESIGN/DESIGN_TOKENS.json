@@ -1,0 +1,125 @@
+{
+  "status": "Single final design specification using established component families; no new feature or visual theme",
+  "design_base_dp": [
+    390,
+    844
+  ],
+  "colors": {
+    "background": "#131030",
+    "surface": "#23134A",
+    "primary": "#8F3DF4",
+    "purple": "#7D4DFF",
+    "accent": "#FFBB31",
+    "error": "#F76B87",
+    "success": "#39D45E",
+    "text": "#F7F4FF",
+    "muted_text": "#BFB8D6",
+    "on_primary": "#FFFFFF",
+    "action_green": "#23C41C",
+    "on_action_green": "#131030"
+  },
+  "typography": {
+    "arabic": "Tajawal",
+    "latin": "Lato",
+    "font_files_included": true,
+    "title_sp": 28,
+    "heading_sp": 22,
+    "body_sp": 16,
+    "caption_sp": 13,
+    "button_sp": 20,
+    "text_scale_policy": "Support at least 1.3; larger scales use reflow/scroll, never a silent global clamp",
+    "button_weight": 700,
+    "font_weights_required": {
+      "arabic": [
+        400,
+        500,
+        700
+      ],
+      "latin": [
+        400,
+        700
+      ]
+    },
+    "font_source_registry": "00_SHARED/fonts/FONT_SOURCE_MANIFEST.json",
+    "font_license_paths": {
+      "arabic": "00_SHARED/fonts/licenses/Tajawal_OFL.txt",
+      "latin": "00_SHARED/fonts/licenses/Lato_OFL.txt"
+    },
+    "source_file_status": {
+      "Tajawal": "7 original user-provided TTF files embedded including 400/500/700",
+      "Lato": "10 original user-provided TTF files embedded; 400/700; legacy 500 mapped to existing 400 by owner approval"
+    },
+    "font_weight_aliases": {
+      "latin_legacy_500": 400
+    }
+  },
+  "space_dp": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32
+  ],
+  "corner_radius_dp": [
+    8,
+    14,
+    20,
+    28
+  ],
+  "min_touch_target_dp": 48,
+  "component_states": [
+    "default",
+    "pressed",
+    "disabled",
+    "focused",
+    "loading",
+    "error",
+    "success",
+    "selected"
+  ],
+  "effects": {
+    "shadow": "muted purple edge glow; avoid permanent high-cost blurs",
+    "focus_ring_dp": 2
+  },
+  "portrait": "Gameplay board square, tray separate, safe areas reserved; do not place banner in game board",
+  "source_policy": "Existing screenshots and exported shells may differ. Semantic tokens govern rebuilt UI. Art colors are not recolored.",
+  "buttons": {
+    "primary": {
+      "gradient": [
+        "#B94AFF",
+        "#6E24DA"
+      ],
+      "label": "#FFFFFF",
+      "default_asset": "00_SHARED/ui/buttons/primary_normal.svg",
+      "state_filename_pattern": "00_SHARED/ui/buttons/primary_{state}.{format}"
+    },
+    "affirmative": {
+      "gradient": [
+        "#78FF43",
+        "#08A314"
+      ],
+      "label": "#131030",
+      "default_asset": "00_SHARED/ui/buttons/success_normal.svg",
+      "state_filename_pattern": "00_SHARED/ui/buttons/success_{state}.{format}"
+    },
+    "secondary": {
+      "label": "#FFFFFF",
+      "default_asset": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "state_filename_pattern": "00_SHARED/ui/buttons/neutral_{state}.{format}"
+    },
+    "destructive": {
+      "label": "#FFFFFF",
+      "default_asset": "00_SHARED/ui/buttons/danger_normal.svg",
+      "state_filename_pattern": "00_SHARED/ui/buttons/danger_{state}.{format}"
+    },
+    "state_names": {
+      "default": "normal",
+      "pressed": "pressed",
+      "disabled": "disabled",
+      "focused": "focused",
+      "loading": "loading"
+    },
+    "feedback": "error and success are inline/message states; do not switch to a second incompatible button library"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "created_at_utc": "2026-11-25T11:24:35.721706+00:00",
+  "overall": "RELEASE_CANDIDATE_FIXED_SUBDOMAIN_NOT_ACCEPTED_FOR_PRODUCTION",
+  "backend": "Laravel 13.44.1; source Handoff archive",
+  "checks": {
+    "php_syntax": {
+      "status": "passed",
+      "count": 60,
+      "details": "php -l source paths app, config, routes, public, database, bootstrap"
+    },
+    "laravel_boot": {
+      "status": "passed",
+      "details": "php artisan --version (Laravel Framework 13.44.1)"
+    },
+    "routes": {
+      "status": "passed",
+      "count": 83,
+      "details": "php artisan route:list --json on production-only vendor"
+    },
+    "composer_autoload": {
+      "status": "passed",
+      "details": "Composer optimize autoload --no-dev; 79 production packages; 33 development-only packages excluded"
+    },
+    "installer_local_http": {
+      "status": "passed",
+      "details": "GET /install/ 200, three-step markup and server-generated private install claim; no MySQL POST executed"
+    },
+    "crypto_backup_roundtrip": {
+      "status": "passed",
+      "details": "sodium XChaCha20 secretstream encrypt/decrypt with 16KB random + repeated data, sha256 match"
+    },
+    "crypto_tamper": {
+      "status": "passed",
+      "details": "appended byte to PQB1 stream; decrypt rejected"
+    },
+    "stage_asset_sha256": {
+      "status": "passed",
+      "count": 474,
+      "levels": 5
+    },
+    "javascript_syntax": {
+      "status": "passed",
+      "details": "node --check public/install/wizard.js"
+    },
+    "phpunit": {
+      "status": "blocked",
+      "reason": "PHP extension dom, mbstring and xmlwriter absent in test runtime"
+    },
+    "fresh_mysql_install": {
+      "status": "not_executed",
+      "reason": "pdo_mysql absent; no MySQL cPanel sandbox available"
+    },
+    "mysql_upgrade": {
+      "status": "not_executed",
+      "reason": "No prior signed release target, no MySQL test environment"
+    },
+    "full_backup_restore": {
+      "status": "not_executed",
+      "reason": "ZipArchive and database driver unavailable; encrypt/decrypt only verified"
+    },
+    "real_external_integrations": {
+      "status": "not_executed",
+      "reason": "No Firebase/APNs/SMTP/AdMob/Google OAuth signed device credentials"
+    },
+    "device_q40_100_piece": {
+      "status": "not_executed",
+      "reason": "Flutter/Flame mobile device render and touch required; 100 piece data has duplicated PNG SHA noted in design review"
+    },
+    "legal_and_store_release": {
+      "status": "pending",
+      "reason": "Owner legal sign-off, 13+ worldwide regional compliance and iOS sign-in guideline verification"
+    },
+    "fixed_root_layout": {
+      "status": "passed_static_review",
+      "details": "Public files are nested under public_html/puzzlequest.50sols.com and private Laravel at puzzlequest_app, not in main 50sols.com document root."
+    },
+    "fixed_root_installer_local_http": {
+      "status": "pending_retest",
+      "details": "Check nested document root and private installer key; local HTTP is not a cPanel MySQL installation test."
+    },
+    "fixed_root_laravel_boot": {
+      "status": "passed",
+      "details": "php artisan --version from puzzlequest_app returned Laravel Framework 13.44.1; route:list --json returned 83 routes"
+    },
+    "fixed_root_update_and_backup_paths": {
+      "status": "static_review_only",
+      "details": "Laravel public_path() is set to /public_html/puzzlequest.50sols.com and used by Updates and Backups; no live upgrade/restore completed."
+    },
+    "apache_htaccess_security": {
+      "status": "not_executed",
+      "reason": "Apache/LiteSpeed host rules on cPanel were not available for integration tests; private files are separated from document root independently of rewrite rules."
+    }
+  },
+  "security_findings_addressed": [
+    "No .env or deployment credentials shipped",
+    "Server generates setup claim post-deployment",
+    "Vendor optimized for production-only packages",
+    "Encrypted backups now cover storage/app and verify file checksums before acceptance",
+    "Updates use release public key configured from privileged DB settings",
+    "Post-update health check added"
+  ],
+  "limitations": "Simulated cPanel subdomain layout; no real cPanel permissions, HTTPS, MySQL migrations, signed upgrade or restoration acceptance."
+}

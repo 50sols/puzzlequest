@@ -1,0 +1,74 @@
+{
+  "disclaimer": "Design slots only; no live advertisements or AdMob configuration IDs included.",
+  "placements": {
+    "home_banner": {
+      "screens": [
+        2
+      ],
+      "format": "banner",
+      "outside_game_board": true
+    },
+    "worlds_banner": {
+      "screens": [
+        3,
+        4
+      ],
+      "format": "banner",
+      "outside_game_board": true
+    },
+    "missions_shop_banner": {
+      "screens": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "format": "banner",
+      "outside_game_board": true
+    },
+    "full_image_rewarded": {
+      "screens": [
+        6,
+        13,
+        17
+      ],
+      "format": "rewarded",
+      "opt_in": true,
+      "grant": "server_verified_earned_only"
+    },
+    "hint_rewarded": {
+      "screens": [
+        6,
+        14
+      ],
+      "format": "rewarded",
+      "opt_in": true
+    },
+    "interstitial": {
+      "screens": [
+        7
+      ],
+      "format": "interstitial",
+      "frequency": {
+        "max_per_session": 2,
+        "min_seconds_between": 180,
+        "max_per_player_utc_day": 6,
+        "session_inactive_timeout_seconds": 1800,
+        "never_after_first_completion_of_session": true,
+        "first_eligible_after_successful_completion_number": 2,
+        "only_after_confirmed_completion_reward_claim": true,
+        "never_during_piece_drag_or_gameplay_or_claim_modal": true,
+        "no_economic_reward": true,
+        "backend_authoritative_cap_with_local_counters": true
+      },
+      "condition": "after completion reward claim is confirmed; not after first completion of session; only existing between-level transition"
+    }
+  },
+  "privacy": "Respect region, age restrictions, CMP and ad policies; no ads on register/reset/delete pages.",
+  "failure": "Do not grant reward after cancelled/unavailable ad; allow non-ad gameplay continuation.",
+  "kind": "design placements; no SDK or implementation contracts",
+  "policy_reference": "02_DESIGN/REWARDS_AND_ADS_AR.md",
+  "provider": "Google AdMob",
+  "ssv": "Required; signed Google callback verified by backend before reward; dedupe request ID and transaction ID",
+  "approval": "Q21 provider/SSV approved; market age remains proposed until privacy/actual audience Q34-Q35"
+}

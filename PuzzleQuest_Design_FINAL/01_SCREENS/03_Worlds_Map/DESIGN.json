@@ -1,0 +1,374 @@
+{
+  "id": 3,
+  "slug": "Worlds_Map",
+  "title": "Worlds",
+  "description": "Scrollable worlds; locks and chapter unlocks",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/03_Worlds_Map/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_worlds_desert_city",
+      "path": "00_SHARED/art/worlds/desert_city.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/worlds/desert_city.png"
+      }
+    },
+    {
+      "asset_id": "art_worlds_green_valley",
+      "path": "00_SHARED/art/worlds/green_valley.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/worlds/green_valley.png"
+      }
+    },
+    {
+      "asset_id": "art_worlds_magic_forest",
+      "path": "00_SHARED/art/worlds/magic_forest.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/worlds/magic_forest.png"
+      }
+    },
+    {
+      "asset_id": "art_worlds_ocean_bay",
+      "path": "00_SHARED/art/worlds/ocean_bay.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/worlds/ocean_bay.png"
+      }
+    },
+    {
+      "asset_id": "art_worlds_snow_land",
+      "path": "00_SHARED/art/worlds/snow_land.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/worlds/snow_land.png"
+      }
+    },
+    {
+      "asset_id": "art_backgrounds_bright",
+      "path": "00_SHARED/art/backgrounds/bright.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/bright.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_arrow_right",
+      "path": "00_SHARED/icons/png/arrow_right.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/arrow_right.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_arrow_right",
+      "path": "00_SHARED/icons/svg/arrow_right.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/arrow_right.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_back",
+      "path": "00_SHARED/icons/png/back.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/back.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_back",
+      "path": "00_SHARED/icons/svg/back.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/back.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_lock",
+      "path": "00_SHARED/icons/png/lock.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/lock.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_lock",
+      "path": "00_SHARED/icons/svg/lock.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/lock.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_star",
+      "path": "00_SHARED/icons/png/star.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/star.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_star",
+      "path": "00_SHARED/icons/svg/star.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/star.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_worlds",
+      "path": "00_SHARED/icons/png/worlds.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/worlds.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_worlds",
+      "path": "00_SHARED/icons/svg/worlds.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/worlds.svg"
+      }
+    },
+    {
+      "asset_id": "ui_ads_banner_320x50",
+      "path": "00_SHARED/ui/ads/banner_320x50.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/ads/banner_320x50.png",
+        "svg": "00_SHARED/ui/ads/banner_320x50.svg"
+      }
+    },
+    {
+      "asset_id": "ui_progress_bar_fill",
+      "path": "00_SHARED/ui/progress/bar_fill.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/bar_fill.png"
+      }
+    },
+    {
+      "asset_id": "ui_progress_bar_track",
+      "path": "00_SHARED/ui/progress/bar_track.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/bar_track.png"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card",
+      "path": "00_SHARED/ui/panels/card.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card.png",
+        "svg": "00_SHARED/ui/panels/card.svg"
+      }
+    },
+    {
+      "asset_id": "ui_panels_card_alt",
+      "path": "00_SHARED/ui/panels/card_alt.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/panels/card_alt.png",
+        "svg": "00_SHARED/ui/panels/card_alt.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_disabled",
+      "path": "00_SHARED/ui/buttons/primary_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_disabled.png",
+        "svg": "00_SHARED/ui/buttons/primary_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_normal",
+      "path": "00_SHARED/ui/buttons/primary_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_normal.png",
+        "svg": "00_SHARED/ui/buttons/primary_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_pressed",
+      "path": "00_SHARED/ui/buttons/primary_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_pressed.png",
+        "svg": "00_SHARED/ui/buttons/primary_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_progress_xp_fill",
+      "path": "00_SHARED/ui/progress/xp_fill.png",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/progress/xp_fill.png"
+      }
+    },
+    {
+      "asset_id": "art_puzzle_scenes_level_002_windmill_spring_thumb",
+      "path": "00_SHARED/art/puzzle_scenes/level_002_windmill_spring_thumb.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/puzzle_scenes/level_002_windmill_spring_thumb.png"
+      }
+    },
+    {
+      "asset_id": "art_puzzle_scenes_level_003_snow_castle_thumb",
+      "path": "00_SHARED/art/puzzle_scenes/level_003_snow_castle_thumb.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/puzzle_scenes/level_003_snow_castle_thumb.png"
+      }
+    },
+    {
+      "asset_id": "art_puzzle_scenes_level_004_sky_balloon_thumb",
+      "path": "00_SHARED/art/puzzle_scenes/level_004_sky_balloon_thumb.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/puzzle_scenes/level_004_sky_balloon_thumb.png"
+      }
+    },
+    {
+      "asset_id": "art_puzzle_scenes_level_005_autumn_tree_thumb",
+      "path": "00_SHARED/art/puzzle_scenes/level_005_autumn_tree_thumb.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/art/puzzle_scenes/level_005_autumn_tree_thumb.png"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "Puzzle_Levels",
+    "Home_My_Village"
+  ],
+  "widgets": [
+    {
+      "id": "world_cards",
+      "kind": "list",
+      "role": "list",
+      "text_key": "ui_world_cards",
+      "focusable": false,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        16,
+        96,
+        358,
+        624
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "collection",
+        "selection_context": "preserve selected world/level and scroll position; only an eligible child row or card navigates",
+        "item_action": {
+          "type": "navigation",
+          "target": "Puzzle_Levels",
+          "requires": "world content published and previous-world-completed; Green Valley open, Snow Land and Desert Ruins locked until complete published content",
+          "on_unavailable": "locked world remains non-navigable and shows its existing unlock requirement; keep scroll and selection"
+        },
+        "note": "Only selected eligible row/card may navigate; source container itself does not navigate."
+      },
+      "layer": "content",
+      "child_min_touch_dp": 48,
+      "semantics_policy": "Container is not one clickable/focusable button; actionable visible children expose separate 48dp targets and semantics. Decorative or disabled children are not actionable."
+    },
+    {
+      "id": "back",
+      "kind": "icon_button",
+      "role": "button",
+      "text_key": "ui_back",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Home_My_Village"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "screen_heading",
+      "kind": "heading",
+      "rect_dp": [
+        72,
+        16,
+        246,
+        48
+      ],
+      "text_key": "screen_03_title",
+      "label_role": "visible_localized_text",
+      "interactive": false,
+      "focusable": false,
+      "decorative": false,
+      "role": "heading",
+      "renderer": "Flutter",
+      "states": [
+        "default"
+      ],
+      "layer": "content",
+      "min_hit_size_dp": null
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/03_Worlds_Map/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win. Legacy screenshot counts/currencies (+100, +120, +500, Gems) are NOT approved product values. No new Gems UI is supplied; dynamic approved values win.",
+  "layout_preview": "01_SCREENS/03_Worlds_Map/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Home_My_Village"
+  },
+  "approved_product_rules": {
+    "source": "02_DESIGN/APPROVED_PRODUCT_RULES.json",
+    "applicable_policies": [
+      "content",
+      "future_content_publication"
+    ],
+    "design_rule": "fetch only published/validated worlds; no locked world auto-available Reference screenshot numerals and old Gems art are not runtime strings. Historical image is preserved as art.",
+    "approved_through": "Q21"
+  },
+  "dynamic_content_policy_ref": "02_DESIGN/CONTENT_PUBLISHING_CONTRACT.json"
+}

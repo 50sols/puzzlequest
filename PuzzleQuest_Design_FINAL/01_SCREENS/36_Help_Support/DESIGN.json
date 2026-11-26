@@ -1,0 +1,372 @@
+{
+  "id": 36,
+  "slug": "Help_Support",
+  "title": "Help & support",
+  "description": "Support link and FAQ, no automatic device logs",
+  "kind": "design_only_no_runtime",
+  "reference": "01_SCREENS/36_Help_Support/reference.png",
+  "assets": [
+    {
+      "asset_id": "art_backgrounds_standard",
+      "path": "00_SHARED/art/backgrounds/standard.png",
+      "usage": "background",
+      "formats": {
+        "png": "00_SHARED/art/backgrounds/standard.png"
+      }
+    },
+    {
+      "asset_id": "icons_png_info",
+      "path": "00_SHARED/icons/png/info.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/info.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_info",
+      "path": "00_SHARED/icons/svg/info.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/info.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_shield",
+      "path": "00_SHARED/icons/png/shield.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/shield.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_shield",
+      "path": "00_SHARED/icons/svg/shield.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/shield.svg"
+      }
+    },
+    {
+      "asset_id": "icons_png_user",
+      "path": "00_SHARED/icons/png/user.png",
+      "usage": "art_or_icon",
+      "formats": {
+        "png": "00_SHARED/icons/png/user.png"
+      }
+    },
+    {
+      "asset_id": "icons_svg_user",
+      "path": "00_SHARED/icons/svg/user.svg",
+      "usage": "art_or_icon",
+      "formats": {
+        "svg": "00_SHARED/icons/svg/user.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_disabled",
+      "path": "00_SHARED/ui/buttons/neutral_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_disabled.png",
+        "svg": "00_SHARED/ui/buttons/neutral_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_normal",
+      "path": "00_SHARED/ui/buttons/neutral_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_normal.png",
+        "svg": "00_SHARED/ui/buttons/neutral_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_neutral_pressed",
+      "path": "00_SHARED/ui/buttons/neutral_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/neutral_pressed.png",
+        "svg": "00_SHARED/ui/buttons/neutral_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_disabled",
+      "path": "00_SHARED/ui/buttons/primary_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_disabled.png",
+        "svg": "00_SHARED/ui/buttons/primary_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_normal",
+      "path": "00_SHARED/ui/buttons/primary_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_normal.png",
+        "svg": "00_SHARED/ui/buttons/primary_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_primary_pressed",
+      "path": "00_SHARED/ui/buttons/primary_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/primary_pressed.png",
+        "svg": "00_SHARED/ui/buttons/primary_pressed.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_disabled",
+      "path": "00_SHARED/ui/buttons/success_disabled.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_disabled.png",
+        "svg": "00_SHARED/ui/buttons/success_disabled.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_normal",
+      "path": "00_SHARED/ui/buttons/success_normal.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_normal.png",
+        "svg": "00_SHARED/ui/buttons/success_normal.svg"
+      }
+    },
+    {
+      "asset_id": "ui_buttons_success_pressed",
+      "path": "00_SHARED/ui/buttons/success_pressed.svg",
+      "usage": "shared_component",
+      "formats": {
+        "png": "00_SHARED/ui/buttons/success_pressed.png",
+        "svg": "00_SHARED/ui/buttons/success_pressed.svg"
+      }
+    }
+  ],
+  "navigation_targets": [
+    "First_Play_Tutorial",
+    "My_Account",
+    "Privacy_Consent_Options",
+    "Profile_Settings"
+  ],
+  "widgets": [
+    {
+      "id": "support_topics",
+      "kind": "list",
+      "role": "list",
+      "text_key": "ui_support_topics",
+      "focusable": false,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "rect_dp": [
+        24,
+        152,
+        342,
+        448
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "collection",
+        "items": [
+          {
+            "id": "how_to_play",
+            "target": "First_Play_Tutorial"
+          },
+          {
+            "id": "account_help",
+            "target": "My_Account"
+          },
+          {
+            "id": "contact_support",
+            "action": "open_ticket_form_state_in_screen36",
+            "support_email": "info@50sols.com"
+          },
+          {
+            "id": "privacy_ads",
+            "target": "Privacy_Consent_Options"
+          }
+        ],
+        "subviews": [
+          "faq",
+          "support_ticket_form",
+          "my_support_requests",
+          "ticket_detail",
+          "sent",
+          "error_keep_draft"
+        ],
+        "support_statuses": [
+          "open",
+          "in_progress",
+          "waiting_for_player",
+          "resolved",
+          "closed"
+        ]
+      },
+      "disabled_while_pending": false,
+      "layer": "content",
+      "child_min_touch_dp": 48,
+      "semantics_policy": "Container is not one clickable/focusable button; actionable visible children expose separate 48dp targets and semantics. Decorative or disabled children are not actionable."
+    },
+    {
+      "id": "back",
+      "kind": "icon_button",
+      "role": "button",
+      "text_key": "ui_back",
+      "focusable": true,
+      "interactive": true,
+      "min_hit_size_dp": 48,
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "rect_dp": [
+        16,
+        16,
+        48,
+        48
+      ],
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interaction": {
+        "type": "navigation",
+        "target": "Profile_Settings"
+      },
+      "layer": "content"
+    },
+    {
+      "id": "open_help_center",
+      "kind": "button",
+      "rect_dp": [
+        32,
+        688,
+        326,
+        56
+      ],
+      "text_key": "ui_open_help_center",
+      "label_role": "visible_localized_text",
+      "decorative": false,
+      "renderer": "Flutter",
+      "interactive": true,
+      "focusable": true,
+      "min_hit_size_dp": 48,
+      "role": "button",
+      "interaction": {
+        "type": "local",
+        "event": "open_backend_hosted_help_center",
+        "languages": [
+          "ar",
+          "en"
+        ],
+        "host": "puzzlequest.50sols.com",
+        "on_unavailable": "stay_show_retry_and_email_info@50sols.com"
+      },
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled"
+      ],
+      "disabled_while_pending": false,
+      "design_status": "visible_in_source_requires_details",
+      "pending_requirement": "Existing reference control; no new screen/provider/service flow is invented. See RELEASE_GATES_AR.md.",
+      "layer": "content"
+    },
+    {
+      "id": "screen_heading",
+      "kind": "heading",
+      "rect_dp": [
+        72,
+        16,
+        246,
+        48
+      ],
+      "text_key": "screen_36_title",
+      "label_role": "visible_localized_text",
+      "interactive": false,
+      "focusable": false,
+      "decorative": false,
+      "role": "heading",
+      "renderer": "Flutter",
+      "states": [
+        "default"
+      ],
+      "layer": "content",
+      "min_hit_size_dp": null
+    }
+  ],
+  "text_policy": "Real localized text; never display screenshot as interactive UI",
+  "design_system": "02_DESIGN/DESIGN_TOKENS.json",
+  "behavior": "01_SCREENS/36_Help_Support/README_AR.md",
+  "schema": "design-handoff-final",
+  "layout_canvas": {
+    "width": 390,
+    "height": 844,
+    "unit": "dp",
+    "space": "content area AFTER system SafeArea insets",
+    "scaling": "constraint reflow; no screenshot stretch; see RESPONSIVE_AR.md"
+  },
+  "reference_policy": "Art composition and existing visible scope only. LAYOUT.svg and rect_dp define final component geometry; screenshot values and system bars are not UI assets.",
+  "layout_preview": "01_SCREENS/36_Help_Support/LAYOUT.svg",
+  "presentation": "screen",
+  "return_policy": {
+    "system_back": "return_to_origin",
+    "origin_context": "Keep caller screen, selected level/difficulty, attempt and scroll position",
+    "fallback": "Home_My_Village"
+  },
+  "help_center_policy": {
+    "reply_email": "info@50sols.com",
+    "verify_mailbox_before_release": true,
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "existing_player_screen": 36,
+    "view_states": [
+      "faq",
+      "support_ticket_form",
+      "my_support_requests",
+      "request_detail",
+      "sending",
+      "sent",
+      "failed_keep_draft",
+      "guest_contact_recovery"
+    ],
+    "categories": [
+      "account_login",
+      "gameplay_progress",
+      "rewards_points",
+      "ads",
+      "privacy_data",
+      "technical_issue",
+      "other"
+    ],
+    "fields": [
+      "category",
+      "short_title",
+      "description",
+      "optional_image",
+      "optional_reply_email"
+    ],
+    "workflow": [
+      "open",
+      "in_progress",
+      "waiting_for_player",
+      "resolved",
+      "closed"
+    ],
+    "support_notifications": "Inbox plus optional verified email"
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "kind": "product_privacy_services_design_contract_no_runtime",
+  "revision": "2026-11-25",
+  "source": "Owner Q27-Q37 and support email; legal language remains conditional",
+  "support": {
+    "reply_email": "info@50sols.com",
+    "verify_mailbox_before_release": true,
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "existing_player_screen": 36,
+    "view_states": [
+      "faq",
+      "support_ticket_form",
+      "my_support_requests",
+      "request_detail",
+      "sending",
+      "sent",
+      "failed_keep_draft",
+      "guest_contact_recovery"
+    ],
+    "categories": [
+      "account_login",
+      "gameplay_progress",
+      "rewards_points",
+      "ads",
+      "privacy_data",
+      "technical_issue",
+      "other"
+    ],
+    "fields": [
+      "category",
+      "short_title",
+      "description",
+      "optional_image",
+      "optional_reply_email"
+    ],
+    "workflow": [
+      "open",
+      "in_progress",
+      "waiting_for_player",
+      "resolved",
+      "closed"
+    ],
+    "support_notifications": "Inbox plus optional verified email"
+  },
+  "profile": {
+    "visibility_options": [
+      "public",
+      "private"
+    ],
+    "default": "private",
+    "friends_v1": false,
+    "public_fields": [
+      "nickname",
+      "avatar",
+      "public_rank_score"
+    ],
+    "never_public": [
+      "email",
+      "devices",
+      "personal_data"
+    ],
+    "private_excludes_public_leaderboard": true,
+    "preferred_world": "display_and_navigation_only",
+    "preferred_world_guest": "local",
+    "preferred_world_registered": "cloud",
+    "preferred_world_offline": "queue_pending_sync",
+    "conflict": "last_server_accepted_write",
+    "unavailable_world_fallback": "first_available_without_erasing_preference"
+  },
+  "devices": {
+    "existing_screen": 28,
+    "subview_not_new_screen": true,
+    "columns": [
+      "device_name",
+      "device_type",
+      "android_ios",
+      "last_activity_at",
+      "session_status",
+      "is_current_device"
+    ],
+    "actions": [
+      "logout_one",
+      "logout_other_devices"
+    ],
+    "require_confirmation": true,
+    "recent_auth_or_reverify": [
+      "password",
+      "otp",
+      "google"
+    ],
+    "server_invalidation_immediate": true,
+    "offline_client": "revoke_next_contact_keep_local_pending_progress_and_block_protected_requests"
+  },
+  "export": {
+    "existing_screen": 28,
+    "format": "zip",
+    "included": [
+      "account_profile",
+      "preferences",
+      "world_level_progress",
+      "best_star_time",
+      "scores_coins_ledger",
+      "achievements_badges_trophies",
+      "rewards_purchases",
+      "available_inbox",
+      "consent_log",
+      "support_tickets",
+      "available_device_session_summary"
+    ],
+    "files": [
+      "json",
+      "csv",
+      "readme"
+    ],
+    "excluded": [
+      "password_hashes",
+      "session_keys",
+      "otp",
+      "backend_secrets"
+    ],
+    "states": [
+      "request",
+      "reauth",
+      "queued",
+      "building",
+      "ready",
+      "expired",
+      "failed_retry"
+    ],
+    "target_ready_hours": 72,
+    "max_days_or_shorter_law": 30,
+    "private_link_ttl_days": 7,
+    "email_attachment": false
+  },
+  "email_change": {
+    "screen": 27,
+    "input_new_email": true,
+    "reauth": true,
+    "otp_sent_to_new_email": true,
+    "old_email_active_until_verification": true,
+    "unique_email_check": true,
+    "security_notice_old_and_new": true,
+    "concurrent_conflict_safe": true,
+    "otp_rules_ref": "Q23"
+  },
+  "deletion": {
+    "screens": [
+      28,
+      30
+    ],
+    "reauth_required": true,
+    "second_confirmation_required": true,
+    "cancel_sessions": true,
+    "hide_profile_immediately": true,
+    "recoverable_days": 30,
+    "active_delete_within_days_after_recovery": 30,
+    "backup_retention_max_days_after_active_deletion": 90,
+    "legal_exceptions_isolated": true,
+    "restore_after_final_delete": false,
+    "show_recovery_deadline": true,
+    "note": "Deletion & backup boundaries subject to region-specific legal signoff; do not implement before signoff."
+  },
+  "audience": {
+    "regions": "global_subject_to_local_compliance",
+    "min_target_age": 13,
+    "under_13_targeted": false,
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "parental_consent_or_block_where_required": true
+  },
+  "consent": {
+    "nonessential_analytics": false,
+    "personalized_ads": false,
+    "marketing_notifications": false,
+    "optional_tracking": false,
+    "optional_consent": false,
+    "default_privacy": "private",
+    "legal_agreement_not_optional_opt_in": true,
+    "consent_audit": [
+      "document_version",
+      "timestamp_utc",
+      "choices"
+    ],
+    "legal_text_status": "awaiting qualified legal counsel and owner publication approval",
+    "legal_pages_host": "https://puzzlequest.50sols.com (requires TLS verification)"
+  },
+  "inbox": {
+    "screen": 35,
+    "categories": [
+      "system",
+      "rewards",
+      "achievements",
+      "progress",
+      "account_security",
+      "support",
+      "events"
+    ],
+    "events_at_v1_launch": false,
+    "ordinary_retention_days": 90,
+    "security_retention_days": 180,
+    "read_all": "mark existing messages at snapshot time only, does not claim reward",
+    "offline_mark_read": "queue idempotent sync",
+    "delete_message": "never deletes reward/achievement ledger"
+  },
+  "copy": {
+    "languages": [
+      "ar",
+      "en"
+    ],
+    "status": "design_copy_approved_subject_to_visual_qa_and_legal_review"
+  }
+}

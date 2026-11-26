@@ -1,0 +1,302 @@
+{
+  "stages": [
+    {
+      "stage": 0,
+      "key": "ruined",
+      "meaning": "Before starting"
+    },
+    {
+      "stage": 1,
+      "key": "scaffold",
+      "meaning": "Construction started"
+    },
+    {
+      "stage": 2,
+      "key": "repairing",
+      "meaning": "Puzzles almost finished"
+    },
+    {
+      "stage": 3,
+      "key": "restored",
+      "meaning": "Building repaired"
+    },
+    {
+      "stage": 4,
+      "key": "upgraded",
+      "meaning": "Bonus upgrades unlocked"
+    }
+  ],
+  "structures": [
+    "cottage",
+    "windmill"
+  ],
+  "notes": "Owner-approved Q18/Q19: start at stage 0, stage unlock by specific completed levels, actual transition only after atomic Coins payment; art assets/anchors unchanged.",
+  "art": [
+    {
+      "building_id": "cottage",
+      "stage": 0,
+      "key": "ruined",
+      "path": "00_SHARED/art/buildings/stages/cottage_stage_0.png",
+      "canvas_px": [
+        600,
+        600
+      ],
+      "ground_anchor_fraction": [
+        0.5,
+        0.9
+      ],
+      "alignment": "preserve full canvas, no individual alpha-bound cropping"
+    },
+    {
+      "building_id": "cottage",
+      "stage": 1,
+      "key": "scaffold",
+      "path": "00_SHARED/art/buildings/stages/cottage_stage_1.png",
+      "canvas_px": [
+        600,
+        600
+      ],
+      "ground_anchor_fraction": [
+        0.5,
+        0.9
+      ],
+      "alignment": "preserve full canvas, no individual alpha-bound cropping"
+    },
+    {
+      "building_id": "cottage",
+      "stage": 2,
+      "key": "repairing",
+      "path": "00_SHARED/art/buildings/stages/cottage_stage_2.png",
+      "canvas_px": [
+        600,
+        600
+      ],
+      "ground_anchor_fraction": [
+        0.5,
+        0.9
+      ],
+      "alignment": "preserve full canvas, no individual alpha-bound cropping"
+    },
+    {
+      "building_id": "cottage",
+      "stage": 3,
+      "key": "restored",
+      "path": "00_SHARED/art/buildings/stages/cottage_stage_3.png",
+      "canvas_px": [
+        600,
+        600
+      ],
+      "ground_anchor_fraction": [
+        0.5,
+        0.9
+      ],
+      "alignment": "preserve full canvas, no individual alpha-bound cropping"
+    },
+    {
+      "building_id": "cottage",
+      "stage": 4,
+      "key": "upgraded",
+      "path": "00_SHARED/art/buildings/stages/cottage_stage_4.png",
+      "canvas_px": [
+        600,
+        600
+      ],
+      "ground_anchor_fraction": [
+        0.5,
+        0.9
+      ],
+      "alignment": "preserve full canvas, no individual alpha-bound cropping"
+    },
+    {
+      "building_id": "windmill",
+      "stage": 0,
+      "key": "ruined",
+      "path": "00_SHARED/art/buildings/stages/windmill_stage_0.png",
+      "canvas_px": [
+        600,
+        600
+      ],
+      "ground_anchor_fraction": [
+        0.5,
+        0.9
+      ],
+      "alignment": "preserve full canvas, no individual alpha-bound cropping"
+    },
+    {
+      "building_id": "windmill",
+      "stage": 1,
+      "key": "scaffold",
+      "path": "00_SHARED/art/buildings/stages/windmill_stage_1.png",
+      "canvas_px": [
+        600,
+        600
+      ],
+      "ground_anchor_fraction": [
+        0.5,
+        0.9
+      ],
+      "alignment": "preserve full canvas, no individual alpha-bound cropping"
+    },
+    {
+      "building_id": "windmill",
+      "stage": 2,
+      "key": "repairing",
+      "path": "00_SHARED/art/buildings/stages/windmill_stage_2.png",
+      "canvas_px": [
+        600,
+        600
+      ],
+      "ground_anchor_fraction": [
+        0.5,
+        0.9
+      ],
+      "alignment": "preserve full canvas, no individual alpha-bound cropping"
+    },
+    {
+      "building_id": "windmill",
+      "stage": 3,
+      "key": "restored",
+      "path": "00_SHARED/art/buildings/stages/windmill_stage_3.png",
+      "canvas_px": [
+        600,
+        600
+      ],
+      "ground_anchor_fraction": [
+        0.5,
+        0.9
+      ],
+      "alignment": "preserve full canvas, no individual alpha-bound cropping"
+    },
+    {
+      "building_id": "windmill",
+      "stage": 4,
+      "key": "upgraded",
+      "path": "00_SHARED/art/buildings/stages/windmill_stage_4.png",
+      "canvas_px": [
+        600,
+        600
+      ],
+      "ground_anchor_fraction": [
+        0.5,
+        0.9
+      ],
+      "alignment": "preserve full canvas, no individual alpha-bound cropping"
+    }
+  ],
+  "SCENE_LAYOUT": {
+    "backplate": "00_SHARED/art/backgrounds/village_clean.png",
+    "backplate_source": "AI-assisted removal of baked architecture from existing decorative village background; existing auth background retained separately",
+    "source_crop_fraction": [
+      0,
+      0.45,
+      1,
+      0.55
+    ],
+    "fit": "contain",
+    "stage_sprites": [
+      {
+        "building_id": "cottage",
+        "ground_anchor_in_crop": [
+          0.72,
+          0.55
+        ],
+        "width_as_fraction_of_crop": 0.46
+      },
+      {
+        "building_id": "windmill",
+        "ground_anchor_in_crop": [
+          0.2,
+          0.43
+        ],
+        "width_as_fraction_of_crop": 0.33
+      }
+    ],
+    "coordinates": "normalized within the cropped backplate; apply one fit transform to image, ground anchors and hit regions",
+    "touch": "sprite silhouette expanded to at least48dp; cottage and windmill hit regions must not overlap",
+    "preview": "02_DESIGN/VILLAGE_SCENE.svg"
+  },
+  "owner_approved_transition_policy": {
+    "buildings": {
+      "cottage": {
+        "start_stage": 0,
+        "state_names": [
+          "ruined",
+          "scaffold",
+          "repairing",
+          "restored",
+          "upgraded"
+        ],
+        "transitions": [
+          {
+            "from_stage": 0,
+            "to_stage": 1,
+            "requires_level_completed": "1-1",
+            "price_coins": 100
+          },
+          {
+            "from_stage": 1,
+            "to_stage": 2,
+            "requires_level_completed": "1-2",
+            "price_coins": 200
+          },
+          {
+            "from_stage": 2,
+            "to_stage": 3,
+            "requires_level_completed": "1-3",
+            "price_coins": 300
+          },
+          {
+            "from_stage": 3,
+            "to_stage": 4,
+            "requires_level_completed": "1-4",
+            "price_coins": 400
+          }
+        ],
+        "total_cost_coins": 1000
+      },
+      "windmill": {
+        "start_stage": 0,
+        "state_names": [
+          "ruined",
+          "scaffold",
+          "repairing",
+          "restored",
+          "upgraded"
+        ],
+        "transitions": [
+          {
+            "from_stage": 0,
+            "to_stage": 1,
+            "requires_level_completed": "1-2",
+            "price_coins": 150
+          },
+          {
+            "from_stage": 1,
+            "to_stage": 2,
+            "requires_level_completed": "1-3",
+            "price_coins": 250
+          },
+          {
+            "from_stage": 2,
+            "to_stage": 3,
+            "requires_level_completed": "1-4",
+            "price_coins": 350
+          },
+          {
+            "from_stage": 3,
+            "to_stage": 4,
+            "requires_level_completed": "1-5",
+            "price_coins": 450
+          }
+        ],
+        "total_cost_coins": 1200
+      }
+    },
+    "total_cost_coins": 2200,
+    "one_stage_at_a_time": true,
+    "automatic_upgrade_on_level_completion": false,
+    "insufficient_balance": "show price and shortage, disable execution, never partially charge or advance",
+    "atomically_debit_and_advance": true,
+    "permanent_stages": true
+  }
+}

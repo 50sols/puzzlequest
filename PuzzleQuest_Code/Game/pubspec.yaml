@@ -1,0 +1,72 @@
+name: puzzlequest_game
+description: PuzzleQuest Flutter + Flame mobile client matching the approved 40-screen design handoff.
+publish_to: none
+version: 1.2.0+5
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flame: ^1.38.2
+  http: ^1.4.0
+  shared_preferences: ^2.5.3
+  flutter_secure_storage: ^11.2.0
+  path_provider: ^2.1.5
+  crypto: ^3.0.6
+  uuid: ^4.5.1
+  image_picker: ^1.2.1
+  share_plus: ^13.3.1
+  intl: ^0.20.2
+  google_sign_in: ^7.2.0
+  firebase_core: ^4.2.1
+  firebase_messaging: ^16.0.4
+  google_mobile_ads: ^6.0.0
+  flutter_localizations:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/
+    - assets/images/
+    - assets/ui/buttons/
+    - assets/ui/popups/
+    - assets/design/art/backgrounds/
+    - assets/design/art/buildings/
+    - assets/design/art/buildings/stages/
+    - assets/design/art/characters/
+    - assets/design/art/characters/avatars/
+    - assets/design/art/rewards/
+    - assets/design/art/worlds/
+    - assets/design/ui/icons/
+    - assets/design/ui/progress/
+    - assets/design/ui/tutorial/
+    - assets/puzzles/level_001/
+    - assets/puzzles/level_001/16_pieces/
+    - assets/puzzles/level_002_windmill_spring/
+    - assets/puzzles/level_002_windmill_spring/16_pieces/
+    - assets/puzzles/level_003_snow_castle/
+    - assets/puzzles/level_003_snow_castle/36_pieces/
+    - assets/puzzles/level_004_sky_balloon/
+    - assets/puzzles/level_004_sky_balloon/64_pieces/
+    - assets/puzzles/level_005_autumn_tree/
+    - assets/puzzles/level_005_autumn_tree/100_pieces/
+    - assets/config/
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Lato-Bold.ttf
+          weight: 700
