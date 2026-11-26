@@ -10,6 +10,20 @@ if(!$secure&&!$local){http_response_code(426);exit('HTTPS is required before ins
 header('X-Content-Type-Options: nosniff');header('X-Frame-Options: DENY');
 header('Referrer-Policy: no-referrer');header('Cache-Control: no-store, private');
 header("Content-Security-Policy: default-src 'none'; style-src 'self'; script-src 'self'; form-action 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'");
+// cPanel File Manager may extract static assets with mode 0600; Apache can reject
+// /install/wizard.js with HTTP 403 while PHP itself is still runnable.
+// Serve only the exact, trusted local wizard asset through the same PHP entry point.
+if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'GET' && ($_GET['asset'] ?? '') === 'wizard') {
+    $script = __DIR__.'/wizard.js';
+    if (!is_file($script) || is_link($script)) {
+        http_response_code(503);
+        header('Content-Type: text/plain; charset=utf-8');
+        exit('Installer JavaScript is missing; verify the Setup ZIP extraction.');
+    }
+    header('Content-Type: application/javascript; charset=utf-8');
+    readfile($script);
+    exit;
+}
 ini_set('session.use_strict_mode','1');session_name('PQ_INSTALL');
 session_set_cookie_params(['secure'=>$secure,'httponly'=>true,'samesite'=>'Strict']);session_start();
 $_SESSION['csrf']??=bin2hex(random_bytes(32));
@@ -93,6 +107,8 @@ $h=fn($value)=>htmlspecialchars((string)$value,ENT_QUOTES|ENT_SUBSTITUTE,'UTF-8'
 <?php if($keyReady): ?><p>أنشأ النظام رمز تثبيت فريدًا خارج مجلد الويب. من cPanel File Manager افتح الملف <code>puzzlequest_app/storage/app/private/install.key</code> وانسخ الرمز. لا تشاركه ولا ترفعه إلى Git.</p>
 <label>رمز ملكية التثبيت<input name="install_key" type="password" minlength="40" autocomplete="off" required></label>
 <?php else: ?><div class="error">تعذّر إنشاء رمز التثبيت الخاص. امنح مجلد storage/app/private صلاحية الكتابة من cPanel وأعد التحميل.</div><?php endif; ?>
+<div id="step-feedback" class="feedback" aria-live="polite"></div>
+<noscript><div class="error">يحتاج معالج التثبيت JavaScript للانتقال بين الخطوات. فعّله في المتصفح.</div></noscript>
 <div class="actions"><button type="button" data-next="2" <?= !$passed?'disabled':'' ?>>التالي ←</button></div></section>
 <section class="panel step" data-step="2" hidden><h2>٢. اتصال MySQL / MariaDB</h2>
 <div class="fields"><label>الرابط النهائي HTTPS<input name="url" value="https://puzzlequest.50sols.com" type="url" required></label><label>اسم خادم MySQL<input name="host" value="localhost" required></label><label>المنفذ<input name="port" type="number" min="1" max="65535" value="3306" required></label><label>اسم قاعدة البيانات<input name="database" required pattern="[A-Za-z0-9_]+"></label><label>اسم مستخدم قاعدة البيانات<input name="username" required></label><label>كلمة مرور قاعدة البيانات<input name="password" type="password" required></label></div>
@@ -104,4 +120,4 @@ $h=fn($value)=>htmlspecialchars((string)$value,ENT_QUOTES|ENT_SUBSTITUTE,'UTF-8'
 </form>
 <?php endif; ?>
 <footer>تثبيت آمن بدون Composer أو Terminal على خادم الإنتاج. جميع الأسرار تُحفظ داخل puzzlequest_app خارج public_html/.</footer>
-</main><script src="/install/wizard.js" defer></script></body></html>
+</main><script src="/install/?asset=wizard" defer></script></body></html>

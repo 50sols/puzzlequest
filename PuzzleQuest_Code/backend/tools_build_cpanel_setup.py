@@ -92,7 +92,11 @@ def pack(output: Path) -> None:
     with zipfile.ZipFile(output,'w',zipfile.ZIP_DEFLATED,compresslevel=6,allowZip64=True) as z:
         for name,blob in sorted(payload.items()):
             if name.startswith('/') or '..' in Path(name).parts: raise RuntimeError('Unsafe path')
-            z.writestr(name,blob)
+            entry = zipfile.ZipInfo(name)
+            entry.create_system = 3
+            entry.external_attr = (0o100644 << 16)  # cPanel/Apache must read public assets.
+            entry.compress_type = zipfile.ZIP_DEFLATED
+            z.writestr(entry, blob, compress_type=zipfile.ZIP_DEFLATED, compresslevel=6)
     with zipfile.ZipFile(output) as z:
         bad=z.testzip()
         if bad: raise RuntimeError(f'Broken ZIP member: {bad}')

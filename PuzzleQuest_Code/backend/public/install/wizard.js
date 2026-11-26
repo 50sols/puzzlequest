@@ -8,12 +8,18 @@
         step=n;
         steps.forEach(el=>el.hidden=Number(el.dataset.step)!==n);
         buttons.forEach(el=>el.classList.toggle('current',Number(el.dataset.indicator)===n));
-        window.scrollTo({top:0,behavior:'instant'});
+        window.scrollTo(0,0);
     }
     const check=(names)=>names.every(name=>{const e=form.elements.namedItem(name);return e && e.checkValidity();});
     document.querySelectorAll('[data-prev]').forEach(el=>el.addEventListener('click',()=>goto(Number(el.dataset.prev))));
     document.querySelectorAll('[data-next]').forEach(el=>el.addEventListener('click',()=>{
-        if(step===1&&!check(['install_key'])){form.elements.install_key.reportValidity();return;}
+        if(step===1&&!check(['install_key'])){
+            const feedback=document.getElementById('step-feedback');
+            if(feedback) feedback.textContent='أدخل رمز التثبيت الكامل من install.key (40 حرفًا على الأقل).';
+            form.elements.install_key.reportValidity();return;
+        }
+        const feedback=document.getElementById('step-feedback');
+        if(feedback) feedback.textContent='';
         if(step===2&&!probed)return;
         goto(Number(el.dataset.next));
     }));
