@@ -33,7 +33,12 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           png=Path('PuzzleQuest_Code/Game/assets/ui/buttons/primary_normal.png')
-          assert png.read_bytes().startswith(bytes.fromhex('89504e470d0a1a0a')), 'Git LFS artwork was not downloaded'
+          signature=bytes.fromhex('89504e470d0a1a0a')
+          assert png.read_bytes().startswith(signature), 'Git LFS artwork was not downloaded'
+          icons=list(Path('PuzzleQuest_Code/Game/android/app/src/main/res').rglob('ic_launcher.png'))
+          assert icons, 'Missing Android launcher icon resources'
+          for icon in icons:
+              assert icon.read_bytes().startswith(signature), f'Android LFS icon is not a PNG: {icon}'
           PY
 
       - name: Setup Java 17
