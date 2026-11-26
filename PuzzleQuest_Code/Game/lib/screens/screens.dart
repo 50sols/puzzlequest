@@ -19,6 +19,7 @@ import '../widgets/waterfall_motion.dart';
 import '../widgets/reward_shine.dart';
 import '../widgets/game_art_button.dart';
 import '../widgets/level_tile_lighting.dart';
+import '../widgets/mission_claim_button.dart';
 import '../game/gameplay.dart';
 
 const _screenTitles=<int, List<String>>{
@@ -1111,14 +1112,16 @@ class _ScreenPageState extends State<ScreenPage> {
             Text('+${number(mission['reward_coins'])}', textDirection: TextDirection.ltr),
           ]),
         ]),
-        if (mission['claimed'] == true)
-          Text(s.tr('تم استلام المكافأة', 'Reward claimed'),
-            style: const TextStyle(color: PQColors.muted))
-        else if (mission['eligible'] == true)
-          TextButton.icon(icon:_previewArt('coins_stack',28),onPressed: () => _perform(() async {
+        const SizedBox(height: 12),
+        PQMissionClaimButton(
+          eligible: mission['eligible'] == true,
+          claimed: mission['claimed'] == true,
+          arabic: s.arabic,
+          onClaim: () => _perform(() async {
             await s.mutate('missions/${mission['id']}/claim');
             if (mounted) _reload('missions');
-          }), label: Text(s.tr('استلم المكافأة', 'Claim reward'))),
+          }),
+        ),
       ])),
     );
   }
