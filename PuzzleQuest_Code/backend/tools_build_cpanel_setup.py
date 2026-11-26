@@ -67,7 +67,7 @@ def pack(output: Path) -> None:
     manifest = {
         'product': 'PuzzleQuest',
         'distribution': 'cPanel fixed subdomain clean install (developer build)',
-        'release_label': 'v1.1.0-subdomain',
+        'release_label': 'v1.0.0-subdomain',
         'document_root': '/home/ACCOUNT/public_html/puzzlequest.50sols.com',
         'private_directory': '/home/ACCOUNT/puzzlequest_app',
         'install_url': 'https://puzzlequest.50sols.com/install/',
@@ -79,7 +79,7 @@ def pack(output: Path) -> None:
     payload[PRIVATE+'SETUP_MANIFEST.json'] = (json.dumps(manifest, ensure_ascii=False, indent=2)+'\n').encode()
     payload[PRIVATE+'BUILD_INFO.json'] = (json.dumps({
         'source': 'PuzzleQuest_Code/backend modified original handoff',
-        'release_label': 'v1.1.0-subdomain',
+        'release_label': 'v1.0.0-subdomain',
         'build_generated_at_utc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'tool': 'tools_build_cpanel_setup.py',
         'status': 'Release candidate; MySQL Fresh Install and upgrade not certified',
@@ -99,6 +99,6 @@ def pack(output: Path) -> None:
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description='Build a cPanel fixed-subdomain fresh-install ZIP (developer computer only)')
-    parser.add_argument('--output',type=Path,default=ROOT.parent.parent.parent/'PuzzleQuest-Setup-v1.1.0-cPanel-Subdomain.zip')
+    parser.add_argument('--output',type=Path,default=ROOT.parent.parent.parent/'PuzzleQuest-Setup-v1.0.0.zip')
     args=parser.parse_args()
     pack(args.output.resolve())
