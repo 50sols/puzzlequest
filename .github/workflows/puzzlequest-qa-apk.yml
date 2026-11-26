@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: puzzlequest-qa-apk-{{ github.ref }}
+  group: puzzlequest-qa-apk-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
