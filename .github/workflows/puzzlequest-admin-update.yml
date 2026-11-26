@@ -10,24 +10,22 @@ permissions:
   contents: read
 
 concurrency:
-  group: puzzlequest-signed-update
+  group: puzzlequest-update-${{ github.ref }}-${{ github.event_name }}
   cancel-in-progress: true
 
 jobs:
-  verify-and-build:
+  validate-update:
+    name: Validate Laravel patch and ZIP contract
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 35
     defaults:
       run:
         working-directory: PuzzleQuest_Code/backend
-    env:
-      PUZZLEQUEST_UPDATE_SIGNING_KEY_B64: ${{ secrets.PUZZLEQUEST_UPDATE_SIGNING_KEY_B64 }}
-      PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64: ${{ secrets.PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64 }}
     steps:
-      - name: Checkout exact Git revision
+      - name: Checkout exact Git commit
         uses: actions/checkout@v4
 
-      - name: Setup PHP and required extensions
+      - name: Setup PHP 8.3 for testing
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
@@ -35,46 +33,119 @@ jobs:
           tools: composer:v2
           extensions: mbstring, curl, dom, fileinfo, openssl, pdo_mysql, pdo_sqlite, sqlite3, sodium, gd, zip
 
-      - name: Verify Composer manifest and install test dependencies
+      - name: Install and validate Composer dependencies
         run: |
           composer validate --no-check-publish
           composer install --prefer-dist --no-interaction --no-progress
 
-      - name: Lint exact changed PHP files
+      - name: Lint changed PHP files
         run: |
           php -l app/Http/Controllers/ContentAssetController.php
           php -l app/Services/Game.php
           php -l routes/api.php
           php -l config/puzzlequest.php
 
-      - name: Run Laravel test suite
+      - name: Run Laravel tests
         run: php artisan test
 
-      - name: Check supported target and trusted signing secrets
-        run: |
-          set -euo pipefail
-          test -n "$PUZZLEQUEST_UPDATE_SIGNING_KEY_B64" || {
-            echo "::error::Missing PUZZLEQUEST_UPDATE_SIGNING_KEY_B64; refusing an unsigned update."
-            exit 1
-          }
-          test -n "$PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64" || {
-            echo "::error::Missing PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64; configure the matching trusted public key in the Admin system."
-            exit 1
-          }
-
-      - name: Install signing verification dependency
+      - name: Setup ZIP validation tools
         run: python3 -m pip install --disable-pip-version-check pynacl==1.5.0
 
-      - name: Build, sign and verify Admin Update ZIP
-        run: python3 tools_build_cpanel_update.py --out dist
+      - name: Verify ZIP format with CI-only throwaway signing key
+        run: |
+          python3 - <<'PY'
+          import base64
+          import json
+          import os
+          from pathlib import Path
+          import subprocess
+          import sys
+          import tempfile
+          import zipfile
 
-      - name: Verify SHA-256 file list
-        run: (cd dist && sha256sum -c SHA256SUMS.txt)
+          from nacl.signing import SigningKey
 
-      - name: Upload signed update for Admin panel
+          # A fresh random key is deliberately restricted to the ephemeral test
+          # process. No private key or test package is published as an artifact.
+          key = SigningKey.generate()
+          with tempfile.TemporaryDirectory(prefix='pq-release-validation-') as directory:
+              env = os.environ.copy()
+              env['PUZZLEQUEST_UPDATE_SIGNING_KEY_B64'] = base64.b64encode(bytes(key)).decode('ascii')
+              env['PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64'] = base64.b64encode(bytes(key.verify_key)).decode('ascii')
+              subprocess.run([sys.executable, 'tools_build_cpanel_update.py', '--out', directory],
+                             check=True, env=env)
+              package = next(Path(directory).glob('PuzzleQuest-Update-v*.zip'))
+              with zipfile.ZipFile(package) as archive:
+                  assert archive.testzip() is None
+                  manifest = json.loads(archive.read('release.json'))
+                  assert manifest['git_sha'] == os.environ['GITHUB_SHA']
+                  assert manifest['deployment_layout'] == 'cpanel_fixed_subdomain_v1'
+                  assert manifest['from_version'] == '1.0.0'
+                  assert manifest['version'] == '1.0.1'
+              subprocess.run(['sha256sum', '-c', 'SHA256SUMS.txt'],
+                             cwd=directory, check=True)
+              print('CI-only signed ZIP contract validation: PASS')
+          PY
+
+      - name: Record release gate status
+        if: ${{ success() }}
+        run: |
+          {
+            echo '### Laravel update source validation passed'
+            echo 'The temporary test key and ZIP were discarded, and no deployable package was published.'
+            echo 'For a trusted release, use Actions → PuzzleQuest | Signed Admin ZIP Update → Run workflow'
+            echo 'after configuring the persistent Ed25519 release signing secrets.'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  publish-signed-update:
+    name: Publish trusted v1.0.1 Admin ZIP
+    if: ${{ github.event_name == 'workflow_dispatch' }}
+    needs: validate-update
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: release-signing
+    defaults:
+      run:
+        working-directory: PuzzleQuest_Code/backend
+    env:
+      PUZZLEQUEST_UPDATE_SIGNING_KEY_B64: ${{ secrets.PUZZLEQUEST_UPDATE_SIGNING_KEY_B64 }}
+      PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64: ${{ secrets.PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64 }}
+    steps:
+      - name: Checkout exact validated source
+        uses: actions/checkout@v4
+
+      - name: Verify trusted release signing configuration
+        run: |
+          set -euo pipefail
+          if [ -z "$PUZZLEQUEST_UPDATE_SIGNING_KEY_B64" ]; then
+            echo "::error::Missing signing key. Configure PUZZLEQUEST_UPDATE_SIGNING_KEY_B64 in GitHub Actions repository or release-signing environment secrets."
+            exit 1
+          fi
+          if [ -z "$PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64" ]; then
+            echo "::error::Missing corresponding public key. Configure PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64 and trust it in PuzzleQuest Admin (release_public_key)."
+            exit 1
+          fi
+
+      - name: Install signing verifier
+        run: python3 -m pip install --disable-pip-version-check pynacl==1.5.0
+
+      - name: Build and cryptographically verify signed ZIP
+        run: |
+          python3 tools_build_cpanel_update.py --out dist
+          (cd dist && sha256sum -c SHA256SUMS.txt)
+
+      - name: Publish verified signed update artifact
         uses: actions/upload-artifact@v4
         with:
           name: PuzzleQuest-Admin-Update-v1.0.1
           path: PuzzleQuest_Code/backend/dist/
           retention-days: 30
           if-no-files-found: error
+
+      - name: Record publish acceptance boundary
+        run: |
+          {
+            echo '### Signed ZIP uploaded as workflow artifact'
+            echo 'This is not a production deployment or staging upgrade certification.'
+            echo 'Install only through PuzzleQuest Admin → System Updates after staging verification.'
+          } >> "$GITHUB_STEP_SUMMARY"
