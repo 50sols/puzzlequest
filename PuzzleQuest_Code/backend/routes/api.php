@@ -4,7 +4,7 @@ use App\Http\Controllers\{AuthController as Auth,GameController as Game,AccountC
 // Asset delivery has a separate rate limit: a 100-piece puzzle needs >100
 // immutable image requests, and the normal API limiter must not block them.
 Route::get('v1/content/{level}/{revision}/{file}',
-    [\\App\\Http\\Controllers\\ContentAssetController::class, 'show'])
+    [\App\Http\Controllers\ContentAssetController::class, 'show'])
     ->where('file', '.*')->middleware('throttle:600,1');
 
 Route::prefix('v1')->middleware('throttle:api')->group(function(){
