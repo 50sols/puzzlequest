@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:puzzlequest_game/core/theme.dart';
 import 'package:puzzlequest_game/widgets/mission_claim_button.dart';
 
 Widget host(Widget child) => MaterialApp(
