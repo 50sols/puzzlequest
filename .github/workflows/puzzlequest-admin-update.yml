@@ -1,0 +1,80 @@
+name: PuzzleQuest | Signed Admin ZIP Update
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - fix/level-content-download-cpanel-20261126
+
+permissions:
+  contents: read
+
+concurrency:
+  group: puzzlequest-signed-update
+  cancel-in-progress: true
+
+jobs:
+  verify-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: PuzzleQuest_Code/backend
+    env:
+      PUZZLEQUEST_UPDATE_SIGNING_KEY_B64: ${{ secrets.PUZZLEQUEST_UPDATE_SIGNING_KEY_B64 }}
+      PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64: ${{ secrets.PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64 }}
+    steps:
+      - name: Checkout exact Git revision
+        uses: actions/checkout@v4
+
+      - name: Setup PHP and required extensions
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          coverage: none
+          tools: composer:v2
+          extensions: mbstring, curl, dom, fileinfo, openssl, pdo_mysql, pdo_sqlite, sqlite3, sodium, gd, zip
+
+      - name: Verify Composer manifest and install test dependencies
+        run: |
+          composer validate --no-check-publish
+          composer install --prefer-dist --no-interaction --no-progress
+
+      - name: Lint exact changed PHP files
+        run: |
+          php -l app/Http/Controllers/ContentAssetController.php
+          php -l app/Services/Game.php
+          php -l routes/api.php
+          php -l config/puzzlequest.php
+
+      - name: Run Laravel test suite
+        run: php artisan test
+
+      - name: Check supported target and trusted signing secrets
+        run: |
+          set -euo pipefail
+          test -n "$PUZZLEQUEST_UPDATE_SIGNING_KEY_B64" || {
+            echo "::error::Missing PUZZLEQUEST_UPDATE_SIGNING_KEY_B64; refusing an unsigned update."
+            exit 1
+          }
+          test -n "$PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64" || {
+            echo "::error::Missing PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64; configure the matching trusted public key in the Admin system."
+            exit 1
+          }
+
+      - name: Install signing verification dependency
+        run: python3 -m pip install --disable-pip-version-check pynacl==1.5.0
+
+      - name: Build, sign and verify Admin Update ZIP
+        run: python3 tools_build_cpanel_update.py --out dist
+
+      - name: Verify SHA-256 file list
+        run: (cd dist && sha256sum -c SHA256SUMS.txt)
+
+      - name: Upload signed update for Admin panel
+        uses: actions/upload-artifact@v4
+        with:
+          name: PuzzleQuest-Admin-Update-v1.0.1
+          path: PuzzleQuest_Code/backend/dist/
+          retention-days: 30
+          if-no-files-found: error
