@@ -29,7 +29,7 @@ jobs:
         run: |
           # Do not download unrelated design/archive LFS objects into CI.
           git lfs install --local
-          git lfs pull --include="PuzzleQuest_Code/Game/assets/**" --exclude=""
+          git lfs pull --include="PuzzleQuest_Code/Game/assets/**,PuzzleQuest_Code/Game/android/app/src/main/res/**" --exclude=""
           python3 - <<'PY'
           from pathlib import Path
           png=Path('PuzzleQuest_Code/Game/assets/ui/buttons/primary_normal.png')
