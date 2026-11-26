@@ -22,6 +22,13 @@
 \`\`\`
 The \`bootstrap/app.php\` public path binding must point Laravel \`public_path()\` at this **specific subdomain** and never to \`puzzlequest_app/public\` or the main \`public_html\`. Source \`backend/app/Services/Content.php\` writes imported assets through \`public_path()\`. Validate public HTTP URLs and checksums after upload.
 
+## Puzzle image delivery after publishing (cPanel)
+- Public files remain immutable at `/public_html/puzzlequest.50sols.com/content/{level_id}/{revision}/`; do not move or delete `manifest.json`, `master.png`, `16_pieces/`, or `16_masks_svg/`.
+- The player catalog now advertises `https://puzzlequest.50sols.com/api/v1/content/{level_id}/{revision}/{file}`. This read-only Laravel route serves **published** revisions only, verifies the requested relative path against the revision's SHA-256 allowlist, and never exposes arbitrary Laravel files.
+- A supported Flutter build may retry this gateway when a legacy static asset URL returns non-200. Both paths must return the *same exact hash*; no silent substitution with bundled artwork is permitted.
+- Before declaring a fix on the installed site, fetch the **real** URL for level 1-1 `master.png`, `manifest.json`, and each `16_pieces/piece_*.png` from the player catalog. Require HTTP 200, expected MIME, matching SHA-256 and an on-device level launch. An API `/status` success alone is insufficient.
+- Existing cPanel installations require a signed compatible **Admin Update ZIP**; never extract Setup ZIP over a live database. The Git source fix alone does not change the deployed site.
+
 ## Fresh install (one ZIP, no SSH on production)
 1. Build a complete, **single** \`PuzzleQuest-Setup-vX.Y.Z.zip\` using final Git commit + production \`vendor\` + all compiled/public files + actual web installer. Never upload a developer source ZIP as a Setup.
 2. In cPanel choose PHP with correct extensions (PDO MySQL, mbstring, sodium, GD, ZIP, DOM, OpenSSL etc). Verify ownership/permissions and subdomain Document Root.
