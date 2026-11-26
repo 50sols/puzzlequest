@@ -21,6 +21,7 @@
 6. [06 — Roadmap and open delivery gates](docs/06_ROADMAP_AR.md)
 7. [07 — Worker execution and handoff](docs/07_WORKER_PLAYBOOK_AR.md)
 8. [08 — Security, QA and existing repo risks](docs/08_SECURITY_QUALITY_AR.md)
+9. [09 — Authorized GitHub Actions: Signed Admin Update + QA APK](docs/09_RELEASE_WORKFLOWS_AR.md)
 
 ## Deployment baseline
 The **next delivery requested by the owner is a clean first installation**, not an upgrade of any currently running site. Never infer production version or contents from an archived ZIP. Use the fixed cPanel layout:
@@ -33,6 +34,6 @@ The **next delivery requested by the owner is a clean first installation**, not 
 ## Rules
 - Laravel is authoritative for wallets, stars, unlocks, time and rewards. Flutter and Python do not mint rewards.
 - A published puzzle revision is immutable; Draft → validate → preview/device QA → approve → publish. Changing art creates a **new revision**.
-- Do not trigger GitHub Actions / workflows now. Local checks are allowed; report exactly what ran.
+- Workflow exception (owner-authorized 26 Nov 2026): only the QA APK and signed Laravel Admin Update pipelines are enabled for the content-download hotfix; see `docs/09_RELEASE_WORKFLOWS_AR.md`. Never claim a build, production deploy, or CI success without direct run evidence.
 - Public repository: no credentials, player data, .env, signing private keys or database files in new commits.
 - Keep existing APIs and player progression intact until a contracted migration is accepted.
