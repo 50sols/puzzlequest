@@ -18,6 +18,7 @@ import '../widgets/verified_level_image.dart';
 import '../widgets/waterfall_motion.dart';
 import '../widgets/reward_shine.dart';
 import '../widgets/game_art_button.dart';
+import '../widgets/level_tile_lighting.dart';
 import '../game/gameplay.dart';
 
 const _screenTitles=<int, List<String>>{
@@ -738,40 +739,43 @@ class _ScreenPageState extends State<ScreenPage> {
   Widget _levelGridTile(LevelSpec level, int position, int stars) {
     final playable = level.unlocked || stars > 0;
     final completed = stars > 0;
-    final colors = completed
-        ? const [Color(0xFF55C126), Color(0xFF145417)]
-        : playable ? const [Color(0xFFCF59F6), Color(0xFF5622C8)]
-        : const [Color(0xFF504886), Color(0xFF282349)];
+    final lighting = PQLevelTileLighting.forState(
+      playable: playable, completed: completed);
     return Semantics(
-      label: s.tr('المرحلة ${level.code}', 'Level ${level.code}'),
+      label: s.tr(
+        'المرحلة ${level.code}، ${completed ? 'مكتملة' : playable ? 'متاحة للعب' : 'مقفولة'}',
+        'Level ${level.code}, ${completed ? 'completed' : playable ? 'ready to play' : 'locked'}'),
       enabled: playable,
       button: playable,
       child: Container(
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(16), boxShadow: [
-          BoxShadow(color: playable && !completed ? const Color(0xAAAD54FD) : Colors.black54,
-            blurRadius: 8, offset: const Offset(0, 3)),
-        ]),
-        child: Material(color: Colors.transparent, borderRadius: BorderRadius.circular(16),
+        decoration: lighting.outer,
+        child: Material(color: Colors.transparent,
+          borderRadius: PQLevelTileLighting.radius,
           clipBehavior: Clip.antiAlias,
           child: Ink(
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: colors.first.withValues(alpha: .95), width: 2),
-              gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: colors)),
+            decoration: lighting.face,
             child: InkWell(onTap: playable ? () => _navigate(5, {'level': level.id}) : null,
-              child: Padding(padding: const EdgeInsets.all(4), child: FittedBox(fit: BoxFit.scaleDown,
-                child: Column(mainAxisSize: MainAxisSize.min, children: [
-                  Text('$position', style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w700)),
-                  if (completed)
-                    Row(mainAxisSize: MainAxisSize.min, textDirection: TextDirection.ltr, children: [
-                      for (var i = 0; i < 3; i++)
-                        _levelRatingStar(17, earned: i < stars),
-                    ])
-                  else if (playable)
-                    const Icon(Icons.play_arrow_rounded, size: 24)
-                  else
-                    _levelGridIcon('lock', 20),
-                ]),
-              ))),
+              child: Padding(padding: const EdgeInsets.all(4),
+                child: FittedBox(fit: BoxFit.scaleDown,
+                  child: Column(mainAxisSize: MainAxisSize.min, children: [
+                    Text('$position', style: TextStyle(
+                      color: playable ? PQColors.white : PQColors.muted,
+                      fontSize: 26, fontWeight: FontWeight.w800,
+                      shadows: lighting.textShadows)),
+                    if (completed)
+                      Row(mainAxisSize: MainAxisSize.min, textDirection: TextDirection.ltr, children: [
+                        for (var i = 0; i < 3; i++)
+                          _levelRatingStar(17, earned: i < stars),
+                      ])
+                    else if (playable)
+                      Icon(Icons.play_circle_fill_rounded,
+                        color: lighting.iconColor, size: 25)
+                    else
+                      Opacity(opacity: .72, child: _levelGridIcon('lock', 20)),
+                  ]),
+                ),
+              ),
+            ),
           ),
         ),
       ),
