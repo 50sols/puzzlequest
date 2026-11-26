@@ -1234,6 +1234,8 @@ class _ScreenPageState extends State<ScreenPage> {
     PQCard(child:ListTile(leading:const Icon(Icons.account_circle,size:44,color:PQColors.gold),
       title:Text(s.displayName),subtitle:Text(s.guest?s.tr('حساب ضيف','Guest account'):'${s.player['email']??''}'),
       onTap:()=>_navigate(26))),
+    // Keep the illustrated language control visible before the long settings menu.
+    PQCard(child:PQLanguageSwitcher(arabic:s.arabic,onChanged:s.setLanguage)),
     _menuItem(Icons.person,26,s.tr('حسابي','My Account')),
     _menuItem(Icons.emoji_events,34,s.tr('الإنجازات','Achievements')),
     _menuItem(Icons.leaderboard,10,s.tr('الترتيب','Leaderboard')),
@@ -1241,7 +1243,6 @@ class _ScreenPageState extends State<ScreenPage> {
     _menuItem(Icons.security,28,s.tr('الخصوصية','Privacy & Security')),
     _menuItem(Icons.help_center,36,s.tr('مركز المساعدة','Help Center')),
     _menuItem(Icons.settings,40,s.tr('خيارات الموافقات','Consent Options')),
-    PQCard(child:PQLanguageSwitcher(arabic:s.arabic,onChanged:s.setLanguage)),
     PQCard(child:SwitchListTile(value:s.reduceMotion,
       title:Text(s.tr('تقليل الحركة','Reduce motion')),
       onChanged:s.setReduceMotion)),
