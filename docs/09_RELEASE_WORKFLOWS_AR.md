@@ -20,13 +20,17 @@
 
 - التحديث المسموح: `from_version=1.0.0` إلى `version=1.0.1` وبنية `cpanel_fixed_subdomain_v1` فقط.
 - Payload المحدد في `PuzzleQuest_Code/backend/release/update-files.json`: إصلاح API للصور + خدمة كتالوج اللعبة + Routes + تعريف الإصدار، دون تغيير DB أو dependencies أو الملفات المنشورة.
-- يعمل فحص Composer وPHP lint واختبارات Laravel، ثم يبني ZIP ببنية يفهمها `App\Services\Updates::verify()`:
-  `release.json` (Manifest) + `release.sig` (توقيع Ed25519 حقيقي) + `payload/...` (ملفات محددة وقيم SHA-256).
+- في كل Push على فرع الإصلاح: يجري **Validate Laravel patch and ZIP contract** (Composer وPHP lint وLaravel tests) ثم تجربة توقيع بمفتاح اختبار مؤقت محلي داخل Runner، تُتحقق فيها سلامة ZIP والـManifest وSHA-256؛ يُتلف المفتاح والحزمة التجريبية ولا يُنشَر منهما شيء.
+- إصدار الحزمة الحقيقية يتم **فقط عند تشغيل workflow_dispatch يدويًا**، وبعد نجاح الاختبارات، في Job مستقل `Publish trusted v1.0.1 Admin ZIP` يستخدم مفاتيح Release المستقرة من GitHub Actions Secrets وبيئة `release-signing`؛ ويمكن اشتراط موافقة المسؤول من إعدادات Environment.
+- الحزمة المنشورة بعد نجاح Job التوقيع تتوافق مع `App\Services\Updates::verify()`: `release.json` (Manifest) + `release.sig` (توقيع Ed25519 موثوق) + `payload/...` (ملفات محددة وقيم SHA-256).
 - **يلزم GitHub Actions Secrets:**
   - `PUZZLEQUEST_UPDATE_SIGNING_KEY_B64`: مفتاح توقيع Ed25519 خاص، 32-byte seed أو 64-byte libsodium secret، مشفر Base64.
   - `PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64`: المفتاح العام المقابل، 32 bytes Base64، **نفس المفتاح العام الموثوق والمسجل في لوحة الإدارة** (`release_public_key`).
-- لا يتم توليد مفتاح خاص مؤقت، ولا إنتاج تحديث غير موقّع، ولا وضع المفتاح الخاص في Git أو Artifact. إذا كانت المفاتيح غير مهيأة يفشل Workflow عمدًا ولا يعطي ZIP مضللًا.
+- مفتاح اختبار عشوائي مؤقت يُستخدم فقط للتحقق من آلية بناء ZIP داخل Runner، ويُحذف دون نشر الحزمة. لا يتم توليد مفتاح نشر موثوق تلقائيًا ولا وضع المفتاح الخاص في Git أو Artifact. إذا كانت مفاتيح الإصدار غير مهيأة، يظل **Job النشر اليدوي** محجوبًا بخطأ صريح؛ أما Push العادي فيتحقق من المصدر دون إنتاج حزمة قابلة للتركيب.
 - يتم تثبيت التحديث **من اللوحة نفسها**: Settings → System → System Updates → Upload → Verify → Backup → Install → Health. يمنع فك ZIP مباشرة على cPanel أو استخدام Setup ZIP فوق الموقع المثبت.
+- **إعداد المفتاح لأول مرة دون تعديل السيرفر:** GitHub Repository → Settings → Secrets and variables → Actions، احفظ مفتاح Ed25519 الخاص بصفة `PUZZLEQUEST_UPDATE_SIGNING_KEY_B64` والعام بصفة `PUZZLEQUEST_UPDATE_PUBLIC_KEY_B64` (أو أضفهما إلى Environment باسم `release-signing`). من PuzzleQuest Admin → الإعدادات / Hosting عيّن حقل مفتاح التحديث العام لنفس المفتاح العام. لا تشارك المفتاح الخاص عبر Chat أو ملفات Release.
+- إذا كانت مفاتيح سابقة موثوقة بالفعل، يجب استخدام **نفس الزوج**؛ لا تستبدله عشوائيًا حتى لا تُرفض التحديثات الموقعة، ولا تُعد النسخة جاهزة للتثبيت قبل اختبار Upgrade على staging.
+
 
 ## شروط قبول حقيقية
 1. نجاح اختبارات PHP وFlutter على commit الإصدار نفسه؛ تطابق SHA في `BUILD_INFO.json` وGitHub Run.
