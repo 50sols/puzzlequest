@@ -81,7 +81,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
       // Restore an active server-authorized attempt; never mint a new attempt
       // on app restart when a resumable one already exists.
       final prefs=await SharedPreferences.getInstance();
-      final activeKey='pq.active_attempt.${widget.level.id}';
+      final activeKey=widget.practice?'pq.practice_attempt.${widget.level.id}':'pq.active_attempt.${widget.level.id}';
       final storedId=prefs.getString(activeKey);
       Map<String,dynamic>? attempt;
       if(widget.practice){
@@ -384,7 +384,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
     _stopwatch.stop();_stopwatch.reset();
     _ticker?.cancel();
     final prefs=await SharedPreferences.getInstance();
-    await prefs.remove('pq.active_attempt.${widget.level.id}');
+    await prefs.remove(_practice?'pq.practice_attempt.${widget.level.id}':'pq.active_attempt.${widget.level.id}');
     if(_practice)await _journal?.discardAfterServerConfirmation();
     if(!mounted)return;
     setState((){
