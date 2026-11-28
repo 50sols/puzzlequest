@@ -149,6 +149,7 @@ class PuzzleSession extends ChangeNotifier {
       if(e.status==0){offline=true;_useBundledLevels();}
       // Authentication succeeded. A catalog outage must not make signup fail.
     }
+    if(!offline)await _flushPendingAvatar();
   }
   Map<String,dynamic> get device => {'device_name':'PuzzleQuest Mobile',
     'platform': defaultTargetPlatform == TargetPlatform.iOS ? 'ios' : 'android'};
