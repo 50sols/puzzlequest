@@ -117,7 +117,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
         // Remove only after the attempt itself has been persisted below.
       }
       }
-      final activeAttempt = attempt;
+      final activeAttempt = attempt!;
       if (activeAttempt['state']=='completed' || activeAttempt['state']=='timed_out') {
         throw StateError('Previous attempt is already finished; return to levels to start a new one.');
       }
@@ -141,7 +141,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
         _practice=widget.practice;
         _pendingSave=journal.events.isNotEmpty && activeAttempt['offline']!=true && !_practice;
         _localComplete = (_offlineTicket || _practice) && manifest.pieces.every((piece) => journal.placed.contains(piece.id));
-        _syncPending = _localComplete;
+        _syncPending = _localComplete && !_practice;
       });
       if(activeAttempt['state']=='paused' && activeAttempt['offline']!=true && !_practice) {
         try{await widget.session.api.post('attempts/$id/clock',{'action':'resume'});}catch(_){}
@@ -379,6 +379,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
       ))));
     if(mounted&&!_finished&&!_exiting&&_paused)await _resume();
   }
+  Future<void> restartPractice() async { if(_practice)await _restart(); }
   Future<void> _restart() async {
     _stopwatch.stop();_stopwatch.reset();
     _ticker?.cancel();
