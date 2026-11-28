@@ -60,7 +60,7 @@ class PuzzleSession extends ChangeNotifier {
       if(cached!=null){
         try{_readCatalog(obj(jsonDecode(cached)));}catch(_){}
       }
-      final savedPlayer=prefs.getString('puzzlequest.confirmed_player');
+      final savedPlayer=await _secure.read(key:'puzzlequest.confirmed_player');
       if(savedPlayer!=null){
         try{player=obj(jsonDecode(savedPlayer));}catch(_){}
       }
@@ -69,7 +69,7 @@ class PuzzleSession extends ChangeNotifier {
         offlineGuest=false;
         try {
           player=await api.get('me');
-          await prefs.setString('puzzlequest.confirmed_player',jsonEncode(player));
+          await _secure.write(key:'puzzlequest.confirmed_player',value:jsonEncode(player));
           await refreshCatalog();
           await _flushPendingAvatar();
         }on ApiException catch(error){
@@ -143,7 +143,7 @@ class PuzzleSession extends ChangeNotifier {
     offlineGuest=false;offline=false;
     final prefs=await SharedPreferences.getInstance();
     await prefs.remove('puzzlequest.offline_guest');
-    await prefs.setString('puzzlequest.confirmed_player',jsonEncode(player));
+    await _secure.write(key:'puzzlequest.confirmed_player',value:jsonEncode(player));
     notifyListeners();
     try{await refreshCatalog();}on ApiException catch(e){
       if(e.status==0){offline=true;_useBundledLevels();}
@@ -203,7 +203,7 @@ class PuzzleSession extends ChangeNotifier {
     api.token = null;player={};offlineGuest=false;offline=false;
     levels=await LocalCatalog.load();worlds=[];_cache.clear();
     final prefs=await SharedPreferences.getInstance();
-    await prefs.remove('puzzlequest.confirmed_player');
+    await _secure.delete(key:'puzzlequest.confirmed_player');
     await prefs.remove('puzzlequest.offline_guest');
     await prefs.remove('puzzlequest.pending_avatar');
     await _secure.delete(key:tokenKey);
@@ -216,7 +216,7 @@ class PuzzleSession extends ChangeNotifier {
     api.token=null;player={};offlineGuest=false;offline=false;
     levels=await LocalCatalog.load();worlds=[];_cache.clear();
     final prefs=await SharedPreferences.getInstance();
-    await prefs.remove('puzzlequest.confirmed_player');
+    await _secure.delete(key:'puzzlequest.confirmed_player');
     await prefs.remove('puzzlequest.offline_guest');
     await prefs.remove('puzzlequest.pending_avatar');
     await _secure.delete(key:tokenKey);notifyListeners();
@@ -230,8 +230,7 @@ class PuzzleSession extends ChangeNotifier {
   Future<void> refreshPlayer() async {
     if (!authenticated) return;
     player = await api.get('me');
-    await (await SharedPreferences.getInstance())
-      .setString('puzzlequest.confirmed_player',jsonEncode(player));
+    await _secure.write(key:'puzzlequest.confirmed_player',value:jsonEncode(player));
     await _flushPendingAvatar();notifyListeners();
   }
   void _readCatalog(Map<String,dynamic> envelope) {
@@ -281,8 +280,7 @@ class PuzzleSession extends ChangeNotifier {
   });
   Future<void> saveProfile(Map<String,dynamic> changes) => run(() async {
     player = await api.patch('account/profile',changes);
-    await (await SharedPreferences.getInstance())
-      .setString('puzzlequest.confirmed_player',jsonEncode(player));
+    await _secure.write(key:'puzzlequest.confirmed_player',value:jsonEncode(player));
     notifyListeners();
   });
 
@@ -309,7 +307,7 @@ class PuzzleSession extends ChangeNotifier {
     try{
       player=await api.patch('account/profile',{'avatar':pending});
       await prefs.remove('puzzlequest.pending_avatar');
-      await prefs.setString('puzzlequest.confirmed_player',jsonEncode(player));
+      await _secure.write(key:'puzzlequest.confirmed_player',value:jsonEncode(player));
       notifyListeners();
     }on ApiException catch(e){
       if(e.status==0){offline=true;_useBundledLevels();}
