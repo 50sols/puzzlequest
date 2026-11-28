@@ -995,7 +995,14 @@ class _ScreenPageState extends State<ScreenPage> {
                 : s.tr('اكتملت الصورة — المكافأة قيد المزامنة', 'Puzzle complete — reward awaiting sync'),
                 textAlign: TextAlign.center),
               const SizedBox(height: 12),
-              if(practice) PQAction(label:s.tr('العودة إلى العوالم','Back to worlds'),onPressed:_home)
+              if(practice) ...[
+                PQAction(label:s.tr('إعادة المحاولة','Replay practice'),onPressed:()async{
+                  setState(()=>_completionPending=false);
+                  await _gameplayKey.currentState?.restartPractice();
+                }),
+                const SizedBox(height:8),
+                PQAction(label:s.tr('العودة إلى العوالم','Back to worlds'),outlined:true,onPressed:_home),
+              ]
               else PQAction(label: s.tr('إعادة المزامنة', 'Retry sync'),
                 onPressed: () async => _gameplayKey.currentState?.retryCompletion()),
             ] else ...[
@@ -1521,7 +1528,10 @@ class _ScreenPageState extends State<ScreenPage> {
     return _authLayout([
       _authArt('mail'),
       const SizedBox(height:16),
-      Text('${s.tr('رمز من 6 أرقام أُرسل إلى','6-digit code sent to')} ${widget.extra['email']??''}'),
+      Text(_otpChallengeId==null
+        ? s.tr('لم يتأكد إرسال الرمز. اضغط إعادة الإرسال عند توفر الخدمة.',
+            'Verification delivery is pending. Request a new code when available.')
+        : '${s.tr('رمز من 6 أرقام أُرسل إلى','6-digit code sent to')} ${widget.extra['email']??''}'),
       TextField(controller:_codeField,keyboardType:TextInputType.number,
         maxLength:6,autofillHints:const [AutofillHints.oneTimeCode],
         onChanged:(_)=>setState((){}),
