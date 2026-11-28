@@ -278,10 +278,7 @@ class _ScreenPageState extends State<ScreenPage> {
       PQAction(label: s.tr('تسجيل الدخول', 'Sign In'), outlined: true, onPressed: () => _navigate(19)),
       const SizedBox(height: 8),
       TextButton(onPressed: () => _navigate(24), child: Text(s.tr('العب كضيف', 'Play as Guest'))),
-       TextButton(onPressed:()async{
-         await s.startOfflinePractice();
-         if(mounted)_home();
-       },child:Text(s.tr('العب دون اتصال (تدريب)','Play offline (practice)'))),
+
       TextButton(onPressed: () => _navigate(40), child: Text(s.tr('خيارات الخصوصية', 'Privacy options'))),
       TextButton(onPressed: () => s.setLanguage(!s.arabic), child: Text(s.arabic ? 'English' : 'العربية')),
     ]),
