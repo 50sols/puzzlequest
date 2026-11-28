@@ -21,6 +21,7 @@ import '../widgets/game_art_button.dart';
 import '../widgets/level_tile_lighting.dart';
 import '../widgets/mission_claim_button.dart';
 import '../widgets/world_card_lighting.dart';
+import '../widgets/avatar_picker.dart';
 import '../game/gameplay.dart';
 
 const _screenTitles=<int, List<String>>{
@@ -61,7 +62,7 @@ class _ScreenPageState extends State<ScreenPage> {
   PuzzleSession get s=>widget.session;
   int get id=>widget.id;
   Future<void> _navigate(int target,[Map<String,dynamic> extra=const {}]) async {
-    if (target == 5 && s.authenticated) {
+    if (target == 5 && s.authenticated && !s.offline) {
       try { await s.refreshCatalog(); } catch (_) {}
       if (!mounted) return;
     }
@@ -89,7 +90,18 @@ class _ScreenPageState extends State<ScreenPage> {
   String _errorText(Object e) {
     if(e is ApiException){if(e.status==0)return s.tr('لا يوجد اتصال بالخادم. حاول لاحقًا.','Cannot connect to server. Try again.');
       if(e.status==401)return s.tr('بيانات الدخول غير صحيحة','Invalid credentials');
-      if(e.status==503)return s.tr('الخدمة غير مهيأة بعد، راجع إعدادات الخادم','Service not configured on server');
+      if(e.status==503)return s.tr('الخادم غير متاح الآن. استمر في اللعب المحلي.','Server unavailable. Continue offline practice.');
+      switch(e.message){
+        case 'email_unavailable_use_login_or_recovery':
+          return s.tr('البريد مسجل بالفعل. استخدم تسجيل الدخول أو استعادة كلمة المرور.',
+            'Email already registered. Sign in or recover your password.');
+        case 'weak_password':case 'compromised_password':
+          return s.tr('اختر كلمة مرور أقوى وغير مكشوفة من قبل.','Choose a stronger, uncompromised password.');
+        case 'password_safety_service_unavailable':
+          return s.tr('فحص أمان كلمة المرور غير متاح الآن. حاول لاحقًا.','Password safety check unavailable. Retry later.');
+        case 'invalid_guest_session':
+          return s.tr('انتهت جلسة الضيف. أعد الدخول.','Guest session expired. Sign in again.');
+      }
       switch (e.message) {
         case 'building_goal_not_met':
           return s.tr('أكمل المرحلة المطلوبة والمذكورة تحت المبنى، وبعدها جرّب الترميم مرة تانية.',
@@ -1418,8 +1430,8 @@ class _ScreenPageState extends State<ScreenPage> {
   DateTime? _resendAvailableAt;
   Timer? _otpTicker;
   @override void initState(){super.initState();_showEvents = widget.extra['events'] == true;if(widget.id==21){
-    _otpChallengeId="${obj(widget.extra['challenge'])['challenge_id']}";
-    _resendAvailableAt=DateTime.now().add(const Duration(seconds:60));
+    _otpChallengeId=obj(widget.extra['challenge'])['challenge_id'] as String?;
+    if(_otpChallengeId!=null)_resendAvailableAt=DateTime.now().add(const Duration(seconds:60));
     _otpTicker=Timer.periodic(const Duration(seconds:1),(_){if(mounted)setState((){});});
   }}
   int get _otpWait => _resendAvailableAt==null?0:math.max(0,_resendAvailableAt!.difference(DateTime.now()).inSeconds+1);
@@ -1466,6 +1478,18 @@ class _ScreenPageState extends State<ScreenPage> {
       title:Text(s.tr('أؤكد أن عمري 13 عامًا أو أكثر','I confirm I am 13 years of age or older')),
       onChanged:(v)=>setState(()=>_confirmedAge=v??false))),
     PQAction(label:s.tr('إنشاء حساب','Create Account'),onPressed:(!_acceptedTerms||!_confirmedAge)?null:()=>_perform(()async{
+      if(_nameField.text.trim().length<2 || _nameField.text.trim().length>40){
+        _notice(s.tr('الاسم يجب أن يكون من 2 إلى 40 حرفًا','Name must be 2–40 characters'));
+        return;
+      }
+      if(!_emailField.text.contains('@') || !_emailField.text.contains('.')){
+        _notice(s.tr('أدخل بريدًا إلكترونيًا صحيحًا','Enter a valid email address'));
+        return;
+      }
+      if(_passwordField.text.length<6 || _passwordField.text.length>64){
+        _notice(s.tr('كلمة المرور من 6 إلى 64 حرفًا','Password must be 6–64 characters'));
+        return;
+      }
       if (_passwordField.text != _confirmPasswordField.text) {
         _notice(s.tr('كلمتا المرور غير متطابقتين', 'Passwords do not match'));
         return;
@@ -1484,9 +1508,10 @@ class _ScreenPageState extends State<ScreenPage> {
       Text('${s.tr('رمز من 6 أرقام أُرسل إلى','6-digit code sent to')} ${widget.extra['email']??''}'),
       TextField(controller:_codeField,keyboardType:TextInputType.number,
         maxLength:6,autofillHints:const [AutofillHints.oneTimeCode],
+        onChanged:(_)=>setState((){}),
         inputFormatters:[FilteringTextInputFormatter.digitsOnly],
         decoration:InputDecoration(labelText:s.tr('رمز التحقق','Verification Code'))),
-      PQAction(label:s.tr('تأكيد','Verify'),onPressed:_codeField.text.length!=6?null:()=>_perform(()async{
+      PQAction(label:s.tr('تأكيد','Verify'),onPressed:(_codeField.text.length!=6||_otpChallengeId==null)?null:()=>_perform(()async{
         await s.verifyOtp(_otpChallengeId??'',_codeField.text.trim(),purpose);_home();
       })),
       const SizedBox(height:8),
@@ -1532,13 +1557,20 @@ class _ScreenPageState extends State<ScreenPage> {
     const SizedBox(height:16),PQAction(label:s.tr('إنشاء حساب','Create Account'),outlined:true,onPressed:()=>_navigate(20)),
   ]);
   Widget _avatars()=>_scroll(_stack([
-    const PQSectionTitle(text:'Choose Avatar'),
-    for(final name in const ['explorer_boy_blue','explorer_boy_glasses','explorer_elder_scout',
-      'explorer_elder_turquoise','explorer_girl_orange','explorer_girl_purple',
-      'explorer_man_orange','explorer_woman_yellow'])
-      PQCard(child:ListTile(leading:const Icon(Icons.face,color:PQColors.gold),title:Text(name),
-        trailing:const Icon(Icons.check_circle_outline),
-        onTap:()=>_perform(()async{await s.saveProfile({'avatar':name});},next:26))),
+    Text(s.tr('اختر شخصيتك','Choose your avatar'),
+      textAlign:TextAlign.center,
+      style:Theme.of(context).textTheme.headlineSmall),
+    const SizedBox(height:6),
+    Text(s.tr('اختر صورة شخصيتك. يعمل حتى دون إنترنت.',
+      'Choose your portrait. Available offline.'),
+      textAlign:TextAlign.center),
+    const SizedBox(height:14),
+    PuzzleAvatarPicker(
+      selectedId:'${s.player['avatar']??''}',arabic:s.arabic,
+      onSelected:(value)=>_perform(()async{
+        await s.chooseAvatar(value);
+      },next:26),
+    ),
   ]));
   Widget _account()=>_scroll(_stack([
     PQCard(child:Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[
