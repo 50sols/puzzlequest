@@ -278,6 +278,10 @@ class _ScreenPageState extends State<ScreenPage> {
       PQAction(label: s.tr('تسجيل الدخول', 'Sign In'), outlined: true, onPressed: () => _navigate(19)),
       const SizedBox(height: 8),
       TextButton(onPressed: () => _navigate(24), child: Text(s.tr('العب كضيف', 'Play as Guest'))),
+       TextButton(onPressed:()async{
+         await s.startOfflinePractice();
+         if(mounted)_home();
+       },child:Text(s.tr('العب دون اتصال (تدريب)','Play offline (practice)'))),
       TextButton(onPressed: () => _navigate(40), child: Text(s.tr('خيارات الخصوصية', 'Privacy options'))),
       TextButton(onPressed: () => s.setLanguage(!s.arabic), child: Text(s.arabic ? 'English' : 'العربية')),
     ]),
@@ -299,7 +303,7 @@ class _ScreenPageState extends State<ScreenPage> {
           child: _villageScene(sceneHeight))),
         SizedBox(height:gap),
         if(s.offline)Padding(padding:const EdgeInsets.only(top:8),
-          child:Text(s.tr('تعمل في وضع محدود دون اتصال','Limited offline mode'),
+          child:Text(s.tr('اللعب المحلي متاح — المكافآت تتطلب الاتصال','Local play available — rewards require internet'),
             style:const TextStyle(color:PQColors.muted,fontSize:12))),
       ]),
         );
@@ -311,7 +315,7 @@ class _ScreenPageState extends State<ScreenPage> {
           Expanded(child: _homeShortcut('assets/design/art/worlds/floating_island.png', s.tr('العوالم', 'Worlds'), 0, () => _navigate(3))),
           const SizedBox(width: 3),
           Expanded(child: FutureBuilder<Map<String, dynamic>>(
-            future: s.authenticated
+            future: s.authenticated && !s.offline
                 ? _queries.putIfAbsent('missions', () => s.api.get('missions'))
                 : null,
             builder: (context, snapshot) {
@@ -382,7 +386,7 @@ class _ScreenPageState extends State<ScreenPage> {
         shadows:const [Shadow(color:Color(0x66FFBB31),blurRadius:6)]))),
   ]);
   Widget _villageScene(double height)=>FutureBuilder<Map<String,dynamic>>(
-    future:s.authenticated?_queries.putIfAbsent('village',()=>s.api.get('village')):null,
+    future:s.authenticated&&!s.offline?_queries.putIfAbsent('village',()=>s.fetch('village','village')):null,
     builder:(context,snapshot){
       final buildings=arr(obj(snapshot.data)['buildings']);
       final cottage=_buildingStage(buildings,'cottage'),windmill=_buildingStage(buildings,'windmill');
@@ -634,8 +638,8 @@ class _ScreenPageState extends State<ScreenPage> {
   Widget _worldStars(List<LevelSpec> levels) {
     final levelIds = levels.map((level) => level.id).toSet();
     return FutureBuilder<Map<String, dynamic>>(
-      future: s.authenticated
-          ? _queries.putIfAbsent('collections', () => s.api.get('collections'))
+      future: s.authenticated && !s.offline
+          ? _queries.putIfAbsent('collections', () => s.fetch('collections','collections'))
           : null,
       builder: (context, snapshot) {
         final stars = arr(obj(snapshot.data)['pictures']).map(obj)
@@ -678,7 +682,7 @@ class _ScreenPageState extends State<ScreenPage> {
       _ => 'green_valley',
     };
     return FutureBuilder<Map<String, dynamic>>(
-      future: s.authenticated ? _queries.putIfAbsent('collections', () => s.api.get('collections')) : null,
+      future: s.authenticated && !s.offline ? _queries.putIfAbsent('collections', () => s.fetch('collections','collections')) : null,
       builder: (context, snapshot) {
         final ratings = {
           for (final item in arr(obj(snapshot.data)['pictures']).map(obj))
@@ -800,7 +804,9 @@ class _ScreenPageState extends State<ScreenPage> {
       ),
     );
   }
-  LevelSpec? get _currentLevel=>s.level('${widget.extra['level']??''}');
+  LevelSpec? get _currentLevel=>s.practiceMode
+      ? (s.localLevel('${widget.extra['level']??''}') ?? s.level('${widget.extra['level']??''}'))
+      : s.level('${widget.extra['level']??''}');
   Widget _levelPreview() {
     final level = _currentLevel;
     if (level == null) return PQEmpty(text: s.tr('المرحلة غير متاحة', 'Level unavailable'));
@@ -918,7 +924,8 @@ class _ScreenPageState extends State<ScreenPage> {
 
   Widget _play(){final level=_currentLevel;
     if(level==null)return PQEmpty(text:s.tr('المرحلة غير متاحة','Level unavailable'));
-    final gameplay = PuzzleGameplay(key:_gameplayKey,level:level,session:s,offlineTicket:widget.extra['offline']==true,
+    final gameplay = PuzzleGameplay(key:_gameplayKey,level:level,session:s,
+      practice:s.practiceMode,offlineTicket:widget.extra['offline']==true&&!s.practiceMode,
       onExit:()=>Navigator.pop(context),
       onLocalCompleted: () {
         if (mounted) setState(() => _completionPending = true);
@@ -932,13 +939,13 @@ class _ScreenPageState extends State<ScreenPage> {
     );
     return Stack(fit: StackFit.expand, children: [
       Offstage(offstage: _completionPending, child: gameplay),
-      if (_completionPending) _completionView(level, const {}, pending: true),
+      if (_completionPending) _completionView(level, const {}, pending: true, practice:s.practiceMode),
     ]);
   }
 
   Widget _complete() => _completionView(_currentLevel, obj(widget.extra['result']));
 
-  Widget _completionView(LevelSpec? level, Map<String, dynamic> result, {bool pending = false}) {
+  Widget _completionView(LevelSpec? level, Map<String, dynamic> result, {bool pending = false, bool practice=false}) {
     final rating = number(result['rating']).clamp(0, 3);
     return Stack(fit: StackFit.expand, children: [
       Image.asset('assets/images/celebrate.png', fit: BoxFit.cover, excludeFromSemantics: true),
@@ -985,10 +992,14 @@ class _ScreenPageState extends State<ScreenPage> {
             ),
             const SizedBox(height: 18),
             if (pending) ...[
-              Text(s.tr('اكتملت الصورة — المكافأة قيد المزامنة', 'Puzzle complete — reward awaiting sync'),
+              Text(practice
+                ? s.tr('اكتملت المرحلة تدريبياً. لا مكافآت أو نجوم معتمدة دون اتصال.',
+                    'Practice complete. No verified coins or stars were awarded.')
+                : s.tr('اكتملت الصورة — المكافأة قيد المزامنة', 'Puzzle complete — reward awaiting sync'),
                 textAlign: TextAlign.center),
               const SizedBox(height: 12),
-              PQAction(label: s.tr('إعادة المزامنة', 'Retry sync'),
+              if(practice) PQAction(label:s.tr('العودة إلى العوالم','Back to worlds'),onPressed:_home)
+              else PQAction(label: s.tr('إعادة المزامنة', 'Retry sync'),
                 onPressed: () async => _gameplayKey.currentState?.retryCompletion()),
             ] else ...[
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
