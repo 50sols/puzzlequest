@@ -207,6 +207,10 @@ class PuzzleSession extends ChangeNotifier {
     await _secure.delete(key:'puzzlequest.confirmed_player');
     await prefs.remove('puzzlequest.offline_guest');
     await prefs.remove('puzzlequest.pending_avatar');
+    await prefs.remove('puzzlequest.catalog');
+    for(final key in const ['missions','collections','village','shop','rewards/daily','leaderboard/weekly']){
+      await prefs.remove('puzzlequest.cache.$key');
+    }
     await _secure.delete(key:tokenKey);
     notifyListeners();
   });
@@ -220,6 +224,10 @@ class PuzzleSession extends ChangeNotifier {
     await _secure.delete(key:'puzzlequest.confirmed_player');
     await prefs.remove('puzzlequest.offline_guest');
     await prefs.remove('puzzlequest.pending_avatar');
+    await prefs.remove('puzzlequest.catalog');
+    for(final key in const ['missions','collections','village','shop','rewards/daily','leaderboard/weekly']){
+      await prefs.remove('puzzlequest.cache.$key');
+    }
     await _secure.delete(key:tokenKey);notifyListeners();
   }
   Future<void> mergeGuest() => run(() async {
