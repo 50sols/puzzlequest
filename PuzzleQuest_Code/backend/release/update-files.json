@@ -4,10 +4,12 @@
   "php_min": "8.3.0",
   "deployment_layout": "cpanel_fixed_subdomain_v1",
   "files": [
+    "app/Http/Controllers/AuthController.php",
     "app/Http/Controllers/ContentAssetController.php",
+    "app/Services/Identity.php",
     "app/Services/Game.php",
     "config/puzzlequest.php",
     "routes/api.php"
   ],
-  "notes": "Only backend patch files. No dependencies, migrations or public files are changed."
+  "notes": "Backend gateway and email guest registration safety hotfix; no migrations or dependencies; preserves existing data."
 }
