@@ -1611,7 +1611,12 @@ class _ScreenPageState extends State<ScreenPage> {
     _menuItem(Icons.face,25,s.tr('اختر شخصية','Choose Avatar')),
     _menuItem(Icons.security,28,s.tr('الخصوصية والأمان','Privacy & Security')),
     _menuItem(Icons.verified_user,40,s.tr('الموافقات','Consents')),
-    if(s.guest)PQAction(label:s.tr('احفظ تقدم الضيف','Save Guest Progress'),onPressed:()=>_navigate(29)),
+    if(s.guest)PQAction(
+      label:s.tr('إنشاء حساب لحفظ تقدمك','Create an Account'),
+      onPressed:()=>_navigate(20)),
+    if(s.previousGuestToken!=null)PQAction(
+      label:s.tr('دمج تقدم الضيف السابق','Merge Previous Guest Progress'),
+      outlined:true,onPressed:()=>_navigate(29)),
   ]));
   Widget _editProfile()=>_scroll(_stack([
     const PQSectionTitle(text:'Edit Profile'),
