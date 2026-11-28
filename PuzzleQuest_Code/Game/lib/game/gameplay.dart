@@ -117,7 +117,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
         // Remove only after the attempt itself has been persisted below.
       }
       }
-      final activeAttempt = attempt!;
+      final activeAttempt = attempt;
       if (activeAttempt['state']=='completed' || activeAttempt['state']=='timed_out') {
         throw StateError('Previous attempt is already finished; return to levels to start a new one.');
       }
