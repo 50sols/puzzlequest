@@ -53,7 +53,7 @@ class PuzzleSession extends ChangeNotifier {
       offlineGuest=prefs.getBool('puzzlequest.offline_guest')??false;
       _bundledLevels=await LocalCatalog.load();
       for(final key in const ['missions','collections','village','shop','rewards/daily','leaderboard/weekly']){
-        final raw=prefs.getString('puzzlequest.cache.$key');
+        final raw=await _secure.read(key:'puzzlequest.cache.$key');
         if(raw!=null){try{_cache[key]=obj(jsonDecode(raw));}catch(_){}}
       }
       final cached=prefs.getString('puzzlequest.catalog');
@@ -209,7 +209,7 @@ class PuzzleSession extends ChangeNotifier {
     await prefs.remove('puzzlequest.pending_avatar');
     await prefs.remove('puzzlequest.catalog');
     for(final key in const ['missions','collections','village','shop','rewards/daily','leaderboard/weekly']){
-      await prefs.remove('puzzlequest.cache.$key');
+      await _secure.delete(key:'puzzlequest.cache.$key');
     }
     await _secure.delete(key:tokenKey);
     notifyListeners();
@@ -226,7 +226,7 @@ class PuzzleSession extends ChangeNotifier {
     await prefs.remove('puzzlequest.pending_avatar');
     await prefs.remove('puzzlequest.catalog');
     for(final key in const ['missions','collections','village','shop','rewards/daily','leaderboard/weekly']){
-      await prefs.remove('puzzlequest.cache.$key');
+      await _secure.delete(key:'puzzlequest.cache.$key');
     }
     await _secure.delete(key:tokenKey);notifyListeners();
   }
@@ -272,8 +272,7 @@ class PuzzleSession extends ChangeNotifier {
       final data=await api.get(endpoint);
       if(safeCache.contains(key)){
         _cache[key]=data;
-        await (await SharedPreferences.getInstance())
-          .setString('puzzlequest.cache.$key',jsonEncode(data));
+        await _secure.write(key:'puzzlequest.cache.$key',value:jsonEncode(data));
       }
       offline=false;notifyListeners();return data;
     }on ApiException catch(e){
