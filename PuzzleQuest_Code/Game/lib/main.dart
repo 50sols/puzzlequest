@@ -37,9 +37,9 @@ class PuzzleQuestApp extends StatelessWidget {
           const SafeArea(top:false,child:AppFooterBanner()),
       ]))),
     home:ScreenPage(
-      key: ValueKey(session.ready ? (session.offline ? 37 : session.authenticated ? 2 : 18) : 1),
+      key: ValueKey(session.ready ? ((session.authenticated || session.offlineGuest) ? 2 : 18) : 1),
       session: session,
-      id: session.ready ? (session.offline ? 37 : session.authenticated ? 2 : 18) : 1,
+      id: session.ready ? ((session.authenticated || session.offlineGuest) ? 2 : 18) : 1,
       extra: const {'startup': true},
     ),
   ));
