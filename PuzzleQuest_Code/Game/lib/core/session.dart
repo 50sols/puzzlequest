@@ -37,9 +37,8 @@ class PuzzleSession extends ChangeNotifier {
   /// Bundled levels are independent practice content; no offline minting.
   void _useBundledLevels() {
     if (_bundledLevels.isEmpty) return;
-    final known={for(final level in levels) level.id: level.unlocked};
     levels=_bundledLevels.map((level) =>
-      level.withUnlocked(offlineGuest || known[level.id]==true || level.unlocked)).toList();
+      level.withUnlocked(true) // Local practice unlock is not a server entitlement.).toList();
     notifyListeners();
   }
 
@@ -53,6 +52,10 @@ class PuzzleSession extends ChangeNotifier {
       hapticsEnabled=prefs.getBool('puzzlequest.haptics_enabled')??true;
       offlineGuest=prefs.getBool('puzzlequest.offline_guest')??false;
       _bundledLevels=await LocalCatalog.load();
+      for(final key in const ['missions','collections','village','shop','rewards/daily','leaderboard/weekly']){
+        final raw=prefs.getString('puzzlequest.cache.$key');
+        if(raw!=null){try{_cache[key]=obj(jsonDecode(raw));}catch(_){}}
+      }
       final cached=prefs.getString('puzzlequest.catalog');
       if(cached!=null){
         try{_readCatalog(obj(jsonDecode(cached)));}catch(_){}
@@ -245,6 +248,10 @@ class PuzzleSession extends ChangeNotifier {
     offline=false;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('puzzlequest.catalog',jsonEncode(result));
+  }
+  LevelSpec? localLevel(String id) {
+    for(final entry in _bundledLevels){if(entry.id==id)return entry.withUnlocked(true);}
+    return null;
   }
   LevelSpec? level(String id) {
     for (final level in levels) { if (level.id == id) return level; }
