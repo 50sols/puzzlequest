@@ -23,7 +23,7 @@
 7. Clean setup includes vendor, compiled assets and browser installer; subsequent update ZIPs need Ed25519 trusted signatures, SHA-256, version constraints, backup and recovery plan.
 8. No production server commands required from user. If cPanel requires DB creation or Document Root change, explain that explicitly.
 9. Never commit real .env, keys, MariaDB data dir, DB dumps, user uploads or tokens. Repo is currently PUBLIC and needs a tracked-file security review.
-10. Do not start/dispatch/configure GitHub Actions at this time; owner prioritizes development speed. Do not claim green CI.
+10. Do not start/dispatch/configure GitHub Actions by default. **Explicit owner exception, 2026-11-26:** two PuzzleQuest workflows are authorized for this image-download hotfix only: `.github/workflows/puzzlequest-qa-apk.yml` (test-signed `.qa` APK) and `.github/workflows/puzzlequest-admin-update.yml` (signed v1.0.0 → v1.0.1 Admin ZIP). Run only their declared CI gates; never infer success or production acceptance from a push alone. No other workflows are authorized by this exception.
 11. Distinguish **designed**, **implemented in source**, **locally tested**, **staging tested**, **production verified** in handoffs; do not claim missing evidence.
 12. Do not modify Android/iOS signing or native configurations unless required by the user's specific game task.
 

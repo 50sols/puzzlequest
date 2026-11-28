@@ -25,6 +25,9 @@ android {
             // Production builds still require the publisher's signing setup.
             if (providers.gradleProperty("localTestRelease").orNull == "true") {
                 signingConfig = signingConfigs.getByName("debug")
+                // Install QA alongside the Play Store build without replacing
+                // its signature, player progress, or private storage.
+                applicationIdSuffix = ".qa"
             }
             // Signing credentials are provisioned by the publisher/CI only.
             // No debug signing for production release.

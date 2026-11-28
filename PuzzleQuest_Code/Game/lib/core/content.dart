@@ -27,8 +27,12 @@ class ContentStore {
     if (uri?.host == 'puzzlequest.50sols.com' && uri?.scheme == 'http') {
       uri = uri!.replace(scheme:'https');
     }
-    if (uri == null || uri.scheme != 'https' || digest.length != 64 ||
-        uri.host != 'puzzlequest.50sols.com' || relativePath.contains('..')) {
+    if (uri == null || uri.scheme != 'https' ||
+        uri.host != 'puzzlequest.50sols.com' || uri.userInfo.isNotEmpty ||
+        uri.hasQuery || uri.hasFragment ||
+        !RegExp(r'^[a-f0-9]{64}$').hasMatch(digest) ||
+        !RegExp(r'^[A-Za-z0-9_./-]+$').hasMatch(relativePath) ||
+        relativePath.split('/').any((part) => part.isEmpty || part == '.' || part == '..')) {
       throw const FormatException('Untrusted content manifest');
     }
     final root = _cacheRoot ?? await getApplicationSupportDirectory();
@@ -41,8 +45,22 @@ class ContentStore {
       if (sha256.convert(b).toString() == digest) return b;
       await file.delete();
     }
-    final response = await _client.get(uri).timeout(const Duration(seconds: 25));
-    if (response.statusCode != 200) throw StateError('Content download failed');
+    var response = await _client.get(uri).timeout(const Duration(seconds: 25));
+    // Older catalogs sometimes point at static /content/ files that shared
+    // hosting refuses to serve. Try the server's published-only binary route,
+    // never an unverified local asset or a different content revision.
+    if (response.statusCode != 200 &&
+        RegExp(r'^[a-z0-9_]{3,100}$').hasMatch(level.id) &&
+        RegExp(r'^[a-f0-9-]{20,128}$').hasMatch(level.revision)) {
+      final gateway = Uri.https('puzzlequest.50sols.com',
+        '/api/v1/content/${level.id}/${level.revision}/$relativePath');
+      if (gateway != uri) {
+        response = await _client.get(gateway).timeout(const Duration(seconds: 25));
+      }
+    }
+    if (response.statusCode != 200) {
+      throw StateError('Content download failed: $relativePath (HTTP ${response.statusCode})');
+    }
     final b = response.bodyBytes;
     if (sha256.convert(b).toString() != digest) throw StateError('Content integrity check failed');
     final temporary = File('${file.path}.partial');

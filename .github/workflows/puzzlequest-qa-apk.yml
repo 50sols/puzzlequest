@@ -1,0 +1,140 @@
+name: PuzzleQuest | QA APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - fix/level-content-download-cpanel-20261126
+
+permissions:
+  contents: read
+
+concurrency:
+  group: puzzlequest-qa-apk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-qa-apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    defaults:
+      run:
+        working-directory: PuzzleQuest_Code/Game
+    steps:
+      - name: Checkout exact commit
+        uses: actions/checkout@v4
+
+      - name: Fetch only game artwork from Git LFS
+        working-directory: .
+        run: |
+          # Do not download unrelated design/archive LFS objects into CI.
+          git lfs install --local
+          git lfs pull --include="PuzzleQuest_Code/Game/assets/**,PuzzleQuest_Code/Game/android/app/src/main/res/**" --exclude=""
+          python3 - <<'PY'
+          from pathlib import Path
+          png=Path('PuzzleQuest_Code/Game/assets/ui/buttons/primary_normal.png')
+          signature=bytes.fromhex('89504e470d0a1a0a')
+          assert png.read_bytes().startswith(signature), 'Git LFS artwork was not downloaded'
+          icons=list(Path('PuzzleQuest_Code/Game/android/app/src/main/res').rglob('ic_launcher.png'))
+          assert icons, 'Missing Android launcher icon resources'
+          for icon in icons:
+              assert icon.read_bytes().startswith(signature), f'Android LFS icon is not a PNG: {icon}'
+          PY
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      # The ubuntu-latest runner already provides the Android SDK. Avoid
+      # the obsolete 'tools' package requested by setup-android defaults.
+
+      - name: Setup Flutter 3.47.6 stable
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: '3.47.6'
+
+      - name: Verify source files and design contract
+        run: |
+          python3 tool/check_source_integrity.py
+          python3 tool/verify_doc03.py
+
+      - name: Install Flutter packages
+        run: flutter pub get
+
+      - name: Analyze Flutter
+        run: flutter analyze --no-fatal-infos
+
+      - name: Run Flutter tests including published content retry
+        run: flutter test
+
+      - name: Prepare isolated test-only Android settings
+        run: |
+          # Never overwrite the store-signed production app on the test phone.
+          # This is a QA-only build: no real Firebase project or Push credentials.
+          echo 'localTestRelease=true' >> android/gradle.properties
+          cat > android/app/google-services.json <<'QA_FIREBASE'
+          {
+            "project_info": {
+              "project_number": "123456789012",
+              "project_id": "puzzlequest-qa-offline",
+              "storage_bucket": "puzzlequest-qa-offline.appspot.com"
+            },
+            "client": [
+              {
+                "client_info": {
+                  "mobilesdk_app_id": "1:123456789012:android:0123456789abcdef012345",
+                  "android_client_info": {
+                    "package_name": "com.puzzlequest50sols.com.qa"
+                  }
+                },
+                "oauth_client": [],
+                "api_key": [{"current_key": "QA_ONLY_NOT_A_REAL_FIREBASE_KEY"}],
+                "services": {"appinvite_service": {"other_platform_oauth_client": []}}
+              }
+            ],
+            "configuration_version": "1"
+          }
+          QA_FIREBASE
+
+      - name: Build test-signed release mode APK
+        run: flutter build apk --release --no-pub --dart-define=PUSH_CONFIGURED=false
+
+      - name: Verify APK signature and QA package identity
+        run: |
+          set -euo pipefail
+          APK=build/app/outputs/flutter-apk/app-release.apk
+          test -s "$APK"
+          TOOLS="$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)"
+          "$TOOLS/apksigner" verify --verbose "$APK"
+          "$TOOLS/aapt" dump badging "$APK" | grep "package: name='com.puzzlequest50sols.com.qa'"
+          mkdir -p dist
+          SHORT="$(echo "$GITHUB_SHA" | cut -c 1-12)"
+          cp "$APK" "dist/PuzzleQuest-QA-$SHORT.apk"
+          (cd dist && sha256sum "PuzzleQuest-QA-$SHORT.apk" > SHA256SUMS.txt)
+          python3 - <<'PY'
+          import json, os, pathlib
+          p=pathlib.Path('dist')
+          (p/'BUILD_INFO.json').write_text(json.dumps({
+            'product':'PuzzleQuest',
+            'type':'QA_APK_NOT_PLAY_STORE',
+            'git_sha':os.environ['GITHUB_SHA'],
+            'package_id':'com.puzzlequest50sols.com.qa',
+            'signing':'ephemeral Android debug key',
+            'push_configured':False,
+            'firebase':'nonproduction build-only placeholder',
+            'live_backend':'https://puzzlequest.50sols.com',
+            'server_fix_deployed':False,
+            'note':'Requires compatible Laravel v1.0.1 gateway deployed for full end-to-end validation.'
+          }, indent=2)+'\n')
+          PY
+
+      - name: Upload APK for device testing
+        uses: actions/upload-artifact@v4
+        with:
+          name: PuzzleQuest-QA-APK
+          path: PuzzleQuest_Code/Game/dist/
+          retention-days: 30
+          if-no-files-found: error

@@ -10,7 +10,20 @@ final class AuthController extends Controller {
     private function device(Request $r): array {return $r->validate(['device_name'=>'sometimes|string|max:100','device_id'=>'sometimes|string|max:128','platform'=>'sometimes|in:android,ios']);}
     private function legal(Request $r): void {if(app()->environment('production')){abort_unless($r->boolean('age_confirmed_13'),422,'13+ age acknowledgement required');$doc=DB::table('legal_documents')->where('slug','terms')->where('approved',true)->whereNotNull('published_at')->first();if(!$doc||!config('puzzlequest.legal_approved'))Json::fail('launch_legal_approval_required',503);}}
     public function guest(Request $r){$this->legal($r);return response()->json($this->identity->guest($this->device($r)),201);}
-    public function register(Request $r){$this->legal($r);$d=$r->validate(['name'=>['required','string','min:2','max:40','regex:/^[\p{Arabic}A-Za-z0-9 _-]+$/u'],'email'=>'required|email:rfc|max:254','password'=>'required|string|min:6|max:64|confirmed','terms_accepted'=>'required|accepted','terms_version'=>'required|string|max:100']);return response()->json($this->identity->register($d+$this->device($r),$r->attributes->get('player')),201);}
+    /** The public register route does not run the player middleware. Resolve an
+     * optional guest bearer credential explicitly so registration retains the
+     * same user ID, validated progress and wallet. */
+    private function guestForRegistration(Request $r): ?object {
+        $plain=$r->bearerToken();
+        if($plain===null)return null;
+        if($plain==='' || strlen($plain)>256)Json::fail('invalid_guest_session',401);
+        $token=DB::table('api_tokens')->where('token_hash',hash('sha256',$plain))->where('expires_at','>',now())->first();
+        $user=$token?DB::table('users')->find($token->user_id):null;
+        if(!$user || $user->status!=='active')Json::fail('invalid_guest_session',401);
+        if(!$user->is_guest)Json::fail('already_registered',409);
+        return $user;
+    }
+    public function register(Request $r){$this->legal($r);$d=$r->validate(['name'=>['required','string','min:2','max:40','regex:/^[\p{Arabic}A-Za-z0-9 _-]+$/u'],'email'=>'required|email:rfc|max:254','password'=>'required|string|min:6|max:64|confirmed','terms_accepted'=>'required|accepted','terms_version'=>'required|string|max:100']);return response()->json($this->identity->register($d+$this->device($r),$this->guestForRegistration($r)),201);}
     public function login(Request $r){$d=$r->validate(['email'=>'required|email:rfc|max:254','password'=>'required|string|max:64']);return response()->json($this->identity->login($d+$this->device($r)));}
     public function otp(Request $r){$d=$r->validate(['email'=>'required|email:rfc|max:254','purpose'=>'required|in:email_verification,password_recovery,mandatory_login']);if($d['purpose']==='mandatory_login'){$u=DB::table('users')->where('email',strtolower($d['email']))->first();if(!$u||$u->password_failures<5)Json::fail('invalid_credentials',401);}return response()->json($this->identity->issueOtp($d['email'],$d['purpose']));}
     public function verify(Request $r){$d=$r->validate(['challenge_id'=>'required|uuid','code'=>'required|string|max:12','purpose'=>'required|in:email_verification,mandatory_login']);$c=$this->identity->consumeOtp($d['challenge_id'],$d['code'],$d['purpose']);$u=DB::table('users')->where('id',$c->user_id)->where('status','active')->first();if(!$u)Json::fail('invalid_credentials',401);DB::table('users')->where('id',$u->id)->update(['email_verified_at'=>now(),'password_failures'=>0,'updated_at'=>now()]);return response()->json($this->identity->token($u->id,$this->device($r)));}

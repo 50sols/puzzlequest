@@ -77,6 +77,15 @@ class LevelSpec {
   String get bundledMaster => 'assets/puzzles/$assetFolder/master.png';
   String bundledPiece(PuzzlePieceSpec piece) => 'assets/puzzles/$assetFolder/${piece.imagePath}';
   bool get downloadable => assets.isNotEmpty;
+
+  /// Local practice uses only bundled files and does not alter any server
+  /// catalogue revision, signature, or verified unlock state.
+  LevelSpec withUnlocked(bool value) => LevelSpec(
+    id: id, code: code, worldId: worldId,
+    pieceCount: pieceCount, limit: limit, three: three, two: two,
+    assetFolder: assetFolder, published: published, unlocked: value,
+    assets: assets, revision: revision, title: title, remoteManifest: remoteManifest,
+  );
 }
 
 class LocalCatalog {

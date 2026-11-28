@@ -22,8 +22,10 @@ import '../widgets/game_art_button.dart';
 
 class PuzzleGameplay extends StatefulWidget {
   const PuzzleGameplay({super.key, required this.level, required this.session,
-    required this.onCompleted, required this.onExit, this.onLocalCompleted, this.offlineTicket=false});
+    required this.onCompleted, required this.onExit, this.onLocalCompleted, this.offlineTicket=false, this.practice=false});
   final bool offlineTicket;
+  /// Practice never creates a server ticket or awards currency.
+  final bool practice;
   final LevelSpec level;
   final PuzzleSession session;
   final void Function(Map<String,dynamic> result) onCompleted;
@@ -43,7 +45,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
   String? _attemptId;
   bool _lifecyclePaused=false,_watchingAd=false;
   bool _pendingSave=false,_restoringPreview=false;
-  bool _loading=true,_paused=false,_submitting=false,_finished=false,_offlineTicket=false,_exiting=false,_localComplete=false,_syncPending=false;
+  bool _loading=true,_paused=false,_submitting=false,_finished=false,_offlineTicket=false,_practice=false,_exiting=false,_localComplete=false,_syncPending=false;
   String? _error;
   int _elapsed=0;
   final Stopwatch _stopwatch=Stopwatch();
@@ -79,9 +81,16 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
       // Restore an active server-authorized attempt; never mint a new attempt
       // on app restart when a resumable one already exists.
       final prefs=await SharedPreferences.getInstance();
-      final activeKey='pq.active_attempt.${widget.level.id}';
+      final activeKey=widget.practice?'pq.practice_attempt.${widget.level.id}':'pq.active_attempt.${widget.level.id}';
       final storedId=prefs.getString(activeKey);
       Map<String,dynamic>? attempt;
+      if(widget.practice){
+        // Device-local attempt. Reward/leaderboard state is never fabricated.
+        final practiceId='practice_${widget.level.id}';
+        final saved=await PlacementJournal.restore(practiceId);
+        attempt={'id':practiceId,'state':'playing','offline':false,
+          'placed_piece_ids':saved.placed.toList(),'elapsed_ms':saved.elapsedMs};
+      }else{
       if(storedId!=null){
         try {
           final found=await widget.session.api.get('attempts/$storedId');
@@ -107,6 +116,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
         },operation);
         // Remove only after the attempt itself has been persisted below.
       }
+      }
       final activeAttempt = attempt;
       if (activeAttempt['state']=='completed' || activeAttempt['state']=='timed_out') {
         throw StateError('Previous attempt is already finished; return to levels to start a new one.');
@@ -128,11 +138,12 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
         _attemptId=id;_journal=journal;_board=game;
         _loading=false;_elapsed=math.max(number(activeAttempt['elapsed_ms']),journal.elapsedMs);
         _offlineTicket=activeAttempt['offline']==true;
-        _pendingSave=journal.events.isNotEmpty && activeAttempt['offline']!=true;
-        _localComplete = _offlineTicket && manifest.pieces.every((piece) => journal.placed.contains(piece.id));
-        _syncPending = _localComplete;
+        _practice=widget.practice;
+        _pendingSave=journal.events.isNotEmpty && activeAttempt['offline']!=true && !_practice;
+        _localComplete = (_offlineTicket || _practice) && manifest.pieces.every((piece) => journal.placed.contains(piece.id));
+        _syncPending = _localComplete && !_practice;
       });
-      if(activeAttempt['state']=='paused' && activeAttempt['offline']!=true) {
+      if(activeAttempt['state']=='paused' && activeAttempt['offline']!=true && !_practice) {
         try{await widget.session.api.post('attempts/$id/clock',{'action':'resume'});}catch(_){}
       }
       if (_localComplete) {
@@ -156,7 +167,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
     sha256.convert(utf8.encode(jsonEncode(events))).toString();
 
   Future<void> _retryPendingSave() async {
-    if (_offlineTicket || _submitting || _journal==null || _attemptId==null ||
+    if (_offlineTicket || _practice || _submitting || _journal==null || _attemptId==null ||
         _journal!.events.isEmpty || _finished) {return;}
     if (mounted) setState(()=>_submitting=true);
     try {
@@ -185,7 +196,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
     }
   }
   Future<void> _restorePreviewIfNeeded() async {
-    if (_restoringPreview || _attemptId==null || _offlineTicket || !mounted) return;
+    if (_restoringPreview || _attemptId==null || _offlineTicket || _practice || !mounted) return;
     final prefs=await SharedPreferences.getInstance();
     final raw=prefs.getString('pq.active_preview.$_attemptId');
     if(raw==null)return;
@@ -214,7 +225,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
     ));}
   }
   Future<void> retryCompletion() async {
-    if (_submitting) return;
+    if (_submitting || _practice) return;
     if (_offlineTicket) {
       setState(() => _submitting = true);
       try {
@@ -250,7 +261,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
     _stopwatch.reset();
     setState(()=>_paused=true);
     if(_journal!=null){_journal!.elapsedMs=_elapsed;await _journal!.persist();}
-    if(_attemptId!=null && !_offlineTicket){
+    if(_attemptId!=null && !_offlineTicket && !_practice){
       try{await widget.session.api.post('attempts/$_attemptId/clock',{'action':'pause'});}catch(_){ /* keep local pause journal */ }
     }
     if(fromLifecycle)_lifecyclePaused=true;
@@ -259,7 +270,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
   Future<void> _resume() async {
     if(_finished)return;
     _lifecyclePaused=false;
-    if(_attemptId!=null && !_offlineTicket){
+    if(_attemptId!=null && !_offlineTicket && !_practice){
       try{await widget.session.api.post('attempts/$_attemptId/clock',{'action':'resume'});}catch(_){/* retain local timing */}
     }
     _stopwatch.start();if(mounted)setState(()=>_paused=false);
@@ -322,7 +333,8 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
         _stopwatch.stop();
         if (mounted) widget.onLocalCompleted?.call();
       }
-      // Offline ticket: journal only; send when all pieces are placed.
+      // Local practice is intentionally never posted as a trusted attempt.
+      if(_practice)return;
       if(_offlineTicket){
         if(_remainingPieces.isEmpty){_localComplete=true;await _syncOffline();}
         return;
@@ -350,7 +362,7 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
           const SizedBox(height:8),
           ListTile(leading:const Icon(Icons.shuffle),title:Text(widget.session.tr('خلط القطع','Shuffle')),
             subtitle:Text('${widget.session.tr('المخزن','Stored')}: ${widget.session.shuffles} — 150 Coins'),
-            onTap:()async{Navigator.pop(modal);await _shuffle();}),
+            onTap:_practice?null:()async{Navigator.pop(modal);await _shuffle();}),
           ListTile(leading:const Icon(Icons.restart_alt),title:Text(widget.session.tr('إعادة المحاولة','Restart')),
             onTap:()async{
               final confirmed=await showDialog<bool>(context:modal,builder:(ctx)=>PuzzleDialog(
@@ -367,17 +379,20 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
       ))));
     if(mounted&&!_finished&&!_exiting&&_paused)await _resume();
   }
+  Future<void> restartPractice() async { if(_practice)await _restart(); }
   Future<void> _restart() async {
     _stopwatch.stop();_stopwatch.reset();
     _ticker?.cancel();
     final prefs=await SharedPreferences.getInstance();
-    await prefs.remove('pq.active_attempt.${widget.level.id}');
+    await prefs.remove(_practice?'pq.practice_attempt.${widget.level.id}':'pq.active_attempt.${widget.level.id}');
+    if(_practice)await _journal?.discardAfterServerConfirmation();
     if(!mounted)return;
     setState((){
       _loading=true;_error=null;_board=null;_journal=null;_attemptId=null;
       _master=null;_manifest=null;_pieceImages={};_selected=null;_hintPieceId=null;
       _trayOrder=[];_elapsed=0;
       _finished=false;_paused=false;_exiting=false;_localComplete=false;_syncPending=false;_pendingSave=false;
+      _practice=false;
     });
     await _initialize();
   }
@@ -476,6 +491,15 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
       image:_master!,remainingMs:remainingMs,
     ));
   }
+  Future<void> _showPracticeImage() async {
+    if(!mounted || _master==null)return;
+    await showDialog<void>(context:context,builder:(ctx)=>PuzzleDialog(
+      title:Text(widget.session.tr('الصورة الأصلية','Original Picture')),
+      content:Image.memory(_master!,width:270,height:270,fit:BoxFit.contain),
+      actions:[TextButton(onPressed:()=>Navigator.pop(ctx),
+        child:Text(widget.session.tr('إغلاق','Close')))],
+    ));
+  }
   void _showError(Object error) {
     if (!mounted) return;
     final message = error is String ? error : widget.session.tr(
@@ -492,6 +516,10 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
     ]));}
     final manifest=_manifest!;final board=_board!;
     return PopScope(canPop:false,onPopInvokedWithResult:(didPop,result){if(!didPop)_pause();},child:Column(children:[
+       if(_practice)Padding(padding:const EdgeInsets.all(6),
+         child:Text(s.tr('لعب تدريبي دون إنترنت — لا مكافآت أو نجوم معتمدة',
+           'Offline practice — no verified coins or stars'),
+           textAlign:TextAlign.center,style:const TextStyle(color:PQColors.gold,fontSize:12))),
       Padding(padding: const EdgeInsets.fromLTRB(8, 8, 16, 6), child: Row(children: [
         BackButton(onPressed: _paused || _finished ? null : () => _pause()),
         Expanded(child: Text('${s.tr('المرحلة', 'Level')} ${widget.level.code}',
@@ -606,10 +634,10 @@ class PuzzleGameplayState extends State<PuzzleGameplay> with WidgetsBindingObser
       const SizedBox(height:10),
       Padding(padding: const EdgeInsets.fromLTRB(12, 0, 12, 12), child: Row(children: [
         Expanded(child: _gameTool(s.tr('تلميح', 'Hint'), 'art/rewards/hint_bulb.png',
-          _hint, badge: s.hints)),
+          _practice?()=>_showError(widget.session.tr('التلميحات تتطلب اتصالًا','Hints require an online connection')):_hint, badge: s.hints)),
         const SizedBox(width: 8),
         Expanded(child: _gameTool(s.tr('الصورة كاملة', 'Full image'), 'ui/icons/video.png',
-          _showFullImage, highlighted: true)),
+          _practice?_showPracticeImage:_showFullImage, highlighted: true)),
         const SizedBox(width: 8),
         Expanded(child: _gameTool(s.tr('إيقاف', 'Pause'), 'ui/icons/pause.png', () => _pause())),
       ])),

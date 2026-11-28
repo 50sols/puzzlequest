@@ -342,9 +342,43 @@ class PQTrophyBadge extends StatelessWidget {
 class PQLanguageSwitcher extends StatelessWidget {
   const PQLanguageSwitcher({super.key,required this.arabic,required this.onChanged});
   final bool arabic;final ValueChanged<bool> onChanged;
+
   @override Widget build(BuildContext context)=>SwitchListTile(
-    title:Text(arabic?'اللغة العربية':'Arabic language'),
-    value:arabic,onChanged:onChanged);
+    contentPadding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+    secondary: Tooltip(
+      message: arabic ? 'تغيير اللغة' : 'Change language',
+      child: Container(
+        width: 56, height: 56,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: PQColors.purple.withValues(alpha: .23),
+          borderRadius: BorderRadius.circular(15),
+          border: Border.all(color: PQColors.gold, width: 1.6),
+          boxShadow: [
+            BoxShadow(
+              color: PQColors.purple.withValues(alpha: .42),
+              blurRadius: 13, spreadRadius: 1,
+            ),
+          ],
+        ),
+        child: Image.asset(
+          'assets/design/ui/icons/worlds.png',
+          width: 38, height: 38, fit: BoxFit.contain,
+          excludeFromSemantics: true,
+        ),
+      ),
+    ),
+    title: Text(arabic ? 'تغيير اللغة' : 'Change language',
+      style: const TextStyle(fontWeight: FontWeight.w800)),
+    subtitle: Text(arabic
+      ? 'العربية • اضغط للتبديل إلى English'
+      : 'English • Tap to switch to العربية',
+      maxLines: 2, overflow: TextOverflow.ellipsis),
+    value: arabic,
+    activeThumbColor: PQColors.gold,
+    activeTrackColor: PQColors.purple,
+    onChanged: onChanged,
+  );
 }
 
 class PQNotificationTile extends StatelessWidget {

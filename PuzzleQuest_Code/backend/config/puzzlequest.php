@@ -1,6 +1,6 @@
 <?php
 return [
-    'version' => '1.0.0',
+    'version' => '1.0.1',
     'rules' => json_decode(file_get_contents(base_path('resources/product/APPROVED_PRODUCT_RULES.json')), true),
     'google_client_id' => env('GOOGLE_CLIENT_ID', '669275008728-h75erb2344tipd76enr2fahcd4h5frea.apps.googleusercontent.com'),
     'firebase_project' => env('FIREBASE_PROJECT_ID', 'puzzlequest50sols'),

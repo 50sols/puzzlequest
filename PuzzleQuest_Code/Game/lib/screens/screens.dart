@@ -18,6 +18,10 @@ import '../widgets/verified_level_image.dart';
 import '../widgets/waterfall_motion.dart';
 import '../widgets/reward_shine.dart';
 import '../widgets/game_art_button.dart';
+import '../widgets/level_tile_lighting.dart';
+import '../widgets/mission_claim_button.dart';
+import '../widgets/world_card_lighting.dart';
+import '../widgets/avatar_picker.dart';
 import '../game/gameplay.dart';
 
 const _screenTitles=<int, List<String>>{
@@ -58,7 +62,7 @@ class _ScreenPageState extends State<ScreenPage> {
   PuzzleSession get s=>widget.session;
   int get id=>widget.id;
   Future<void> _navigate(int target,[Map<String,dynamic> extra=const {}]) async {
-    if (target == 5 && s.authenticated) {
+    if (target == 5 && s.authenticated && !s.offline) {
       try { await s.refreshCatalog(); } catch (_) {}
       if (!mounted) return;
     }
@@ -86,7 +90,18 @@ class _ScreenPageState extends State<ScreenPage> {
   String _errorText(Object e) {
     if(e is ApiException){if(e.status==0)return s.tr('لا يوجد اتصال بالخادم. حاول لاحقًا.','Cannot connect to server. Try again.');
       if(e.status==401)return s.tr('بيانات الدخول غير صحيحة','Invalid credentials');
-      if(e.status==503)return s.tr('الخدمة غير مهيأة بعد، راجع إعدادات الخادم','Service not configured on server');
+      if(e.status==503)return s.tr('الخادم غير متاح الآن. استمر في اللعب المحلي.','Server unavailable. Continue offline practice.');
+      switch(e.message){
+        case 'email_unavailable_use_login_or_recovery':
+          return s.tr('البريد مسجل بالفعل. استخدم تسجيل الدخول أو استعادة كلمة المرور.',
+            'Email already registered. Sign in or recover your password.');
+        case 'weak_password':case 'compromised_password':
+          return s.tr('اختر كلمة مرور أقوى وغير مكشوفة من قبل.','Choose a stronger, uncompromised password.');
+        case 'password_safety_service_unavailable':
+          return s.tr('فحص أمان كلمة المرور غير متاح الآن. حاول لاحقًا.','Password safety check unavailable. Retry later.');
+        case 'invalid_guest_session':
+          return s.tr('انتهت جلسة الضيف. أعد الدخول.','Guest session expired. Sign in again.');
+      }
       switch (e.message) {
         case 'building_goal_not_met':
           return s.tr('أكمل المرحلة المطلوبة والمذكورة تحت المبنى، وبعدها جرّب الترميم مرة تانية.',
@@ -263,6 +278,7 @@ class _ScreenPageState extends State<ScreenPage> {
       PQAction(label: s.tr('تسجيل الدخول', 'Sign In'), outlined: true, onPressed: () => _navigate(19)),
       const SizedBox(height: 8),
       TextButton(onPressed: () => _navigate(24), child: Text(s.tr('العب كضيف', 'Play as Guest'))),
+
       TextButton(onPressed: () => _navigate(40), child: Text(s.tr('خيارات الخصوصية', 'Privacy options'))),
       TextButton(onPressed: () => s.setLanguage(!s.arabic), child: Text(s.arabic ? 'English' : 'العربية')),
     ]),
@@ -284,7 +300,7 @@ class _ScreenPageState extends State<ScreenPage> {
           child: _villageScene(sceneHeight))),
         SizedBox(height:gap),
         if(s.offline)Padding(padding:const EdgeInsets.only(top:8),
-          child:Text(s.tr('تعمل في وضع محدود دون اتصال','Limited offline mode'),
+          child:Text(s.tr('اللعب المحلي متاح — المكافآت تتطلب الاتصال','Local play available — rewards require internet'),
             style:const TextStyle(color:PQColors.muted,fontSize:12))),
       ]),
         );
@@ -296,7 +312,7 @@ class _ScreenPageState extends State<ScreenPage> {
           Expanded(child: _homeShortcut('assets/design/art/worlds/floating_island.png', s.tr('العوالم', 'Worlds'), 0, () => _navigate(3))),
           const SizedBox(width: 3),
           Expanded(child: FutureBuilder<Map<String, dynamic>>(
-            future: s.authenticated
+            future: s.authenticated && !s.offline
                 ? _queries.putIfAbsent('missions', () => s.api.get('missions'))
                 : null,
             builder: (context, snapshot) {
@@ -367,7 +383,7 @@ class _ScreenPageState extends State<ScreenPage> {
         shadows:const [Shadow(color:Color(0x66FFBB31),blurRadius:6)]))),
   ]);
   Widget _villageScene(double height)=>FutureBuilder<Map<String,dynamic>>(
-    future:s.authenticated?_queries.putIfAbsent('village',()=>s.api.get('village')):null,
+    future:s.authenticated&&!s.offline?_queries.putIfAbsent('village',()=>s.fetch('village','village')):null,
     builder:(context,snapshot){
       final buildings=arr(obj(snapshot.data)['buildings']);
       final cottage=_buildingStage(buildings,'cottage'),windmill=_buildingStage(buildings,'windmill');
@@ -569,21 +585,21 @@ class _ScreenPageState extends State<ScreenPage> {
         : s.tr('يفتح بعد نشر المحتوى وإكمال العالم السابق',
             'Unlocks when published and after completing the previous world');
     return Container(
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), boxShadow: [
-        BoxShadow(color: accent.withValues(alpha: available ? .7 : .23), blurRadius: 12),
-      ]),
+      decoration: PQWorldCardLighting.outer(accent, available: available),
       child: Material(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20),
-          side: BorderSide(color: accent, width: 2)),
+        shape: RoundedRectangleBorder(borderRadius: PQWorldCardLighting.radius,
+          side: PQWorldCardLighting.rim(accent, available: available)),
         clipBehavior: Clip.antiAlias,
         child: InkWell(
           onTap: available ? () => _navigate(4, {'world': worldId}) : null,
           child: Stack(children: [
             Positioned.fill(child: Image.asset('assets/design/art/worlds/$art.png',
-              fit: BoxFit.cover, excludeFromSemantics: true)),
-            const Positioned.fill(child: DecoratedBox(decoration: BoxDecoration(
-              gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter,
-                colors: [Colors.transparent, Color(0xE610102A)]),
+              fit: BoxFit.cover, excludeFromSemantics: true,
+              color: PQWorldCardLighting.artworkTint(available: available),
+              colorBlendMode: BlendMode.modulate)),
+            Positioned.fill(child: IgnorePointer(child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: PQWorldCardLighting.scrim(available: available)),
             ))),
             ConstrainedBox(constraints: BoxConstraints(minHeight: available ? 172 : 146),
               child: Align(alignment: Alignment.bottomCenter,
@@ -591,7 +607,12 @@ class _ScreenPageState extends State<ScreenPage> {
                   child: Row(crossAxisAlignment: CrossAxisAlignment.end, children: [
                     Expanded(child: Column(crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisSize: MainAxisSize.min, children: [
-                        Text(title, style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold)),
+                        Text(title, style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold,
+                          color: available ? PQColors.white : PQColors.muted,
+                          shadows: available ? const [
+                            Shadow(color: Color(0xFF422164), blurRadius: 7),
+                            Shadow(color: Color(0xAAFFBB31), blurRadius: 12),
+                          ] : const [])),
                         if (available)
                           _worldStars(levels)
                         else Text(requirement),
@@ -614,8 +635,8 @@ class _ScreenPageState extends State<ScreenPage> {
   Widget _worldStars(List<LevelSpec> levels) {
     final levelIds = levels.map((level) => level.id).toSet();
     return FutureBuilder<Map<String, dynamic>>(
-      future: s.authenticated
-          ? _queries.putIfAbsent('collections', () => s.api.get('collections'))
+      future: s.authenticated && !s.offline
+          ? _queries.putIfAbsent('collections', () => s.fetch('collections','collections'))
           : null,
       builder: (context, snapshot) {
         final stars = arr(obj(snapshot.data)['pictures']).map(obj)
@@ -658,7 +679,7 @@ class _ScreenPageState extends State<ScreenPage> {
       _ => 'green_valley',
     };
     return FutureBuilder<Map<String, dynamic>>(
-      future: s.authenticated ? _queries.putIfAbsent('collections', () => s.api.get('collections')) : null,
+      future: s.authenticated && !s.offline ? _queries.putIfAbsent('collections', () => s.fetch('collections','collections')) : null,
       builder: (context, snapshot) {
         final ratings = {
           for (final item in arr(obj(snapshot.data)['pictures']).map(obj))
@@ -738,46 +759,51 @@ class _ScreenPageState extends State<ScreenPage> {
   Widget _levelGridTile(LevelSpec level, int position, int stars) {
     final playable = level.unlocked || stars > 0;
     final completed = stars > 0;
-    final colors = completed
-        ? const [Color(0xFF55C126), Color(0xFF145417)]
-        : playable ? const [Color(0xFFCF59F6), Color(0xFF5622C8)]
-        : const [Color(0xFF504886), Color(0xFF282349)];
+    final lighting = PQLevelTileLighting.forState(
+      playable: playable, completed: completed);
     return Semantics(
-      label: s.tr('المرحلة ${level.code}', 'Level ${level.code}'),
+      label: s.tr(
+        'المرحلة ${level.code}، ${completed ? 'مكتملة' : playable ? 'متاحة للعب' : 'مقفولة'}',
+        'Level ${level.code}, ${completed ? 'completed' : playable ? 'ready to play' : 'locked'}'),
       enabled: playable,
       button: playable,
       child: Container(
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(16), boxShadow: [
-          BoxShadow(color: playable && !completed ? const Color(0xAAAD54FD) : Colors.black54,
-            blurRadius: 8, offset: const Offset(0, 3)),
-        ]),
-        child: Material(color: Colors.transparent, borderRadius: BorderRadius.circular(16),
+        decoration: lighting.outer,
+        child: Material(color: Colors.transparent,
+          borderRadius: PQLevelTileLighting.radius,
           clipBehavior: Clip.antiAlias,
           child: Ink(
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: colors.first.withValues(alpha: .95), width: 2),
-              gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: colors)),
+            decoration: lighting.face,
             child: InkWell(onTap: playable ? () => _navigate(5, {'level': level.id}) : null,
-              child: Padding(padding: const EdgeInsets.all(4), child: FittedBox(fit: BoxFit.scaleDown,
-                child: Column(mainAxisSize: MainAxisSize.min, children: [
-                  Text('$position', style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w700)),
-                  if (completed)
-                    Row(mainAxisSize: MainAxisSize.min, textDirection: TextDirection.ltr, children: [
-                      for (var i = 0; i < 3; i++)
-                        _levelRatingStar(17, earned: i < stars),
-                    ])
-                  else if (playable)
-                    const Icon(Icons.play_arrow_rounded, size: 24)
-                  else
-                    _levelGridIcon('lock', 20),
-                ]),
-              ))),
+              child: Padding(padding: const EdgeInsets.all(4),
+                child: FittedBox(fit: BoxFit.scaleDown,
+                  child: Column(mainAxisSize: MainAxisSize.min, children: [
+                    Text('$position', style: TextStyle(
+                      color: playable ? PQColors.white : PQColors.muted,
+                      fontSize: 26, fontWeight: FontWeight.w800,
+                      shadows: lighting.textShadows)),
+                    if (completed)
+                      Row(mainAxisSize: MainAxisSize.min, textDirection: TextDirection.ltr, children: [
+                        for (var i = 0; i < 3; i++)
+                          _levelRatingStar(17, earned: i < stars),
+                      ])
+                    else if (playable)
+                      Icon(Icons.play_circle_fill_rounded,
+                        color: lighting.iconColor, size: 25)
+                    else
+                      Opacity(opacity: .72, child: _levelGridIcon('lock', 20)),
+                  ]),
+                ),
+              ),
+            ),
           ),
         ),
       ),
     );
   }
-  LevelSpec? get _currentLevel=>s.level('${widget.extra['level']??''}');
+  LevelSpec? get _currentLevel=>s.practiceMode
+      ? (s.localLevel('${widget.extra['level']??''}') ?? s.level('${widget.extra['level']??''}'))
+      : s.level('${widget.extra['level']??''}');
   Widget _levelPreview() {
     final level = _currentLevel;
     if (level == null) return PQEmpty(text: s.tr('المرحلة غير متاحة', 'Level unavailable'));
@@ -895,7 +921,8 @@ class _ScreenPageState extends State<ScreenPage> {
 
   Widget _play(){final level=_currentLevel;
     if(level==null)return PQEmpty(text:s.tr('المرحلة غير متاحة','Level unavailable'));
-    final gameplay = PuzzleGameplay(key:_gameplayKey,level:level,session:s,offlineTicket:widget.extra['offline']==true,
+    final gameplay = PuzzleGameplay(key:_gameplayKey,level:level,session:s,
+      practice:s.practiceMode,offlineTicket:widget.extra['offline']==true&&!s.practiceMode,
       onExit:()=>Navigator.pop(context),
       onLocalCompleted: () {
         if (mounted) setState(() => _completionPending = true);
@@ -909,13 +936,13 @@ class _ScreenPageState extends State<ScreenPage> {
     );
     return Stack(fit: StackFit.expand, children: [
       Offstage(offstage: _completionPending, child: gameplay),
-      if (_completionPending) _completionView(level, const {}, pending: true),
+      if (_completionPending) _completionView(level, const {}, pending: true, practice:s.practiceMode),
     ]);
   }
 
   Widget _complete() => _completionView(_currentLevel, obj(widget.extra['result']));
 
-  Widget _completionView(LevelSpec? level, Map<String, dynamic> result, {bool pending = false}) {
+  Widget _completionView(LevelSpec? level, Map<String, dynamic> result, {bool pending = false, bool practice=false}) {
     final rating = number(result['rating']).clamp(0, 3);
     return Stack(fit: StackFit.expand, children: [
       Image.asset('assets/images/celebrate.png', fit: BoxFit.cover, excludeFromSemantics: true),
@@ -962,10 +989,21 @@ class _ScreenPageState extends State<ScreenPage> {
             ),
             const SizedBox(height: 18),
             if (pending) ...[
-              Text(s.tr('اكتملت الصورة — المكافأة قيد المزامنة', 'Puzzle complete — reward awaiting sync'),
+              Text(practice
+                ? s.tr('اكتملت المرحلة تدريبياً. لا مكافآت أو نجوم معتمدة دون اتصال.',
+                    'Practice complete. No verified coins or stars were awarded.')
+                : s.tr('اكتملت الصورة — المكافأة قيد المزامنة', 'Puzzle complete — reward awaiting sync'),
                 textAlign: TextAlign.center),
               const SizedBox(height: 12),
-              PQAction(label: s.tr('إعادة المزامنة', 'Retry sync'),
+              if(practice) ...[
+                PQAction(label:s.tr('إعادة المحاولة','Replay practice'),onPressed:()async{
+                  setState(()=>_completionPending=false);
+                  await _gameplayKey.currentState?.restartPractice();
+                }),
+                const SizedBox(height:8),
+                PQAction(label:s.tr('العودة إلى العوالم','Back to worlds'),outlined:true,onPressed:_home),
+              ]
+              else PQAction(label: s.tr('إعادة المزامنة', 'Retry sync'),
                 onPressed: () async => _gameplayKey.currentState?.retryCompletion()),
             ] else ...[
               Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
@@ -1027,12 +1065,20 @@ class _ScreenPageState extends State<ScreenPage> {
 
   final Map<String,Future<Map<String,dynamic>>> _queries={};
   Widget _data(String path,Widget Function(Map<String,dynamic>) builder){
-    if(!s.authenticated)return PQEmpty(text:s.tr('سجّل الدخول أو تابع كضيف لعرض بياناتك','Sign in or play as guest to view your data'));
+    const offlineAllowed={'missions','collections','village','shop','rewards/daily','leaderboard/weekly'};
+    if(!s.authenticated&&!(s.practiceMode&&offlineAllowed.contains(path))){
+      return PQEmpty(text:s.tr('سجّل الدخول أو تابع كضيف لعرض بياناتك','Sign in or play as guest to view your data'));
+    }
+    if(s.practiceMode){
+      if(!offlineAllowed.contains(path))return PQEmpty(text:s.tr('هذه الخدمة تتطلب اتصالًا','This feature requires internet'));
+      return builder(s.cached(path));
+    }
     return FutureBuilder<Map<String,dynamic>>(
-      future:_queries.putIfAbsent(path,()=>s.api.get(path)),
+      future:_queries.putIfAbsent(path,()=>s.fetch(path,path)),
       builder:(ctx,snapshot){
         if(snapshot.connectionState!=ConnectionState.done)return Center(child:PQInlineStatus(
           state:PQInlineState.loading,message:s.tr('جاري التحميل','Loading')));
+        if(snapshot.hasError&&s.cached(path).isNotEmpty)return builder(s.cached(path));
         if(snapshot.hasError)return Center(child:PQInlineStatus(
           state:s.offline?PQInlineState.offline:PQInlineState.error,
           message:_errorText(snapshot.error!),onRetry:()=>_reload(path)));
@@ -1107,14 +1153,16 @@ class _ScreenPageState extends State<ScreenPage> {
             Text('+${number(mission['reward_coins'])}', textDirection: TextDirection.ltr),
           ]),
         ]),
-        if (mission['claimed'] == true)
-          Text(s.tr('تم استلام المكافأة', 'Reward claimed'),
-            style: const TextStyle(color: PQColors.muted))
-        else if (mission['eligible'] == true)
-          TextButton.icon(icon:_previewArt('coins_stack',28),onPressed: () => _perform(() async {
+        const SizedBox(height: 12),
+        PQMissionClaimButton(
+          eligible: mission['eligible'] == true,
+          claimed: mission['claimed'] == true,
+          arabic: s.arabic,
+          onClaim: () => _perform(() async {
             await s.mutate('missions/${mission['id']}/claim');
             if (mounted) _reload('missions');
-          }), label: Text(s.tr('استلم المكافأة', 'Claim reward'))),
+          }),
+        ),
       ])),
     );
   }
@@ -1221,6 +1269,8 @@ class _ScreenPageState extends State<ScreenPage> {
     PQCard(child:ListTile(leading:const Icon(Icons.account_circle,size:44,color:PQColors.gold),
       title:Text(s.displayName),subtitle:Text(s.guest?s.tr('حساب ضيف','Guest account'):'${s.player['email']??''}'),
       onTap:()=>_navigate(26))),
+    // Keep the illustrated language control visible before the long settings menu.
+    PQCard(child:PQLanguageSwitcher(arabic:s.arabic,onChanged:s.setLanguage)),
     _menuItem(Icons.person,26,s.tr('حسابي','My Account')),
     _menuItem(Icons.emoji_events,34,s.tr('الإنجازات','Achievements')),
     _menuItem(Icons.leaderboard,10,s.tr('الترتيب','Leaderboard')),
@@ -1228,7 +1278,6 @@ class _ScreenPageState extends State<ScreenPage> {
     _menuItem(Icons.security,28,s.tr('الخصوصية','Privacy & Security')),
     _menuItem(Icons.help_center,36,s.tr('مركز المساعدة','Help Center')),
     _menuItem(Icons.settings,40,s.tr('خيارات الموافقات','Consent Options')),
-    PQCard(child:PQLanguageSwitcher(arabic:s.arabic,onChanged:s.setLanguage)),
     PQCard(child:SwitchListTile(value:s.reduceMotion,
       title:Text(s.tr('تقليل الحركة','Reduce motion')),
       onChanged:s.setReduceMotion)),
@@ -1404,8 +1453,8 @@ class _ScreenPageState extends State<ScreenPage> {
   DateTime? _resendAvailableAt;
   Timer? _otpTicker;
   @override void initState(){super.initState();_showEvents = widget.extra['events'] == true;if(widget.id==21){
-    _otpChallengeId="${obj(widget.extra['challenge'])['challenge_id']}";
-    _resendAvailableAt=DateTime.now().add(const Duration(seconds:60));
+    _otpChallengeId=obj(widget.extra['challenge'])['challenge_id'] as String?;
+    if(_otpChallengeId!=null)_resendAvailableAt=DateTime.now().add(const Duration(seconds:60));
     _otpTicker=Timer.periodic(const Duration(seconds:1),(_){if(mounted)setState((){});});
   }}
   int get _otpWait => _resendAvailableAt==null?0:math.max(0,_resendAvailableAt!.difference(DateTime.now()).inSeconds+1);
@@ -1452,6 +1501,18 @@ class _ScreenPageState extends State<ScreenPage> {
       title:Text(s.tr('أؤكد أن عمري 13 عامًا أو أكثر','I confirm I am 13 years of age or older')),
       onChanged:(v)=>setState(()=>_confirmedAge=v??false))),
     PQAction(label:s.tr('إنشاء حساب','Create Account'),onPressed:(!_acceptedTerms||!_confirmedAge)?null:()=>_perform(()async{
+      if(_nameField.text.trim().length<2 || _nameField.text.trim().length>40){
+        _notice(s.tr('الاسم يجب أن يكون من 2 إلى 40 حرفًا','Name must be 2–40 characters'));
+        return;
+      }
+      if(!_emailField.text.contains('@') || !_emailField.text.contains('.')){
+        _notice(s.tr('أدخل بريدًا إلكترونيًا صحيحًا','Enter a valid email address'));
+        return;
+      }
+      if(_passwordField.text.length<6 || _passwordField.text.length>64){
+        _notice(s.tr('كلمة المرور من 6 إلى 64 حرفًا','Password must be 6–64 characters'));
+        return;
+      }
       if (_passwordField.text != _confirmPasswordField.text) {
         _notice(s.tr('كلمتا المرور غير متطابقتين', 'Passwords do not match'));
         return;
@@ -1467,12 +1528,16 @@ class _ScreenPageState extends State<ScreenPage> {
     return _authLayout([
       _authArt('mail'),
       const SizedBox(height:16),
-      Text('${s.tr('رمز من 6 أرقام أُرسل إلى','6-digit code sent to')} ${widget.extra['email']??''}'),
+      Text(_otpChallengeId==null
+        ? s.tr('لم يتأكد إرسال الرمز. اضغط إعادة الإرسال عند توفر الخدمة.',
+            'Verification delivery is pending. Request a new code when available.')
+        : '${s.tr('رمز من 6 أرقام أُرسل إلى','6-digit code sent to')} ${widget.extra['email']??''}'),
       TextField(controller:_codeField,keyboardType:TextInputType.number,
         maxLength:6,autofillHints:const [AutofillHints.oneTimeCode],
+        onChanged:(_)=>setState((){}),
         inputFormatters:[FilteringTextInputFormatter.digitsOnly],
         decoration:InputDecoration(labelText:s.tr('رمز التحقق','Verification Code'))),
-      PQAction(label:s.tr('تأكيد','Verify'),onPressed:_codeField.text.length!=6?null:()=>_perform(()async{
+      PQAction(label:s.tr('تأكيد','Verify'),onPressed:(_codeField.text.length!=6||_otpChallengeId==null)?null:()=>_perform(()async{
         await s.verifyOtp(_otpChallengeId??'',_codeField.text.trim(),purpose);_home();
       })),
       const SizedBox(height:8),
@@ -1515,16 +1580,26 @@ class _ScreenPageState extends State<ScreenPage> {
       onChanged:(v)=>setState(()=>_confirmedAge=v??false))),
     PQAction(label:s.tr('ابدأ كضيف','Start as Guest'),onPressed:!_confirmedAge?null:()=>_perform(
       ()=>s.startGuest(ageConfirmed:_confirmedAge),next:2)),
+    const SizedBox(height:8),
+    PQAction(label:s.tr('العب دون اتصال (تدريب)','Play offline (practice)'),outlined:true,
+      onPressed:!_confirmedAge?null:()=>_perform(s.startOfflinePractice,next:2)),
     const SizedBox(height:16),PQAction(label:s.tr('إنشاء حساب','Create Account'),outlined:true,onPressed:()=>_navigate(20)),
   ]);
   Widget _avatars()=>_scroll(_stack([
-    const PQSectionTitle(text:'Choose Avatar'),
-    for(final name in const ['explorer_boy_blue','explorer_boy_glasses','explorer_elder_scout',
-      'explorer_elder_turquoise','explorer_girl_orange','explorer_girl_purple',
-      'explorer_man_orange','explorer_woman_yellow'])
-      PQCard(child:ListTile(leading:const Icon(Icons.face,color:PQColors.gold),title:Text(name),
-        trailing:const Icon(Icons.check_circle_outline),
-        onTap:()=>_perform(()async{await s.saveProfile({'avatar':name});},next:26))),
+    Text(s.tr('اختر شخصيتك','Choose your avatar'),
+      textAlign:TextAlign.center,
+      style:Theme.of(context).textTheme.headlineSmall),
+    const SizedBox(height:6),
+    Text(s.tr('اختر صورة شخصيتك. يعمل حتى دون إنترنت.',
+      'Choose your portrait. Available offline.'),
+      textAlign:TextAlign.center),
+    const SizedBox(height:14),
+    PuzzleAvatarPicker(
+      selectedId:'${s.player['avatar']??''}',arabic:s.arabic,
+      onSelected:(value)=>_perform(()async{
+        await s.chooseAvatar(value);
+      },next:26),
+    ),
   ]));
   Widget _account()=>_scroll(_stack([
     PQCard(child:Column(crossAxisAlignment:CrossAxisAlignment.stretch,children:[
@@ -1536,7 +1611,12 @@ class _ScreenPageState extends State<ScreenPage> {
     _menuItem(Icons.face,25,s.tr('اختر شخصية','Choose Avatar')),
     _menuItem(Icons.security,28,s.tr('الخصوصية والأمان','Privacy & Security')),
     _menuItem(Icons.verified_user,40,s.tr('الموافقات','Consents')),
-    if(s.guest)PQAction(label:s.tr('احفظ تقدم الضيف','Save Guest Progress'),onPressed:()=>_navigate(29)),
+    if(s.guest)PQAction(
+      label:s.tr('إنشاء حساب لحفظ تقدمك','Create an Account'),
+      onPressed:()=>_navigate(20)),
+    if(s.previousGuestToken!=null)PQAction(
+      label:s.tr('دمج تقدم الضيف السابق','Merge Previous Guest Progress'),
+      outlined:true,onPressed:()=>_navigate(29)),
   ]));
   Widget _editProfile()=>_scroll(_stack([
     const PQSectionTitle(text:'Edit Profile'),

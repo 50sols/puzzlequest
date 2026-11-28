@@ -1,6 +1,12 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{AuthController as Auth,GameController as Game,AccountController as Account};
+// Asset delivery has a separate rate limit: a 100-piece puzzle needs >100
+// immutable image requests, and the normal API limiter must not block them.
+Route::get('v1/content/{level}/{revision}/{file}',
+    [\App\Http\Controllers\ContentAssetController::class, 'show'])
+    ->where('file', '.*')->middleware('throttle:600,1');
+
 Route::prefix('v1')->middleware('throttle:api')->group(function(){
     Route::get('status',fn()=>response()->json(['service'=>'PuzzleQuest','version'=>config('puzzlequest.version'),'time'=>now()->toIso8601String()]));
     Route::prefix('auth')->middleware('throttle:identity')->group(function(){
