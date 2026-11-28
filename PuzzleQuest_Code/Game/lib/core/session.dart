@@ -37,8 +37,8 @@ class PuzzleSession extends ChangeNotifier {
   /// Bundled levels are independent practice content; no offline minting.
   void _useBundledLevels() {
     if (_bundledLevels.isEmpty) return;
-    levels=_bundledLevels.map((level) =>
-      level.withUnlocked(true) // Local practice unlock is not a server entitlement.).toList();
+    // All bundled stages are accessible in local practice, not as server unlocks.
+    levels=_bundledLevels.map((level)=>level.withUnlocked(true)).toList();
     notifyListeners();
   }
 
@@ -104,7 +104,7 @@ class PuzzleSession extends ChangeNotifier {
 
   Future<T> run<T>(Future<T> Function() task) async {
     busy = true; status = null; notifyListeners();
-    try { final result = await task(); offline = false; return result; }
+    try { final result = await task(); return result; }
     on ApiException catch (e) {
       if(e.status==0){offline=true;_useBundledLevels();}
       status=e.message;rethrow;
