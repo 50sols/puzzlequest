@@ -1061,12 +1061,20 @@ class _ScreenPageState extends State<ScreenPage> {
 
   final Map<String,Future<Map<String,dynamic>>> _queries={};
   Widget _data(String path,Widget Function(Map<String,dynamic>) builder){
-    if(!s.authenticated)return PQEmpty(text:s.tr('سجّل الدخول أو تابع كضيف لعرض بياناتك','Sign in or play as guest to view your data'));
+    const offlineAllowed={'missions','collections','village','shop','rewards/daily','leaderboard/weekly'};
+    if(!s.authenticated&&!(s.practiceMode&&offlineAllowed.contains(path))){
+      return PQEmpty(text:s.tr('سجّل الدخول أو تابع كضيف لعرض بياناتك','Sign in or play as guest to view your data'));
+    }
+    if(s.practiceMode){
+      if(!offlineAllowed.contains(path))return PQEmpty(text:s.tr('هذه الخدمة تتطلب اتصالًا','This feature requires internet'));
+      return builder(s.cached(path));
+    }
     return FutureBuilder<Map<String,dynamic>>(
-      future:_queries.putIfAbsent(path,()=>s.api.get(path)),
+      future:_queries.putIfAbsent(path,()=>s.fetch(path,path)),
       builder:(ctx,snapshot){
         if(snapshot.connectionState!=ConnectionState.done)return Center(child:PQInlineStatus(
           state:PQInlineState.loading,message:s.tr('جاري التحميل','Loading')));
+        if(snapshot.hasError&&s.cached(path).isNotEmpty)return builder(s.cached(path));
         if(snapshot.hasError)return Center(child:PQInlineStatus(
           state:s.offline?PQInlineState.offline:PQInlineState.error,
           message:_errorText(snapshot.error!),onRetry:()=>_reload(path)));
@@ -1565,6 +1573,9 @@ class _ScreenPageState extends State<ScreenPage> {
       onChanged:(v)=>setState(()=>_confirmedAge=v??false))),
     PQAction(label:s.tr('ابدأ كضيف','Start as Guest'),onPressed:!_confirmedAge?null:()=>_perform(
       ()=>s.startGuest(ageConfirmed:_confirmedAge),next:2)),
+    const SizedBox(height:8),
+    PQAction(label:s.tr('العب دون اتصال (تدريب)','Play offline (practice)'),outlined:true,
+      onPressed:!_confirmedAge?null:()=>_perform(s.startOfflinePractice,next:2)),
     const SizedBox(height:16),PQAction(label:s.tr('إنشاء حساب','Create Account'),outlined:true,onPressed:()=>_navigate(20)),
   ]);
   Widget _avatars()=>_scroll(_stack([
