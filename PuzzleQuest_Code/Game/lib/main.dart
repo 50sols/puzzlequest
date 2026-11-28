@@ -33,7 +33,7 @@ class PuzzleQuestApp extends StatelessWidget {
     builder:(context,child)=>Directionality(textDirection:session.arabic?TextDirection.rtl:TextDirection.ltr,
       child:PQBackdrop(child:Column(children:[
         Expanded(child:child??const SizedBox()),
-        if(RewardedAdsService.canPreviewTestAd)
+        if(RewardedAdsService.canPreviewTestAd && !session.offline)
           const SafeArea(top:false,child:AppFooterBanner()),
       ]))),
     home:ScreenPage(
