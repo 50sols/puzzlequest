@@ -45,6 +45,13 @@ final class EmailGuestRegistrationTest extends TestCase {
         $this->assertSame(1,DB::table('users')->count());
         $this->assertSame(1,DB::table('consents')->where('user_id',$id)->count());
         $this->assertNotEmpty($result['verification']['challenge_id']);
+        // Converted guest tokens must not become silently privileged sessions.
+        $this->getJson('/api/v1/me',[
+            'Authorization'=>'Bearer '.$guest['access_token'],
+        ])->assertUnauthorized();
+        $this->getJson('/api/v1/me',[
+            'Authorization'=>'Bearer '.$result['access_token'],
+        ])->assertOk()->assertJsonPath('id',$id);
     }
 
     public function test_invalid_guest_token_does_not_silently_create_another_account(): void {
