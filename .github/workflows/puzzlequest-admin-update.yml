@@ -41,6 +41,8 @@ jobs:
       - name: Lint changed PHP files
         run: |
           php -l app/Http/Controllers/ContentAssetController.php
+          php -l app/Http/Controllers/AuthController.php
+          php -l app/Services/Identity.php
           php -l app/Services/Game.php
           php -l routes/api.php
           php -l config/puzzlequest.php
