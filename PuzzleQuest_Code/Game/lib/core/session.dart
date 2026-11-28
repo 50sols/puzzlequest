@@ -256,6 +256,7 @@ class PuzzleSession extends ChangeNotifier {
     offline=false;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('puzzlequest.catalog',jsonEncode(result));
+    await _flushPendingAvatar();
   }
   LevelSpec? localLevel(String id) {
     for(final entry in _bundledLevels){if(entry.id==id)return entry.withUnlocked(true);}
