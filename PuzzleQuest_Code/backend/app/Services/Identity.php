@@ -34,7 +34,7 @@ final class Identity {
             $email=strtolower(trim($data['email']));if(str_ends_with($email,'@guest.invalid'))Json::fail('invalid_email');
             if(DB::table('users')->where('email',$email)->exists())Json::fail('email_unavailable_use_login_or_recovery',409);
             $values=['name'=>$data['name'],'email'=>$email,'password'=>Hash::make($data['password']),'is_guest'=>false,'updated_at'=>now()];
-            if($guest){$u=DB::table('users')->where('id',$guest->id)->lockForUpdate()->first();if(!$u->is_guest)Json::fail('already_registered',409);DB::table('users')->where('id',$u->id)->update($values);$uid=$u->id;}
+            if($guest){$u=DB::table('users')->where('id',$guest->id)->lockForUpdate()->first();if(!$u||!$u->is_guest||$u->status!=='active')Json::fail('invalid_guest_session',409);DB::table('users')->where('id',$u->id)->update($values);$uid=$u->id;DB::table('api_tokens')->where('user_id',$uid)->delete();DB::table('push_devices')->where('user_id',$uid)->update(['active'=>false]);}
             else{$uid=DB::table('users')->insertGetId($values+['created_at'=>now()]);$this->wallet->initial($uid);}
             DB::table('consents')->insert(['user_id'=>$uid,'document_version'=>$data['terms_version'],'choices'=>Json::encode(['terms_accepted'=>true,'personalized_ads'=>false,'tracking'=>false,'marketing'=>false]),'created_at'=>now()]);
             $result=$this->token($uid,$data);try{$result['verification']=$this->issueOtp($email,'email_verification');}catch(\Illuminate\Http\Exceptions\HttpResponseException $e){$result['verification']=['state'=>'delivery_unavailable_retry_after_setup'];}
